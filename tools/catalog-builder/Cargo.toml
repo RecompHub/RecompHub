@@ -1,0 +1,15 @@
+[package]
+name = "catalog-builder"
+version = "0.1.0"
+description = "Gera catalog/games.json a partir de catalog/sources.json + GitHub, SteamGridDB e IGDB"
+edition = "2024"
+publish = false
+
+[dependencies]
+recomphub-catalog.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+chrono.workspace = true
+reqwest = { workspace = true, features = ["query"] }
+tokio = { workspace = true, features = ["rt-multi-thread", "macros"] }
+anyhow = "1"

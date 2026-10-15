@@ -1,0 +1,72 @@
+name: Release
+
+# Publicar uma versão:
+#   1. altere `version` em app/src-tauri/Cargo.toml (ex.: 0.2.0) e commite;
+#   2. git tag v0.2.0 && git push origin v0.2.0
+#   3. revise o rascunho criado em Releases e clique em "Publish".
+# Só depois de publicada a release passa a ser oferecida pelo updater.
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+          - os: ubuntu-22.04 # glibc mais antiga = AppImage roda em mais distros
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Conferir versão da tag
+        shell: bash
+        run: |
+          version=$(grep -m1 '^version' app/src-tauri/Cargo.toml | cut -d'"' -f2)
+          if [ "v$version" != "$GITHUB_REF_NAME" ]; then
+            echo "::error::A tag $GITHUB_REF_NAME não bate com a versão v$version do Cargo.toml"
+            exit 1
+          fi
+
+      - name: Dependências do Linux
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Instalar dependências do frontend
+        working-directory: app
+        run: npm ci
+
+      - uses: tauri-apps/tauri-action@v0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
+          TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
+        with:
+          projectPath: app
+          tagName: ${{ github.ref_name }}
+          releaseName: RecompHub ${{ github.ref_name }}
+          releaseBody: |
+            **Windows:** baixe `RecompHub_*_x64-setup.exe`. Não precisa de admin nem de programas extras.
+            **Linux / Steam Deck:** baixe o `.AppImage`, marque como executável e abra.
+
+            Você precisa da sua própria ROM para jogar. O RecompHub nunca distribui ROMs.
+          releaseDraft: true
+          includeUpdaterJson: true

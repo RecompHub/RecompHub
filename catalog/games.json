@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-15T22:58:29.328411800Z",
+  "games": [
+    {
+      "id": "zelda64-mm",
+      "name": "Zelda 64: Recompiled (Majora's Mask)",
+      "repo": "Zelda64Recomp/Zelda64Recomp",
+      "originalTitle": "The Legend of Zelda: Majora's Mask",
+      "originalPlatform": "N64",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "*-Linux-X64.zip",
+          "executable": "Zelda64Recompiled"
+        },
+        "windows-x64": {
+          "assetPattern": "*-Windows.zip",
+          "executable": "Zelda64Recompiled.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "The Legend of Zelda: Majora's Mask (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "images": {},
+      "recomp": {
+        "description": "Static recompilation of Majora's Mask (and soon Ocarina of Time) for PC (Windows/Linux/Mac)",
+        "homepage": null,
+        "license": "GPL-3.0",
+        "topics": [],
+        "stars": 7429,
+        "firstReleaseAt": "2024-05-10T05:07:15Z",
+        "latestRelease": {
+          "tag": "v1.2.2",
+          "name": "v1.2.2",
+          "publishedAt": "2025-08-27T00:58:35Z",
+          "htmlUrl": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/tag/v1.2.2"
+        },
+        "releaseCount": 7,
+        "totalDownloads": 371619
+      }
+    },
+    {
+      "id": "starfox64",
+      "name": "Starfox 64: Recompiled",
+      "repo": "sonicdcer/Starfox64Recomp",
+      "originalTitle": "Star Fox 64",
+      "originalPlatform": "N64",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "*-Linux-X64-*.zip",
+          "executable": "Starfox64Recompiled"
+        },
+        "windows-x64": {
+          "assetPattern": "*-Windows-*.zip",
+          "executable": "Starfox64Recompiled.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Star Fox 64 (USA) (Rev 1)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "images": {},
+      "recomp": {
+        "description": "Starfox 64 for PC (Windows/Linux/MacOS)",
+        "homepage": null,
+        "license": "GPL-3.0",
+        "topics": [],
+        "stars": 381,
+        "firstReleaseAt": "2025-12-24T22:22:59Z",
+        "latestRelease": {
+          "tag": "1.0.3",
+          "name": "Starfox 64: Recompiled 1.0.3",
+          "publishedAt": "2025-12-30T04:13:00Z",
+          "htmlUrl": "https://github.com/sonicdcer/Starfox64Recomp/releases/tag/1.0.3"
+        },
+        "releaseCount": 4,
+        "totalDownloads": 30073
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+[package]
+name = "recomphub-catalog"
+version = "0.1.0"
+description = "Tipos do catálogo do RecompHub (fonte editada à mão e catálogo gerado)"
+edition = "2024"
+
+[dependencies]
+serde.workspace = true
+chrono.workspace = true
+
+[dev-dependencies]
+serde_json.workspace = true

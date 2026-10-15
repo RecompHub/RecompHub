@@ -1,0 +1,4 @@
+# Linka o runtime do C (MSVC) estaticamente: o usuário não precisa instalar
+# o Visual C++ Redistributable.
+[target.x86_64-pc-windows-msvc]
+rustflags = ["-C", "target-feature=+crt-static"]

@@ -1,0 +1,50 @@
+name: Atualizar catálogo
+
+on:
+  schedule:
+    - cron: "0 6 * * *" # diariamente, 03:00 em Brasília
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - catalog/sources.json
+      - catalog/images/**
+
+permissions:
+  contents: write
+
+concurrency:
+  group: catalog
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          key: catalog-builder
+
+      - name: Gerar games.json
+        run: cargo run --release -p catalog-builder
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SGDB_API_KEY: ${{ secrets.SGDB_API_KEY }}
+          IGDB_CLIENT_ID: ${{ secrets.IGDB_CLIENT_ID }}
+          IGDB_CLIENT_SECRET: ${{ secrets.IGDB_CLIENT_SECRET }}
+
+      - name: Commitar se mudou
+        run: |
+          if git diff --quiet catalog/games.json; then
+            echo "Catálogo sem alterações."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog/games.json
+          git commit -m "catalog: atualização automática"
+          git push

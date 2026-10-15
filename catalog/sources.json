@@ -1,0 +1,36 @@
+{
+  "games": [
+    {
+      "id": "zelda64-mm",
+      "name": "Zelda 64: Recompiled (Majora's Mask)",
+      "repo": "Zelda64Recomp/Zelda64Recomp",
+      "originalTitle": "The Legend of Zelda: Majora's Mask",
+      "originalPlatform": "N64",
+      "platforms": {
+        "windows-x64": { "assetPattern": "*-Windows.zip", "executable": "Zelda64Recompiled.exe" },
+        "linux-x64": { "assetPattern": "*-Linux-X64.zip", "executable": "Zelda64Recompiled" }
+      },
+      "requiredRom": {
+        "description": "The Legend of Zelda: Majora's Mask (USA)",
+        "sha1": []
+      },
+      "achievements": { "enabled": false, "supportedVersions": [] }
+    },
+    {
+      "id": "starfox64",
+      "name": "Starfox 64: Recompiled",
+      "repo": "sonicdcer/Starfox64Recomp",
+      "originalTitle": "Star Fox 64",
+      "originalPlatform": "N64",
+      "platforms": {
+        "windows-x64": { "assetPattern": "*-Windows-*.zip", "executable": "Starfox64Recompiled.exe" },
+        "linux-x64": { "assetPattern": "*-Linux-X64-*.zip", "executable": "Starfox64Recompiled" }
+      },
+      "requiredRom": {
+        "description": "Star Fox 64 (USA) (Rev 1)",
+        "sha1": []
+      },
+      "achievements": { "enabled": false, "supportedVersions": [] }
+    }
+  ]
+}
