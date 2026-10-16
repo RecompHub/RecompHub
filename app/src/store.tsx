@@ -7,7 +7,8 @@ export type Route =
   | { page: "home" }
   | { page: "explore" }
   | { page: "library"; gameId?: string }
-  | { page: "game"; gameId: string };
+  | { page: "game"; gameId: string }
+  | { page: "settings" };
 
 interface Store {
   catalog: Catalog | null;

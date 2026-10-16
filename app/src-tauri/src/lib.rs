@@ -4,6 +4,7 @@ mod error;
 mod github;
 mod install;
 mod launch;
+mod settings;
 mod state;
 
 use std::collections::HashSet;
@@ -18,6 +19,7 @@ use tauri_plugin_opener::OpenerExt;
 use catalog::{Catalog, Game, PlatformAsset};
 use error::{Error, Result};
 use github::{GitHub, Release};
+use settings::Settings;
 use state::{InstalledGame, Library, LibraryEntry};
 
 struct AppState {
@@ -26,7 +28,9 @@ struct AppState {
     platform: String,
     http: reqwest::Client,
     github: GitHub,
-    games_dir: PathBuf,
+    default_games_dir: PathBuf,
+    settings_path: PathBuf,
+    settings: Mutex<Settings>,
     library_path: PathBuf,
     library: Mutex<Library>,
     /// Jogos com instalação/remoção em andamento.
@@ -66,6 +70,25 @@ impl AppState {
         let result = f(&mut library);
         state::save(&self.library_path, &library)?;
         Ok(result)
+    }
+
+    /// Pasta onde a próxima instalação vai: a escolhida pelo usuário ou a padrão.
+    fn games_dir(&self) -> PathBuf {
+        self.settings
+            .lock()
+            .unwrap()
+            .games_dir
+            .clone()
+            .unwrap_or_else(|| self.default_games_dir.clone())
+    }
+
+    fn settings_view(&self) -> SettingsView {
+        let custom = self.settings.lock().unwrap().games_dir.clone();
+        SettingsView {
+            games_dir: custom.clone().unwrap_or_else(|| self.default_games_dir.clone()),
+            default_games_dir: self.default_games_dir.clone(),
+            is_default_games_dir: custom.is_none(),
+        }
     }
 
     fn is_running(&self, id: &str) -> bool {
@@ -113,6 +136,14 @@ struct InstallProgressEvent {
 struct GameExitedEvent {
     game_id: String,
     session_seconds: u64,
+}
+
+#[derive(Clone, Serialize)]
+#[serde(rename_all = "camelCase")]
+struct SettingsView {
+    games_dir: PathBuf,
+    default_games_dir: PathBuf,
+    is_default_games_dir: bool,
 }
 
 #[tauri::command]
@@ -182,7 +213,7 @@ async fn install_game(
 
     let installed = install::install(
         &state.http,
-        &state.games_dir,
+        &state.games_dir(),
         &game_id,
         platform,
         &release,
@@ -211,7 +242,7 @@ async fn install_game(
 fn uninstall_game(state: State<'_, AppState>, game_id: String) -> Result<Library> {
     let _guard = BusyGuard::acquire(&state, &game_id)?;
     let installed = state.installed_game(&game_id)?;
-    install::uninstall(&state.games_dir, &installed)?;
+    install::uninstall(&game_id, &installed)?;
     state.update_library(|library| {
         if let Some(entry) = library.get_mut(&game_id) {
             entry.installed = None;
@@ -272,11 +303,31 @@ fn open_install_dir(app: AppHandle, state: State<'_, AppState>, game_id: String)
         .map_err(|e| Error::Io(std::io::Error::other(e.to_string())))
 }
 
+#[tauri::command]
+fn get_settings(state: State<'_, AppState>) -> SettingsView {
+    state.settings_view()
+}
+
+/// `None` volta para a pasta padrão. Jogos já instalados ficam onde estão.
+#[tauri::command]
+fn set_games_dir(state: State<'_, AppState>, path: Option<PathBuf>) -> Result<SettingsView> {
+    if let Some(dir) = &path {
+        settings::validate_games_dir(dir)?;
+    }
+    {
+        let mut current = state.settings.lock().unwrap();
+        current.games_dir = path;
+        settings::save(&state.settings_path, &current)?;
+    }
+    Ok(state.settings_view())
+}
+
 fn init_state(app: &AppHandle) -> Result<AppState> {
     let paths = app.path();
     let data_dir = paths.app_local_data_dir()?;
     let cache_dir = paths.app_cache_dir()?;
     let library_path = data_dir.join("library.json");
+    let settings_path = data_dir.join("settings.json");
     let catalog_cache_path = cache_dir.join("catalog.json");
     let http = reqwest::Client::builder()
         .user_agent(concat!("RecompHub/", env!("CARGO_PKG_VERSION")))
@@ -288,7 +339,9 @@ fn init_state(app: &AppHandle) -> Result<AppState> {
         platform: catalog::current_platform(),
         github: GitHub::new(http.clone(), cache_dir.join("github")),
         http,
-        games_dir: data_dir.join("games"),
+        default_games_dir: data_dir.join("games"),
+        settings: Mutex::new(settings::load(&settings_path)?),
+        settings_path,
         library: Mutex::new(state::load(&library_path)?),
         library_path,
         busy: Mutex::default(),
@@ -299,6 +352,7 @@ fn init_state(app: &AppHandle) -> Result<AppState> {
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
     tauri::Builder::default()
+        .plugin(tauri_plugin_dialog::init())
         .plugin(tauri_plugin_process::init())
         .plugin(tauri_plugin_updater::Builder::new().build())
         .plugin(tauri_plugin_opener::init())
@@ -320,6 +374,8 @@ pub fn run() {
             uninstall_game,
             launch_game,
             open_install_dir,
+            get_settings,
+            set_games_dir,
         ])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
