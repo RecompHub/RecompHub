@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-16T22:52:40.603516400Z",
+  "generatedAt": "2026-10-16T23:19:54.847458372Z",
   "games": [
     {
       "id": "zelda64-mm",
@@ -38,7 +38,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 7444,
+        "stars": 7445,
         "firstReleaseAt": "2024-05-10T05:07:15Z",
         "latestRelease": {
           "tag": "v1.2.2",
@@ -47,7 +47,7 @@
           "htmlUrl": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 7,
-        "totalDownloads": 372261
+        "totalDownloads": 372282
       }
     },
     {
@@ -95,7 +95,7 @@
           "htmlUrl": "https://github.com/sonicdcer/Starfox64Recomp/releases/tag/1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 30131
+        "totalDownloads": 30132
       }
     },
     {
@@ -143,7 +143,7 @@
           "htmlUrl": "https://github.com/BanjoRecomp/BanjoRecomp/releases/tag/v1.0.2"
         },
         "releaseCount": 3,
-        "totalDownloads": 144743
+        "totalDownloads": 144753
       }
     },
     {
@@ -191,7 +191,7 @@
           "htmlUrl": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled/releases/tag/v1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 44790
+        "totalDownloads": 44800
       }
     },
     {
@@ -245,7 +245,7 @@
           "htmlUrl": "https://github.com/klorfmorf/Goemon64Recomp/releases/tag/v0.2.0-dev"
         },
         "releaseCount": 5,
-        "totalDownloads": 22813
+        "totalDownloads": 22816
       }
     },
     {
@@ -293,7 +293,7 @@
           "htmlUrl": "https://github.com/RevoSucks/BM64Recomp/releases/tag/v1.0.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 20297
+        "totalDownloads": 20300
       }
     },
     {
@@ -341,7 +341,7 @@
           "htmlUrl": "https://github.com/MegaMan64Recomp/MegaMan64Recompiled/releases/tag/v0.9.1"
         },
         "releaseCount": 3,
-        "totalDownloads": 14592
+        "totalDownloads": 14593
       }
     },
     {
@@ -389,7 +389,7 @@
           "htmlUrl": "https://github.com/HarvestMoon64Recomp/HarvestMoon64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 6,
-        "totalDownloads": 9064
+        "totalDownloads": 9067
       }
     },
     {
@@ -433,7 +433,7 @@
           "htmlUrl": "https://github.com/theboy181/drmario64_recomp_plus/releases/tag/1.0.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 10692
+        "totalDownloads": 10695
       }
     },
     {
@@ -546,7 +546,7 @@
           "htmlUrl": "https://github.com/JackandBeans/Snap64Recomp/releases/tag/v1.1.4"
         },
         "releaseCount": 15,
-        "totalDownloads": 7610
+        "totalDownloads": 7615
       }
     },
     {
@@ -596,7 +596,7 @@
           "htmlUrl": "https://github.com/DahSidiAbdallah/ConkerBFDReloaded/releases/tag/v1.3.6"
         },
         "releaseCount": 12,
-        "totalDownloads": 5937
+        "totalDownloads": 5941
       }
     },
     {
@@ -692,7 +692,7 @@
           "htmlUrl": "https://github.com/TwilitRealm/dusklight/releases/tag/v2.0.3"
         },
         "releaseCount": 24,
-        "totalDownloads": 1355145
+        "totalDownloads": 1355243
       },
       "trophyProvider": {
         "kind": "dusklight",
