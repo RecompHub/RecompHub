@@ -41,6 +41,7 @@ struct Release {
 
 #[derive(Deserialize)]
 struct Asset {
+    name: String,
     download_count: u64,
 }
 
@@ -59,8 +60,16 @@ impl GitHub {
         }
         Ok(request.send().await?.error_for_status()?.json().await?)
     }
+}
 
-    pub async fn recomp_info(&self, repo: &str) -> Result<RecompInfo> {
+/// Dados do recomp + nomes dos assets da release que o launcher instala.
+pub struct RecompData {
+    pub info: RecompInfo,
+    pub latest_assets: Vec<String>,
+}
+
+impl GitHub {
+    pub async fn recomp_info(&self, repo: &str) -> Result<RecompData> {
         let info: Repo = self.get(&format!("/repos/{repo}")).await?;
 
         let mut releases: Vec<Release> = Vec::new();
@@ -76,18 +85,18 @@ impl GitHub {
         }
 
         // A API devolve da mais nova para a mais antiga.
-        let latest = releases
-            .iter()
-            .find(|r| !r.prerelease)
-            .or(releases.first())
-            .map(|r| ReleaseSummary {
+        let latest_release = releases.iter().find(|r| !r.prerelease).or(releases.first());
+        let latest_assets = latest_release
+            .map(|r| r.assets.iter().map(|a| a.name.clone()).collect())
+            .unwrap_or_default();
+        let latest = latest_release.map(|r| ReleaseSummary {
                 tag: r.tag_name.clone(),
                 name: r.name.clone(),
                 published_at: r.published_at,
                 html_url: r.html_url.clone(),
             });
 
-        Ok(RecompInfo {
+        let info = RecompInfo {
             description: info.description,
             homepage: info.homepage.filter(|h| !h.is_empty()),
             license: info
@@ -104,6 +113,7 @@ impl GitHub {
                 .flat_map(|r| &r.assets)
                 .map(|a| a.download_count)
                 .sum(),
-        })
+        };
+        Ok(RecompData { info, latest_assets })
     }
 }

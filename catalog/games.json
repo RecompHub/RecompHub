@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-16T01:07:13.966957885Z",
+  "generatedAt": "2026-10-16T01:59:27.871633600Z",
   "games": [
     {
       "id": "zelda64-mm",
@@ -41,7 +41,7 @@
           "htmlUrl": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 7,
-        "totalDownloads": 371684
+        "totalDownloads": 371707
       }
     },
     {
@@ -83,7 +83,490 @@
           "htmlUrl": "https://github.com/sonicdcer/Starfox64Recomp/releases/tag/1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 30077
+        "totalDownloads": 30079
+      }
+    },
+    {
+      "id": "banjo-kazooie",
+      "name": "Banjo-Kazooie: Recompiled",
+      "repo": "BanjoRecomp/BanjoRecomp",
+      "originalTitle": "Banjo-Kazooie",
+      "originalPlatform": "N64",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "*-Linux-X64.tar.gz",
+          "executable": "BanjoRecompiled"
+        },
+        "windows-x64": {
+          "assetPattern": "*-Windows.zip",
+          "executable": "BanjoRecompiled.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Banjo-Kazooie (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "images": {},
+      "recomp": {
+        "description": "PC Port of Banjo-Kazooie made using N64: Recompiled (Windows/Linux/Mac) ",
+        "homepage": null,
+        "license": "GPL-3.0",
+        "topics": [],
+        "stars": 2044,
+        "firstReleaseAt": "2026-01-24T19:29:09Z",
+        "latestRelease": {
+          "tag": "v1.0.2",
+          "name": "v1.0.2",
+          "publishedAt": "2026-07-31T19:43:17Z",
+          "htmlUrl": "https://github.com/BanjoRecomp/BanjoRecomp/releases/tag/v1.0.2"
+        },
+        "releaseCount": 3,
+        "totalDownloads": 144363
+      }
+    },
+    {
+      "id": "dk64",
+      "name": "Donkey Kong 64: Recompiled",
+      "repo": "Rainchus/Donkey-Kong-64-Recompiled",
+      "originalTitle": "Donkey Kong 64",
+      "originalPlatform": "N64",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "*-Linux-X64-Release-*.zip",
+          "executable": "DK64Recompiled"
+        },
+        "windows-x64": {
+          "assetPattern": "*-Windows-Release-*.zip",
+          "executable": "DK64Recompiled.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Donkey Kong 64 (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "images": {},
+      "recomp": {
+        "description": null,
+        "homepage": null,
+        "license": "GPL-3.0",
+        "topics": [],
+        "stars": 509,
+        "firstReleaseAt": "2026-08-29T19:03:58Z",
+        "latestRelease": {
+          "tag": "v1.0.3",
+          "name": "DK64 Rekongpiled 1.0.3",
+          "publishedAt": "2026-09-30T00:21:10Z",
+          "htmlUrl": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled/releases/tag/v1.0.3"
+        },
+        "releaseCount": 4,
+        "totalDownloads": 44443
+      }
+    },
+    {
+      "id": "goemon64",
+      "name": "Goemon 64: Recompiled",
+      "repo": "klorfmorf/Goemon64Recomp",
+      "originalTitle": "Mystical Ninja Starring Goemon",
+      "originalPlatform": "N64",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "*-Linux-X64-Release.zip",
+          "executable": "Goemon64Recompiled"
+        },
+        "windows-x64": {
+          "assetPattern": "*-Windows-RelWithDebInfo.zip",
+          "executable": "Goemon64Recompiled.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Mystical Ninja Starring Goemon (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "images": {},
+      "recomp": {
+        "description": "An unofficial PC port of Mystical Ninja Starring Goemon achieved via static recompilation.",
+        "homepage": null,
+        "license": "GPL-3.0",
+        "topics": [
+          "goemon",
+          "mystical-ninja",
+          "n64",
+          "pc-port",
+          "recompilation"
+        ],
+        "stars": 315,
+        "firstReleaseAt": "2025-02-20T23:53:16Z",
+        "latestRelease": {
+          "tag": "v0.2.0-dev",
+          "name": "v0.2.0-dev",
+          "publishedAt": "2026-01-31T15:40:34Z",
+          "htmlUrl": "https://github.com/klorfmorf/Goemon64Recomp/releases/tag/v0.2.0-dev"
+        },
+        "releaseCount": 5,
+        "totalDownloads": 22735
+      }
+    },
+    {
+      "id": "bomberman64",
+      "name": "Bomberman 64: Recompiled",
+      "repo": "RevoSucks/BM64Recomp",
+      "originalTitle": "Bomberman 64",
+      "originalPlatform": "N64",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "*-Linux-X64-Release.zip",
+          "executable": "BM64Recompiled"
+        },
+        "windows-x64": {
+          "assetPattern": "*-Windows-RelWithDebInfo.zip",
+          "executable": "BM64Recompiled.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Bomberman 64 (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "images": {},
+      "recomp": {
+        "description": null,
+        "homepage": null,
+        "license": "GPL-3.0",
+        "topics": [],
+        "stars": 298,
+        "firstReleaseAt": "2026-03-22T22:47:19Z",
+        "latestRelease": {
+          "tag": "v1.0.0",
+          "name": "v1.0.0 - Initial Release",
+          "publishedAt": "2026-03-22T22:47:19Z",
+          "htmlUrl": "https://github.com/RevoSucks/BM64Recomp/releases/tag/v1.0.0"
+        },
+        "releaseCount": 1,
+        "totalDownloads": 20204
+      }
+    },
+    {
+      "id": "megaman64",
+      "name": "Mega Man 64: Recompiled",
+      "repo": "MegaMan64Recomp/MegaMan64Recompiled",
+      "originalTitle": "Mega Man 64",
+      "originalPlatform": "N64",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "*-Linux-X64.zip",
+          "executable": "MegaMan64Recompiled"
+        },
+        "windows-x64": {
+          "assetPattern": "*-Windows.zip",
+          "executable": "MegaMan64Recompiled.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Mega Man 64 (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "images": {},
+      "recomp": {
+        "description": "Recompilation of Mega Man 64",
+        "homepage": null,
+        "license": "GPL-3.0",
+        "topics": [],
+        "stars": 270,
+        "firstReleaseAt": "2025-05-03T02:37:18Z",
+        "latestRelease": {
+          "tag": "v0.9.1",
+          "name": "Mega Man 64: Recompiled 0.9.1",
+          "publishedAt": "2026-04-30T20:35:04Z",
+          "htmlUrl": "https://github.com/MegaMan64Recomp/MegaMan64Recompiled/releases/tag/v0.9.1"
+        },
+        "releaseCount": 3,
+        "totalDownloads": 14510
+      }
+    },
+    {
+      "id": "harvestmoon64",
+      "name": "Harvest Moon 64: Recompiled",
+      "repo": "HarvestMoon64Recomp/HarvestMoon64Recomp",
+      "originalTitle": "Harvest Moon 64",
+      "originalPlatform": "N64",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "*-Linux-X64.zip",
+          "executable": "HarvestMoon64Recompiled"
+        },
+        "windows-x64": {
+          "assetPattern": "*-Windows.zip",
+          "executable": "HarvestMoon64Recompiled.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Harvest Moon 64 (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "images": {},
+      "recomp": {
+        "description": "PC Port of Harvest Moon 64 made using N64: Recompiled (Windows/Linux/Mac) ",
+        "homepage": null,
+        "license": "GPL-3.0",
+        "topics": [],
+        "stars": 161,
+        "firstReleaseAt": "2026-06-27T05:24:02Z",
+        "latestRelease": {
+          "tag": "v1.2.2",
+          "name": "v1.2.2",
+          "publishedAt": "2026-09-25T21:17:14Z",
+          "htmlUrl": "https://github.com/HarvestMoon64Recomp/HarvestMoon64Recomp/releases/tag/v1.2.2"
+        },
+        "releaseCount": 6,
+        "totalDownloads": 8985
+      }
+    },
+    {
+      "id": "drmario64",
+      "name": "Dr. Mario 64: Recompiled",
+      "repo": "theboy181/drmario64_recomp_plus",
+      "originalTitle": "Dr. Mario 64",
+      "originalPlatform": "N64",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-Windows.zip",
+          "executable": "drmario64_recomp.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Dr. Mario 64 (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "images": {},
+      "recomp": {
+        "description": "Recompilation of Dr. Mario 64 ",
+        "homepage": null,
+        "license": "GPL-3.0",
+        "topics": [],
+        "stars": 152,
+        "firstReleaseAt": "2025-12-18T04:36:00Z",
+        "latestRelease": {
+          "tag": "1.0.0",
+          "name": "Dr. Mario 64 Recompiled v1.0.0",
+          "publishedAt": "2025-12-18T04:36:00Z",
+          "htmlUrl": "https://github.com/theboy181/drmario64_recomp_plus/releases/tag/1.0.0"
+        },
+        "releaseCount": 1,
+        "totalDownloads": 10661
+      }
+    },
+    {
+      "id": "snowboardkids2",
+      "name": "Snowboard Kids 2: Recompiled",
+      "repo": "cdlewis/snowboardkids2-recomp",
+      "originalTitle": "Snowboard Kids 2",
+      "originalPlatform": "N64",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "*-Linux-X64-Release.tar.gz",
+          "executable": "SnowboardKids2Recompiled"
+        },
+        "windows-x64": {
+          "assetPattern": "*-Windows-RelWithDebInfo.zip",
+          "executable": "SnowboardKids2Recompiled.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Snowboard Kids 2 (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "images": {},
+      "recomp": {
+        "description": "Snowboard Kids 2 for PC (Windows/Linux/MacOS)",
+        "homepage": null,
+        "license": "GPL-3.0",
+        "topics": [
+          "n64",
+          "nintendo",
+          "recompilation"
+        ],
+        "stars": 108,
+        "firstReleaseAt": "2026-06-21T18:50:51Z",
+        "latestRelease": {
+          "tag": "v1.0.5",
+          "name": "Snowboard Kids 2: Recompiled v1.0.5",
+          "publishedAt": "2026-06-21T18:50:51Z",
+          "htmlUrl": "https://github.com/cdlewis/snowboardkids2-recomp/releases/tag/v1.0.5"
+        },
+        "releaseCount": 4,
+        "totalDownloads": 7647
+      }
+    },
+    {
+      "id": "pokemon-snap",
+      "name": "Snap64Recomp (Pokémon Snap)",
+      "repo": "JackandBeans/Snap64Recomp",
+      "originalTitle": "Pokémon Snap",
+      "originalPlatform": "N64",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "*-linux-x86_64.tar.gz",
+          "executable": "Snap64Recomp"
+        },
+        "windows-x64": {
+          "assetPattern": "*-win64.zip",
+          "executable": "Snap64Recomp.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Pokémon Snap (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "images": {},
+      "recomp": {
+        "description": "Native Windows, Linux and macOS port of Pokémon Snap (N64) by static recompilation. Plays like the cartridge by default; every enhancement is opt-in. Bring your own dump; no game data is included.",
+        "homepage": "https://github.com/JackandBeans/Snap64Recomp/releases/latest",
+        "license": "GPL-3.0",
+        "topics": [
+          "linux",
+          "macos",
+          "n64",
+          "n64recomp",
+          "nintendo-64",
+          "pokemon",
+          "pokemon-snap",
+          "recompilation",
+          "rt64",
+          "static-recompilation",
+          "steam-deck",
+          "windows"
+        ],
+        "stars": 108,
+        "firstReleaseAt": "2026-09-05T16:30:20Z",
+        "latestRelease": {
+          "tag": "v1.1.4",
+          "name": "Snap64 Recomp 1.1.4",
+          "publishedAt": "2026-10-11T15:40:53Z",
+          "htmlUrl": "https://github.com/JackandBeans/Snap64Recomp/releases/tag/v1.1.4"
+        },
+        "releaseCount": 15,
+        "totalDownloads": 7487
+      }
+    },
+    {
+      "id": "conker",
+      "name": "Conker's BFD Reloaded",
+      "repo": "DahSidiAbdallah/ConkerBFDReloaded",
+      "originalTitle": "Conker's Bad Fur Day",
+      "originalPlatform": "N64",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-Windows.zip",
+          "executable": "ConkerBFDReloaded.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Conker's Bad Fur Day (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "images": {},
+      "recomp": {
+        "description": "Conker's Bad Fur Day running natively on PC: an N64 recompilation with a Classic mode true to the N64 and a Modern mode (widescreen, smooth frame rate, free camera).",
+        "homepage": null,
+        "license": "MIT",
+        "topics": [
+          "conker",
+          "n64",
+          "n64recomp",
+          "recompilation",
+          "rt64"
+        ],
+        "stars": 86,
+        "firstReleaseAt": "2026-10-01T00:51:32Z",
+        "latestRelease": {
+          "tag": "v1.3.6",
+          "name": "Conker's Bad Fur Day: Reloaded 1.3.6",
+          "publishedAt": "2026-10-10T16:33:49Z",
+          "htmlUrl": "https://github.com/DahSidiAbdallah/ConkerBFDReloaded/releases/tag/v1.3.6"
+        },
+        "releaseCount": 12,
+        "totalDownloads": 5650
+      }
+    },
+    {
+      "id": "castlevania64",
+      "name": "Castlevania 64: Recompiled",
+      "repo": "RevoSucks/CV64Recomp",
+      "originalTitle": "Castlevania",
+      "originalPlatform": "N64",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "*-Linux-X64-Release.zip",
+          "executable": "CV64Recompiled"
+        },
+        "windows-x64": {
+          "assetPattern": "*-Windows-RelWithDebInfo.zip",
+          "executable": "CV64Recompiled.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Castlevania (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "images": {},
+      "recomp": {
+        "description": "A recompilation of Castlevania for the N64.",
+        "homepage": null,
+        "license": "GPL-3.0",
+        "topics": [],
+        "stars": 13,
+        "firstReleaseAt": "2026-10-06T03:02:16Z",
+        "latestRelease": {
+          "tag": "v0.5.0",
+          "name": "v0.5.0 (Beta)",
+          "publishedAt": "2026-10-06T03:02:16Z",
+          "htmlUrl": "https://github.com/RevoSucks/CV64Recomp/releases/tag/v0.5.0"
+        },
+        "releaseCount": 1,
+        "totalDownloads": 165
       }
     }
   ]

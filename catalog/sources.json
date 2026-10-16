@@ -7,14 +7,23 @@
       "originalTitle": "The Legend of Zelda: Majora's Mask",
       "originalPlatform": "N64",
       "platforms": {
-        "windows-x64": { "assetPattern": "*-Windows.zip", "executable": "Zelda64Recompiled.exe" },
-        "linux-x64": { "assetPattern": "*-Linux-X64.zip", "executable": "Zelda64Recompiled" }
+        "windows-x64": {
+          "assetPattern": "*-Windows.zip",
+          "executable": "Zelda64Recompiled.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "*-Linux-X64.zip",
+          "executable": "Zelda64Recompiled"
+        }
       },
       "requiredRom": {
         "description": "The Legend of Zelda: Majora's Mask (USA)",
         "sha1": []
       },
-      "achievements": { "enabled": false, "supportedVersions": [] }
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      }
     },
     {
       "id": "starfox64",
@@ -23,14 +32,290 @@
       "originalTitle": "Star Fox 64",
       "originalPlatform": "N64",
       "platforms": {
-        "windows-x64": { "assetPattern": "*-Windows-*.zip", "executable": "Starfox64Recompiled.exe" },
-        "linux-x64": { "assetPattern": "*-Linux-X64-*.zip", "executable": "Starfox64Recompiled" }
+        "windows-x64": {
+          "assetPattern": "*-Windows-*.zip",
+          "executable": "Starfox64Recompiled.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "*-Linux-X64-*.zip",
+          "executable": "Starfox64Recompiled"
+        }
       },
       "requiredRom": {
         "description": "Star Fox 64 (USA) (Rev 1)",
         "sha1": []
       },
-      "achievements": { "enabled": false, "supportedVersions": [] }
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      }
+    },
+    {
+      "id": "banjo-kazooie",
+      "name": "Banjo-Kazooie: Recompiled",
+      "repo": "BanjoRecomp/BanjoRecomp",
+      "originalTitle": "Banjo-Kazooie",
+      "originalPlatform": "N64",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-Windows.zip",
+          "executable": "BanjoRecompiled.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "*-Linux-X64.tar.gz",
+          "executable": "BanjoRecompiled"
+        }
+      },
+      "requiredRom": {
+        "description": "Banjo-Kazooie (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      }
+    },
+    {
+      "id": "dk64",
+      "name": "Donkey Kong 64: Recompiled",
+      "repo": "Rainchus/Donkey-Kong-64-Recompiled",
+      "originalTitle": "Donkey Kong 64",
+      "originalPlatform": "N64",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-Windows-Release-*.zip",
+          "executable": "DK64Recompiled.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "*-Linux-X64-Release-*.zip",
+          "executable": "DK64Recompiled"
+        }
+      },
+      "requiredRom": {
+        "description": "Donkey Kong 64 (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      }
+    },
+    {
+      "id": "goemon64",
+      "name": "Goemon 64: Recompiled",
+      "repo": "klorfmorf/Goemon64Recomp",
+      "originalTitle": "Mystical Ninja Starring Goemon",
+      "originalPlatform": "N64",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-Windows-RelWithDebInfo.zip",
+          "executable": "Goemon64Recompiled.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "*-Linux-X64-Release.zip",
+          "executable": "Goemon64Recompiled"
+        }
+      },
+      "requiredRom": {
+        "description": "Mystical Ninja Starring Goemon (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      }
+    },
+    {
+      "id": "bomberman64",
+      "name": "Bomberman 64: Recompiled",
+      "repo": "RevoSucks/BM64Recomp",
+      "originalTitle": "Bomberman 64",
+      "originalPlatform": "N64",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-Windows-RelWithDebInfo.zip",
+          "executable": "BM64Recompiled.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "*-Linux-X64-Release.zip",
+          "executable": "BM64Recompiled"
+        }
+      },
+      "requiredRom": {
+        "description": "Bomberman 64 (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      }
+    },
+    {
+      "id": "megaman64",
+      "name": "Mega Man 64: Recompiled",
+      "repo": "MegaMan64Recomp/MegaMan64Recompiled",
+      "originalTitle": "Mega Man 64",
+      "originalPlatform": "N64",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-Windows.zip",
+          "executable": "MegaMan64Recompiled.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "*-Linux-X64.zip",
+          "executable": "MegaMan64Recompiled"
+        }
+      },
+      "requiredRom": {
+        "description": "Mega Man 64 (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      }
+    },
+    {
+      "id": "harvestmoon64",
+      "name": "Harvest Moon 64: Recompiled",
+      "repo": "HarvestMoon64Recomp/HarvestMoon64Recomp",
+      "originalTitle": "Harvest Moon 64",
+      "originalPlatform": "N64",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-Windows.zip",
+          "executable": "HarvestMoon64Recompiled.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "*-Linux-X64.zip",
+          "executable": "HarvestMoon64Recompiled"
+        }
+      },
+      "requiredRom": {
+        "description": "Harvest Moon 64 (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      }
+    },
+    {
+      "id": "drmario64",
+      "name": "Dr. Mario 64: Recompiled",
+      "repo": "theboy181/drmario64_recomp_plus",
+      "originalTitle": "Dr. Mario 64",
+      "originalPlatform": "N64",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-Windows.zip",
+          "executable": "drmario64_recomp.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Dr. Mario 64 (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      }
+    },
+    {
+      "id": "snowboardkids2",
+      "name": "Snowboard Kids 2: Recompiled",
+      "repo": "cdlewis/snowboardkids2-recomp",
+      "originalTitle": "Snowboard Kids 2",
+      "originalPlatform": "N64",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-Windows-RelWithDebInfo.zip",
+          "executable": "SnowboardKids2Recompiled.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "*-Linux-X64-Release.tar.gz",
+          "executable": "SnowboardKids2Recompiled"
+        }
+      },
+      "requiredRom": {
+        "description": "Snowboard Kids 2 (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      }
+    },
+    {
+      "id": "pokemon-snap",
+      "name": "Snap64Recomp (Pokémon Snap)",
+      "repo": "JackandBeans/Snap64Recomp",
+      "originalTitle": "Pokémon Snap",
+      "originalPlatform": "N64",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-win64.zip",
+          "executable": "Snap64Recomp.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "*-linux-x86_64.tar.gz",
+          "executable": "Snap64Recomp"
+        }
+      },
+      "requiredRom": {
+        "description": "Pokémon Snap (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      }
+    },
+    {
+      "id": "conker",
+      "name": "Conker's BFD Reloaded",
+      "repo": "DahSidiAbdallah/ConkerBFDReloaded",
+      "originalTitle": "Conker's Bad Fur Day",
+      "originalPlatform": "N64",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-Windows.zip",
+          "executable": "ConkerBFDReloaded.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Conker's Bad Fur Day (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      }
+    },
+    {
+      "id": "castlevania64",
+      "name": "Castlevania 64: Recompiled",
+      "repo": "RevoSucks/CV64Recomp",
+      "originalTitle": "Castlevania",
+      "originalPlatform": "N64",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-Windows-RelWithDebInfo.zip",
+          "executable": "CV64Recompiled.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "*-Linux-X64-Release.zip",
+          "executable": "CV64Recompiled"
+        }
+      },
+      "requiredRom": {
+        "description": "Castlevania (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      }
     }
   ]
 }
