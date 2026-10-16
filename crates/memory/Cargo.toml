@@ -1,0 +1,13 @@
+[package]
+name = "recomphub-memory"
+version = "0.1.0"
+description = "Leitura da RDRAM das recomps do N64 (fonte de memória das conquistas)"
+edition = "2024"
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.61", features = [
+    "Win32_Foundation",
+    "Win32_System_Memory",
+    "Win32_System_Threading",
+    "Win32_System_Diagnostics_Debug",
+] }
