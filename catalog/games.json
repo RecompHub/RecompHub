@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-16T21:38:12.360453600Z",
+  "generatedAt": "2026-10-16T22:24:21.856008774Z",
   "games": [
     {
       "id": "zelda64-mm",
@@ -41,7 +41,7 @@
           "htmlUrl": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 7,
-        "totalDownloads": 372209
+        "totalDownloads": 372244
       }
     },
     {
@@ -125,7 +125,7 @@
           "htmlUrl": "https://github.com/BanjoRecomp/BanjoRecomp/releases/tag/v1.0.2"
         },
         "releaseCount": 3,
-        "totalDownloads": 144716
+        "totalDownloads": 144735
       }
     },
     {
@@ -167,7 +167,7 @@
           "htmlUrl": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled/releases/tag/v1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 44763
+        "totalDownloads": 44785
       }
     },
     {
@@ -257,7 +257,7 @@
           "htmlUrl": "https://github.com/RevoSucks/BM64Recomp/releases/tag/v1.0.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 20289
+        "totalDownloads": 20293
       }
     },
     {
@@ -299,7 +299,7 @@
           "htmlUrl": "https://github.com/MegaMan64Recomp/MegaMan64Recompiled/releases/tag/v0.9.1"
         },
         "releaseCount": 3,
-        "totalDownloads": 14588
+        "totalDownloads": 14590
       }
     },
     {
@@ -341,7 +341,7 @@
           "htmlUrl": "https://github.com/HarvestMoon64Recomp/HarvestMoon64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 6,
-        "totalDownloads": 9060
+        "totalDownloads": 9063
       }
     },
     {
@@ -379,7 +379,7 @@
           "htmlUrl": "https://github.com/theboy181/drmario64_recomp_plus/releases/tag/1.0.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 10690
+        "totalDownloads": 10691
       }
     },
     {
@@ -425,7 +425,7 @@
           "htmlUrl": "https://github.com/cdlewis/snowboardkids2-recomp/releases/tag/v1.0.5"
         },
         "releaseCount": 4,
-        "totalDownloads": 7689
+        "totalDownloads": 7690
       }
     },
     {
@@ -480,7 +480,7 @@
           "htmlUrl": "https://github.com/JackandBeans/Snap64Recomp/releases/tag/v1.1.4"
         },
         "releaseCount": 15,
-        "totalDownloads": 7604
+        "totalDownloads": 7608
       }
     },
     {
@@ -524,7 +524,7 @@
           "htmlUrl": "https://github.com/DahSidiAbdallah/ConkerBFDReloaded/releases/tag/v1.3.6"
         },
         "releaseCount": 12,
-        "totalDownloads": 5907
+        "totalDownloads": 5923
       }
     },
     {
@@ -599,7 +599,7 @@
         "homepage": "https://twilitrealm.dev",
         "license": "CC0-1.0",
         "topics": [],
-        "stars": 5879,
+        "stars": 5880,
         "firstReleaseAt": "2026-04-24T03:44:05Z",
         "latestRelease": {
           "tag": "v2.0.3",
@@ -608,7 +608,7 @@
           "htmlUrl": "https://github.com/TwilitRealm/dusklight/releases/tag/v2.0.3"
         },
         "releaseCount": 24,
-        "totalDownloads": 1354753
+        "totalDownloads": 1355008
       },
       "trophyProvider": {
         "kind": "dusklight",
