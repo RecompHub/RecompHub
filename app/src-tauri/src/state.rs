@@ -3,7 +3,7 @@
 //! Um jogo pode estar na biblioteca sem estar instalado. O launcher confia
 //! neste arquivo para saber a versão instalada, não em metadados do executável.
 
-use std::collections::HashMap;
+use std::collections::{BTreeMap, HashMap};
 use std::path::{Path, PathBuf};
 
 use chrono::{DateTime, Local};
@@ -22,6 +22,9 @@ pub struct LibraryEntry {
     pub play_time_seconds: u64,
     #[serde(default)]
     pub last_played_at: Option<DateTime<Local>>,
+    /// Troféus desbloqueados: id → quando.
+    #[serde(default)]
+    pub trophies: BTreeMap<u32, DateTime<Local>>,
 }
 
 impl LibraryEntry {
@@ -31,6 +34,7 @@ impl LibraryEntry {
             installed: None,
             play_time_seconds: 0,
             last_played_at: None,
+            trophies: BTreeMap::new(),
         }
     }
 }

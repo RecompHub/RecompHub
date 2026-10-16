@@ -179,6 +179,28 @@ pub struct GameInfo {
     pub screenshots: Vec<String>,
 }
 
+/// Troféus de um jogo (`<pasta de dados>/trophies/<id>.json` por enquanto;
+/// no futuro, servidos junto com o catálogo).
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct TrophySet {
+    pub game_id: String,
+    pub trophies: Vec<Trophy>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct Trophy {
+    /// Único dentro do jogo; é a chave dos desbloqueios salvos.
+    pub id: u32,
+    pub title: String,
+    pub description: String,
+    #[serde(default)]
+    pub points: u32,
+    /// Condições no formato do RetroAchievements (ex.: `"0xH1EF6A0=99"`).
+    pub conditions: String,
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;

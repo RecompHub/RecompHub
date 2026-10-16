@@ -3,6 +3,7 @@ import { useStore, useGameStatus } from "../store";
 import { GameArt } from "../components/GameArt";
 import { GameActions } from "../components/GameActions";
 import { InfoPanel, ReleaseNotes } from "../components/GameDetails";
+import { TrophiesSection } from "../components/Trophies";
 import { formatDate, formatPlayTime, formatRelative } from "../format";
 import type { Game } from "../types";
 
@@ -148,6 +149,7 @@ function LibraryDetail({ game }: { game: Game }) {
               {s.installed.imported ? "Importado" : "Instalado"} em {formatDate(s.installed.installedAt)} · {s.installed.installPath}
             </p>
           )}
+          <TrophiesSection game={game} />
           <ReleaseNotes game={game} />
         </div>
         <InfoPanel game={game} />
