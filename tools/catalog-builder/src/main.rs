@@ -106,7 +106,14 @@ async fn build_game(
     };
 
     let recomp = match ctx.gh.recomp_info(&source.repo).await {
-        Ok(info) => Some(info),
+        Ok(data) => {
+            for (platform, asset) in &source.platforms {
+                if let Err(e) = check_asset_pattern(&asset.asset_pattern, &data.latest_assets) {
+                    fail(&format!("assetPattern de {platform}"), e);
+                }
+            }
+            Some(data.info)
+        }
         Err(e) => {
             fail("GitHub", e);
             prev.and_then(|p| p.recomp.clone())
@@ -170,6 +177,21 @@ async fn build_game(
     }
 }
 
+/// O launcher instala o primeiro asset que casar; o padrão tem de casar com
+/// exatamente um, senão a recomp mudou o nome dos arquivos.
+fn check_asset_pattern(pattern: &str, assets: &[String]) -> Result<()> {
+    let glob = globset::GlobBuilder::new(pattern)
+        .case_insensitive(true)
+        .build()?
+        .compile_matcher();
+    let matches: Vec<&String> = assets.iter().filter(|a| glob.is_match(a.as_str())).collect();
+    match matches.len() {
+        1 => Ok(()),
+        0 => anyhow::bail!("\"{pattern}\" não casa com nenhum asset da última release"),
+        _ => anyhow::bail!("\"{pattern}\" casa com vários assets: {matches:?}"),
+    }
+}
+
 /// Caminhos relativos (ex.: `images/zelda-hero.png`) viram URL do catálogo publicado.
 fn resolve_local(images: Images, base_url: &str) -> Images {
     let resolve = |v: Option<String>| {
@@ -186,5 +208,23 @@ fn resolve_local(images: Images, base_url: &str) -> Images {
         hero: resolve(images.hero),
         logo: resolve(images.logo),
         icon: resolve(images.icon),
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn asset_pattern_must_match_exactly_one_asset() {
+        let assets = vec![
+            "Game-v1-Windows.zip".to_string(),
+            "Game-v1-Linux-X64.zip".to_string(),
+            "Game-v1-Linux-Flatpak-X64.zip".to_string(),
+        ];
+        assert!(check_asset_pattern("*-windows.zip", &assets).is_ok());
+        assert!(check_asset_pattern("*-Linux-X64.zip", &assets).is_ok());
+        assert!(check_asset_pattern("*-macOS.zip", &assets).is_err());
+        assert!(check_asset_pattern("*Linux*", &assets).is_err());
     }
 }

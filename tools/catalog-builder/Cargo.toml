@@ -13,3 +13,4 @@ chrono.workspace = true
 reqwest = { workspace = true, features = ["query"] }
 tokio = { workspace = true, features = ["rt-multi-thread", "macros"] }
 anyhow = "1"
+globset = "0.4"
