@@ -23,6 +23,13 @@
       "achievements": {
         "enabled": false,
         "supportedVersions": []
+      },
+      "sgdbId": 34302,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/958c6e525626a72dc5722a63f638a80b.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/25fa2d39a0143f1f30c36eece145a526.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/fe8c15fed5f808006ce95eddb7366e35.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/30b4f25f536778f198568a0030e8a586.ico"
       }
     },
     {
@@ -48,6 +55,13 @@
       "achievements": {
         "enabled": false,
         "supportedVersions": []
+      },
+      "sgdbId": 36615,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/9122b7acc2588eff1d20211ce8fb8798.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/44adaadb095f40b587f4b409ac55799b.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/ad3019b856147c17e82a5bead782d2a8.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/9fbcbcb41e52efd7dbcb96e8a5c4cb63.ico"
       }
     },
     {
@@ -73,6 +87,13 @@
       "achievements": {
         "enabled": false,
         "supportedVersions": []
+      },
+      "sgdbId": 35564,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/a154a70f923c579313aa9c47ed7c34e2.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/17326d10d511828f6b34fa6d751739e2.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/ce5193a069bea027a60e06c57a106eb6.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/c133fb1bb634af68c5088f3438848bfd.png"
       }
     },
     {
@@ -98,6 +119,13 @@
       "achievements": {
         "enabled": false,
         "supportedVersions": []
+      },
+      "sgdbId": 37695,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/86f7d456aa5848c284f7940bdecdef5d.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/dd6e83b6da55d90f5740e0dd3f3e5a13.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/6933b5648c59d618bbb30986c84080fe.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/bd46c557fbdb2e0f92a082793598803d.ico"
       }
     },
     {
@@ -123,6 +151,13 @@
       "achievements": {
         "enabled": false,
         "supportedVersions": []
+      },
+      "sgdbId": 33703,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/47e596b1edee7909345c64a4d1a39517.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/058a4a63fccbdb3d0b0ab0e8f7a8951c.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/421740375847b6249d9383615831c23b.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/5cbd31d6a0809f253c2679d508ecb6c2.png"
       }
     },
     {
@@ -148,6 +183,13 @@
       "achievements": {
         "enabled": false,
         "supportedVersions": []
+      },
+      "sgdbId": 1680,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/c5b781ce025e8217c23f95f9569a0b96.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/3a06105cf87a4a0d2b22ca218aca4783.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/afb79a9be5cd9762572a008088d3153e.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/bb6c7fdc54b738a6fdc09a851afa12fb.png"
       }
     },
     {
@@ -173,6 +215,13 @@
       "achievements": {
         "enabled": false,
         "supportedVersions": []
+      },
+      "sgdbId": 37399,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/174cbbef75ac1b1b15847299d50f77bf.jpg",
+        "hero": "https://cdn2.steamgriddb.com/hero/423971c507756f83500704f0e8d9214b.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/f612c7d25f5690ad41496fcfdbf8d1a8.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/850618e22f83f152773d2a3e51168812.png"
       }
     },
     {
@@ -198,6 +247,13 @@
       "achievements": {
         "enabled": false,
         "supportedVersions": []
+      },
+      "sgdbId": 35297,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/cab8fb3904dfe2e30a8579bc38e74ada.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/4a65fd714997aaca6455b8d338cc61c6.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/609a199881ca4ba9c95688235cd6ac5c.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/4a15fc6d75970e9607efa44697977f2b.ico"
       }
     },
     {
@@ -219,6 +275,13 @@
       "achievements": {
         "enabled": false,
         "supportedVersions": []
+      },
+      "sgdbId": 37541,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/c3884b938f2ccc63708d922671c5ea23.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/3a0d1535e1f1929f76f28f007a57584c.jpg",
+        "logo": "https://cdn2.steamgriddb.com/logo/6052639706e0beb2fabeaf09d667f9b9.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/f665651bcc641391820b462874c05e16.png"
       }
     },
     {
@@ -244,6 +307,13 @@
       "achievements": {
         "enabled": false,
         "supportedVersions": []
+      },
+      "sgdbId": 1667,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/b1a491999695f9df23123c2290041da8.jpg",
+        "hero": "https://cdn2.steamgriddb.com/hero/4ee0331f55ba0c795f89feffdfdf1e77.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/3bbf7cb52c81e8125532adff3b21a6b4.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/25780194564b89eb52c5689daa6f3ee9.png"
       }
     },
     {
@@ -269,6 +339,13 @@
       "achievements": {
         "enabled": false,
         "supportedVersions": []
+      },
+      "sgdbId": 37585,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/1661b79578c9a10b72cc4403977801bf.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/4c07fe24771249c343e70c32289c1192.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/2f635a9fe4a4d8d1ec9e3a111cc02f4b.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/46673d49b30de9f06adfcdd257a7556b.png"
       }
     },
     {
@@ -290,6 +367,13 @@
       "achievements": {
         "enabled": false,
         "supportedVersions": []
+      },
+      "sgdbId": 36366,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/e7ba692151c4e6c1c41c4770cdd15e8b.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/1a04f965818a8533f5613003c7db243d.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/ce840aa9583592e71f3db26ee6e41703.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/7cfe973cfd3353ecacc3ec1e53a1c5ea.png"
       }
     },
     {
@@ -315,6 +399,13 @@
       "achievements": {
         "enabled": false,
         "supportedVersions": []
+      },
+      "sgdbId": 5261755,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/1d5132d7b72e7c47827b518181343d2b.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/b16539e3ff2250a2bf164a92b030633c.jpg",
+        "logo": "https://cdn2.steamgriddb.com/logo/72a7dd9f91089b8fabd3edc4c9db7ed1.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/1ecb6468735bde11b1d125b787158088.png"
       }
     },
     {
@@ -349,6 +440,13 @@
           "macos": "~/Library/Application Support/TwilitRealm/Dusklight/achievements.json"
         },
         "definitions": "trophies/dusklight.json"
+      },
+      "sgdbId": 34645,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/36d6a670240681fbbf69cbba0c9065ce.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/e105b88b3e1ac23ec811a708cd7edebf.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/2d8b6c92b659a90e7ef716f811d8bba1.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/feecee9f1643651799ede2740927317a.ico"
       }
     }
   ]
