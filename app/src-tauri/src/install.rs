@@ -192,17 +192,22 @@ fn unpack_nested_tarballs(dir: &Path) -> Result<()> {
 
 /// Remove a pasta do jogo. Recusa caminhos fora de `games_dir`, para que um
 /// `installed.json` editado à mão não apague outra pasta.
-pub fn uninstall(games_dir: &Path, installed: &InstalledGame) -> Result<()> {
+pub fn uninstall(game_id: &str, installed: &InstalledGame) -> Result<()> {
     let path = &installed.install_path;
-    if !path.starts_with(games_dir) {
+    if !path.exists() {
+        return Ok(());
+    }
+    // Os jogos podem estar em qualquer pasta escolhida pelo usuário, então a
+    // proteção é verificar que é mesmo uma pasta criada pelo launcher.
+    let looks_like_ours = path.file_name().is_some_and(|n| n == game_id)
+        && path.join(&installed.executable).is_file();
+    if !looks_like_ours {
         return Err(Error::Io(std::io::Error::other(format!(
-            "{} está fora da pasta de jogos; remova manualmente",
+            "{} não parece uma instalação do RecompHub; remova manualmente",
             path.display()
         ))));
     }
-    if path.exists() {
-        std::fs::remove_dir_all(path)?;
-    }
+    std::fs::remove_dir_all(path)?;
     Ok(())
 }
 

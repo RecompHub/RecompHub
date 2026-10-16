@@ -2,16 +2,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#2a2f3a"/>
-      <stop offset="1" stop-color="#121419"/>
+      <stop offset="0" stop-color="#1a1a1a"/>
+      <stop offset="1" stop-color="#000000"/>
     </linearGradient>
     <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#f6a466"/>
-      <stop offset="1" stop-color="#c4561f"/>
+      <stop offset="0" stop-color="#9be22b"/>
+      <stop offset="1" stop-color="#4f7d00"/>
     </linearGradient>
     <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#ffd59a" stop-opacity="0.9"/>
-      <stop offset="1" stop-color="#ffd59a" stop-opacity="0"/>
+      <stop offset="0" stop-color="#c8ff7a" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#c8ff7a" stop-opacity="0"/>
     </radialGradient>
   </defs>
 
@@ -19,9 +19,9 @@
 
   <!-- faíscas -->
   <circle cx="700" cy="250" r="120" fill="url(#glow)"/>
-  <path d="M700 165 L722 228 L785 250 L722 272 L700 335 L678 272 L615 250 L678 228 Z" fill="#ffe2b8"/>
-  <circle cx="575" cy="215" r="16" fill="#ffc98a"/>
-  <circle cx="815" cy="345" r="12" fill="#ffc98a"/>
+  <path d="M700 165 L722 228 L785 250 L722 272 L700 335 L678 272 L615 250 L678 228 Z" fill="#e9ffc9"/>
+  <circle cx="575" cy="215" r="16" fill="#b7f05a"/>
+  <circle cx="815" cy="345" r="12" fill="#b7f05a"/>
 
   <!-- bigorna -->
   <path
@@ -33,5 +33,5 @@
        L 494 575 L 448 480 L 335 480
        C 270 480 210 445 140 395 Z"
     fill="url(#metal)"/>
-  <rect x="335" y="372" width="525" height="26" fill="#ffd2a6" opacity="0.55"/>
+  <rect x="335" y="372" width="525" height="26" fill="#d6ff9e" opacity="0.55"/>
 </svg>

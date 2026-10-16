@@ -44,13 +44,16 @@ Os tipos ficam em `crates/catalog`, compartilhados entre o builder e o launcher.
 
 ## Interface: inspirada na Steam
 
-Menu horizontal no topo: **Início · Explorar · Biblioteca**, com botão de voltar e "Atualizar lista".
+Menu horizontal no topo: **Início · Explorar · Biblioteca**, com botão de voltar, "Atualizar lista" e engrenagem (Configurações).
+
+Tema **preto e verde** (verde `#76b900`), cantos retos, inspirado no app da NVIDIA. Cores em variáveis CSS no topo de `app/src/App.css`.
 
 | Tela | Conteúdo |
 |------|----------|
 | Início | Destaque do recomp atualizado mais recentemente; prateleiras "Atualizações recentes", "Novos recomps" e "Mais populares" |
 | Explorar | Filtros à esquerda (busca, ordenação, biblioteca, disponível no meu sistema, com conquistas, plataforma original, gênero); ordena por última atualização, lançamento do recomp, lançamento do jogo, nome, estrelas, downloads |
 | Biblioteca | Lista à esquerda (instalados / não instalados); à direita hero, Jogar/Instalar/Atualizar, tempo de jogo, última vez, versão, notas da versão |
+| Configurações | Pasta de instalação dos jogos (só afeta novas instalações), versão do launcher, procurar atualizações |
 | Página do jogo | Hero + logo, adicionar à biblioteca, resumo, screenshots, notas da versão, ficha (recomp + jogo original), aviso de ROM |
 
 A biblioteca é **local** (`library.json`) por enquanto. Um jogo pode estar na biblioteca
