@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-16T01:59:27.871633600Z",
+  "generatedAt": "2026-10-16T02:04:23.348564999Z",
   "games": [
     {
       "id": "zelda64-mm",
@@ -83,7 +83,7 @@
           "htmlUrl": "https://github.com/sonicdcer/Starfox64Recomp/releases/tag/1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 30079
+        "totalDownloads": 30080
       }
     },
     {
@@ -125,7 +125,7 @@
           "htmlUrl": "https://github.com/BanjoRecomp/BanjoRecomp/releases/tag/v1.0.2"
         },
         "releaseCount": 3,
-        "totalDownloads": 144363
+        "totalDownloads": 144368
       }
     },
     {
@@ -215,7 +215,7 @@
           "htmlUrl": "https://github.com/klorfmorf/Goemon64Recomp/releases/tag/v0.2.0-dev"
         },
         "releaseCount": 5,
-        "totalDownloads": 22735
+        "totalDownloads": 22743
       }
     },
     {
@@ -341,7 +341,7 @@
           "htmlUrl": "https://github.com/HarvestMoon64Recomp/HarvestMoon64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 6,
-        "totalDownloads": 8985
+        "totalDownloads": 8987
       }
     },
     {
@@ -379,7 +379,7 @@
           "htmlUrl": "https://github.com/theboy181/drmario64_recomp_plus/releases/tag/1.0.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 10661
+        "totalDownloads": 10664
       }
     },
     {
