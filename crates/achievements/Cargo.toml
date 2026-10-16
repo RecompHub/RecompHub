@@ -1,0 +1,13 @@
+[package]
+name = "recomphub-achievements"
+version = "0.1.0"
+description = "Motor de conquistas do RecompHub: rcheevos + fonte de memória trocável"
+edition = "2024"
+# rcheevos (MIT) é compilada a partir do submódulo em ./rcheevos
+links = "rcheevos"
+
+[dependencies]
+recomphub-memory.workspace = true
+
+[build-dependencies]
+cc = "1.8"

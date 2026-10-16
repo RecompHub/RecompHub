@@ -3137,6 +3137,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "recomphub-achievements"
+version = "0.1.0"
+dependencies = [
+ "cc",
+ "recomphub-memory",
+]
+
+[[package]]
 name = "recomphub-catalog"
 version = "0.1.0"
 dependencies = [

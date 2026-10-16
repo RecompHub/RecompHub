@@ -29,6 +29,8 @@ npm run tauri dev      # abre o launcher em modo desenvolvimento
 npm run tauri build    # gera o instalador
 ```
 
+Depois de clonar: `git submodule update --init` (baixa a rcheevos).
+
 Testes do Rust (na raiz): `cargo test --workspace`.
 
 ### Catálogo
