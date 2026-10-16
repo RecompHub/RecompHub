@@ -2,7 +2,7 @@
 //!
 //! | Fase | Implementação                                                      |
 //! |------|--------------------------------------------------------------------|
-//! | 1    | Leitura externa do processo ([`external`], Windows por enquanto)   |
+//! | 1    | Leitura externa do processo ([`external`]: Windows e Linux)        |
 //! | 2    | Mod na recomp expõe a RDRAM por memória compartilhada              |
 //! | 3    | rcheevos roda dentro da recomp (o launcher só exibe)               |
 //!
@@ -10,7 +10,6 @@
 
 pub mod n64;
 
-#[cfg(windows)]
 pub mod external;
 
 /// Acesso à RAM do console, em endereços físicos do próprio console

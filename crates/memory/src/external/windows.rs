@@ -1,8 +1,4 @@
-//! Fase 1: lê a RDRAM de fora do processo da recomp (Windows).
-//!
-//! O runtime reserva 4 GiB e deixa só os primeiros 512 MiB legíveis
-//! (`librecomp/src/recomp.cpp`); essa assinatura identifica a RDRAM sem
-//! depender da versão do jogo.
+//! Leitura externa no Windows: `VirtualQueryEx` + `ReadProcessMemory`.
 
 use std::ffi::c_void;
 use std::mem::{MaybeUninit, size_of};
@@ -16,31 +12,9 @@ use windows_sys::Win32::System::Threading::{
     OpenProcess, PROCESS_QUERY_INFORMATION, PROCESS_VM_READ,
 };
 
+use super::{Error, RECOMP_ALLOCATION_SIZE, RECOMP_MEM_SIZE};
 use crate::MemorySource;
 use crate::n64::RDRAM_SIZE;
-
-/// Tamanhos de `librecomp/include/librecomp/addresses.hpp`.
-pub const RECOMP_MEM_SIZE: usize = 512 * 1024 * 1024;
-pub const RECOMP_ALLOCATION_SIZE: usize = 4096 * 1024 * 1024;
-
-#[derive(Debug)]
-pub enum Error {
-    /// `OpenProcess` falhou (processo fechou ou sem permissão).
-    OpenProcess(std::io::Error),
-    /// Nenhuma alocação com o formato da RDRAM da recomp.
-    RdramNotFound,
-}
-
-impl std::fmt::Display for Error {
-    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        match self {
-            Error::OpenProcess(e) => write!(f, "não foi possível abrir o processo: {e}"),
-            Error::RdramNotFound => f.write_str("RDRAM da recomp não encontrada no processo"),
-        }
-    }
-}
-
-impl std::error::Error for Error {}
 
 /// Leitura da RDRAM de outro processo (ou do próprio, nos testes).
 pub struct ExternalMemory {

@@ -5,7 +5,7 @@
 //! # ex.: ... -- 12345 0x80000318
 //! ```
 
-#[cfg(windows)]
+#[cfg(any(windows, target_os = "linux"))]
 fn main() {
     use recomphub_memory::external::ExternalMemory;
     use recomphub_memory::{MemorySource, n64};
@@ -44,7 +44,7 @@ fn main() {
     }
 }
 
-#[cfg(not(windows))]
+#[cfg(not(any(windows, target_os = "linux")))]
 fn main() {
-    eprintln!("rdram_probe por enquanto só funciona no Windows");
+    eprintln!("rdram_probe só funciona no Windows e no Linux");
 }

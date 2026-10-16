@@ -83,6 +83,10 @@ pelo jogo original. Para conquistas, interessa só `0x000000–0x7FFFFF`.
 
 ## Próximos passos
 
-1. Localizador de RDRAM (Windows) + `MemorySource` externa, com a conversão de endereço acima.
-2. Validar no processo real de uma recomp (a alocação existe já na tela de seleção de ROM).
-3. Com uma ROM: ler valores conhecidos e confirmar a ordem dos bytes esperada pelo RA.
+1. ~~Localizador de RDRAM + `MemorySource` externa~~: `crates/memory` (Windows via
+   `VirtualQueryEx`, Linux via `/proc/<pid>/maps` + `process_vm_readv`).
+2. ~~Validar no processo real~~: Starfox64Recompiled 1.0.3 no Windows, RDRAM encontrada na tela
+   de seleção de ROM. Linux validado só por teste automatizado (CI em Ubuntu).
+3. Com uma ROM: ler valores conhecidos (`rdram_probe`) e confirmar a ordem dos bytes esperada pelo RA.
+4. Linux: com `ptrace_scope = 1` só dá para ler processos filhos; o launcher já inicia o jogo
+   como filho, mas o `rdram_probe` precisa de `sudo` ou de ser o pai do jogo.
