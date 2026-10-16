@@ -31,6 +31,14 @@ export function TopBar() {
       <button className="btn btn-ghost" onClick={refreshCatalog} disabled={refreshing} title="Baixar a lista de jogos mais recente">
         {refreshing ? "Atualizando…" : "⟳ Atualizar lista"}
       </button>
+      <button
+        className={`topbar-icon ${route.page === "settings" ? "topbar-icon-active" : ""}`}
+        onClick={() => navigate({ page: "settings" })}
+        title="Configurações"
+        aria-label="Configurações"
+      >
+        ⚙
+      </button>
     </header>
   );
 }

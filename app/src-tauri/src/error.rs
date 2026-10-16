@@ -18,6 +18,8 @@ pub enum Error {
     Running,
     #[error("desinstale o jogo antes de removê-lo da biblioteca")]
     StillInstalled,
+    #[error("não é possível instalar jogos em {0}")]
+    InvalidGamesDir(String),
     #[error("GitHub respondeu {0}")]
     GitHubStatus(u16),
     #[error("catálogo remoto indisponível (HTTP {0})")]

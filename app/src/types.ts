@@ -97,3 +97,9 @@ export interface InstallProgress {
   downloaded: number;
   total: number;
 }
+
+export interface SettingsView {
+  gamesDir: string;
+  defaultGamesDir: string;
+  isDefaultGamesDir: boolean;
+}
