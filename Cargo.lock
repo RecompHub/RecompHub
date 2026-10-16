@@ -3119,6 +3119,7 @@ dependencies = [
  "futures-util",
  "globset",
  "recomphub-catalog",
+ "recomphub-memory",
  "reqwest",
  "serde",
  "serde_json",
@@ -3142,6 +3143,14 @@ dependencies = [
  "chrono",
  "serde",
  "serde_json",
+]
+
+[[package]]
+name = "recomphub-memory"
+version = "0.1.0"
+dependencies = [
+ "libc",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
