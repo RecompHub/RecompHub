@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-15T22:58:29.328411800Z",
+  "generatedAt": "2026-10-16T01:07:13.966957885Z",
   "games": [
     {
       "id": "zelda64-mm",
@@ -32,7 +32,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 7429,
+        "stars": 7431,
         "firstReleaseAt": "2024-05-10T05:07:15Z",
         "latestRelease": {
           "tag": "v1.2.2",
@@ -41,7 +41,7 @@
           "htmlUrl": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 7,
-        "totalDownloads": 371619
+        "totalDownloads": 371684
       }
     },
     {
@@ -74,7 +74,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 381,
+        "stars": 382,
         "firstReleaseAt": "2025-12-24T22:22:59Z",
         "latestRelease": {
           "tag": "1.0.3",
@@ -83,7 +83,7 @@
           "htmlUrl": "https://github.com/sonicdcer/Starfox64Recomp/releases/tag/1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 30073
+        "totalDownloads": 30077
       }
     }
   ]
