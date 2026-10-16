@@ -48,6 +48,50 @@ pub struct SourceGame {
     /// Imagens que substituem as do SteamGridDB (URL ou caminho em `catalog/images/`).
     #[serde(default, skip_serializing_if = "Images::is_empty")]
     pub images: Images,
+    /// Conquistas detectadas pelo próprio jogo (ex.: Dusklight).
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub trophy_provider: Option<TrophyProvider>,
+}
+
+/// Conquistas que o próprio jogo detecta e grava num arquivo de progresso; o
+/// launcher só lê esse arquivo. Hoje: `kind = "dusklight"`, que grava
+/// `{ "<chave>": { "progress": n, "unlocked": bool } }`.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct TrophyProvider {
+    pub kind: String,
+    /// Arquivo de progresso por sistema (`windows`, `linux`, `macos`).
+    /// `%APPDATA%`, `%LOCALAPPDATA%` e `~` são expandidos pelo launcher.
+    pub progress_file: BTreeMap<String, String>,
+    /// Só no `sources.json`: caminho (em `catalog/`) com as definições, que o
+    /// builder copia para `trophies`.
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub definitions: Option<String>,
+    #[serde(default, skip_serializing_if = "Vec::is_empty")]
+    pub trophies: Vec<ExternalTrophy>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct ExternalTrophy {
+    /// Chave usada pelo jogo no arquivo de progresso.
+    pub key: String,
+    pub title: String,
+    pub description: String,
+    #[serde(default)]
+    pub category: String,
+    /// Meta de um contador (ex.: 60 Poe Souls); 0 = conquista simples.
+    #[serde(default)]
+    pub goal: u32,
+}
+
+/// Formato de `catalog/trophies/<id>.json`.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct ExternalTrophyFile {
+    #[serde(default)]
+    pub source: String,
+    pub trophies: Vec<ExternalTrophy>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -137,6 +181,8 @@ pub struct CatalogGame {
     /// Dados do jogo original (IGDB).
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub game: Option<GameInfo>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub trophy_provider: Option<TrophyProvider>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

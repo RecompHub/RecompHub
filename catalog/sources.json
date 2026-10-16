@@ -316,6 +316,40 @@
         "enabled": false,
         "supportedVersions": []
       }
+    },
+    {
+      "id": "dusklight",
+      "name": "Dusklight (Twilight Princess)",
+      "repo": "TwilitRealm/dusklight",
+      "originalTitle": "The Legend of Zelda: Twilight Princess",
+      "originalPlatform": "GC",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-win32-x86_64.zip",
+          "executable": "dusklight.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "*-linux-x86_64.AppImage",
+          "executable": "*-linux-x86_64.AppImage"
+        }
+      },
+      "requiredRom": {
+        "description": "The Legend of Zelda: Twilight Princess (USA), imagem de disco de GameCube (.iso)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": true,
+        "supportedVersions": []
+      },
+      "trophyProvider": {
+        "kind": "dusklight",
+        "progressFile": {
+          "windows": "%APPDATA%/TwilitRealm/Dusklight/achievements.json",
+          "linux": "~/.local/share/TwilitRealm/Dusklight/achievements.json",
+          "macos": "~/Library/Application Support/TwilitRealm/Dusklight/achievements.json"
+        },
+        "definitions": "trophies/dusklight.json"
+      }
     }
   ]
 }

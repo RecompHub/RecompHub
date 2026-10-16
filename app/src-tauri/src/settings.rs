@@ -40,8 +40,7 @@ pub fn validate_games_dir(dir: &Path) -> Result<()> {
     }
     std::fs::create_dir_all(dir)?;
     let probe = dir.join(".recomphub-write-test");
-    std::fs::write(&probe, b"ok")
-        .map_err(|_| Error::InvalidGamesDir(dir.display().to_string()))?;
+    std::fs::write(&probe, b"ok").map_err(|_| Error::InvalidGamesDir(dir.display().to_string()))?;
     let _ = std::fs::remove_file(probe);
     Ok(())
 }

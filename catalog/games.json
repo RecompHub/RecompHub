@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-16T10:53:40.146435335Z",
+  "generatedAt": "2026-10-16T21:38:12.360453600Z",
   "games": [
     {
       "id": "zelda64-mm",
@@ -32,7 +32,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 7437,
+        "stars": 7444,
         "firstReleaseAt": "2024-05-10T05:07:15Z",
         "latestRelease": {
           "tag": "v1.2.2",
@@ -41,7 +41,7 @@
           "htmlUrl": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 7,
-        "totalDownloads": 371911
+        "totalDownloads": 372209
       }
     },
     {
@@ -74,7 +74,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 383,
+        "stars": 384,
         "firstReleaseAt": "2025-12-24T22:22:59Z",
         "latestRelease": {
           "tag": "1.0.3",
@@ -83,7 +83,7 @@
           "htmlUrl": "https://github.com/sonicdcer/Starfox64Recomp/releases/tag/1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 30115
+        "totalDownloads": 30130
       }
     },
     {
@@ -116,7 +116,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 2046,
+        "stars": 2047,
         "firstReleaseAt": "2026-01-24T19:29:09Z",
         "latestRelease": {
           "tag": "v1.0.2",
@@ -125,7 +125,7 @@
           "htmlUrl": "https://github.com/BanjoRecomp/BanjoRecomp/releases/tag/v1.0.2"
         },
         "releaseCount": 3,
-        "totalDownloads": 144523
+        "totalDownloads": 144716
       }
     },
     {
@@ -158,7 +158,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 510,
+        "stars": 511,
         "firstReleaseAt": "2026-08-29T19:03:58Z",
         "latestRelease": {
           "tag": "v1.0.3",
@@ -167,7 +167,7 @@
           "htmlUrl": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled/releases/tag/v1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 44579
+        "totalDownloads": 44763
       }
     },
     {
@@ -206,7 +206,7 @@
           "pc-port",
           "recompilation"
         ],
-        "stars": 315,
+        "stars": 317,
         "firstReleaseAt": "2025-02-20T23:53:16Z",
         "latestRelease": {
           "tag": "v0.2.0-dev",
@@ -215,7 +215,7 @@
           "htmlUrl": "https://github.com/klorfmorf/Goemon64Recomp/releases/tag/v0.2.0-dev"
         },
         "releaseCount": 5,
-        "totalDownloads": 22777
+        "totalDownloads": 22811
       }
     },
     {
@@ -257,7 +257,7 @@
           "htmlUrl": "https://github.com/RevoSucks/BM64Recomp/releases/tag/v1.0.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 20246
+        "totalDownloads": 20289
       }
     },
     {
@@ -299,7 +299,7 @@
           "htmlUrl": "https://github.com/MegaMan64Recomp/MegaMan64Recompiled/releases/tag/v0.9.1"
         },
         "releaseCount": 3,
-        "totalDownloads": 14556
+        "totalDownloads": 14588
       }
     },
     {
@@ -332,7 +332,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 162,
+        "stars": 164,
         "firstReleaseAt": "2026-06-27T05:24:02Z",
         "latestRelease": {
           "tag": "v1.2.2",
@@ -341,7 +341,7 @@
           "htmlUrl": "https://github.com/HarvestMoon64Recomp/HarvestMoon64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 6,
-        "totalDownloads": 9024
+        "totalDownloads": 9060
       }
     },
     {
@@ -379,7 +379,7 @@
           "htmlUrl": "https://github.com/theboy181/drmario64_recomp_plus/releases/tag/1.0.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 10683
+        "totalDownloads": 10690
       }
     },
     {
@@ -425,7 +425,7 @@
           "htmlUrl": "https://github.com/cdlewis/snowboardkids2-recomp/releases/tag/v1.0.5"
         },
         "releaseCount": 4,
-        "totalDownloads": 7671
+        "totalDownloads": 7689
       }
     },
     {
@@ -480,7 +480,7 @@
           "htmlUrl": "https://github.com/JackandBeans/Snap64Recomp/releases/tag/v1.1.4"
         },
         "releaseCount": 15,
-        "totalDownloads": 7554
+        "totalDownloads": 7604
       }
     },
     {
@@ -524,7 +524,7 @@
           "htmlUrl": "https://github.com/DahSidiAbdallah/ConkerBFDReloaded/releases/tag/v1.3.6"
         },
         "releaseCount": 12,
-        "totalDownloads": 5783
+        "totalDownloads": 5907
       }
     },
     {
@@ -566,7 +566,409 @@
           "htmlUrl": "https://github.com/RevoSucks/CV64Recomp/releases/tag/v0.5.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 183
+        "totalDownloads": 189
+      }
+    },
+    {
+      "id": "dusklight",
+      "name": "Dusklight (Twilight Princess)",
+      "repo": "TwilitRealm/dusklight",
+      "originalTitle": "The Legend of Zelda: Twilight Princess",
+      "originalPlatform": "GC",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "*-linux-x86_64.AppImage",
+          "executable": "*-linux-x86_64.AppImage"
+        },
+        "windows-x64": {
+          "assetPattern": "*-win32-x86_64.zip",
+          "executable": "dusklight.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "The Legend of Zelda: Twilight Princess (USA), imagem de disco de GameCube (.iso)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": true,
+        "supportedVersions": []
+      },
+      "images": {},
+      "recomp": {
+        "description": "Dusklight brings a classic adventure to PC and mobile platforms with a variety of fixes and improvements.",
+        "homepage": "https://twilitrealm.dev",
+        "license": "CC0-1.0",
+        "topics": [],
+        "stars": 5879,
+        "firstReleaseAt": "2026-04-24T03:44:05Z",
+        "latestRelease": {
+          "tag": "v2.0.3",
+          "name": "v2.0.3",
+          "publishedAt": "2026-09-30T07:06:44Z",
+          "htmlUrl": "https://github.com/TwilitRealm/dusklight/releases/tag/v2.0.3"
+        },
+        "releaseCount": 24,
+        "totalDownloads": 1354753
+      },
+      "trophyProvider": {
+        "kind": "dusklight",
+        "progressFile": {
+          "linux": "~/.local/share/TwilitRealm/Dusklight/achievements.json",
+          "macos": "~/Library/Application Support/TwilitRealm/Dusklight/achievements.json",
+          "windows": "%APPDATA%/TwilitRealm/Dusklight/achievements.json"
+        },
+        "trophies": [
+          {
+            "key": "hero_of_twilight",
+            "title": "Hero of Twilight",
+            "description": "Deliver the finishing blow to Ganondorf.",
+            "category": "challenge",
+            "goal": 0
+          },
+          {
+            "key": "three_heart_clear",
+            "title": "Hero Mode",
+            "description": "Defeat Ganondorf with only 3 heart containers.",
+            "category": "challenge",
+            "goal": 0
+          },
+          {
+            "key": "completionist",
+            "title": "Completionist",
+            "description": "Complete the game after collecting all equipment, heart containers, portals, bugs, poes, and hidden skills.",
+            "category": "challenge",
+            "goal": 0
+          },
+          {
+            "key": "princess_of_bugs",
+            "title": "The Princess of Bugs",
+            "description": "Deliver all 24 golden bugs to Agitha.",
+            "category": "collection",
+            "goal": 24
+          },
+          {
+            "key": "all_poes",
+            "title": "Poe Collector",
+            "description": "Collect all 60 Poe Souls.",
+            "category": "collection",
+            "goal": 60
+          },
+          {
+            "key": "hylian_loach",
+            "title": "Legendary Catch",
+            "description": "Obtain the Hylian Loach in your fishing journal.",
+            "category": "collection",
+            "goal": 0
+          },
+          {
+            "key": "all_fish",
+            "title": "Gone Fishin'",
+            "description": "Obtain all 6 species of fish in your fishing journal.",
+            "category": "collection",
+            "goal": 6
+          },
+          {
+            "key": "a_big_heart",
+            "title": "A Big Heart",
+            "description": "Reach maximum health with all 20 heart containers.",
+            "category": "collection",
+            "goal": 20
+          },
+          {
+            "key": "all_bottles",
+            "title": "Glassware Guardian",
+            "description": "Obtain all 4 bottles.",
+            "category": "collection",
+            "goal": 4
+          },
+          {
+            "key": "all_hidden_skills",
+            "title": "Master of Secrets",
+            "description": "Learn all 7 Hidden Skills.",
+            "category": "collection",
+            "goal": 7
+          },
+          {
+            "key": "all_letters",
+            "title": "We Deliver!",
+            "description": "Collect all 16 postman letters.",
+            "category": "collection",
+            "goal": 16
+          },
+          {
+            "key": "cave_of_ordeals",
+            "title": "Conqueror of Ordeals",
+            "description": "Clear all 50 floors of the Cave of Ordeals.",
+            "category": "challenge",
+            "goal": 0
+          },
+          {
+            "key": "cave_of_ordeals_heartless",
+            "title": "Indomitable",
+            "description": "Clear all 50 floors of the Cave of Ordeals with only 3 heart containers.",
+            "category": "challenge",
+            "goal": 0
+          },
+          {
+            "key": "speedrun_12h",
+            "title": "Been There Done That",
+            "description": "Defeat Ganondorf with a total save file play time under 12 hours.",
+            "category": "challenge",
+            "goal": 0
+          },
+          {
+            "key": "speedrun_8h",
+            "title": "Swift Blade",
+            "description": "Defeat Ganondorf with a total save file play time under 6 hours.",
+            "category": "challenge",
+            "goal": 0
+          },
+          {
+            "key": "dark_hammer_one_hit",
+            "title": "Mortal Edge",
+            "description": "Defeat Darkhammer in a single hit.",
+            "category": "misc",
+            "goal": 0
+          },
+          {
+            "key": "no_deaths_clear",
+            "title": "Deathless",
+            "description": "Defeat Ganondorf with 0 deaths on your save file.",
+            "category": "challenge",
+            "goal": 0
+          },
+          {
+            "key": "untouchable",
+            "title": "Untouchable",
+            "description": "Kill 25 enemies in a row without taking damage.",
+            "category": "challenge",
+            "goal": 25
+          },
+          {
+            "key": "bow_100m_hit",
+            "title": "Long Shot",
+            "description": "Hit an enemy from over 100 meters away with the bow.",
+            "category": "misc",
+            "goal": 0
+          },
+          {
+            "key": "rollstab_triple",
+            "title": "Surgical Skewer",
+            "description": "Kill 3 enemies with a single rollstab.",
+            "category": "misc",
+            "goal": 0
+          },
+          {
+            "key": "plumm_max",
+            "title": "Thank You Berry Much",
+            "description": "Score 61,454 points in the Plumm minigame.",
+            "category": "minigame",
+            "goal": 0
+          },
+          {
+            "key": "rollgoal_8",
+            "title": "Rollgoal Novice",
+            "description": "Complete the first 8 rollgoal stages.",
+            "category": "minigame",
+            "goal": 8
+          },
+          {
+            "key": "rollgoal_all",
+            "title": "Lost Your Marbles",
+            "description": "Complete all rollgoal stages.",
+            "category": "minigame",
+            "goal": 64
+          },
+          {
+            "key": "goat_30s",
+            "title": "Ranch Hand",
+            "description": "Herd all 20 goats into the pen in under 30 seconds.",
+            "category": "minigame",
+            "goal": 0
+          },
+          {
+            "key": "goat_20s",
+            "title": "Bane of Howard",
+            "description": "Herd all 20 goats into the pen in under 20 seconds.",
+            "category": "minigame",
+            "goal": 0
+          },
+          {
+            "key": "goat_18s",
+            "title": "King of the Ranch",
+            "description": "Herd all 20 goats into the pen in under 18 seconds.",
+            "category": "minigame",
+            "goal": 0
+          },
+          {
+            "key": "snowboard_70s",
+            "title": "Downhill Dash",
+            "description": "Finish the snowboarding minigame in under 70 seconds.",
+            "category": "minigame",
+            "goal": 0
+          },
+          {
+            "key": "canoe_perfect",
+            "title": "River Raider",
+            "description": "Achieve a perfect score in the canoe minigame.",
+            "category": "minigame",
+            "goal": 0
+          },
+          {
+            "key": "star_2_under_40s",
+            "title": "Rising Star",
+            "description": "Complete the STAR Prize 2 minigame in under 40 seconds.",
+            "category": "minigame",
+            "goal": 0
+          },
+          {
+            "key": "star_2_under_30s",
+            "title": "Shooting Star",
+            "description": "Complete the STAR Prize 2 minigame in under 30 seconds.",
+            "category": "minigame",
+            "goal": 0
+          },
+          {
+            "key": "friendly_fire",
+            "title": "Friendly Fire",
+            "description": "Get hit by your own cannonball.",
+            "category": "misc",
+            "goal": 0
+          },
+          {
+            "key": "long_jump_attack",
+            "title": "Long Jump Attack",
+            "description": "Travel more than 15 meters in a single jump attack before landing.",
+            "category": "misc",
+            "goal": 0
+          },
+          {
+            "key": "email_me",
+            "title": "Email Me",
+            "description": "Read a letter during the Dark Beast Ganon fight.",
+            "category": "misc",
+            "goal": 0
+          },
+          {
+            "key": "heavy_hitter",
+            "title": "Heavy Hitter",
+            "description": "Wear the Iron Boots during the end credits.",
+            "category": "misc",
+            "goal": 0
+          },
+          {
+            "key": "fishing_rod_ganondorf",
+            "title": "Here Fishy Fishy",
+            "description": "Confuse Ganondorf with the fishing rod.",
+            "category": "misc",
+            "goal": 0
+          },
+          {
+            "key": "steal_from_trill",
+            "title": "Petty Theft",
+            "description": "Steal from Trill.",
+            "category": "misc",
+            "goal": 0
+          },
+          {
+            "key": "cucco_control",
+            "title": "Cucco Whisperer",
+            "description": "Take control of a cucco.",
+            "category": "misc",
+            "goal": 0
+          },
+          {
+            "key": "ganondorf_3hit",
+            "title": "Autospin Annihilation",
+            "description": "Finish off Ganondorf in the final duel after only 3 attacks.",
+            "category": "misc",
+            "goal": 0
+          },
+          {
+            "key": "back_in_time",
+            "title": "Back in Time",
+            "description": "Perform the Back in Time glitch to play on the title screen.",
+            "category": "glitched",
+            "goal": 0
+          },
+          {
+            "key": "early_master_sword",
+            "title": "Early Master Sword",
+            "description": "Obtain the Master Sword before completing Midna's Desperate Hour.",
+            "category": "glitched",
+            "goal": 0
+          },
+          {
+            "key": "earliest_master_sword",
+            "title": "Earliest Master Sword",
+            "description": "Obtain the Master Sword before meeting Midna.",
+            "category": "glitched",
+            "goal": 0
+          },
+          {
+            "key": "speedrun_4h",
+            "title": "Hero of Time",
+            "description": "Defeat Ganondorf with a total save file play time under 4 hours.",
+            "category": "glitched",
+            "goal": 0
+          },
+          {
+            "key": "no_fish_suit",
+            "title": "No Fish Suit No Problem",
+            "description": "Defeat Morpheel without equipping Zora Armor.",
+            "category": "glitched",
+            "goal": 0
+          },
+          {
+            "key": "null_item",
+            "title": "Null Item",
+            "description": "Obtain the mysterious black rupee in the item wheel.",
+            "category": "glitched",
+            "goal": 0
+          },
+          {
+            "key": "stallord_skip",
+            "title": "Stallord Skip",
+            "description": "Leave Stallord's arena through the exit without defeating Stallord.",
+            "category": "glitched",
+            "goal": 0
+          },
+          {
+            "key": "lakebed_before_lanayru",
+            "title": "White Midna Glitch",
+            "description": "Clear the Lakebed Temple before clearing Lanayru's Twilight.",
+            "category": "glitched",
+            "goal": 0
+          },
+          {
+            "key": "early_hidden_village",
+            "title": "Quick Detour",
+            "description": "Rescue the Hidden Village before clearing Goron Mines.",
+            "category": "glitched",
+            "goal": 0
+          },
+          {
+            "key": "forest_temple_no_boomerang",
+            "title": "Must Have Been The Wind",
+            "description": "Complete the Forest Temple without obtaining the Gale Boomerang.",
+            "category": "glitched",
+            "goal": 0
+          },
+          {
+            "key": "early_city",
+            "title": "Early City",
+            "description": "Obtain the Double Clawshots without obtaining the Dominion Rod.",
+            "category": "glitched",
+            "goal": 0
+          },
+          {
+            "key": "early_kakariko",
+            "title": "Gorge Skip",
+            "description": "Collect the Kakariko warp portal without warping the gorge bridge.",
+            "category": "glitched",
+            "goal": 0
+          }
+        ]
       }
     }
   ]

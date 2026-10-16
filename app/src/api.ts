@@ -16,6 +16,7 @@ export const api = {
   importGame: (gameId: string, path: string) => invoke<Library>("import_game", { gameId, path }),
   launchGame: (gameId: string) => invoke<void>("launch_game", { gameId }),
   openInstallDir: (gameId: string) => invoke<void>("open_install_dir", { gameId }),
+  scanGamesDir: () => invoke<Library>("scan_games_dir"),
   getTrophies: (gameId: string) => invoke<TrophiesView>("get_trophies", { gameId }),
   editTrophies: (gameId: string) => invoke<void>("edit_trophies", { gameId }),
   getSettings: () => invoke<SettingsView>("get_settings"),

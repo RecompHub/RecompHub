@@ -16,6 +16,7 @@ use std::time::Instant;
 
 use serde::Serialize;
 use tauri::{AppHandle, Emitter, Manager, State};
+use tauri_plugin_notification::NotificationExt;
 use tauri_plugin_opener::OpenerExt;
 
 use catalog::{Catalog, Game, PlatformAsset};
@@ -88,7 +89,9 @@ impl AppState {
     fn settings_view(&self) -> SettingsView {
         let custom = self.settings.lock().unwrap().games_dir.clone();
         SettingsView {
-            games_dir: custom.clone().unwrap_or_else(|| self.default_games_dir.clone()),
+            games_dir: custom
+                .clone()
+                .unwrap_or_else(|| self.default_games_dir.clone()),
             default_games_dir: self.default_games_dir.clone(),
             is_default_games_dir: custom.is_none(),
         }
@@ -145,16 +148,26 @@ struct GameExitedEvent {
 #[serde(rename_all = "camelCase")]
 struct TrophyUnlockedEvent {
     game_id: String,
-    id: u32,
+    key: String,
     title: String,
     description: String,
 }
 
+/// Troféu na interface, venha ele de condições do RA (arquivo local) ou do
+/// próprio jogo (provedor).
 #[derive(Clone, Serialize)]
 #[serde(rename_all = "camelCase")]
 struct TrophyView {
-    #[serde(flatten)]
-    trophy: trophies::Trophy,
+    key: String,
+    title: String,
+    description: String,
+    points: u32,
+    category: String,
+    /// Contadores: meta e progresso (ex.: 12/60). Meta 0 = troféu simples.
+    goal: u32,
+    progress: u32,
+    unlocked: bool,
+    /// Só quando o launcher viu o desbloqueio acontecer.
     unlocked_at: Option<chrono::DateTime<chrono::Local>>,
     /// Condição inválida (o troféu não é avaliado).
     error: Option<String>,
@@ -163,11 +176,13 @@ struct TrophyView {
 #[derive(Clone, Serialize)]
 #[serde(rename_all = "camelCase")]
 struct TrophiesView {
-    /// Arquivo de definições (pode não existir ainda).
+    /// Arquivo de definições ou de progresso (pode não existir ainda).
     path: PathBuf,
     trophies: Vec<TrophyView>,
     /// JSON inválido no arquivo.
     load_error: Option<String>,
+    /// Ex.: "dusklight" quando os troféus vêm do próprio jogo (não editáveis).
+    provider: Option<String>,
 }
 
 #[derive(Clone, Serialize)]
@@ -186,9 +201,14 @@ fn get_catalog(state: State<'_, AppState>) -> Catalog {
 /// Baixa o catálogo publicado. Em caso de erro o catálogo atual continua valendo.
 #[tauri::command]
 async fn refresh_catalog(state: State<'_, AppState>) -> Result<Catalog> {
-    let catalog = catalog::fetch_remote(&state.http, &state.catalog_cache_path).await?;
-    *state.catalog.write().unwrap() = catalog.clone();
-    Ok(catalog)
+    let remote = catalog::fetch_remote(&state.http, &state.catalog_cache_path).await?;
+    let mut current = state.catalog.write().unwrap();
+    // Nunca troca por um catálogo mais antigo (ex.: o embutido numa versão
+    // nova do launcher é mais recente que o publicado em cache).
+    if remote.generated_at >= current.generated_at {
+        *current = remote;
+    }
+    Ok(current.clone())
 }
 
 #[tauri::command]
@@ -242,23 +262,21 @@ async fn install_game(
     let game = state.game(&game_id)?;
     let platform = state.platform_asset(&game)?;
     let release = state.github.latest_release(&game.repo).await?;
+    // Atualização acontece onde o jogo já está (inclusive se foi importado).
+    let target = match state.installed_game(&game_id) {
+        Ok(current) => current.install_path,
+        Err(_) => state.games_dir().join(&game_id),
+    };
 
-    let installed = install::install(
-        &state.http,
-        &state.games_dir(),
-        &game_id,
-        platform,
-        &release,
-        |progress| {
-            let _ = app.emit(
-                "install-progress",
-                InstallProgressEvent {
-                    game_id: game_id.clone(),
-                    progress,
-                },
-            );
-        },
-    )
+    let installed = install::install(&state.http, &target, platform, &release, |progress| {
+        let _ = app.emit(
+            "install-progress",
+            InstallProgressEvent {
+                game_id: game_id.clone(),
+                progress,
+            },
+        );
+    })
     .await?;
 
     state.update_library(|library| {
@@ -323,7 +341,60 @@ fn launch_game(app: AppHandle, state: State<'_, AppState>, game_id: String) -> R
 }
 
 /// Se o jogo tem troféus definidos, acompanha a memória dele em outra thread.
-fn start_trophy_watch(app: &AppHandle, state: &AppState, game_id: &str, pid: u32, alive: Arc<AtomicBool>) {
+fn start_trophy_watch(
+    app: &AppHandle,
+    state: &AppState,
+    game_id: &str,
+    pid: u32,
+    alive: Arc<AtomicBool>,
+) {
+    let unlock = {
+        let app = app.clone();
+        let game_id = game_id.to_string();
+        move |key: String, title: &str, description: &str| {
+            let state = app.state::<AppState>();
+            let _ = state.update_library(|library| {
+                if let Some(entry) = library.get_mut(&game_id) {
+                    entry
+                        .trophies
+                        .entry(key.clone())
+                        .or_insert_with(chrono::Local::now);
+                }
+            });
+            // Notificação do sistema: aparece por cima do jogo em tela cheia,
+            // onde a janela do launcher não é vista.
+            let _ = app
+                .notification()
+                .builder()
+                .title(format!("🏆 Troféu desbloqueado: {title}"))
+                .body(description)
+                .show();
+            let _ = app.emit(
+                "trophy-unlocked",
+                TrophyUnlockedEvent {
+                    game_id: game_id.clone(),
+                    key,
+                    title: title.to_string(),
+                    description: description.to_string(),
+                },
+            );
+        }
+    };
+
+    // Conquistas do próprio jogo: basta acompanhar o arquivo de progresso.
+    if let Some(provider) = state.game(game_id).ok().and_then(|g| g.trophy_provider) {
+        let Some(path) = trophies::provider_progress_path(&provider) else {
+            return;
+        };
+        std::thread::spawn(move || {
+            trophies::watch_provider(path, alive, provider.trophies, |t| {
+                unlock(t.key.clone(), &t.title, &t.description)
+            });
+        });
+        return;
+    }
+
+    // Troféus escritos pelo usuário (condições do RA): lê a RDRAM do processo.
     let path = trophies::definitions_path(&state.data_dir, game_id);
     let Ok(Some(set)) = trophies::load(&path) else {
         return;
@@ -333,32 +404,21 @@ fn start_trophy_watch(app: &AppHandle, state: &AppState, game_id: &str, pid: u32
         .lock()
         .unwrap()
         .get(game_id)
-        .map(|e| e.trophies.keys().copied().collect())
+        .map(|e| e.trophies.keys().filter_map(|k| k.parse().ok()).collect())
         .unwrap_or_default();
-    let app = app.clone();
-    let game_id = game_id.to_string();
     std::thread::spawn(move || {
-        trophies::watch(pid, alive, set, already, |trophy| {
-            let state = app.state::<AppState>();
-            let _ = state.update_library(|library| {
-                if let Some(entry) = library.get_mut(&game_id) {
-                    entry.trophies.entry(trophy.id).or_insert_with(chrono::Local::now);
-                }
-            });
-            let _ = app.emit(
-                "trophy-unlocked",
-                TrophyUnlockedEvent {
-                    game_id: game_id.clone(),
-                    id: trophy.id,
-                    title: trophy.title.clone(),
-                    description: trophy.description.clone(),
-                },
-            );
+        trophies::watch(pid, alive, set, already, |t| {
+            unlock(t.id.to_string(), &t.title, &t.description)
         });
     });
 }
 
-fn wait_for_exit(app: AppHandle, game_id: String, mut child: std::process::Child, alive: Arc<AtomicBool>) {
+fn wait_for_exit(
+    app: AppHandle,
+    game_id: String,
+    mut child: std::process::Child,
+    alive: Arc<AtomicBool>,
+) {
     let started = Instant::now();
     let _ = child.wait();
     alive.store(false, Ordering::Relaxed);
@@ -391,14 +451,48 @@ fn open_install_dir(app: AppHandle, state: State<'_, AppState>, game_id: String)
 
 #[tauri::command]
 fn get_trophies(state: State<'_, AppState>, game_id: String) -> TrophiesView {
-    let path = trophies::definitions_path(&state.data_dir, &game_id);
-    let unlocked = state
+    let seen = state
         .library
         .lock()
         .unwrap()
         .get(&game_id)
         .map(|e| e.trophies.clone())
         .unwrap_or_default();
+
+    if let Some(provider) = state.game(&game_id).ok().and_then(|g| g.trophy_provider) {
+        let path = trophies::provider_progress_path(&provider).unwrap_or_default();
+        let (progress, load_error) = match trophies::read_provider_progress(&path) {
+            Ok(p) => (p, None),
+            Err(e) => (Default::default(), Some(e.to_string())),
+        };
+        let trophies = provider
+            .trophies
+            .iter()
+            .map(|t| {
+                let entry = progress.get(&t.key).cloned().unwrap_or_default();
+                TrophyView {
+                    key: t.key.clone(),
+                    title: t.title.clone(),
+                    description: t.description.clone(),
+                    points: 0,
+                    category: t.category.clone(),
+                    goal: t.goal,
+                    progress: entry.progress.clamp(0, u32::MAX as i64) as u32,
+                    unlocked: entry.unlocked,
+                    unlocked_at: seen.get(&t.key).copied(),
+                    error: None,
+                }
+            })
+            .collect();
+        return TrophiesView {
+            path,
+            trophies,
+            load_error,
+            provider: Some(provider.kind),
+        };
+    }
+
+    let path = trophies::definitions_path(&state.data_dir, &game_id);
     let (set, load_error) = match trophies::load(&path) {
         Ok(set) => (set, None),
         Err(e) => (None, Some(e.to_string())),
@@ -408,13 +502,71 @@ fn get_trophies(state: State<'_, AppState>, game_id: String) -> TrophiesView {
         .map(|s| s.trophies)
         .unwrap_or_default()
         .into_iter()
-        .map(|trophy| TrophyView {
-            unlocked_at: unlocked.get(&trophy.id).copied(),
-            error: errors.remove(&trophy.id),
-            trophy,
+        .map(|t| {
+            let key = t.id.to_string();
+            let unlocked_at = seen.get(&key).copied();
+            TrophyView {
+                error: errors.remove(&t.id),
+                key,
+                title: t.title,
+                description: t.description,
+                points: t.points,
+                category: String::new(),
+                goal: 0,
+                progress: unlocked_at.is_some() as u32,
+                unlocked: unlocked_at.is_some(),
+                unlocked_at,
+            }
         })
         .collect();
-    TrophiesView { path, trophies, load_error }
+    TrophiesView {
+        path,
+        trophies,
+        load_error,
+        provider: None,
+    }
+}
+
+/// Registra jogos do catálogo que já estão na pasta de jogos (ex.: copiados
+/// à mão), pela pasta com o id do jogo e o executável esperado.
+#[tauri::command]
+fn scan_games_dir(state: State<'_, AppState>) -> Result<Library> {
+    let dir = state.games_dir();
+    let folders: Vec<PathBuf> = match std::fs::read_dir(&dir) {
+        Ok(entries) => entries
+            .filter_map(|e| e.ok())
+            .filter(|e| e.file_type().is_ok_and(|t| t.is_dir()))
+            .map(|e| e.path())
+            .collect(),
+        Err(_) => return Ok(state.library.lock().unwrap().clone()),
+    };
+    let games = state.catalog.read().unwrap().games.clone();
+    let mut found = Vec::new();
+    for game in games {
+        if state.installed_game(&game.id).is_ok() || state.busy.lock().unwrap().contains(&game.id) {
+            continue;
+        }
+        let Some(platform) = game.platforms.get(&state.platform) else {
+            continue;
+        };
+        let folder = folders.iter().find(|f| {
+            f.file_name()
+                .and_then(|n| n.to_str())
+                .is_some_and(|n| n.eq_ignore_ascii_case(&game.id))
+        });
+        if let Some(installed) = folder.and_then(|f| install::import(f, platform).ok()) {
+            found.push((game.id, installed));
+        }
+    }
+    state.update_library(|library| {
+        for (id, installed) in found {
+            library
+                .entry(id)
+                .or_insert_with(LibraryEntry::new)
+                .installed = Some(installed);
+        }
+        library.clone()
+    })
 }
 
 /// Abre o arquivo de troféus do jogo no editor padrão (cria um modelo se não existir).
@@ -449,6 +601,16 @@ fn set_games_dir(state: State<'_, AppState>, path: Option<PathBuf>) -> Result<Se
     Ok(state.settings_view())
 }
 
+/// `C:\RecompHub\Games` no Windows (ao lado do launcher, fácil de achar);
+/// nos outros sistemas, dentro da pasta de dados do app.
+fn default_games_dir(data_dir: &std::path::Path) -> PathBuf {
+    if cfg!(windows) {
+        PathBuf::from(r"C:\RecompHub\Games")
+    } else {
+        data_dir.join("games")
+    }
+}
+
 fn init_state(app: &AppHandle) -> Result<AppState> {
     let paths = app.path();
     let data_dir = paths.app_local_data_dir()?;
@@ -466,7 +628,7 @@ fn init_state(app: &AppHandle) -> Result<AppState> {
         platform: catalog::current_platform(),
         github: GitHub::new(http.clone(), cache_dir.join("github")),
         http,
-        default_games_dir: data_dir.join("games"),
+        default_games_dir: default_games_dir(&data_dir),
         data_dir: data_dir.clone(),
         settings: Mutex::new(settings::load(&settings_path)?),
         settings_path,
@@ -480,6 +642,7 @@ fn init_state(app: &AppHandle) -> Result<AppState> {
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
     tauri::Builder::default()
+        .plugin(tauri_plugin_notification::init())
         .plugin(tauri_plugin_dialog::init())
         .plugin(tauri_plugin_process::init())
         .plugin(tauri_plugin_updater::Builder::new().build())
@@ -505,6 +668,7 @@ pub fn run() {
             open_install_dir,
             get_settings,
             get_trophies,
+            scan_games_dir,
             edit_trophies,
             set_games_dir,
         ])

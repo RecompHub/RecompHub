@@ -20,7 +20,9 @@ use std::path::PathBuf;
 
 use anyhow::{Context, Result};
 use chrono::Utc;
-use recomphub_catalog::{Catalog, CatalogGame, Images, SCHEMA_VERSION, SourceGame, Sources};
+use recomphub_catalog::{
+    Catalog, CatalogGame, ExternalTrophyFile, Images, SCHEMA_VERSION, SourceGame, Sources,
+};
 
 fn env(name: &str) -> Option<String> {
     std::env::var(name).ok().filter(|v| !v.trim().is_empty())
@@ -64,7 +66,7 @@ async fn main() -> Result<()> {
     for source in sources.games {
         let prev = previous_games.get(source.id.as_str()).copied();
         println!("• {}", source.name);
-        let ctx = Ctx { gh: &gh, sgdb: sgdb.as_ref(), igdb: igdb.as_ref(), base_url: &base_url };
+        let ctx = Ctx { gh: &gh, sgdb: sgdb.as_ref(), igdb: igdb.as_ref(), base_url: &base_url, catalog_dir: &dir };
         games.push(build_game(&ctx, source, prev, &mut failures).await);
     }
 
@@ -90,6 +92,7 @@ struct Ctx<'a> {
     sgdb: Option<&'a sgdb::SteamGridDb>,
     igdb: Option<&'a igdb::Igdb>,
     base_url: &'a str,
+    catalog_dir: &'a std::path::Path,
 }
 
 /// Cada fonte que falhar mantém os dados anteriores daquele jogo; a falha é
@@ -160,6 +163,21 @@ async fn build_game(
         }
     }
 
+    // Definições das conquistas do próprio jogo: copiadas do arquivo indicado.
+    let trophy_provider = source.trophy_provider.map(|mut provider| {
+        if let Some(file) = provider.definitions.take() {
+            let path = ctx.catalog_dir.join(&file);
+            let parsed = std::fs::read(&path)
+                .map_err(anyhow::Error::from)
+                .and_then(|b| Ok(serde_json::from_slice::<ExternalTrophyFile>(&b)?));
+            match parsed {
+                Ok(defs) => provider.trophies = defs.trophies,
+                Err(e) => fail(&format!("definições de troféus {file}"), e),
+            }
+        }
+        provider
+    });
+
     CatalogGame {
         id: source.id,
         name: source.name,
@@ -174,6 +192,7 @@ async fn build_game(
         images,
         recomp,
         game,
+        trophy_provider,
     }
 }
 

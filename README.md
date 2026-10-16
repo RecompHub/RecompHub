@@ -56,9 +56,19 @@ Detalhes: [docs/decisions/0002-catalogo-e-interface.md](docs/decisions/0002-cata
 - Linux: `.AppImage` e `.deb` em `target/release/bundle/`
 
 O instalador do Windows não exige admin nem programas pré-instalados (ver
-[docs/decisions/0001-stack.md](docs/decisions/0001-stack.md)). Ele instala em
-`%LOCALAPPDATA%\RecompHub`; a biblioteca e os jogos ficam em
-`%LOCALAPPDATA%\com.recomphub.launcher` e sobrevivem à desinstalação.
+[docs/decisions/0001-stack.md](docs/decisions/0001-stack.md)). Pastas padrão no Windows:
+
+| O quê | Onde |
+|-------|------|
+| Launcher | `C:\RecompHub` (template NSIS próprio em `app/src-tauri/nsis/installer.nsi`) |
+| Jogos | `C:\RecompHub\Games\<id>` (configurável) |
+| Biblioteca, cache, troféus locais | `%LOCALAPPDATA%\com.recomphub.launcher` |
+
+O desinstalador remove só os arquivos do launcher; `C:\RecompHub\Games` e a biblioteca
+sobrevivem. Em cada pasta de jogo, o launcher registra em `.recomphub-files.json` os
+arquivos que instalou, e atualizar ou desinstalar o jogo mexe **só** nesses: ROM, saves e
+mods do usuário na mesma pasta ficam intactos. Pastas de jogo copiadas à mão para
+`C:\RecompHub\Games\<id>` são detectadas e importadas ao abrir o launcher.
 
 Build local com artefatos do updater (precisa da chave privada):
 

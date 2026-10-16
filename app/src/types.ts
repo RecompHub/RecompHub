@@ -16,6 +16,7 @@ export interface Game {
   requiredRom: { description: string; sha1: string[] };
   achievements: { enabled: boolean; supportedVersions: string[] };
   sgdbId?: number;
+  trophyProvider?: { kind: string; trophies: { key: string }[] };
   igdbId?: number;
   images: Images;
   recomp?: RecompInfo;
@@ -116,7 +117,17 @@ export interface Trophy {
   conditions: string;
 }
 
-export interface TrophyView extends Trophy {
+export interface TrophyView {
+  key: string;
+  title: string;
+  description: string;
+  points: number;
+  category: string;
+  /** Contadores: meta (0 = troféu simples) e progresso atual. */
+  goal: number;
+  progress: number;
+  unlocked: boolean;
+  /** Só quando o launcher viu o desbloqueio acontecer. */
   unlockedAt: string | null;
   error: string | null;
 }
@@ -125,11 +136,13 @@ export interface TrophiesView {
   path: string;
   trophies: TrophyView[];
   loadError: string | null;
+  /** Ex.: "dusklight" quando os troféus vêm do próprio jogo. */
+  provider: string | null;
 }
 
 export interface TrophyUnlocked {
   gameId: string;
-  id: number;
+  key: string;
   title: string;
   description: string;
 }

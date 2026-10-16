@@ -22,9 +22,10 @@ pub struct LibraryEntry {
     pub play_time_seconds: u64,
     #[serde(default)]
     pub last_played_at: Option<DateTime<Local>>,
-    /// Troféus desbloqueados: id → quando.
+    /// Troféus desbloqueados enquanto o launcher acompanhava: chave → quando.
+    /// (Os do RA usam o id numérico como chave.)
     #[serde(default)]
-    pub trophies: BTreeMap<u32, DateTime<Local>>,
+    pub trophies: BTreeMap<String, DateTime<Local>>,
 }
 
 impl LibraryEntry {
