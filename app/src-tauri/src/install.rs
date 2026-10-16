@@ -159,6 +159,7 @@ fn unpack(
         install_path: target,
         executable: relative,
         executable_hash,
+        imported: false,
     })
 }
 
@@ -193,6 +194,9 @@ fn unpack_nested_tarballs(dir: &Path) -> Result<()> {
 /// Remove a pasta do jogo. Recusa caminhos fora de `games_dir`, para que um
 /// `installed.json` editado à mão não apague outra pasta.
 pub fn uninstall(game_id: &str, installed: &InstalledGame) -> Result<()> {
+    if installed.imported {
+        return Ok(());
+    }
     let path = &installed.install_path;
     if !path.exists() {
         return Ok(());
@@ -210,6 +214,23 @@ pub fn uninstall(game_id: &str, installed: &InstalledGame) -> Result<()> {
     std::fs::remove_dir_all(path)?;
     Ok(())
 }
+
+/// Registra uma recomp instalada manualmente em `dir`. A versão é
+/// desconhecida, então o launcher vai oferecer a atualização.
+pub fn import(dir: &Path, platform: &PlatformAsset) -> Result<InstalledGame> {
+    let found = find_executable(dir, &platform.executable)?
+        .ok_or_else(|| Error::ExecutableNotFound(platform.executable.clone()))?;
+    Ok(InstalledGame {
+        installed_tag: UNKNOWN_TAG.to_string(),
+        installed_at: chrono::Local::now(),
+        install_path: dir.to_path_buf(),
+        executable: found.strip_prefix(dir).unwrap_or(&found).to_path_buf(),
+        executable_hash: sha256_file(&found)?,
+        imported: true,
+    })
+}
+
+pub const UNKNOWN_TAG: &str = "desconhecida";
 
 /// Procura o executável pelo nome (aceita glob), preferindo o mais raso:
 /// alguns zips têm uma pasta raiz, outros não.
@@ -280,6 +301,26 @@ mod tests {
         let _ = std::fs::remove_dir_all(&dir);
         std::fs::create_dir_all(&dir).unwrap();
         dir
+    }
+
+    #[test]
+    fn imported_install_is_registered_and_never_deleted() {
+        let dir = temp_dir("import");
+        std::fs::create_dir_all(dir.join("bin")).unwrap();
+        std::fs::write(dir.join("bin/MyRecomp.exe"), b"exe").unwrap();
+        let platform = PlatformAsset {
+            asset_pattern: "*.zip".into(),
+            executable: "myrecomp.exe".into(),
+        };
+
+        let installed = import(&dir, &platform).unwrap();
+        assert!(installed.imported);
+        assert_eq!(installed.installed_tag, UNKNOWN_TAG);
+        assert_eq!(installed.executable, PathBuf::from("bin/MyRecomp.exe"));
+
+        uninstall("qualquer-id", &installed).unwrap();
+        assert!(dir.join("bin/MyRecomp.exe").is_file(), "arquivos do usuário apagados");
+        std::fs::remove_dir_all(&dir).unwrap();
     }
 
     /// Mesmo formato dos builds Linux do Zelda64Recomp e do Starfox64Recomp.

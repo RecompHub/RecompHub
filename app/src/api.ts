@@ -13,6 +13,7 @@ export const api = {
   latestRelease: (gameId: string) => invoke<Release>("latest_release", { gameId }),
   installGame: (gameId: string) => invoke<Library>("install_game", { gameId }),
   uninstallGame: (gameId: string) => invoke<Library>("uninstall_game", { gameId }),
+  importGame: (gameId: string, path: string) => invoke<Library>("import_game", { gameId, path }),
   launchGame: (gameId: string) => invoke<void>("launch_game", { gameId }),
   openInstallDir: (gameId: string) => invoke<void>("open_install_dir", { gameId }),
   getSettings: () => invoke<SettingsView>("get_settings"),

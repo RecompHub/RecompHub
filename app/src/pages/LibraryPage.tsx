@@ -122,9 +122,15 @@ function LibraryDetail({ game }: { game: Game }) {
                 <button
                   className="btn btn-ghost"
                   disabled={s.running || !!s.progress}
-                  onClick={() => confirm(`Desinstalar ${game.name}? A pasta de instalação será apagada.`) && store.uninstall(game.id)}
+                  onClick={() =>
+                    confirm(
+                      s.installed?.imported
+                        ? `Remover ${game.name} do launcher? Os arquivos em ${s.installed.installPath} não serão apagados.`
+                        : `Desinstalar ${game.name}? A pasta de instalação será apagada.`,
+                    ) && store.uninstall(game.id)
+                  }
                 >
-                  Desinstalar
+                  {s.installed.imported ? "Remover do launcher" : "Desinstalar"}
                 </button>
               </>
             )}
@@ -139,7 +145,7 @@ function LibraryDetail({ game }: { game: Game }) {
           </div>
           {s.installed && (
             <p className="muted small">
-              Instalado em {formatDate(s.installed.installedAt)} · {s.installed.installPath}
+              {s.installed.imported ? "Importado" : "Instalado"} em {formatDate(s.installed.installedAt)} · {s.installed.installPath}
             </p>
           )}
           <ReleaseNotes game={game} />

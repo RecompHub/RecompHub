@@ -239,6 +239,20 @@ async fn install_game(
 }
 
 #[tauri::command]
+fn import_game(state: State<'_, AppState>, game_id: String, path: PathBuf) -> Result<Library> {
+    let _guard = BusyGuard::acquire(&state, &game_id)?;
+    let game = state.game(&game_id)?;
+    let installed = install::import(&path, state.platform_asset(&game)?)?;
+    state.update_library(|library| {
+        library
+            .entry(game_id)
+            .or_insert_with(LibraryEntry::new)
+            .installed = Some(installed);
+        library.clone()
+    })
+}
+
+#[tauri::command]
 fn uninstall_game(state: State<'_, AppState>, game_id: String) -> Result<Library> {
     let _guard = BusyGuard::acquire(&state, &game_id)?;
     let installed = state.installed_game(&game_id)?;
@@ -372,6 +386,7 @@ pub fn run() {
             latest_release,
             install_game,
             uninstall_game,
+            import_game,
             launch_game,
             open_install_dir,
             get_settings,

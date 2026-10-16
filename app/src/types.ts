@@ -80,6 +80,8 @@ export interface InstalledGame {
   installPath: string;
   executable: string;
   executableHash: string;
+  /** Instalada fora do launcher; desinstalar não apaga os arquivos. */
+  imported: boolean;
 }
 
 /** Release completa, buscada sob demanda (notas da versão). */
