@@ -30,6 +30,7 @@ interface Store {
   removeFromLibrary: (id: string) => Promise<void>;
   install: (id: string) => Promise<void>;
   uninstall: (id: string) => Promise<void>;
+  importInstall: (id: string, path: string) => Promise<void>;
   launch: (id: string) => Promise<void>;
   openInstallDir: (id: string) => Promise<void>;
   gameById: (id: string) => Game | undefined;
@@ -129,6 +130,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
         setProgress(({ [id]: _, ...rest }) => rest);
       },
       uninstall: (id) => run(() => api.uninstallGame(id)),
+      importInstall: (id, path) => run(() => api.importGame(id, path)),
       launch: (id) => run(() => api.launchGame(id)),
       openInstallDir: (id) => run(() => api.openInstallDir(id)),
       gameById: (id) => catalog?.games.find((g) => g.id === id),

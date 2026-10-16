@@ -46,6 +46,10 @@ pub struct InstalledGame {
     /// SHA-256 do executável: detecta alteração manual e será a chave dos
     /// offsets de memória na fase 1 das conquistas.
     pub executable_hash: String,
+    /// Instalação feita fora do launcher e só registrada nele: desinstalar
+    /// apenas esquece o jogo, sem apagar os arquivos do usuário.
+    #[serde(default)]
+    pub imported: bool,
 }
 
 pub type Library = HashMap<String, LibraryEntry>;

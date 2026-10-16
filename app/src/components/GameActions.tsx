@@ -1,3 +1,4 @@
+import { open } from "@tauri-apps/plugin-dialog";
 import { useStore, useGameStatus } from "../store";
 import { formatBytes } from "../format";
 import type { Game } from "../types";
@@ -45,9 +46,21 @@ export function GameActions({ game, showLibraryButton = false }: { game: Game; s
           )}
         </>
       ) : (
-        <button className="btn btn-big btn-install" onClick={() => store.install(game.id)}>
-          ⬇ Instalar
-        </button>
+        <>
+          <button className="btn btn-big btn-install" onClick={() => store.install(game.id)}>
+            ⬇ Instalar
+          </button>
+          <button
+            className="btn btn-big btn-secondary"
+            title="Já baixou esta recomp por conta própria? Aponte a pasta dela."
+            onClick={async () => {
+              const dir = await open({ directory: true, title: `Pasta onde ${game.name} está instalado` });
+              if (typeof dir === "string") await store.importInstall(game.id, dir);
+            }}
+          >
+            Já tenho instalado…
+          </button>
+        </>
       )}
 
       {showLibraryButton && !s.inLibrary && (
