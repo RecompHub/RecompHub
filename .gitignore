@@ -5,3 +5,7 @@ CLAUDE.md
 
 # Rust (workspace)
 /target/
+
+# Credenciais locais (Twitch/IGDB, etc.): nunca versionar
+.env
+.env.*

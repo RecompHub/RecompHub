@@ -19,6 +19,8 @@ export const api = {
   scanGamesDir: () => invoke<Library>("scan_games_dir"),
   getTrophies: (gameId: string) => invoke<TrophiesView>("get_trophies", { gameId }),
   editTrophies: (gameId: string) => invoke<void>("edit_trophies", { gameId }),
+  setTrophy: (gameId: string, key: string, unlocked: boolean) =>
+    invoke<Library>("set_trophy", { gameId, key, unlocked }),
   getSettings: () => invoke<SettingsView>("get_settings"),
   setGamesDir: (path: string | null) => invoke<SettingsView>("set_games_dir", { path }),
 };

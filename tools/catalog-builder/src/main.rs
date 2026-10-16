@@ -8,8 +8,11 @@
 //! fonte são mantidos do `games.json` anterior):
 //! - `GITHUB_TOKEN`
 //! - `SGDB_API_KEY`
-//! - `IGDB_CLIENT_ID` + `IGDB_CLIENT_SECRET`
+//! - `IGDB_CLIENT_ID` + `IGDB_CLIENT_SECRET` (ou `TWITCH_CLIENT_ID` + `TWITCH_CLIENT_SECRET`)
 //! - `CATALOG_BASE_URL` (padrão: [`recomphub_catalog::DEFAULT_BASE_URL`])
+//!
+//! Localmente, elas podem ficar num `.env` na raiz do repositório (ignorado
+//! pelo git). No GitHub Actions vêm dos secrets.
 
 mod github;
 mod igdb;
@@ -30,6 +33,9 @@ fn env(name: &str) -> Option<String> {
 
 #[tokio::main]
 async fn main() -> Result<()> {
+    // `.env` na pasta atual ou acima (raiz do repositório); variáveis já
+    // definidas no ambiente têm prioridade.
+    let _ = dotenvy::dotenv();
     let dir = PathBuf::from(std::env::args().nth(1).unwrap_or_else(|| "catalog".into()));
     let sources: Sources = serde_json::from_slice(
         &std::fs::read(dir.join("sources.json")).context("lendo sources.json")?,
@@ -50,8 +56,10 @@ async fn main() -> Result<()> {
         .build()?;
     let gh = github::GitHub::new(http.clone(), env("GITHUB_TOKEN"));
     let sgdb = env("SGDB_API_KEY").map(|key| sgdb::SteamGridDb::new(http.clone(), key));
-    let igdb = match (env("IGDB_CLIENT_ID"), env("IGDB_CLIENT_SECRET")) {
-        (Some(id), Some(secret)) => Some(igdb::Igdb::connect(http.clone(), id, &secret).await?),
+    let igdb_id = env("IGDB_CLIENT_ID").or_else(|| env("TWITCH_CLIENT_ID"));
+    let igdb_secret = env("IGDB_CLIENT_SECRET").or_else(|| env("TWITCH_CLIENT_SECRET"));
+    let igdb = match (igdb_id, igdb_secret) {
+        (Some(id), Some(secret)) => Some(igdb::Igdb::connect(http.clone(), id, secret).await?),
         _ => None,
     };
     if sgdb.is_none() {

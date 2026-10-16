@@ -39,3 +39,6 @@ jobs:
 
       - name: Testes Rust
         run: cargo test --workspace
+
+      - name: Testes Rust com conquistas automáticas (módulo guardado)
+        run: cargo test -p recomphub --features auto-trophies

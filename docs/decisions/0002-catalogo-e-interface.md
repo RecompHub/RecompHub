@@ -87,3 +87,18 @@ Por isso o jogo ganha um `trophyProvider` no `sources.json`:
 
 Próximo passo possível: um mod nativo do Dusklight (SDK + `WebSocketService`) para eventos
 que o arquivo não tem, como a área atual (rich presence).
+
+### Atualização (16/10/2026): lista manual; automático guardado
+
+Decisão do usuário: **por enquanto, conquistas são uma lista que o usuário marca à mão**.
+A detecção automática fica para o futuro.
+
+- Pesquisa nos 14 repositórios do catálogo: **só o Dusklight tem conquistas próprias**
+  (as 13 recomps de N64 não têm). A lista do RetroAchievements **não** é usada.
+- `get_trophies` devolve as conquistas do `trophyProvider` (catálogo); `set_trophy` marca e
+  desmarca, gravando em `LibraryEntry::trophies` (chave → data).
+- Todo o código automático (arquivo de progresso do Dusklight, leitura da RDRAM + rcheevos,
+  troféus com condições escritos pelo usuário) foi para `app/src-tauri/src/auto_trophies.rs`,
+  atrás da feature **`auto-trophies`** (desligada por padrão; `crates/memory` e
+  `crates/achievements` viram dependências opcionais). O CI compila e testa os dois modos.
+  Ligar a feature grava no mesmo lugar das marcações manuais, sem mudar a interface.
