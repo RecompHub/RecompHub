@@ -1,6 +1,7 @@
 import { StoreProvider, useStore } from "./store";
 import { TopBar } from "./components/TopBar";
 import { UpdateBanner } from "./components/UpdateBanner";
+import { TrophyToasts } from "./components/Trophies";
 import { HomePage } from "./pages/HomePage";
 import { ExplorePage } from "./pages/ExplorePage";
 import { LibraryPage } from "./pages/LibraryPage";
@@ -21,6 +22,7 @@ function Shell() {
         {route.page === "game" && <GamePage key={route.gameId} gameId={route.gameId} />}
         {route.page === "settings" && <SettingsPage />}
       </main>
+      <TrophyToasts />
       {error && (
         <div className="toast" role="alert">
           <span>{error}</span>

@@ -1,7 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import { listen } from "@tauri-apps/api/event";
 import { api } from "./api";
-import type { Catalog, Game, InstallProgress, Library } from "./types";
+import type { Catalog, Game, InstallProgress, Library, TrophyUnlocked } from "./types";
 
 export type Route =
   | { page: "home" }
@@ -19,12 +19,15 @@ interface Store {
   refreshing: boolean;
   /** Último erro de uma ação, mostrado num aviso no rodapé. */
   error: string | null;
+  /** Troféus desbloqueados ainda na tela. */
+  unlocks: (TrophyUnlocked & { key: number })[];
   route: Route;
   canGoBack: boolean;
 
   navigate: (route: Route) => void;
   goBack: () => void;
   dismissError: () => void;
+  dismissUnlock: (key: number) => void;
   refreshCatalog: () => Promise<void>;
   addToLibrary: (id: string) => Promise<void>;
   removeFromLibrary: (id: string) => Promise<void>;
@@ -52,6 +55,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   const [progress, setProgress] = useState<Record<string, InstallProgress>>({});
   const [refreshing, setRefreshing] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [unlocks, setUnlocks] = useState<(TrophyUnlocked & { key: number })[]>([]);
   const [history, setHistory] = useState<Route[]>([{ page: "home" }]);
 
   const route = history[history.length - 1];
@@ -90,6 +94,10 @@ export function StoreProvider({ children }: { children: ReactNode }) {
         });
         api.getLibrary().then(setLibrary);
       }),
+      listen<TrophyUnlocked>("trophy-unlocked", (e) => {
+        setUnlocks((prev) => [...prev, { ...e.payload, key: Date.now() + Math.random() }]);
+        api.getLibrary().then(setLibrary);
+      }),
     ];
     return () => unlisteners.forEach((u) => u.then((f) => f()));
   }, []);
@@ -117,11 +125,13 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       progress,
       refreshing,
       error,
+      unlocks,
       route,
       canGoBack: history.length > 1,
       navigate: (r) => setHistory((h) => [...h.slice(-30), r]),
       goBack: () => setHistory((h) => (h.length > 1 ? h.slice(0, -1) : h)),
       dismissError: () => setError(null),
+      dismissUnlock: (key) => setUnlocks((prev) => prev.filter((u) => u.key !== key)),
       refreshCatalog,
       addToLibrary: (id) => run(() => api.addToLibrary(id)),
       removeFromLibrary: (id) => run(() => api.removeFromLibrary(id)),
@@ -135,7 +145,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       openInstallDir: (id) => run(() => api.openInstallDir(id)),
       gameById: (id) => catalog?.games.find((g) => g.id === id),
     }),
-    [catalog, platform, library, running, progress, refreshing, error, route, history.length, refreshCatalog, run],
+    [catalog, platform, library, running, progress, refreshing, error, unlocks, route, history.length, refreshCatalog, run],
   );
 
   return <StoreContext.Provider value={store}>{children}</StoreContext.Provider>;

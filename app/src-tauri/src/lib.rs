@@ -6,10 +6,12 @@ mod install;
 mod launch;
 mod settings;
 mod state;
+mod trophies;
 
 use std::collections::HashSet;
 use std::path::PathBuf;
-use std::sync::{Mutex, RwLock};
+use std::sync::atomic::{AtomicBool, Ordering};
+use std::sync::{Arc, Mutex, RwLock};
 use std::time::Instant;
 
 use serde::Serialize;
@@ -28,6 +30,7 @@ struct AppState {
     platform: String,
     http: reqwest::Client,
     github: GitHub,
+    data_dir: PathBuf,
     default_games_dir: PathBuf,
     settings_path: PathBuf,
     settings: Mutex<Settings>,
@@ -136,6 +139,35 @@ struct InstallProgressEvent {
 struct GameExitedEvent {
     game_id: String,
     session_seconds: u64,
+}
+
+#[derive(Clone, Serialize)]
+#[serde(rename_all = "camelCase")]
+struct TrophyUnlockedEvent {
+    game_id: String,
+    id: u32,
+    title: String,
+    description: String,
+}
+
+#[derive(Clone, Serialize)]
+#[serde(rename_all = "camelCase")]
+struct TrophyView {
+    #[serde(flatten)]
+    trophy: trophies::Trophy,
+    unlocked_at: Option<chrono::DateTime<chrono::Local>>,
+    /// Condição inválida (o troféu não é avaliado).
+    error: Option<String>,
+}
+
+#[derive(Clone, Serialize)]
+#[serde(rename_all = "camelCase")]
+struct TrophiesView {
+    /// Arquivo de definições (pode não existir ainda).
+    path: PathBuf,
+    trophies: Vec<TrophyView>,
+    /// JSON inválido no arquivo.
+    load_error: Option<String>,
 }
 
 #[derive(Clone, Serialize)]
@@ -283,13 +315,53 @@ fn launch_game(app: AppHandle, state: State<'_, AppState>, game_id: String) -> R
     let child = launch::spawn(&executable)?;
     running.insert(game_id.clone());
     let _ = app.emit("game-started", &game_id);
-    std::thread::spawn(move || wait_for_exit(app, game_id, child));
+
+    let alive = Arc::new(AtomicBool::new(true));
+    start_trophy_watch(&app, &state, &game_id, child.id(), alive.clone());
+    std::thread::spawn(move || wait_for_exit(app, game_id, child, alive));
     Ok(())
 }
 
-fn wait_for_exit(app: AppHandle, game_id: String, mut child: std::process::Child) {
+/// Se o jogo tem troféus definidos, acompanha a memória dele em outra thread.
+fn start_trophy_watch(app: &AppHandle, state: &AppState, game_id: &str, pid: u32, alive: Arc<AtomicBool>) {
+    let path = trophies::definitions_path(&state.data_dir, game_id);
+    let Ok(Some(set)) = trophies::load(&path) else {
+        return;
+    };
+    let already: HashSet<u32> = state
+        .library
+        .lock()
+        .unwrap()
+        .get(game_id)
+        .map(|e| e.trophies.keys().copied().collect())
+        .unwrap_or_default();
+    let app = app.clone();
+    let game_id = game_id.to_string();
+    std::thread::spawn(move || {
+        trophies::watch(pid, alive, set, already, |trophy| {
+            let state = app.state::<AppState>();
+            let _ = state.update_library(|library| {
+                if let Some(entry) = library.get_mut(&game_id) {
+                    entry.trophies.entry(trophy.id).or_insert_with(chrono::Local::now);
+                }
+            });
+            let _ = app.emit(
+                "trophy-unlocked",
+                TrophyUnlockedEvent {
+                    game_id: game_id.clone(),
+                    id: trophy.id,
+                    title: trophy.title.clone(),
+                    description: trophy.description.clone(),
+                },
+            );
+        });
+    });
+}
+
+fn wait_for_exit(app: AppHandle, game_id: String, mut child: std::process::Child, alive: Arc<AtomicBool>) {
     let started = Instant::now();
     let _ = child.wait();
+    alive.store(false, Ordering::Relaxed);
     let session_seconds = started.elapsed().as_secs();
 
     let state = app.state::<AppState>();
@@ -314,6 +386,47 @@ fn open_install_dir(app: AppHandle, state: State<'_, AppState>, game_id: String)
     let installed = state.installed_game(&game_id)?;
     app.opener()
         .open_path(installed.install_path.to_string_lossy(), None::<&str>)
+        .map_err(|e| Error::Io(std::io::Error::other(e.to_string())))
+}
+
+#[tauri::command]
+fn get_trophies(state: State<'_, AppState>, game_id: String) -> TrophiesView {
+    let path = trophies::definitions_path(&state.data_dir, &game_id);
+    let unlocked = state
+        .library
+        .lock()
+        .unwrap()
+        .get(&game_id)
+        .map(|e| e.trophies.clone())
+        .unwrap_or_default();
+    let (set, load_error) = match trophies::load(&path) {
+        Ok(set) => (set, None),
+        Err(e) => (None, Some(e.to_string())),
+    };
+    let mut errors = set.as_ref().map(trophies::validate).unwrap_or_default();
+    let trophies = set
+        .map(|s| s.trophies)
+        .unwrap_or_default()
+        .into_iter()
+        .map(|trophy| TrophyView {
+            unlocked_at: unlocked.get(&trophy.id).copied(),
+            error: errors.remove(&trophy.id),
+            trophy,
+        })
+        .collect();
+    TrophiesView { path, trophies, load_error }
+}
+
+/// Abre o arquivo de troféus do jogo no editor padrão (cria um modelo se não existir).
+#[tauri::command]
+fn edit_trophies(app: AppHandle, state: State<'_, AppState>, game_id: String) -> Result<()> {
+    state.game(&game_id)?;
+    let path = trophies::definitions_path(&state.data_dir, &game_id);
+    if !path.exists() {
+        trophies::write_template(&path, &game_id)?;
+    }
+    app.opener()
+        .open_path(path.to_string_lossy(), None::<&str>)
         .map_err(|e| Error::Io(std::io::Error::other(e.to_string())))
 }
 
@@ -354,6 +467,7 @@ fn init_state(app: &AppHandle) -> Result<AppState> {
         github: GitHub::new(http.clone(), cache_dir.join("github")),
         http,
         default_games_dir: data_dir.join("games"),
+        data_dir: data_dir.clone(),
         settings: Mutex::new(settings::load(&settings_path)?),
         settings_path,
         library: Mutex::new(state::load(&library_path)?),
@@ -390,6 +504,8 @@ pub fn run() {
             launch_game,
             open_install_dir,
             get_settings,
+            get_trophies,
+            edit_trophies,
             set_games_dir,
         ])
         .run(tauri::generate_context!())

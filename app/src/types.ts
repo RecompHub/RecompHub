@@ -72,6 +72,8 @@ export interface LibraryEntry {
   installed: InstalledGame | null;
   playTimeSeconds: number;
   lastPlayedAt: string | null;
+  /** id do troféu → quando foi desbloqueado. */
+  trophies: Record<string, string>;
 }
 
 export interface InstalledGame {
@@ -104,4 +106,30 @@ export interface SettingsView {
   gamesDir: string;
   defaultGamesDir: string;
   isDefaultGamesDir: boolean;
+}
+
+export interface Trophy {
+  id: number;
+  title: string;
+  description: string;
+  points: number;
+  conditions: string;
+}
+
+export interface TrophyView extends Trophy {
+  unlockedAt: string | null;
+  error: string | null;
+}
+
+export interface TrophiesView {
+  path: string;
+  trophies: TrophyView[];
+  loadError: string | null;
+}
+
+export interface TrophyUnlocked {
+  gameId: string;
+  id: number;
+  title: string;
+  description: string;
 }
