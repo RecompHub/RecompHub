@@ -49,7 +49,12 @@ pub fn validate(set: &TrophySet) -> BTreeMap<u32, String> {
     let mut runtime = recomphub_achievements::Runtime::new();
     set.trophies
         .iter()
-        .filter_map(|t| runtime.activate(t.id, &t.conditions).err().map(|e| (t.id, e.to_string())))
+        .filter_map(|t| {
+            runtime
+                .activate(t.id, &t.conditions)
+                .err()
+                .map(|e| (t.id, e.to_string()))
+        })
         .collect()
 }
 
@@ -109,6 +114,108 @@ pub fn watch(
 #[cfg(not(any(windows, target_os = "linux")))]
 pub fn watch(_: u32, _: Arc<AtomicBool>, _: TrophySet, _: HashSet<u32>, _: impl Fn(&Trophy)) {}
 
+// ---------- Conquistas detectadas pelo próprio jogo (ex.: Dusklight) ----------
+
+pub use recomphub_catalog::{ExternalTrophy, TrophyProvider};
+
+/// Progresso de uma conquista, como o jogo grava.
+#[derive(Debug, Clone, Default, serde::Deserialize)]
+pub struct ProviderEntry {
+    #[serde(default)]
+    pub progress: i64,
+    #[serde(default)]
+    pub unlocked: bool,
+}
+
+pub type ProviderProgress = std::collections::HashMap<String, ProviderEntry>;
+
+/// Expande `%APPDATA%`, `%LOCALAPPDATA%` e `~` no caminho do catálogo.
+pub fn expand_path(raw: &str) -> PathBuf {
+    let mut s = raw.to_string();
+    for var in ["APPDATA", "LOCALAPPDATA", "USERPROFILE"] {
+        let token = format!("%{var}%");
+        if s.contains(&token) {
+            if let Ok(value) = std::env::var(var) {
+                s = s.replace(&token, &value);
+            }
+        }
+    }
+    if let Some(rest) = s.strip_prefix("~/") {
+        if let Some(home) = std::env::var_os("HOME").or_else(|| std::env::var_os("USERPROFILE")) {
+            return PathBuf::from(home).join(rest);
+        }
+    }
+    PathBuf::from(s)
+}
+
+/// Arquivo de progresso para o sistema atual.
+pub fn provider_progress_path(provider: &TrophyProvider) -> Option<PathBuf> {
+    provider
+        .progress_file
+        .get(std::env::consts::OS)
+        .map(|p| expand_path(p))
+}
+
+/// Arquivo ainda inexistente (jogo nunca aberto) = nenhum progresso.
+pub fn read_provider_progress(path: &Path) -> Result<ProviderProgress> {
+    match std::fs::read(path) {
+        // Tolera BOM (editores e o PowerShell 5 gravam UTF-8 com BOM).
+        Ok(bytes) => Ok(serde_json::from_slice(
+            bytes.strip_prefix(b"\xEF\xBB\xBF").unwrap_or(&bytes),
+        )?),
+        Err(e) if e.kind() == std::io::ErrorKind::NotFound => Ok(ProviderProgress::new()),
+        Err(e) => Err(e.into()),
+    }
+}
+
+/// Acompanha o arquivo de progresso até `alive` virar falso e chama
+/// `on_unlock` para cada conquista que passar a desbloqueada nesse período.
+/// O Dusklight grava o arquivo no mesmo frame do desbloqueio.
+pub fn watch_provider(
+    path: PathBuf,
+    alive: Arc<AtomicBool>,
+    trophies: Vec<ExternalTrophy>,
+    on_unlock: impl Fn(&ExternalTrophy),
+) {
+    use std::time::{Duration, SystemTime};
+
+    let unlocked_now = |progress: &ProviderProgress| -> HashSet<String> {
+        progress
+            .iter()
+            .filter(|(_, e)| e.unlocked)
+            .map(|(k, _)| k.clone())
+            .collect()
+    };
+    let modified = |p: &Path| std::fs::metadata(p).and_then(|m| m.modified()).ok();
+
+    // O que já estava desbloqueado antes desta sessão não gera notificação.
+    let mut seen = read_provider_progress(&path)
+        .map(|p| unlocked_now(&p))
+        .unwrap_or_default();
+    let mut last_modified: Option<SystemTime> = modified(&path);
+
+    while alive.load(Ordering::Relaxed) {
+        std::thread::sleep(Duration::from_millis(500));
+        let current = modified(&path);
+        if current.is_none() || current == last_modified {
+            continue;
+        }
+        last_modified = current;
+        // O jogo pode estar no meio da escrita; tenta de novo na próxima volta.
+        let Ok(progress) = read_provider_progress(&path) else {
+            last_modified = None;
+            continue;
+        };
+        for key in unlocked_now(&progress) {
+            if seen.insert(key.clone()) {
+                if let Some(trophy) = trophies.iter().find(|t| t.key == key) {
+                    on_unlock(trophy);
+                }
+            }
+        }
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -121,6 +228,60 @@ mod tests {
         let set = load(&path).unwrap().unwrap();
         assert_eq!(set.game_id, "jogo");
         assert!(validate(&set).is_empty());
+        std::fs::remove_dir_all(dir).unwrap();
+    }
+
+    #[test]
+    fn expand_path_replaces_appdata() {
+        // SAFETY: teste isolado; só esta thread lê a variável.
+        unsafe { std::env::set_var("APPDATA", "C:/Users/x/AppData/Roaming") };
+        assert_eq!(
+            expand_path("%APPDATA%/TwilitRealm/Dusklight/achievements.json"),
+            PathBuf::from("C:/Users/x/AppData/Roaming/TwilitRealm/Dusklight/achievements.json")
+        );
+    }
+
+    /// Simula o Dusklight gravando o achievements.json durante a sessão.
+    #[test]
+    fn watch_provider_reports_only_new_unlocks() {
+        let dir = std::env::temp_dir().join(format!("recomphub-provider-{}", std::process::id()));
+        std::fs::create_dir_all(&dir).unwrap();
+        let path = dir.join("achievements.json");
+        std::fs::write(
+            &path,
+            br#"{"antiga":{"progress":1,"unlocked":true},"nova":{"progress":0,"unlocked":false}}"#,
+        )
+        .unwrap();
+
+        let def = |key: &str| ExternalTrophy {
+            key: key.into(),
+            title: key.into(),
+            description: String::new(),
+            category: String::new(),
+            goal: 0,
+        };
+        let alive = Arc::new(AtomicBool::new(true));
+        let unlocked = Arc::new(std::sync::Mutex::new(Vec::new()));
+        let handle = {
+            let (path, alive, unlocked) = (path.clone(), alive.clone(), unlocked.clone());
+            std::thread::spawn(move || {
+                watch_provider(path, alive, vec![def("antiga"), def("nova")], |t| {
+                    unlocked.lock().unwrap().push(t.key.clone())
+                })
+            })
+        };
+
+        std::thread::sleep(std::time::Duration::from_millis(700));
+        std::fs::write(
+            &path,
+            br#"{"antiga":{"progress":1,"unlocked":true},"nova":{"progress":1,"unlocked":true}}"#,
+        )
+        .unwrap();
+        std::thread::sleep(std::time::Duration::from_millis(1500));
+        alive.store(false, Ordering::Relaxed);
+        handle.join().unwrap();
+
+        assert_eq!(*unlocked.lock().unwrap(), vec!["nova".to_string()]);
         std::fs::remove_dir_all(dir).unwrap();
     }
 

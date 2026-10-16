@@ -20,14 +20,14 @@ interface Store {
   /** Último erro de uma ação, mostrado num aviso no rodapé. */
   error: string | null;
   /** Troféus desbloqueados ainda na tela. */
-  unlocks: (TrophyUnlocked & { key: number })[];
+  unlocks: (TrophyUnlocked & { toastId: number })[];
   route: Route;
   canGoBack: boolean;
 
   navigate: (route: Route) => void;
   goBack: () => void;
   dismissError: () => void;
-  dismissUnlock: (key: number) => void;
+  dismissUnlock: (toastId: number) => void;
   refreshCatalog: () => Promise<void>;
   addToLibrary: (id: string) => Promise<void>;
   removeFromLibrary: (id: string) => Promise<void>;
@@ -55,7 +55,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   const [progress, setProgress] = useState<Record<string, InstallProgress>>({});
   const [refreshing, setRefreshing] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [unlocks, setUnlocks] = useState<(TrophyUnlocked & { key: number })[]>([]);
+  const [unlocks, setUnlocks] = useState<(TrophyUnlocked & { toastId: number })[]>([]);
   const [history, setHistory] = useState<Route[]>([{ page: "home" }]);
 
   const route = history[history.length - 1];
@@ -78,6 +78,8 @@ export function StoreProvider({ children }: { children: ReactNode }) {
         setPlatform(p);
         setLibrary(l);
         setRunning(new Set(r));
+        // Jogos copiados à mão para a pasta de jogos entram na biblioteca.
+        api.scanGamesDir().then(setLibrary).catch(() => {});
       })
       .catch((e) => setError(String(e)));
 
@@ -95,7 +97,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
         api.getLibrary().then(setLibrary);
       }),
       listen<TrophyUnlocked>("trophy-unlocked", (e) => {
-        setUnlocks((prev) => [...prev, { ...e.payload, key: Date.now() + Math.random() }]);
+        setUnlocks((prev) => [...prev, { ...e.payload, toastId: Date.now() + Math.random() }]);
         api.getLibrary().then(setLibrary);
       }),
     ];
@@ -131,7 +133,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       navigate: (r) => setHistory((h) => [...h.slice(-30), r]),
       goBack: () => setHistory((h) => (h.length > 1 ? h.slice(0, -1) : h)),
       dismissError: () => setError(null),
-      dismissUnlock: (key) => setUnlocks((prev) => prev.filter((u) => u.key !== key)),
+      dismissUnlock: (toastId) => setUnlocks((prev) => prev.filter((u) => u.toastId !== toastId)),
       refreshCatalog,
       addToLibrary: (id) => run(() => api.addToLibrary(id)),
       removeFromLibrary: (id) => run(() => api.removeFromLibrary(id)),

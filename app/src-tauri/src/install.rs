@@ -1,8 +1,12 @@
 //! Download, extração e remoção dos jogos.
 //!
-//! Cada jogo fica em `<games_dir>/<id>/`. A release é extraída primeiro em
-//! `<id>.staging/` e só substitui a pasta antiga quando tudo deu certo, então
-//! uma atualização interrompida não quebra a versão instalada.
+//! Cada jogo fica em `<games_dir>/<id>/` (ou onde já estava instalado). A
+//! release é extraída primeiro em `<pasta>.staging/` e só depois aplicada,
+//! então um download ou extração com erro não quebra a versão instalada.
+//!
+//! O launcher registra em [`MANIFEST`] os arquivos que ele mesmo colocou na
+//! pasta. Atualizar e desinstalar removem **só esses**: ROM, saves, mods e
+//! qualquer outro arquivo do usuário na pasta do jogo nunca são apagados.
 
 use std::io::Read;
 use std::path::{Path, PathBuf};
@@ -33,18 +37,30 @@ pub struct Progress {
     pub total: u64,
 }
 
+/// Arquivo, dentro da pasta do jogo, com a lista do que o launcher instalou.
+pub const MANIFEST: &str = ".recomphub-files.json";
+
+#[derive(Debug, Serialize, serde::Deserialize)]
+struct Manifest {
+    /// Caminhos relativos à pasta do jogo, com `/`.
+    files: Vec<String>,
+}
+
+/// Instala (ou atualiza) a release em `target`.
 pub async fn install(
     http: &reqwest::Client,
-    games_dir: &Path,
-    game_id: &str,
+    target: &Path,
     platform: &PlatformAsset,
     release: &Release,
     on_progress: impl Fn(Progress),
 ) -> Result<InstalledGame> {
     let asset = release.find_asset(&platform.asset_pattern)?;
-    tokio::fs::create_dir_all(games_dir).await?;
+    let parent = target
+        .parent()
+        .ok_or_else(|| Error::InvalidGamesDir(target.display().to_string()))?;
+    tokio::fs::create_dir_all(parent).await?;
 
-    let download_path = games_dir.join(format!("{game_id}.download"));
+    let download_path = sibling(target, "download");
     let result = download(http, asset, &download_path, &on_progress).await;
     if let Err(e) = result {
         let _ = tokio::fs::remove_file(&download_path).await;
@@ -57,20 +73,12 @@ pub async fn install(
         total: asset.size,
     });
 
-    let games_dir = games_dir.to_path_buf();
-    let game_id = game_id.to_string();
+    let target = target.to_path_buf();
     let asset_name = asset.name.clone();
     let executable = platform.executable.clone();
     let tag = release.tag_name.clone();
     tokio::task::spawn_blocking(move || {
-        let result = unpack(
-            &games_dir,
-            &game_id,
-            &download_path,
-            &asset_name,
-            &executable,
-            tag,
-        );
+        let result = unpack(&target, &download_path, &asset_name, &executable, tag);
         let _ = std::fs::remove_file(&download_path);
         result
     })
@@ -113,16 +121,23 @@ async fn download(
     Ok(())
 }
 
+/// `<pasta>.<sufixo>` ao lado da pasta do jogo (mesmo disco, para o rename).
+fn sibling(target: &Path, suffix: &str) -> PathBuf {
+    let name = target
+        .file_name()
+        .map(|n| n.to_string_lossy().into_owned())
+        .unwrap_or_default();
+    target.with_file_name(format!("{name}.{suffix}"))
+}
+
 fn unpack(
-    games_dir: &Path,
-    game_id: &str,
+    target: &Path,
     archive: &Path,
     asset_name: &str,
     executable_pattern: &str,
     tag: String,
 ) -> Result<InstalledGame> {
-    let staging = games_dir.join(format!("{game_id}.staging"));
-    let target = games_dir.join(game_id);
+    let staging = sibling(target, "staging");
     if staging.exists() {
         std::fs::remove_dir_all(&staging)?;
     }
@@ -148,15 +163,30 @@ fn unpack(
     make_executable(&found)?;
     let executable_hash = sha256_file(&found)?;
 
-    if target.exists() {
-        std::fs::remove_dir_all(&target)?;
+    // Tira os arquivos da versão anterior que o launcher instalou e coloca os
+    // novos por cima; o resto da pasta (do usuário) fica como está.
+    remove_managed_files(target)?;
+    let files = list_files(&staging)?;
+    for file in &files {
+        let dest = target.join(file);
+        if let Some(dir) = dest.parent() {
+            std::fs::create_dir_all(dir)?;
+        }
+        std::fs::rename(staging.join(file), &dest)?;
     }
-    std::fs::rename(&staging, &target)?;
+    std::fs::remove_dir_all(&staging)?;
+    let manifest = Manifest {
+        files: files
+            .iter()
+            .map(|f| f.to_string_lossy().replace('\\', "/"))
+            .collect(),
+    };
+    std::fs::write(target.join(MANIFEST), serde_json::to_vec_pretty(&manifest)?)?;
 
     Ok(InstalledGame {
         installed_tag: tag,
         installed_at: chrono::Local::now(),
-        install_path: target,
+        install_path: target.to_path_buf(),
         executable: relative,
         executable_hash,
         imported: false,
@@ -191,8 +221,64 @@ fn unpack_nested_tarballs(dir: &Path) -> Result<()> {
     Ok(())
 }
 
-/// Remove a pasta do jogo. Recusa caminhos fora de `games_dir`, para que um
-/// `installed.json` editado à mão não apague outra pasta.
+/// Arquivos (não pastas) sob `root`, relativos a ele.
+fn list_files(root: &Path) -> Result<Vec<PathBuf>> {
+    let mut files = Vec::new();
+    let mut dirs = vec![root.to_path_buf()];
+    while let Some(dir) = dirs.pop() {
+        for entry in std::fs::read_dir(&dir)? {
+            let entry = entry?;
+            let path = entry.path();
+            if entry.file_type()?.is_dir() {
+                dirs.push(path);
+            } else {
+                files.push(path.strip_prefix(root).unwrap_or(&path).to_path_buf());
+            }
+        }
+    }
+    files.sort();
+    Ok(files)
+}
+
+/// Apaga os arquivos listados no manifesto (e as pastas que ficarem vazias).
+/// Sem manifesto, não apaga nada.
+fn remove_managed_files(target: &Path) -> Result<()> {
+    let Ok(bytes) = std::fs::read(target.join(MANIFEST)) else {
+        return Ok(());
+    };
+    let manifest: Manifest = serde_json::from_slice(&bytes)?;
+    for file in &manifest.files {
+        // Nunca sai da pasta do jogo, mesmo com um manifesto adulterado.
+        let relative = Path::new(file);
+        let escapes = relative.is_absolute()
+            || relative.components().any(|c| {
+                matches!(
+                    c,
+                    std::path::Component::ParentDir | std::path::Component::Prefix(_)
+                )
+            });
+        if escapes {
+            continue;
+        }
+        let path = target.join(relative);
+        if path.is_file() {
+            std::fs::remove_file(&path)?;
+        }
+        let mut dir = path.parent();
+        while let Some(d) = dir {
+            // Para ao chegar na raiz do jogo ou numa pasta que não ficou vazia.
+            if d == target || std::fs::remove_dir(d).is_err() {
+                break;
+            }
+            dir = d.parent();
+        }
+    }
+    let _ = std::fs::remove_file(target.join(MANIFEST));
+    Ok(())
+}
+
+/// Desinstala: remove só os arquivos que o launcher instalou. Jogos
+/// importados são apenas esquecidos.
 pub fn uninstall(game_id: &str, installed: &InstalledGame) -> Result<()> {
     if installed.imported {
         return Ok(());
@@ -201,6 +287,13 @@ pub fn uninstall(game_id: &str, installed: &InstalledGame) -> Result<()> {
     if !path.exists() {
         return Ok(());
     }
+    if path.join(MANIFEST).is_file() {
+        remove_managed_files(path)?;
+        let _ = std::fs::remove_dir(path); // só se ficou vazia
+        return Ok(());
+    }
+    // Instalações de versões antigas do launcher (sem manifesto) ficavam numa
+    // pasta só delas, com o nome do jogo.
     // Os jogos podem estar em qualquer pasta escolhida pelo usuário, então a
     // proteção é verificar que é mesmo uma pasta criada pelo launcher.
     let looks_like_ours = path.file_name().is_some_and(|n| n == game_id)
@@ -319,7 +412,10 @@ mod tests {
         assert_eq!(installed.executable, PathBuf::from("bin/MyRecomp.exe"));
 
         uninstall("qualquer-id", &installed).unwrap();
-        assert!(dir.join("bin/MyRecomp.exe").is_file(), "arquivos do usuário apagados");
+        assert!(
+            dir.join("bin/MyRecomp.exe").is_file(),
+            "arquivos do usuário apagados"
+        );
         std::fs::remove_dir_all(&dir).unwrap();
     }
 
@@ -352,13 +448,75 @@ mod tests {
             zip.finish().unwrap();
         }
 
-        let installed = unpack(&root, "game", &zip_path, "Game-Linux-X64.zip", "Game", "v1".into()).unwrap();
         let dir = root.join("game");
+        let installed = unpack(&dir, &zip_path, "Game-Linux-X64.zip", "Game", "v1".into()).unwrap();
         assert_eq!(installed.executable, PathBuf::from("Game"));
         assert!(dir.join("Game").is_file());
         assert!(dir.join("assets/a.txt").is_file());
         assert!(!dir.join("Game.tar.gz").exists());
 
+        std::fs::remove_dir_all(&root).unwrap();
+    }
+
+    fn zip_with(path: &Path, files: &[(&str, &[u8])]) {
+        let mut zip = zip::ZipWriter::new(std::fs::File::create(path).unwrap());
+        let options = zip::write::SimpleFileOptions::default()
+            .compression_method(zip::CompressionMethod::Stored);
+        for (name, data) in files {
+            zip.start_file(*name, options).unwrap();
+            std::io::Write::write_all(&mut zip, data).unwrap();
+        }
+        zip.finish().unwrap();
+    }
+
+    /// O cenário do Dusklight: o usuário guardou a ROM na pasta do jogo.
+    #[test]
+    fn update_and_uninstall_never_touch_user_files() {
+        let root = temp_dir("manifest");
+        let dir = root.join("Jogo");
+        std::fs::create_dir_all(dir.join("ROM")).unwrap();
+        std::fs::write(dir.join("ROM/jogo.iso"), b"rom").unwrap();
+
+        // v1 por cima da pasta que já tinha a ROM
+        let v1 = root.join("v1.zip");
+        zip_with(
+            &v1,
+            &[("Game.exe", b"v1"), ("old.dll", b"x"), ("libs/a.dll", b"x")],
+        );
+        unpack(&dir, &v1, "Game-Windows.zip", "game.exe", "v1".into()).unwrap();
+        assert!(dir.join("old.dll").is_file());
+        assert!(dir.join("ROM/jogo.iso").is_file());
+
+        // v2 remove o que a v1 instalou e não existe mais
+        let v2 = root.join("v2.zip");
+        zip_with(&v2, &[("Game.exe", b"v2"), ("new.dll", b"x")]);
+        let installed = unpack(&dir, &v2, "Game-Windows.zip", "game.exe", "v2".into()).unwrap();
+        assert!(!dir.join("old.dll").exists());
+        assert!(
+            !dir.join("libs").exists(),
+            "pasta vazia da v1 deveria sumir"
+        );
+        assert_eq!(std::fs::read(dir.join("Game.exe")).unwrap(), b"v2");
+        assert!(dir.join("ROM/jogo.iso").is_file());
+
+        // desinstalar deixa só o que é do usuário
+        uninstall("jogo", &installed).unwrap();
+        assert!(!dir.join("Game.exe").exists());
+        assert!(!dir.join(MANIFEST).exists());
+        assert!(dir.join("ROM/jogo.iso").is_file());
+
+        std::fs::remove_dir_all(&root).unwrap();
+    }
+
+    #[test]
+    fn tampered_manifest_cannot_delete_outside_the_game_folder() {
+        let root = temp_dir("tampered");
+        let dir = root.join("jogo");
+        std::fs::create_dir_all(&dir).unwrap();
+        std::fs::write(root.join("fora.txt"), b"importante").unwrap();
+        std::fs::write(dir.join(MANIFEST), br#"{"files":["../fora.txt"]}"#).unwrap();
+        remove_managed_files(&dir).unwrap();
+        assert!(root.join("fora.txt").is_file());
         std::fs::remove_dir_all(&root).unwrap();
     }
 

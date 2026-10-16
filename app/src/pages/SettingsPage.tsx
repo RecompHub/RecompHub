@@ -20,6 +20,7 @@ export function SettingsPage() {
     setError(null);
     try {
       setSettings(await api.setGamesDir(path));
+      await api.scanGamesDir();
     } catch (e) {
       setError(String(e));
     }

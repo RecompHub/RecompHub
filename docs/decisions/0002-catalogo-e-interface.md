@@ -58,3 +58,32 @@ Tema **preto e verde** (verde `#76b900`), cantos retos, inspirado no app da NVID
 
 A biblioteca é **local** (`library.json`) por enquanto. Um jogo pode estar na biblioteca
 sem estar instalado; o tempo de jogo fica na entrada da biblioteca e sobrevive a reinstalações.
+
+## Troféus do próprio jogo (provedores)
+
+Alguns ports já detectam conquistas por conta própria. O **Dusklight** (Twilight Princess,
+port da decompilação, CC0) grava `%APPDATA%\TwilitRealm\Dusklight\achievements.json`
+(`{ "<chave>": { "progress": n, "unlocked": bool } }`) no mesmo frame do desbloqueio, mas
+não expõe as conquistas para mods ("Until we implement an AchievementService…").
+
+Por isso o jogo ganha um `trophyProvider` no `sources.json`:
+
+```json
+"trophyProvider": {
+  "kind": "dusklight",
+  "progressFile": { "windows": "%APPDATA%/TwilitRealm/Dusklight/achievements.json", "linux": "~/.local/share/..." },
+  "definitions": "trophies/dusklight.json"
+}
+```
+
+- `catalog/trophies/dusklight.json` é gerado por `tools/extract-dusklight-achievements.mjs`
+  a partir de `src/dusk/achievements.cpp` (nome, descrição, categoria, meta dos contadores).
+  O builder copia as definições para o `games.json`. Rodar de novo quando sair versão nova.
+- Enquanto o jogo roda pelo RecompHub, o launcher acompanha o arquivo de progresso e, a cada
+  conquista nova, grava a data na biblioteca e mostra notificação **do sistema** (a janela do
+  launcher fica atrás do jogo) e na própria interface.
+- Não usamos a lista do RetroAchievements: o CLAUDE.md proíbe copiar sets do RA, e as
+  condições do RA são para a memória do Dolphin, que não existe num port nativo.
+
+Próximo passo possível: um mod nativo do Dusklight (SDK + `WebSocketService`) para eventos
+que o arquivo não tem, como a área atual (rich presence).
