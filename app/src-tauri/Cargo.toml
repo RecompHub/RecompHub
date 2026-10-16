@@ -30,6 +30,9 @@ sha2 = "0.11.1"
 globset = "0.4.20"
 thiserror = "2.0.21"
 tauri-plugin-process = "2"
+tauri-plugin-dialog = "2"
+tar = "0.4.46"
+flate2 = "1.1.10"
 
 [target.'cfg(not(any(target_os = "android", target_os = "ios")))'.dependencies]
 tauri-plugin-updater = "2"

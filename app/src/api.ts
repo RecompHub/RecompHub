@@ -1,5 +1,5 @@
 import { invoke } from "@tauri-apps/api/core";
-import type { Catalog, Library, Release } from "./types";
+import type { Catalog, Library, Release, SettingsView } from "./types";
 
 // Um wrapper por comando de app/src-tauri/src/lib.rs.
 export const api = {
@@ -15,4 +15,6 @@ export const api = {
   uninstallGame: (gameId: string) => invoke<Library>("uninstall_game", { gameId }),
   launchGame: (gameId: string) => invoke<void>("launch_game", { gameId }),
   openInstallDir: (gameId: string) => invoke<void>("open_install_dir", { gameId }),
+  getSettings: () => invoke<SettingsView>("get_settings"),
+  setGamesDir: (path: string | null) => invoke<SettingsView>("set_games_dir", { path }),
 };

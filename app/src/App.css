@@ -1,16 +1,19 @@
 :root {
-  --bg: #1a1d24;
-  --bg-deep: #121419;
-  --panel: #22262f;
-  --panel-hover: #2b303b;
-  --border: #323845;
-  --text: #e6e8ee;
-  --muted: #8b92a3;
-  --accent: #e8833a; /* brasa da forja */
-  --accent-dim: #e8833a33;
-  --play: #4caf50;
-  --play-hover: #5cc260;
-  --update: #3d8ee8;
+  /* Preto e verde. */
+  --bg: #0b0b0b;
+  --bg-deep: #000;
+  --panel: #161616;
+  --panel-hover: #212121;
+  --border: #262626;
+  --text: #f2f2f2;
+  --muted: #8c8c8c;
+  --accent: #76b900;
+  --accent-hover: #8ad400;
+  --accent-dim: #76b90024;
+  --on-accent: #000;
+  --play: var(--accent);
+  --play-hover: var(--accent-hover);
+  --update: var(--accent);
   --topbar-h: 52px;
 
   font-family: "Segoe UI", system-ui, sans-serif;
@@ -204,7 +207,7 @@ h1, h2, h3, h4 {
 .btn-play {
   min-width: 160px;
   background: var(--play);
-  color: #fff;
+  color: var(--on-accent);
 }
 
 .btn-play:hover:not(:disabled) {
@@ -214,26 +217,27 @@ h1, h2, h3, h4 {
 .btn-install {
   min-width: 160px;
   background: var(--accent);
-  color: #1a1206;
+  color: var(--on-accent);
 }
 
 .btn-install:hover:not(:disabled) {
-  background: #f39550;
+  background: var(--accent-hover);
 }
 
 .btn-update {
-  background: var(--update);
-  color: #fff;
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
 }
 
 .btn-update:hover:not(:disabled) {
-  background: #5aa2f0;
+  background: var(--accent-dim);
 }
 
 .btn-running {
   min-width: 160px;
-  background: #2f4a30;
-  color: #9fdf9f;
+  background: #132100;
+  color: var(--accent);
   opacity: 1 !important;
 }
 
@@ -300,7 +304,7 @@ h1, h2, h3, h4 {
   text-align: center;
   font-weight: 600;
   color: #fff;
-  background: linear-gradient(160deg, hsl(var(--hue) 45% 32%), hsl(calc(var(--hue) + 40) 40% 14%));
+  background: linear-gradient(160deg, hsl(var(--hue) 14% 22%), #050505 85%);
 }
 
 .art-grid {
@@ -336,7 +340,7 @@ h1, h2, h3, h4 {
 
 .badge-installed {
   background: var(--play);
-  color: #fff;
+  color: var(--on-accent);
 }
 
 .dot {
@@ -355,7 +359,7 @@ h1, h2, h3, h4 {
 }
 
 .dot-update {
-  background: var(--update);
+  background: var(--text);
 }
 
 /* ---------- Início ---------- */
@@ -368,7 +372,7 @@ h1, h2, h3, h4 {
   overflow: hidden;
   padding: 0;
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
   background: var(--panel);
   cursor: pointer;
   text-align: left;
@@ -401,7 +405,7 @@ h1, h2, h3, h4 {
   font-weight: 600;
   text-transform: uppercase;
   background: var(--accent);
-  color: #1a1206;
+  color: var(--on-accent);
 }
 
 .feature-logo {
@@ -434,7 +438,7 @@ h1, h2, h3, h4 {
 .game-card-art {
   position: relative;
   overflow: hidden;
-  border-radius: 6px;
+  border-radius: 4px;
   box-shadow: 0 4px 14px #0006;
   transition: transform 0.15s;
 }
@@ -511,7 +515,7 @@ h1, h2, h3, h4 {
   margin-bottom: 8px;
   padding: 10px;
   border: none;
-  border-radius: 6px;
+  border-radius: 4px;
   background: var(--panel);
   text-align: left;
   cursor: pointer;
@@ -647,7 +651,7 @@ h1, h2, h3, h4 {
 
 .release-notes {
   padding: 16px;
-  border-radius: 6px;
+  border-radius: 4px;
   background: var(--panel);
 }
 
@@ -670,7 +674,7 @@ h1, h2, h3, h4 {
   align-self: start;
   margin-top: 28px;
   padding: 16px;
-  border-radius: 6px;
+  border-radius: 4px;
   background: var(--panel);
 }
 
@@ -800,7 +804,7 @@ h1, h2, h3, h4 {
   align-items: center;
   gap: 14px;
   padding: 8px 16px;
-  background: #1d2b3d;
+  background: #0f1a00;
   border-bottom: 1px solid var(--border);
 }
 
@@ -809,5 +813,67 @@ h1, h2, h3, h4 {
 }
 
 .update-error {
+  color: #ff8a8a;
+}
+
+/* ---------- Configurações ---------- */
+
+.topbar-icon {
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: transparent;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.topbar-icon:hover,
+.topbar-icon-active {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.settings {
+  max-width: 860px;
+}
+
+.settings-title {
+  font-size: 24px;
+}
+
+.setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px;
+  border-radius: 4px;
+  background: var(--panel);
+}
+
+.setting-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.setting-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.path {
+  margin-top: 6px;
+  overflow-wrap: anywhere;
+  font-family: Consolas, monospace;
+  font-size: 12px;
+  color: var(--accent);
+  user-select: text;
+}
+
+.settings-error {
   color: #ff8a8a;
 }

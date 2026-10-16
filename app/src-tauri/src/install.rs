@@ -128,13 +128,19 @@ fn unpack(
     }
     std::fs::create_dir_all(&staging)?;
 
-    if asset_name.to_ascii_lowercase().ends_with(".zip") {
+    let lower = asset_name.to_ascii_lowercase();
+    if lower.ends_with(".zip") {
         // `extract` sanitiza os caminhos (proteção contra zip slip).
         zip::ZipArchive::new(std::fs::File::open(archive)?)?.extract(&staging)?;
+    } else if is_tarball(&lower) {
+        extract_tar_gz(archive, &staging)?;
     } else {
         // Asset que já é o próprio executável (ex.: AppImage).
         std::fs::copy(archive, staging.join(asset_name))?;
     }
+    // Os builds Linux das recomps vêm como um zip com um .tar.gz dentro (o
+    // tar preserva a permissão de execução, que o zip do GitHub perde).
+    unpack_nested_tarballs(&staging)?;
 
     let found = find_executable(&staging, executable_pattern)?
         .ok_or_else(|| Error::ExecutableNotFound(executable_pattern.to_string()))?;
@@ -156,19 +162,52 @@ fn unpack(
     })
 }
 
+fn is_tarball(lower_name: &str) -> bool {
+    lower_name.ends_with(".tar.gz") || lower_name.ends_with(".tgz")
+}
+
+/// `unpack` recusa entradas com `..` ou caminhos absolutos.
+fn extract_tar_gz(archive: &Path, dest: &Path) -> Result<()> {
+    let decoder = flate2::read::GzDecoder::new(std::fs::File::open(archive)?);
+    let mut tar = tar::Archive::new(decoder);
+    tar.set_preserve_permissions(true);
+    tar.unpack(dest)?;
+    Ok(())
+}
+
+fn unpack_nested_tarballs(dir: &Path) -> Result<()> {
+    for entry in std::fs::read_dir(dir)? {
+        let path = entry?.path();
+        let is_tar = path
+            .file_name()
+            .and_then(|n| n.to_str())
+            .is_some_and(|n| is_tarball(&n.to_ascii_lowercase()));
+        if is_tar && path.is_file() {
+            extract_tar_gz(&path, dir)?;
+            std::fs::remove_file(&path)?;
+        }
+    }
+    Ok(())
+}
+
 /// Remove a pasta do jogo. Recusa caminhos fora de `games_dir`, para que um
 /// `installed.json` editado à mão não apague outra pasta.
-pub fn uninstall(games_dir: &Path, installed: &InstalledGame) -> Result<()> {
+pub fn uninstall(game_id: &str, installed: &InstalledGame) -> Result<()> {
     let path = &installed.install_path;
-    if !path.starts_with(games_dir) {
+    if !path.exists() {
+        return Ok(());
+    }
+    // Os jogos podem estar em qualquer pasta escolhida pelo usuário, então a
+    // proteção é verificar que é mesmo uma pasta criada pelo launcher.
+    let looks_like_ours = path.file_name().is_some_and(|n| n == game_id)
+        && path.join(&installed.executable).is_file();
+    if !looks_like_ours {
         return Err(Error::Io(std::io::Error::other(format!(
-            "{} está fora da pasta de jogos; remova manualmente",
+            "{} não parece uma instalação do RecompHub; remova manualmente",
             path.display()
         ))));
     }
-    if path.exists() {
-        std::fs::remove_dir_all(path)?;
-    }
+    std::fs::remove_dir_all(path)?;
     Ok(())
 }
 
@@ -235,6 +274,52 @@ fn make_executable(_path: &Path) -> Result<()> {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    fn temp_dir(name: &str) -> PathBuf {
+        let dir = std::env::temp_dir().join(format!("recomphub-{name}-{}", std::process::id()));
+        let _ = std::fs::remove_dir_all(&dir);
+        std::fs::create_dir_all(&dir).unwrap();
+        dir
+    }
+
+    /// Mesmo formato dos builds Linux do Zelda64Recomp e do Starfox64Recomp.
+    #[test]
+    fn unpack_handles_zip_with_tarball_inside() {
+        let root = temp_dir("tarball");
+
+        let mut tar_gz = Vec::new();
+        {
+            let encoder = flate2::write::GzEncoder::new(&mut tar_gz, flate2::Compression::fast());
+            let mut builder = tar::Builder::new(encoder);
+            for (name, data) in [("Game", &b"elf"[..]), ("assets/a.txt", &b"x"[..])] {
+                let mut header = tar::Header::new_gnu();
+                header.set_size(data.len() as u64);
+                header.set_mode(0o755);
+                header.set_cksum();
+                builder.append_data(&mut header, name, data).unwrap();
+            }
+            builder.into_inner().unwrap().finish().unwrap();
+        }
+
+        let zip_path = root.join("download");
+        {
+            let mut zip = zip::ZipWriter::new(std::fs::File::create(&zip_path).unwrap());
+            let options = zip::write::SimpleFileOptions::default()
+                .compression_method(zip::CompressionMethod::Stored);
+            zip.start_file("Game.tar.gz", options).unwrap();
+            std::io::Write::write_all(&mut zip, &tar_gz).unwrap();
+            zip.finish().unwrap();
+        }
+
+        let installed = unpack(&root, "game", &zip_path, "Game-Linux-X64.zip", "Game", "v1".into()).unwrap();
+        let dir = root.join("game");
+        assert_eq!(installed.executable, PathBuf::from("Game"));
+        assert!(dir.join("Game").is_file());
+        assert!(dir.join("assets/a.txt").is_file());
+        assert!(!dir.join("Game.tar.gz").exists());
+
+        std::fs::remove_dir_all(&root).unwrap();
+    }
 
     #[test]
     fn find_executable_prefers_shallowest_match() {
