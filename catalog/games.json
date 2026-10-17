@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-17T09:43:30.858495400Z",
+  "generatedAt": "2026-10-17T09:47:31.717009221Z",
   "games": [
     {
       "id": "zelda64-mm",
@@ -48,7 +48,7 @@
           "htmlUrl": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 7,
-        "totalDownloads": 372570
+        "totalDownloads": 372571
       },
       "game": {
         "title": "The Legend of Zelda: Majora's Mask",
@@ -430,7 +430,7 @@
           "htmlUrl": "https://github.com/RevoSucks/BM64Recomp/releases/tag/v1.0.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 20356
+        "totalDownloads": 20357
       },
       "game": {
         "title": "Bomberman 64",
@@ -812,7 +812,7 @@
           "htmlUrl": "https://github.com/JackandBeans/Snap64Recomp/releases/tag/v1.1.4"
         },
         "releaseCount": 15,
-        "totalDownloads": 7765
+        "totalDownloads": 7766
       },
       "game": {
         "title": "Pokémon Snap",
@@ -1045,7 +1045,7 @@
           "htmlUrl": "https://github.com/TwilitRealm/dusklight/releases/tag/v2.0.3"
         },
         "releaseCount": 24,
-        "totalDownloads": 1357804
+        "totalDownloads": 1357813
       },
       "game": {
         "title": "The Legend of Zelda: Twilight Princess",
@@ -1480,7 +1480,7 @@
           "vulkan",
           "windows"
         ],
-        "stars": 2979,
+        "stars": 2980,
         "firstReleaseAt": "2026-10-10T22:37:56Z",
         "latestRelease": {
           "tag": "windows-v2.4.1",
@@ -1489,7 +1489,7 @@
           "htmlUrl": "https://github.com/FelipePrado0/gow3_pc/releases/tag/windows-v2.4.1"
         },
         "releaseCount": 18,
-        "totalDownloads": 370117
+        "totalDownloads": 370126
       },
       "game": {
         "title": "God of War III: Remastered",
@@ -1560,7 +1560,7 @@
           "htmlUrl": "https://github.com/Supermedo/uncharted_pc/releases/tag/v0.3.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 36264
+        "totalDownloads": 36268
       },
       "game": {
         "title": "Uncharted: The Nathan Drake Collection",
@@ -1706,7 +1706,7 @@
           "htmlUrl": "https://github.com/mchughalex/skate3recomp/releases/tag/v2.0.2"
         },
         "releaseCount": 9,
-        "totalDownloads": 114845
+        "totalDownloads": 114847
       },
       "game": {
         "title": "Skate 3",
@@ -1854,7 +1854,7 @@
           "htmlUrl": "https://github.com/zolaware/reblue/releases/tag/v1.3.1"
         },
         "releaseCount": 21,
-        "totalDownloads": 53084
+        "totalDownloads": 53087
       },
       "game": {
         "title": "Blue Dragon",
@@ -1927,7 +1927,7 @@
           "htmlUrl": "https://github.com/sonicdcer/MarioKart64Recomp/releases/tag/v0.9.2"
         },
         "releaseCount": 2,
-        "totalDownloads": 27409
+        "totalDownloads": 27410
       },
       "game": {
         "title": "Mario Kart 64",
