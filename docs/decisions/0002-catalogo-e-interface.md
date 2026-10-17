@@ -102,3 +102,25 @@ A detecção automática fica para o futuro.
   atrás da feature **`auto-trophies`** (desligada por padrão; `crates/memory` e
   `crates/achievements` viram dependências opcionais). O CI compila e testa os dois modos.
   Ligar a feature grava no mesmo lugar das marcações manuais, sem mudar a interface.
+
+## Atualização (17/10/2026): jogos com instalador próprio
+
+Alguns projetos não publicam o jogo pronto, e sim um instalador que compila o jogo no PC do usuário a partir do disco dele (ex.: WiiCompiled/Mario Kart Wii, Nebula/Super Mario Galaxy). Para eles, a plataforma no `sources.json` ganha `installer`:
+
+```json
+"windows-x64": {
+  "assetPattern": "WiiCompiled-Setup.exe",
+  "executable": "WiiCompiled.exe",
+  "installer": {
+    "installDir": "%LOCALAPPDATA%/Programs/WiiCompiled",
+    "args": ["--silent", "--progress-json", "--game", "{rom}"],
+    "progressJson": true
+  }
+}
+```
+
+- O launcher baixa o instalador, pede a imagem do disco quando os argumentos têm `{rom}` e executa. Com `progressJson`, roda sem janela e lê o progresso em NDJSON; sem, abre a janela do próprio instalador e espera ela fechar.
+- Depois procura `executable` em `installDir`. Quando há várias pastas de versão, fica com o executável mais recente, e essa busca é refeita a cada vez que o jogo abre.
+- Os arquivos são do instalador: "Remover do launcher" não apaga nada. Quem desinstala é o próprio projeto, em Configurações do Windows → Aplicativos.
+- Jogos já instalados por fora aparecem sozinhos na biblioteca (`scan_games_dir`).
+- Código: `app/src-tauri/src/setup.rs`.

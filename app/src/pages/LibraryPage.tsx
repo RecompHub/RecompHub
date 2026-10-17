@@ -128,13 +128,18 @@ function LibraryDetail({ game }: { game: Game }) {
                   disabled={s.running || !!s.progress}
                   onClick={() =>
                     confirm(
-                      s.installed?.imported
+                      s.installed?.external
+                        ? t(
+                            "Remover {game} do launcher? O jogo continua instalado; para apagá-lo, use o desinstalador do projeto em Configurações do Windows → Aplicativos.",
+                            { game: gameTitle(game) },
+                          )
+                        : s.installed?.imported
                         ? t("Remover {game} do launcher? Os arquivos em {path} não serão apagados.", { game: gameTitle(game), path: s.installed.installPath })
                         : t("Desinstalar {game}? A pasta de instalação será apagada.", { game: gameTitle(game) }),
                     ) && store.uninstall(game.id)
                   }
                 >
-                  {t(s.installed.imported ? "Remover do launcher" : "Desinstalar")}
+                  {t(s.installed.imported || s.installed.external ? "Remover do launcher" : "Desinstalar")}
                 </button>
               </>
             )}

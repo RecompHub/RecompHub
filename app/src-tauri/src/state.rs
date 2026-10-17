@@ -55,6 +55,10 @@ pub struct InstalledGame {
     /// apenas esquece o jogo, sem apagar os arquivos do usuário.
     #[serde(default)]
     pub imported: bool,
+    /// Instalado pelo instalador do próprio projeto (ver `setup.rs`): os
+    /// arquivos são dele, então remover do launcher não apaga nada.
+    #[serde(default)]
+    pub external: bool,
 }
 
 pub type Library = HashMap<String, LibraryEntry>;

@@ -27,6 +27,8 @@ use crate::state::InstalledGame;
 pub enum Stage {
     Download,
     Extract,
+    /// Instalador do próprio projeto rodando (ver `setup.rs`).
+    Setup,
 }
 
 #[derive(Debug, Clone, Serialize)]
@@ -35,6 +37,9 @@ pub struct Progress {
     pub stage: Stage,
     pub downloaded: u64,
     pub total: u64,
+    /// Etapa descrita pelo instalador do projeto, quando ele informa.
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub message: Option<String>,
 }
 
 /// Arquivo, dentro da pasta do jogo, com a lista do que o launcher instalou.
@@ -71,6 +76,7 @@ pub async fn install(
         stage: Stage::Extract,
         downloaded: asset.size,
         total: asset.size,
+        message: None,
     });
 
     let target = target.to_path_buf();
@@ -86,7 +92,7 @@ pub async fn install(
     .expect("tarefa de extração entrou em pânico")
 }
 
-async fn download(
+pub(crate) async fn download(
     http: &reqwest::Client,
     asset: &Asset,
     dest: &Path,
@@ -114,6 +120,7 @@ async fn download(
                 stage: Stage::Download,
                 downloaded,
                 total,
+                message: None,
             });
         }
     }
@@ -190,6 +197,7 @@ fn unpack(
         executable: relative,
         executable_hash,
         imported: false,
+        external: false,
     })
 }
 
@@ -280,7 +288,7 @@ fn remove_managed_files(target: &Path) -> Result<()> {
 /// Desinstala: remove só os arquivos que o launcher instalou. Jogos
 /// importados são apenas esquecidos.
 pub fn uninstall(game_id: &str, installed: &InstalledGame) -> Result<()> {
-    if installed.imported {
+    if installed.imported || installed.external {
         return Ok(());
     }
     let path = &installed.install_path;
@@ -320,14 +328,17 @@ pub fn import(dir: &Path, platform: &PlatformAsset) -> Result<InstalledGame> {
         executable: found.strip_prefix(dir).unwrap_or(&found).to_path_buf(),
         executable_hash: sha256_file(&found)?,
         imported: true,
+        external: false,
     })
 }
 
 pub const UNKNOWN_TAG: &str = "desconhecida";
 
 /// Procura o executável pelo nome (aceita glob), preferindo o mais raso:
-/// alguns zips têm uma pasta raiz, outros não.
-fn find_executable(root: &Path, pattern: &str) -> Result<Option<PathBuf>> {
+/// alguns zips têm uma pasta raiz, outros não. Empate na mesma profundidade
+/// fica com o modificado por último (ex.: `versions/<v>/Jogo.exe` de
+/// instaladores que guardam a versão anterior).
+pub(crate) fn find_executable(root: &Path, pattern: &str) -> Result<Option<PathBuf>> {
     let glob = GlobBuilder::new(pattern)
         .case_insensitive(true)
         .literal_separator(true)
@@ -336,6 +347,7 @@ fn find_executable(root: &Path, pattern: &str) -> Result<Option<PathBuf>> {
     let mut dirs = vec![root.to_path_buf()];
     while !dirs.is_empty() {
         let mut next = Vec::new();
+        let mut best: Option<(std::time::SystemTime, PathBuf)> = None;
         for dir in dirs {
             let mut entries: Vec<_> = std::fs::read_dir(&dir)?.collect::<std::io::Result<_>>()?;
             entries.sort_by_key(|e| e.file_name());
@@ -344,9 +356,15 @@ fn find_executable(root: &Path, pattern: &str) -> Result<Option<PathBuf>> {
                 if entry.file_type()?.is_dir() {
                     next.push(path);
                 } else if glob.is_match(entry.file_name()) {
-                    return Ok(Some(path));
+                    let modified = entry.metadata()?.modified().unwrap_or(std::time::UNIX_EPOCH);
+                    if best.as_ref().is_none_or(|(t, _)| modified > *t) {
+                        best = Some((modified, path));
+                    }
                 }
             }
+        }
+        if let Some((_, path)) = best {
+            return Ok(Some(path));
         }
         dirs = next;
     }
@@ -404,6 +422,7 @@ mod tests {
         let platform = PlatformAsset {
             asset_pattern: "*.zip".into(),
             executable: "myrecomp.exe".into(),
+            installer: None,
         };
 
         let installed = import(&dir, &platform).unwrap();

@@ -105,6 +105,28 @@ pub struct PlatformAsset {
     pub asset_pattern: String,
     /// Nome do executável dentro do pacote (aceita glob).
     pub executable: String,
+    /// O asset é o instalador do próprio projeto (ex.: um Setup que compila o
+    /// jogo a partir do disco do usuário), não um pacote para extrair.
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub installer: Option<Installer>,
+}
+
+/// Instalador próprio do projeto. O launcher baixa, executa e depois procura
+/// `executable` em `install_dir`; os arquivos ficam a cargo do instalador.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct Installer {
+    /// Onde o instalador coloca o jogo. Aceita `%VARIAVEL%` e `~`.
+    pub install_dir: String,
+    /// Argumentos. `{rom}` vira a imagem de disco que o usuário escolher.
+    /// Sem argumentos, o instalador abre a janela dele.
+    #[serde(default, skip_serializing_if = "Vec::is_empty")]
+    pub args: Vec<String>,
+    /// O instalador escreve o progresso em NDJSON na saída padrão:
+    /// `{"type":"progress","percent":n,"message":"..."}` e, no fim,
+    /// `{"type":"result","success":bool,"error":"..."}`.
+    #[serde(default, skip_serializing_if = "std::ops::Not::not")]
+    pub progress_json: bool,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

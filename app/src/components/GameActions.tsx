@@ -9,22 +9,48 @@ export function GameActions({ game, showLibraryButton = false }: { game: Game; s
   const store = useStore();
   const s = useGameStatus(game);
 
+  const installer = game.platforms[store.platform]?.installer;
+  const needsRom = installer?.args?.some((a) => a.includes("{rom}")) ?? false;
+
+  // Jogos de instalador próprio que compilam a partir do disco pedem a imagem antes.
+  const install = async () => {
+    let rom: string | undefined;
+    if (needsRom) {
+      const file = await open({
+        title: t("Imagem do disco de {game}", { game: gameTitle(game) }),
+        filters: [{ name: t("Imagem de disco"), extensions: ["iso", "wbfs", "rvz", "wia", "gcz", "ciso", "gcm"] }],
+      });
+      if (typeof file !== "string") return;
+      rom = file;
+    }
+    await store.install(game.id, rom);
+  };
+
   if (s.progress) {
-    const pct = s.progress.total ? Math.round((s.progress.downloaded / s.progress.total) * 100) : 0;
+    const p = s.progress;
+    const pct = p.total ? Math.round((p.downloaded / p.total) * 100) : 0;
     const label =
-      s.progress.stage === "extract"
+      p.stage === "extract"
         ? t("Extraindo…")
-        : t("Baixando {pct}% · {done} de {total}", {
-            pct,
-            done: formatBytes(s.progress.downloaded),
-            total: formatBytes(s.progress.total),
-          });
+        : p.stage === "setup"
+          ? p.total
+            ? [t("Instalando {pct}%", { pct }), p.message].filter(Boolean).join(" · ")
+            : t("Siga as instruções na janela do instalador…")
+          : t("Baixando {pct}% · {done} de {total}", {
+              pct,
+              done: formatBytes(p.downloaded),
+              total: formatBytes(p.total),
+            });
+    const full = p.stage === "extract" || (p.stage === "setup" && !p.total);
     return (
       <div className="actions">
         <div className="progress" role="progressbar" aria-valuenow={pct}>
-          <div className="progress-bar" style={{ width: `${s.progress.stage === "extract" ? 100 : pct}%` }} />
+          <div className="progress-bar" style={{ width: `${full ? 100 : pct}%` }} />
           <span>{label}</span>
         </div>
+        {p.stage === "setup" && p.total > 0 && (
+          <span className="muted small">{t("Pode demorar bastante: o jogo está sendo compilado no seu PC.")}</span>
+        )}
       </div>
     );
   }
@@ -45,14 +71,14 @@ export function GameActions({ game, showLibraryButton = false }: { game: Game; s
             ▶ {t("Jogar")}
           </button>
           {s.updateAvailable && (
-            <button className="btn btn-big btn-update" onClick={() => store.install(game.id)}>
+            <button className="btn btn-big btn-update" onClick={install}>
               {t("Atualizar para {tag}", { tag: game.recomp?.latestRelease?.tag ?? "" })}
             </button>
           )}
         </>
       ) : (
         <>
-          <button className="btn btn-big btn-install" onClick={() => store.install(game.id)}>
+          <button className="btn btn-big btn-install" onClick={install}>
             ⬇ {t("Instalar")}
           </button>
           <button

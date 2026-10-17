@@ -22,6 +22,12 @@ pub enum Error {
     StillInstalled,
     #[error("não é possível instalar jogos em {0}")]
     InvalidGamesDir(String),
+    #[error("o instalador do projeto falhou: {0}")]
+    InstallerFailed(String),
+    #[error("o instalador terminou, mas o jogo não foi encontrado em {0}")]
+    InstallerNoGame(String),
+    #[error("escolha a imagem do disco do jogo para instalar")]
+    RomRequired,
     #[error("GitHub respondeu {0}")]
     GitHubStatus(u16),
     #[error("catálogo remoto indisponível (HTTP {0})")]
@@ -64,6 +70,9 @@ impl Error {
             Error::Running => "the game is running".into(),
             Error::StillInstalled => "uninstall the game before removing it from the library".into(),
             Error::InvalidGamesDir(d) => format!("games cannot be installed in {d}"),
+            Error::InstallerFailed(m) => format!("the project's installer failed: {}", m.replace("código", "code").replace("detalhes em", "details in")),
+            Error::InstallerNoGame(d) => format!("the installer finished, but the game was not found in {d}"),
+            Error::RomRequired => "choose the game's disc image to install".into(),
             Error::GitHubStatus(code) => format!("GitHub responded {code}"),
             Error::CatalogStatus(code) => format!("remote catalog unavailable (HTTP {code})"),
             Error::CatalogSchema(v) => format!("remote catalog uses a newer format (v{v}); update the launcher"),

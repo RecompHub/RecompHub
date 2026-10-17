@@ -32,7 +32,8 @@ interface Store {
   refreshCatalog: () => Promise<void>;
   addToLibrary: (id: string) => Promise<void>;
   removeFromLibrary: (id: string) => Promise<void>;
-  install: (id: string) => Promise<void>;
+  /** `rom`: imagem de disco, para jogos cujo instalador pede uma. */
+  install: (id: string, rom?: string) => Promise<void>;
   uninstall: (id: string) => Promise<void>;
   importInstall: (id: string, path: string) => Promise<void>;
   setTrophy: (id: string, key: string, unlocked: boolean) => Promise<void>;
@@ -139,8 +140,8 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       refreshCatalog,
       addToLibrary: (id) => run(() => api.addToLibrary(id)),
       removeFromLibrary: (id) => run(() => api.removeFromLibrary(id)),
-      install: async (id) => {
-        await run(() => api.installGame(id));
+      install: async (id, rom) => {
+        await run(() => api.installGame(id, rom));
         setProgress(({ [id]: _, ...rest }) => rest);
       },
       uninstall: (id) => run(() => api.uninstallGame(id)),

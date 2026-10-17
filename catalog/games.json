@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-17T10:18:57.914629100Z",
+  "generatedAt": "2026-10-17T10:35:55.408965300Z",
   "games": [
     {
       "id": "zelda64-mm",
@@ -48,7 +48,7 @@
           "htmlUrl": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 7,
-        "totalDownloads": 372587
+        "totalDownloads": 372592
       },
       "game": {
         "title": "The Legend of Zelda: Majora's Mask",
@@ -198,7 +198,7 @@
           "htmlUrl": "https://github.com/BanjoRecomp/BanjoRecomp/releases/tag/v1.0.2"
         },
         "releaseCount": 3,
-        "totalDownloads": 144940
+        "totalDownloads": 144942
       },
       "game": {
         "title": "Banjo-Kazooie",
@@ -274,7 +274,7 @@
           "htmlUrl": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled/releases/tag/v1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 45031
+        "totalDownloads": 45039
       },
       "game": {
         "title": "Donkey Kong 64",
@@ -505,7 +505,7 @@
           "htmlUrl": "https://github.com/MegaMan64Recomp/MegaMan64Recompiled/releases/tag/v0.9.1"
         },
         "releaseCount": 3,
-        "totalDownloads": 14642
+        "totalDownloads": 14643
       },
       "game": {
         "title": "Mega Man 64",
@@ -812,7 +812,7 @@
           "htmlUrl": "https://github.com/JackandBeans/Snap64Recomp/releases/tag/v1.1.4"
         },
         "releaseCount": 15,
-        "totalDownloads": 7766
+        "totalDownloads": 7768
       },
       "game": {
         "title": "Pokémon Snap",
@@ -891,7 +891,7 @@
           "htmlUrl": "https://github.com/DahSidiAbdallah/ConkerBFDReloaded/releases/tag/v1.4.0"
         },
         "releaseCount": 13,
-        "totalDownloads": 6221
+        "totalDownloads": 6225
       },
       "game": {
         "title": "Conker's Bad Fur Day",
@@ -1037,7 +1037,7 @@
         "homepage": "https://twilitrealm.dev",
         "license": "CC0-1.0",
         "topics": [],
-        "stars": 5892,
+        "stars": 5893,
         "firstReleaseAt": "2026-04-24T03:44:05Z",
         "latestRelease": {
           "tag": "v2.0.3",
@@ -1046,7 +1046,7 @@
           "htmlUrl": "https://github.com/TwilitRealm/dusklight/releases/tag/v2.0.3"
         },
         "releaseCount": 24,
-        "totalDownloads": 1357894
+        "totalDownloads": 1357947
       },
       "game": {
         "title": "The Legend of Zelda: Twilight Princess",
@@ -1482,7 +1482,7 @@
           "vulkan",
           "windows"
         ],
-        "stars": 2987,
+        "stars": 2991,
         "firstReleaseAt": "2026-10-10T22:37:56Z",
         "latestRelease": {
           "tag": "windows-v2.4.1",
@@ -1491,7 +1491,7 @@
           "htmlUrl": "https://github.com/FelipePrado0/gow3_pc/releases/tag/windows-v2.4.1"
         },
         "releaseCount": 18,
-        "totalDownloads": 371622
+        "totalDownloads": 372679
       },
       "game": {
         "title": "God of War III: Remastered",
@@ -1554,7 +1554,7 @@
         "homepage": null,
         "license": "GPL-2.0",
         "topics": [],
-        "stars": 1117,
+        "stars": 1118,
         "firstReleaseAt": "2026-10-15T00:17:51Z",
         "latestRelease": {
           "tag": "v0.3.3",
@@ -1563,7 +1563,7 @@
           "htmlUrl": "https://github.com/Supermedo/uncharted_pc/releases/tag/v0.3.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 36575
+        "totalDownloads": 36786
       },
       "game": {
         "title": "Uncharted: The Nathan Drake Collection",
@@ -1635,7 +1635,7 @@
           "htmlUrl": "https://github.com/hedge-dev/UnleashedRecomp/releases/tag/v1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 723624
+        "totalDownloads": 723634
       },
       "game": {
         "title": "Sonic Unleashed",
@@ -1711,7 +1711,7 @@
           "htmlUrl": "https://github.com/mchughalex/skate3recomp/releases/tag/v2.0.2"
         },
         "releaseCount": 9,
-        "totalDownloads": 114880
+        "totalDownloads": 114901
       },
       "game": {
         "title": "Skate 3",
@@ -1785,7 +1785,7 @@
           "htmlUrl": "https://github.com/BlackLabelHQ/SymphonyRecomp/releases/tag/v0.5.1b"
         },
         "releaseCount": 9,
-        "totalDownloads": 51199
+        "totalDownloads": 51209
       },
       "game": {
         "title": "Castlevania: Symphony of the Night",
@@ -1861,7 +1861,7 @@
           "htmlUrl": "https://github.com/zolaware/reblue/releases/tag/v1.3.1"
         },
         "releaseCount": 21,
-        "totalDownloads": 53096
+        "totalDownloads": 53097
       },
       "game": {
         "title": "Blue Dragon",
@@ -2167,7 +2167,7 @@
           "htmlUrl": "https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation/releases/tag/v0.1.1"
         },
         "releaseCount": 15,
-        "totalDownloads": 5330
+        "totalDownloads": 5337
       },
       "game": {
         "title": "New Super Mario Bros. Wii",
@@ -2192,6 +2192,162 @@
           "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc88ft.jpg",
           "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc88fw.jpg",
           "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc88fv.jpg"
+        ]
+      },
+      "aiAssisted": true
+    },
+    {
+      "id": "mario-kart-wii",
+      "name": "WiiCompiled",
+      "repo": "patchzyy/Wiicompiled",
+      "originalTitle": "Mario Kart Wii",
+      "originalPlatform": "Wii",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "WiiCompiled-Setup.exe",
+          "executable": "WiiCompiled.exe",
+          "installer": {
+            "installDir": "%LOCALAPPDATA%/Programs/WiiCompiled",
+            "args": [
+              "--silent",
+              "--progress-json",
+              "--game",
+              "{rom}"
+            ],
+            "progressJson": true
+          }
+        }
+      },
+      "requiredRom": {
+        "description": "Imagem do seu disco de Wii: Mario Kart Wii (Europa/PAL, RMCP01, sem modificações), em ISO, WBFS, RVZ, WIA, GCZ ou CISO. Cerca de 20 GB livres durante a instalação.",
+        "descriptionEn": "Your Wii disc image: Mario Kart Wii (Europe/PAL, RMCP01, unmodified), as ISO, WBFS, RVZ, WIA, GCZ or CISO. About 20 GB free during installation.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 36054,
+      "igdbId": 2183,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/3fb22546e0a13fb8b5d7345218eef2a5.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/c4bfbf68f5d8d0f8b9a0752ca08ea01d.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/860320be12a1c050cd7731794e231bd3.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/e7758fe5b033ed143e73a3cbafa3ff2f.ico"
+      },
+      "recomp": {
+        "description": "Wiicompiled",
+        "homepage": null,
+        "license": "GPL-3.0",
+        "topics": [],
+        "stars": 1173,
+        "firstReleaseAt": "2026-08-23T20:28:40Z",
+        "latestRelease": {
+          "tag": "v0.2.34",
+          "name": "v0.2.34",
+          "publishedAt": "2026-10-08T19:21:17Z",
+          "htmlUrl": "https://github.com/patchzyy/Wiicompiled/releases/tag/v0.2.34"
+        },
+        "releaseCount": 14,
+        "totalDownloads": 193164
+      },
+      "game": {
+        "title": "Mario Kart Wii",
+        "releaseDate": "2008-04-10",
+        "developers": [
+          "Nintendo EAD Software Development Group No.1"
+        ],
+        "publishers": [
+          "Nintendo"
+        ],
+        "genres": [
+          "Racing"
+        ],
+        "summary": "Mario Kart Wii is a multiplayer-oriented racing game for the Wii, and the sixth main installment in the Mario Kart series. Mario Kart Wii retains the traditional item-based weaponry familiar with the franchise, where players can select a Mario franchise driver and themed vehicles. As with most racing games, the overarching goal is to place first among other competitors, through the usage of such items and taking the fastest routes to secure the leads. Several new key elements introduced to Mario Kart Wii include increasing the number of racers to 12 racers from 8 racers from previous entries in the series, as well as introducing a new type of vehicle to the franchise: bikes. The game takes advantage of features unique to the Wii, most notably its motion control capabilities. A Wii Wheel is included in most Mario Kart Wii packages, though the game is still compatible with other controllers. Game modes are also present such as the traditional Grand Prix, Versus, Battle, and Time Trial modes.",
+        "rating": 75.6,
+        "url": "https://www.igdb.com/games/mario-kart-wii",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc88g5.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc88g7.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc88ga.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc88g9.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc88g4.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc88g6.jpg"
+        ]
+      },
+      "aiAssisted": true
+    },
+    {
+      "id": "super-mario-galaxy",
+      "name": "Nebula",
+      "repo": "keepvaibin/nebula",
+      "originalTitle": "Super Mario Galaxy",
+      "originalPlatform": "Wii",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "Nebula-Setup.exe",
+          "executable": "Nebula.exe",
+          "installer": {
+            "installDir": "%LOCALAPPDATA%/Programs/Nebula"
+          }
+        }
+      },
+      "requiredRom": {
+        "description": "Seu disco de Wii: Super Mario Galaxy (EUA, RMGE01, revisão 0), em ISO, RVZ ou pasta extraída. O instalador do Nebula pede o arquivo. Cerca de 16 GB livres durante a instalação.",
+        "descriptionEn": "Your Wii disc: Super Mario Galaxy (USA, RMGE01, revision 0), as ISO, RVZ or extracted folder. The Nebula installer asks for it. About 16 GB free during installation.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 36389,
+      "igdbId": 1077,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/850660ba5cb014184e5cc0e6b3d4c6bb.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/5e9fb672ee46be628a141b594d7c6f3e.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/faafda66202d234463057972460c04f5.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/654ad60ebd1ae29cedc37da04b6b0672.png"
+      },
+      "recomp": {
+        "description": "A Recompilation of Super Mario Galaxy, intended to work on Windows (with MacOS and Android support in plans).",
+        "homepage": null,
+        "license": "GPL-3.0",
+        "topics": [],
+        "stars": 200,
+        "firstReleaseAt": "2026-10-06T20:43:37Z",
+        "latestRelease": {
+          "tag": "v1.0.1",
+          "name": "Nebula 1.0.1",
+          "publishedAt": "2026-10-16T21:07:19Z",
+          "htmlUrl": "https://github.com/keepvaibin/nebula/releases/tag/v1.0.1"
+        },
+        "releaseCount": 7,
+        "totalDownloads": 6169
+      },
+      "game": {
+        "title": "Super Mario Galaxy",
+        "releaseDate": "2007-11-01",
+        "developers": [
+          "Nintendo Entertainment Analysis & Development"
+        ],
+        "publishers": [
+          "Nintendo"
+        ],
+        "genres": [
+          "Platform",
+          "Adventure"
+        ],
+        "summary": "A 3D platformer and first Wii entry in the Super Mario franchise, Super Mario Galaxy sees Mario jump across planets and galaxies with varying items, enemies, geographies and gravity mechanics in order to reach his enemy Bowser, who has attacked the Mushroom Kingdom and hijacked Princess Peach's castle with her inside.",
+        "rating": 93.7,
+        "url": "https://www.igdb.com/games/super-mario-galaxy",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc882z.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc882y.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8830.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sclnv9.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8831.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sclnv8.jpg"
         ]
       },
       "aiAssisted": true
