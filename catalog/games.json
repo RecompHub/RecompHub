@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-16T22:52:40.603516400Z",
+  "generatedAt": "2026-10-17T00:08:33.133132Z",
   "games": [
     {
       "id": "zelda64-mm",
@@ -27,6 +27,7 @@
         "supportedVersions": []
       },
       "sgdbId": 34302,
+      "igdbId": 1030,
       "images": {
         "grid": "https://cdn2.steamgriddb.com/grid/958c6e525626a72dc5722a63f638a80b.png",
         "hero": "https://cdn2.steamgriddb.com/hero/25fa2d39a0143f1f30c36eece145a526.png",
@@ -38,7 +39,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 7444,
+        "stars": 7447,
         "firstReleaseAt": "2024-05-10T05:07:15Z",
         "latestRelease": {
           "tag": "v1.2.2",
@@ -47,7 +48,33 @@
           "htmlUrl": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 7,
-        "totalDownloads": 372261
+        "totalDownloads": 372334
+      },
+      "game": {
+        "title": "The Legend of Zelda: Majora's Mask",
+        "releaseDate": "2000-04-27",
+        "developers": [
+          "Nintendo EAD Software Development Group No.3"
+        ],
+        "publishers": [
+          "Nintendo",
+          "Gradiente"
+        ],
+        "genres": [
+          "Puzzle",
+          "Adventure"
+        ],
+        "summary": "The Legend of Zelda: Majora's Mask is a direct sequel to Ocarina of Time, it utilizes the same engine and visual style as its predecessor. The game retains the traditional elements of Zelda games as well as those introduced in Ocarina of Time, such as active blocking with a shield, various throwing items, and the usage of melodies played on the ocarina to solve puzzles. Compared to the previous Zelda games, this installment is more oriented towards interaction with NPCs and has a larger variety of items, optional quests, and mini-games. It also includes a time system that spans three days, and this cycle must be reset periodically to progress through the game.",
+        "rating": 88.3,
+        "url": "https://www.igdb.com/games/the-legend-of-zelda-majora-s-mask",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sckeb7.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sckeb0.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sckeb2.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sckeb3.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sckeay.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sckeaz.jpg"
+        ]
       }
     },
     {
@@ -75,6 +102,7 @@
         "supportedVersions": []
       },
       "sgdbId": 36615,
+      "igdbId": 2591,
       "images": {
         "grid": "https://cdn2.steamgriddb.com/grid/9122b7acc2588eff1d20211ce8fb8798.png",
         "hero": "https://cdn2.steamgriddb.com/hero/44adaadb095f40b587f4b409ac55799b.png",
@@ -95,7 +123,33 @@
           "htmlUrl": "https://github.com/sonicdcer/Starfox64Recomp/releases/tag/1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 30131
+        "totalDownloads": 30135
+      },
+      "game": {
+        "title": "Star Fox 64",
+        "releaseDate": "1997-04-27",
+        "developers": [
+          "Nintendo Entertainment Analysis & Development"
+        ],
+        "publishers": [
+          "Nintendo",
+          "Gradiente",
+          "iQue"
+        ],
+        "genres": [
+          "Shooter"
+        ],
+        "summary": "The update to the 16-bit Super NES title continues the original's on-rails 3D shooting action on the Nintendo 64. Starring Fox McCloud, Peppy Hare, Falco Lombardi, and Slippy Toad, this new 64-bit version contains 15 plus levels, easy, medium, and difficult paths, forward-scrolling levels as well as full 3D realms, and a three-part multiplayer mode using a four-player split screen. In addition to plenty of Arwing action, the game introduces a new hover tank and even features a submarine level. The 8-megabyte cartridge also boasts voice samples from 23 different characters instead of the original's animal noises. Star Fox 64 was the first game to feature Rumble Pak support. A Rumble Pak bundle and standalone version of the game were sold. Released in Europe under the name Lylat Wars.",
+        "rating": 86.3,
+        "url": "https://www.igdb.com/games/star-fox-64",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/jtsefknmlxh6p47b5cci.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/miplpreqvfh0e8ur9tav.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/bzjyvrfnovi3qbp8k7l2.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/k5xbessch3uiczvhfhvp.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/kfvivvasj0olxyacgpjp.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/erdq99jtwyxvjod7lr0r.jpg"
+        ]
       }
     },
     {
@@ -123,6 +177,7 @@
         "supportedVersions": []
       },
       "sgdbId": 35564,
+      "igdbId": 2148,
       "images": {
         "grid": "https://cdn2.steamgriddb.com/grid/a154a70f923c579313aa9c47ed7c34e2.png",
         "hero": "https://cdn2.steamgriddb.com/hero/17326d10d511828f6b34fa6d751739e2.png",
@@ -143,7 +198,34 @@
           "htmlUrl": "https://github.com/BanjoRecomp/BanjoRecomp/releases/tag/v1.0.2"
         },
         "releaseCount": 3,
-        "totalDownloads": 144743
+        "totalDownloads": 144788
+      },
+      "game": {
+        "title": "Banjo-Kazooie",
+        "releaseDate": "1998-06-29",
+        "developers": [
+          "Rare"
+        ],
+        "publishers": [
+          "Nintendo",
+          "Gradiente"
+        ],
+        "genres": [
+          "Platform",
+          "Quiz/Trivia",
+          "Adventure"
+        ],
+        "summary": "Trouble brews when Gruntilda the witch captures the unbearably beautiful cub, Tooty. But before the grisly hag can steal the bear's good looks, big brother Banjo and his fine-feathered friend, Kazooie, join forces to stop her. Combining their 24 moves and special powers, Banjo and Kazooie will fend off armies of beasts. Bear and bird must hunt down the 100 puzzle pieces and 900 musical notes that will ultimately lead them to Gruntilda. However. miles of swamp, desert, and snow and one bear of an adventure stand in their way.",
+        "rating": 81.7,
+        "url": "https://www.igdb.com/games/banjo-kazooie",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/b5eifmw6szhfwujkunh7.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/xernbdnxgismr6g4mmhv.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/cjqlxtfmxnu5ns4cl5gd.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/tfypjmqp62zyntnrina8.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/tv6ibveyf0es8z2lcqfk.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/eih1k9ywsbxneckzul2x.jpg"
+        ]
       }
     },
     {
@@ -171,6 +253,7 @@
         "supportedVersions": []
       },
       "sgdbId": 37695,
+      "igdbId": 1096,
       "images": {
         "grid": "https://cdn2.steamgriddb.com/grid/86f7d456aa5848c284f7940bdecdef5d.png",
         "hero": "https://cdn2.steamgriddb.com/hero/dd6e83b6da55d90f5740e0dd3f3e5a13.png",
@@ -191,7 +274,33 @@
           "htmlUrl": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled/releases/tag/v1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 44790
+        "totalDownloads": 44830
+      },
+      "game": {
+        "title": "Donkey Kong 64",
+        "releaseDate": "1999-11-22",
+        "developers": [
+          "Rare"
+        ],
+        "publishers": [
+          "Nintendo",
+          "Gradiente"
+        ],
+        "genres": [
+          "Platform",
+          "Adventure"
+        ],
+        "summary": "K. Rool has kidnapped the Kongs! Can Donkey Kong rescue his friends, reclaim the Golden Bananas and save his homeland from certain doom? Take out some Kremlings with Chunky's Pineapple Launcher or Lanky's Trombone. Float through the air using Tiny's Ponytail Twirl. Even rocket to the sky with Diddy's Jetbarrel!",
+        "rating": 74.0,
+        "url": "https://www.igdb.com/games/donkey-kong-64",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/if6s6lgmhidnr7uwnadn.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/vlusndy0ucd8fegdltph.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/svvshwwqcz9glswmugx4.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/zovmhinuiqgr4ltxahgm.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ajf9w5yyyihghnjeo6wm.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/xpzb3o0qetqzjmvbon55.jpg"
+        ]
       }
     },
     {
@@ -219,6 +328,7 @@
         "supportedVersions": []
       },
       "sgdbId": 33703,
+      "igdbId": 3545,
       "images": {
         "grid": "https://cdn2.steamgriddb.com/grid/47e596b1edee7909345c64a4d1a39517.png",
         "hero": "https://cdn2.steamgriddb.com/hero/058a4a63fccbdb3d0b0ab0e8f7a8951c.png",
@@ -245,7 +355,33 @@
           "htmlUrl": "https://github.com/klorfmorf/Goemon64Recomp/releases/tag/v0.2.0-dev"
         },
         "releaseCount": 5,
-        "totalDownloads": 22813
+        "totalDownloads": 22817
+      },
+      "game": {
+        "title": "Mystical Ninja Starring Goemon",
+        "releaseDate": "1997-08-07",
+        "developers": [
+          "Konami"
+        ],
+        "publishers": [
+          "Konami",
+          "Gradiente"
+        ],
+        "genres": [
+          "Platform",
+          "Adventure"
+        ],
+        "summary": "The story follows Goemon's struggles to prevent the Peach Mountain Shoguns gang from turning Japan into a Westernized fine arts theater. The plot calls for three cinematic musical features and battles between giant robots; like other Ganbare Goemon games, it is peppered with surrealist humor and anachronisms.\n\nThe protagonist of Mystical Ninja is Goemon, a hot-blooded, kiseru-wielding ninja with blue, bushy hair based loosely on the legendary thief Ishikawa Goemon. The lord of Oedo asks him to find those who maimed Oedo Castle. Goemon lives in Oedo Town and is friends with Ebisumaru, a strange, gluttonous fat man who wears a blue bandana. Ebisumaru is defined as lazy and perverted. Their kunai-throwing friend Sasuke is a mechanical ninja (made by the Wise Man of Iga) who enjoys hot baths and Japanese tea. Rounding out the heroes is Yae, a fierce sword-wielding kunoichi, who happens upon Goemon's band in Zazen Town. The villains of the game hail from the organization Peach Mountain Shoguns and include a gang of four \"weirdos\" led by Spring Breeze Dancin' (Danshin Harukaze) and Kitty Lily (Margaret Ranko). They intend to transform Japan into a stage for their talents.",
+        "rating": 76.4,
+        "url": "https://www.igdb.com/games/mystical-ninja-starring-goemon",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/w7cfzhx5fymgyyhczxms.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/y6knduomo5iuqn0ca2jh.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/iilccpbixsefkdifj7as.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/aogrj3vs2wu1cjmuxiuk.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ym8uxyjrzq3xjh4a1lam.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/x60ogqqdrphwfrcfh40o.jpg"
+        ]
       }
     },
     {
@@ -273,6 +409,7 @@
         "supportedVersions": []
       },
       "sgdbId": 1680,
+      "igdbId": 3451,
       "images": {
         "grid": "https://cdn2.steamgriddb.com/grid/c5b781ce025e8217c23f95f9569a0b96.png",
         "hero": "https://cdn2.steamgriddb.com/hero/3a06105cf87a4a0d2b22ca218aca4783.png",
@@ -293,7 +430,33 @@
           "htmlUrl": "https://github.com/RevoSucks/BM64Recomp/releases/tag/v1.0.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 20297
+        "totalDownloads": 20301
+      },
+      "game": {
+        "title": "Bomberman 64",
+        "releaseDate": "1997-09-26",
+        "developers": [
+          "Hudson Soft"
+        ],
+        "publishers": [
+          "Nintendo"
+        ],
+        "genres": [
+          "Platform",
+          "Puzzle",
+          "Adventure"
+        ],
+        "summary": "The evil Altair is using the Omni Cube to drain the energy from Planet Bomber. With the aid of a mysterious helper, you must defeat Altair, and restore peace to Planet Bomber. In the Adventure mode, guide Bomberman through 24 areas of perilous conflict. Battle Altair's sinister allies, destroy their bases and put an end to the insane attack. The multi-player Battle mode offers endless hours of explosive action. Use the standard Bomberman character or create a custom one and save it to an N64 Controller Pak.",
+        "rating": 70.0,
+        "url": "https://www.igdb.com/games/bomberman-64",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scbqxa.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scbqxc.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scbqx8.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scbqxh.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scbqxb.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scbqxd.jpg"
+        ]
       }
     },
     {
@@ -321,6 +484,7 @@
         "supportedVersions": []
       },
       "sgdbId": 37399,
+      "igdbId": 10614,
       "images": {
         "grid": "https://cdn2.steamgriddb.com/grid/174cbbef75ac1b1b15847299d50f77bf.jpg",
         "hero": "https://cdn2.steamgriddb.com/hero/423971c507756f83500704f0e8d9214b.png",
@@ -341,7 +505,33 @@
           "htmlUrl": "https://github.com/MegaMan64Recomp/MegaMan64Recompiled/releases/tag/v0.9.1"
         },
         "releaseCount": 3,
-        "totalDownloads": 14592
+        "totalDownloads": 14596
+      },
+      "game": {
+        "title": "Mega Man 64",
+        "releaseDate": "2000-11-22",
+        "developers": [
+          "Capcom"
+        ],
+        "publishers": [
+          "Gradiente",
+          "Capcom"
+        ],
+        "genres": [
+          "Platform",
+          "Puzzle",
+          "Role-playing (RPG)",
+          "Adventure"
+        ],
+        "summary": "Mega Man Volnutt is the game's playable character. Mega Man Volnutt is a \"Digger\", a person in charge of investigating ruins from a flooded Earth. During his journey with his friends, their ship crashes in Kattelox Island, where Mega Man decides to confront pirates who are attacking it to obtain the its hidden treasure. As an action roleplaying game, Mega Man Legends's gameplay is very different from the ones of the original series despite sharing a few elements.",
+        "rating": 70.1,
+        "url": "https://www.igdb.com/games/mega-man-64",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ktmmu5embnlwykncbu9p.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/otpupwc7jgxxwko7yfez.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ianjquzywpq84h01xegr.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/uuaw0h9ypt3uyhwx6rmh.jpg"
+        ]
       }
     },
     {
@@ -369,6 +559,7 @@
         "supportedVersions": []
       },
       "sgdbId": 35297,
+      "igdbId": 3378,
       "images": {
         "grid": "https://cdn2.steamgriddb.com/grid/cab8fb3904dfe2e30a8579bc38e74ada.png",
         "hero": "https://cdn2.steamgriddb.com/hero/4a65fd714997aaca6455b8d338cc61c6.png",
@@ -389,7 +580,33 @@
           "htmlUrl": "https://github.com/HarvestMoon64Recomp/HarvestMoon64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 6,
-        "totalDownloads": 9064
+        "totalDownloads": 9071
+      },
+      "game": {
+        "title": "Harvest Moon 64",
+        "releaseDate": "1999-02-05",
+        "developers": [
+          "Toy Box Studios",
+          "Victor Interactive Software"
+        ],
+        "publishers": [
+          "Natsume Inc.",
+          "Pack-In-Soft"
+        ],
+        "genres": [
+          "Role-playing (RPG)",
+          "Simulator"
+        ],
+        "summary": "Retire to the country for a new challenge in Harvest Moon 64. Hard work is rewarded as you struggle to bring prosperity back to a neglected farm. Work the land, pick up odd-jobs, and get to know the neighbors. Harvest Moon 64 has all the charm of the original Super Nintendo classic, plus many new surprises.\n\n* Tons of new seasonal vegetables and fruits.\n* Raise cows, chickens, and sheep.\n* New items and gifts. Including tools that increase in power as you master them.\n* One of town's five eligible women may prove to be the love of your life.\n* Celebrate seasonal festivals with the nearby townsfolk.\n* Enjoy local horse and dog racing.",
+        "rating": 89.7,
+        "url": "https://www.igdb.com/games/harvest-moon-64",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ies6wts7ndk2em4504sj.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/jd65yfebmhasdokspigz.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/rgvm4uv3fs2f2zghraov.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/v1q9ulwybkbzdwmlxnxy.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/c9ghduolttucdukpzljd.jpg"
+        ]
       }
     },
     {
@@ -413,6 +630,7 @@
         "supportedVersions": []
       },
       "sgdbId": 37541,
+      "igdbId": 3475,
       "images": {
         "grid": "https://cdn2.steamgriddb.com/grid/c3884b938f2ccc63708d922671c5ea23.png",
         "hero": "https://cdn2.steamgriddb.com/hero/3a0d1535e1f1929f76f28f007a57584c.jpg",
@@ -433,7 +651,31 @@
           "htmlUrl": "https://github.com/theboy181/drmario64_recomp_plus/releases/tag/1.0.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 10692
+        "totalDownloads": 10696
+      },
+      "game": {
+        "title": "Dr. Mario 64",
+        "releaseDate": "2001-04-08",
+        "developers": [
+          "Nintendo IRD"
+        ],
+        "publishers": [
+          "Nintendo",
+          "Gradiente",
+          "iQue"
+        ],
+        "genres": [
+          "Puzzle"
+        ],
+        "summary": "The flu season has come about, and it's Dr. Mario's duty to use his Megavitamins to heal the people of the land. However, Wario, wanting to have the fame that Dr. Mario has, attempts to steal the Megavitamins, but to no avail. Afterwards, Mad Scienstein and Rudy the Clown (from Wario Land 3) steal the Megavitamins, and both Dr. Mario and Wario give chase.",
+        "rating": 77.8,
+        "url": "https://www.igdb.com/games/dr-mario-64",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/schja1.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/schja2.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/schja3.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/schja0.jpg"
+        ]
       }
     },
     {
@@ -461,6 +703,7 @@
         "supportedVersions": []
       },
       "sgdbId": 1667,
+      "igdbId": 3343,
       "images": {
         "grid": "https://cdn2.steamgriddb.com/grid/b1a491999695f9df23123c2290041da8.jpg",
         "hero": "https://cdn2.steamgriddb.com/hero/4ee0331f55ba0c795f89feffdfdf1e77.png",
@@ -486,6 +729,28 @@
         },
         "releaseCount": 4,
         "totalDownloads": 7690
+      },
+      "game": {
+        "title": "Snowboard Kids 2",
+        "releaseDate": "1999-02-19",
+        "developers": [
+          "Racdym"
+        ],
+        "publishers": [
+          "Atlus"
+        ],
+        "genres": [
+          "Racing",
+          "Sport"
+        ],
+        "summary": "The game is set in Snow Town, which is the main hometown of the protagonists. The plot follows the daily lives and adventures of the kids, and the rather ridiculous attempts of Damien to sabotage them.\n\nThe gameplay of this game is almost identical to its predecessor's, but with a few differences.\n\nThere are now three distinct playing modes: the Story mode, which follows the game plot and uses the classical system of cash prizes by winning the races; the battle mode, which includes multiplayer mode; and the Training mode.\n\nThere were new additions and changes to the Items and Shots. All of them were redesigned and the Shots were renamed as Weapons. Additions include the Rocket, the Wings and the Whirlwind (see more below). Other changes to the Items and Weapons include the reduction in the freeze time when a character is hit by the Freezing Shot, and the effect of losing coins when hit by a Slapstick.\n\nThe special tricks (which were different for each character and required the player to perform a combo to do them) were replaced by the ability of doing multiple tricks while in the air. It also added the ability to repel Weapon attacks by performing a Trick or Board Grab in the imminence of the hit. The player can also look behind by pressing the R button.",
+        "rating": 75.4,
+        "url": "https://www.igdb.com/games/snowboard-kids-2",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8b9v.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8b9u.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8b9w.jpg"
+        ]
       }
     },
     {
@@ -513,6 +778,7 @@
         "supportedVersions": []
       },
       "sgdbId": 37585,
+      "igdbId": 2324,
       "images": {
         "grid": "https://cdn2.steamgriddb.com/grid/1661b79578c9a10b72cc4403977801bf.png",
         "hero": "https://cdn2.steamgriddb.com/hero/4c07fe24771249c343e70c32289c1192.png",
@@ -546,7 +812,35 @@
           "htmlUrl": "https://github.com/JackandBeans/Snap64Recomp/releases/tag/v1.1.4"
         },
         "releaseCount": 15,
-        "totalDownloads": 7610
+        "totalDownloads": 7621
+      },
+      "game": {
+        "title": "Pokémon Snap",
+        "releaseDate": "1999-03-21",
+        "developers": [
+          "HAL Laboratory",
+          "Pax Softnica"
+        ],
+        "publishers": [
+          "Nintendo of Europe",
+          "Nintendo of America",
+          "Gradiente",
+          "Nintendo"
+        ],
+        "genres": [
+          "Simulator"
+        ],
+        "summary": "Traverse various areas and take photographs of different types of Pokémon by discovering their secrets. Capture the perfect frame to gain bonus points from Professor Oak in order to unlock helpful items and locate and photograph the elusive Mew, a legendary Pokémon whose existence has never been recorded.",
+        "rating": 76.0,
+        "url": "https://www.igdb.com/games/pokemon-snap",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/iuk58t4y8htx49deps9h.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ati2xfu5npjcq5zcevix.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/kpg0tdr3vvajhfu89d9l.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/phihsao4l8qhpbucakw7.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/l1hfn1vnbukrmnifzpgg.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/x50xpfdpirenxluvkmzm.jpg"
+        ]
       }
     },
     {
@@ -570,6 +864,7 @@
         "supportedVersions": []
       },
       "sgdbId": 36366,
+      "igdbId": 1286,
       "images": {
         "grid": "https://cdn2.steamgriddb.com/grid/e7ba692151c4e6c1c41c4770cdd15e8b.png",
         "hero": "https://cdn2.steamgriddb.com/hero/1a04f965818a8533f5613003c7db243d.png",
@@ -587,16 +882,45 @@
           "recompilation",
           "rt64"
         ],
-        "stars": 89,
+        "stars": 90,
         "firstReleaseAt": "2026-10-01T00:51:32Z",
         "latestRelease": {
-          "tag": "v1.3.6",
-          "name": "Conker's Bad Fur Day: Reloaded 1.3.6",
-          "publishedAt": "2026-10-10T16:33:49Z",
-          "htmlUrl": "https://github.com/DahSidiAbdallah/ConkerBFDReloaded/releases/tag/v1.3.6"
+          "tag": "v1.4.0",
+          "name": "Conker's Bad Fur Day: Reloaded 1.4.0",
+          "publishedAt": "2026-10-16T23:35:10Z",
+          "htmlUrl": "https://github.com/DahSidiAbdallah/ConkerBFDReloaded/releases/tag/v1.4.0"
         },
-        "releaseCount": 12,
-        "totalDownloads": 5937
+        "releaseCount": 13,
+        "totalDownloads": 5960
+      },
+      "game": {
+        "title": "Conker's Bad Fur Day",
+        "releaseDate": "2001-03-05",
+        "developers": [
+          "Rare"
+        ],
+        "publishers": [
+          "THQ",
+          "Rare",
+          "Gradiente"
+        ],
+        "genres": [
+          "Shooter",
+          "Platform",
+          "Puzzle",
+          "Adventure"
+        ],
+        "summary": "Humorous action-platformer that does away with the tedious item collection found in most games in the genre. Instead, BFD employs a combination of standard jump, run and explore mechanics and context-sensitive gags and actions. For instance, in the beginning of the game, by pressing the B button on the first pad he encounters, Conker drinks some Alka-Seltzer to wipe out his hangover, at which point players can proceed forward. Later on these pads are used to activate a slingshot and throwing knives; to turn Conker into an anvil and drop downward; to shoot automatic, double-handed guns; to activate a The Matrix-inspired slow-motion effect and flip through the air shooting enemies; and much, much more.",
+        "rating": 81.6,
+        "url": "https://www.igdb.com/games/conker-s-bad-fur-day",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/vji0juzvdpmg90nbw3vw.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/zk6ddezf7b4qbesowjdv.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/f5pxxbadvvjh51c6zglp.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/vhypyuqss3nwc9mdroca.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/etprkvmwzfgam629r3on.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/rdxaotvh8ihawcgmb6sd.jpg"
+        ]
       }
     },
     {
@@ -624,6 +948,7 @@
         "supportedVersions": []
       },
       "sgdbId": 5261755,
+      "igdbId": 1130,
       "images": {
         "grid": "https://cdn2.steamgriddb.com/grid/1d5132d7b72e7c47827b518181343d2b.png",
         "hero": "https://cdn2.steamgriddb.com/hero/b16539e3ff2250a2bf164a92b030633c.jpg",
@@ -645,6 +970,33 @@
         },
         "releaseCount": 1,
         "totalDownloads": 189
+      },
+      "game": {
+        "title": "Castlevania",
+        "releaseDate": "1999-01-26",
+        "developers": [
+          "Konami"
+        ],
+        "publishers": [
+          "Konami",
+          "Gradiente"
+        ],
+        "genres": [
+          "Platform",
+          "Puzzle",
+          "Hack and slash/Beat 'em up",
+          "Adventure"
+        ],
+        "summary": "Take control of Reinhardt Schneider, a whip-toting Vampire Killer who has waited his whole life to meet his destiny, or Carrie Fernandez, a young girl with a strong magical presence who is mysteriously drawn to Dracula's evil Castlevania. It is their duty to seek out Castlevania and put an end to its residents' plans. What is your destiny?",
+        "rating": 54.6,
+        "url": "https://www.igdb.com/games/castlevania--2",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/w9zgw3qg5umv3jmu5tvg.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/lc6xoekfjhyoi0zpb08l.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/zeruwpny9qtjkz87riit.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/pxez15dmknzndswc6hle.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/umkw4qgkmecgg2z0bqr7.jpg"
+        ]
       }
     },
     {
@@ -672,6 +1024,7 @@
         "supportedVersions": []
       },
       "sgdbId": 34645,
+      "igdbId": 1036,
       "images": {
         "grid": "https://cdn2.steamgriddb.com/grid/36d6a670240681fbbf69cbba0c9065ce.png",
         "hero": "https://cdn2.steamgriddb.com/hero/e105b88b3e1ac23ec811a708cd7edebf.png",
@@ -692,7 +1045,32 @@
           "htmlUrl": "https://github.com/TwilitRealm/dusklight/releases/tag/v2.0.3"
         },
         "releaseCount": 24,
-        "totalDownloads": 1355145
+        "totalDownloads": 1355584
+      },
+      "game": {
+        "title": "The Legend of Zelda: Twilight Princess",
+        "releaseDate": "2006-12-02",
+        "developers": [
+          "Nintendo EAD Software Development Group No.3"
+        ],
+        "publishers": [
+          "Nintendo"
+        ],
+        "genres": [
+          "Puzzle",
+          "Adventure"
+        ],
+        "summary": "The Legend of Zelda: Twilight Princess is the last Zelda game for GameCube, it was highly anticipated by many members of the gaming community and was regarded as finally fulfilling the dreams of those who wanted a much more realistic and mature game than the ones before. The art is similar to the naturalistic style of Ocarina of Time, rather than the cel-shaded look of The Wind Waker. The main adventure takes place in several provinces with dungeons and temples. New to this game is the ability for Link to transform into a Wolf when entering the Twilight. As a wolf, Link can use his senses to solve puzzles and get past obstacles, he can also dig holes to find hearts and rupees. Twilight Princess has received universal acclaim from reviewers and journalists, who cited it as the greatest Zelda game of all time.",
+        "rating": 90.8,
+        "url": "https://www.igdb.com/games/the-legend-of-zelda-twilight-princess",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sckfzl.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sckfzc.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sckfzd.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sckfzg.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sckfzf.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sckfzh.jpg"
+        ]
       },
       "trophyProvider": {
         "kind": "dusklight",
