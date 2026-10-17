@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-17T10:57:29.109527500Z",
+  "generatedAt": "2026-10-17T11:00:57.157484732Z",
   "games": [
     {
       "id": "zelda64-mm",
@@ -274,7 +274,7 @@
           "htmlUrl": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled/releases/tag/v1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 45042
+        "totalDownloads": 45044
       },
       "game": {
         "title": "Donkey Kong 64",
@@ -580,7 +580,7 @@
           "htmlUrl": "https://github.com/HarvestMoon64Recomp/HarvestMoon64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 6,
-        "totalDownloads": 9135
+        "totalDownloads": 9136
       },
       "game": {
         "title": "Harvest Moon 64",
@@ -1037,7 +1037,7 @@
         "homepage": "https://twilitrealm.dev",
         "license": "CC0-1.0",
         "topics": [],
-        "stars": 5893,
+        "stars": 5894,
         "firstReleaseAt": "2026-04-24T03:44:05Z",
         "latestRelease": {
           "tag": "v2.0.3",
@@ -1046,7 +1046,7 @@
           "htmlUrl": "https://github.com/TwilitRealm/dusklight/releases/tag/v2.0.3"
         },
         "releaseCount": 24,
-        "totalDownloads": 1358002
+        "totalDownloads": 1358018
       },
       "game": {
         "title": "The Legend of Zelda: Twilight Princess",
@@ -1491,7 +1491,7 @@
           "htmlUrl": "https://github.com/FelipePrado0/gow3_pc/releases/tag/windows-v2.4.1"
         },
         "releaseCount": 18,
-        "totalDownloads": 373787
+        "totalDownloads": 374283
       },
       "game": {
         "title": "God of War III: Remastered",
@@ -1805,7 +1805,7 @@
         "homepage": null,
         "license": "GPL-2.0",
         "topics": [],
-        "stars": 1125,
+        "stars": 1128,
         "firstReleaseAt": "2026-10-15T00:17:51Z",
         "latestRelease": {
           "tag": "v0.3.3",
@@ -1814,7 +1814,7 @@
           "htmlUrl": "https://github.com/Supermedo/uncharted_pc/releases/tag/v0.3.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 36982
+        "totalDownloads": 37068
       },
       "game": {
         "title": "Uncharted: The Nathan Drake Collection",
@@ -1962,7 +1962,7 @@
           "htmlUrl": "https://github.com/mchughalex/skate3recomp/releases/tag/v2.0.2"
         },
         "releaseCount": 9,
-        "totalDownloads": 114928
+        "totalDownloads": 114941
       },
       "game": {
         "title": "Skate 3",
@@ -2500,7 +2500,7 @@
           "htmlUrl": "https://github.com/patchzyy/Wiicompiled/releases/tag/v0.2.34"
         },
         "releaseCount": 14,
-        "totalDownloads": 193199
+        "totalDownloads": 193210
       },
       "game": {
         "title": "Mario Kart Wii",
@@ -2574,7 +2574,7 @@
           "htmlUrl": "https://github.com/keepvaibin/nebula/releases/tag/v1.0.1"
         },
         "releaseCount": 7,
-        "totalDownloads": 6184
+        "totalDownloads": 6192
       },
       "game": {
         "title": "Super Mario Galaxy",
