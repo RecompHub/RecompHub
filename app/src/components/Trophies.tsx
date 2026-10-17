@@ -3,6 +3,7 @@ import { api } from "../api";
 import { useStore } from "../store";
 import { formatDate, gameTitle } from "../format";
 import type { Game, TrophiesView, TrophyView } from "../types";
+import { t, t as tr } from "../i18n";
 
 const CATEGORY_LABELS: Record<string, string> = {
   challenge: "Desafios",
@@ -44,7 +45,7 @@ export function TrophiesSection({ game }: { game: Game }) {
     <section>
       <div className="trophies-head">
         <h2 className="section-title">
-          Troféus {trophies.length > 0 && <span className="muted">· {done}/{trophies.length}</span>}
+          {t("Troféus")} {trophies.length > 0 && <span className="muted">· {done}/{trophies.length}</span>}
         </h2>
       </div>
 
@@ -56,22 +57,22 @@ export function TrophiesSection({ game }: { game: Game }) {
 
       {provider && (
         <p className="muted small">
-          {PROVIDER_LABELS[provider] ?? "Conquistas do próprio jogo"}. Marque as que você já fez; a detecção
-          automática virá numa versão futura.
+          {t(PROVIDER_LABELS[provider] ?? "Conquistas do próprio jogo")}.{" "}
+          {t("Marque as que você já fez; a detecção automática virá numa versão futura.")}
         </p>
       )}
 
-      {view?.loadError && <p className="settings-error">Arquivo de troféus inválido: {view.loadError}</p>}
+      {view?.loadError && <p className="settings-error">{t("Arquivo de troféus inválido: {error}", { error: view.loadError })}</p>}
 
       {trophies.length === 0 && !view?.loadError && (
-        <p className="muted small">Este jogo ainda não tem uma lista de conquistas.</p>
+        <p className="muted small">{t("Este jogo ainda não tem uma lista de conquistas.")}</p>
       )}
 
       {[...groups].map(([category, list]) => (
         <div key={category}>
           {category && (
             <h4 className="trophy-category">
-              {CATEGORY_LABELS[category] ?? category}{" "}
+              {CATEGORY_LABELS[category] ? t(CATEGORY_LABELS[category]) : category}{" "}
               <span className="muted">
                 {list.filter((t) => t.unlocked).length}/{list.length}
               </span>
@@ -97,16 +98,16 @@ function TrophyRow({ trophy: t, onToggle }: { trophy: TrophyView; onToggle: (unl
           className="trophy-check"
           checked={t.unlocked}
           onChange={(e) => onToggle(e.target.checked)}
-          aria-label={`${t.title}: ${t.unlocked ? "feita" : "não feita"}`}
+          aria-label={`${t.title}: ${t.unlocked ? tr("feita") : tr("não feita")}`}
         />
         <span className="trophy-icon">{t.unlocked ? "🏆" : "🔒"}</span>
         <span className="trophy-text">
           <strong>{t.title}</strong>
           <span className="muted small">{t.description}</span>
-          {t.error && <span className="trophy-error">Condição inválida: {t.error}</span>}
+          {t.error && <span className="trophy-error">{tr("Condição inválida: {error}", { error: t.error })}</span>}
         </span>
         <span className="trophy-meta">
-          {t.points > 0 && <span>{t.points} pts</span>}
+          {t.points > 0 && <span>{tr("{points} pts", { points: t.points })}</span>}
           {t.unlockedAt && <span className="muted small">{formatDate(t.unlockedAt)}</span>}
         </span>
       </label>
@@ -129,7 +130,7 @@ export function TrophyToasts() {
         <button key={u.toastId} className="trophy-toast" onClick={() => dismissUnlock(u.toastId)}>
           <span className="trophy-icon">🏆</span>
           <span className="trophy-text">
-            <span className="trophy-toast-label">Troféu desbloqueado · {(() => { const g = gameById(u.gameId); return g ? gameTitle(g) : ""; })()}</span>
+            <span className="trophy-toast-label">{t("Troféu desbloqueado")} · {(() => { const g = gameById(u.gameId); return g ? gameTitle(g) : ""; })()}</span>
             <strong>{u.title}</strong>
             <span className="muted small">{u.description}</span>
           </span>

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-17T10:17:20.057132431Z",
+  "generatedAt": "2026-10-17T10:18:57.914629100Z",
   "games": [
     {
       "id": "zelda64-mm",
@@ -123,7 +123,7 @@
           "htmlUrl": "https://github.com/sonicdcer/Starfox64Recomp/releases/tag/1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 30161
+        "totalDownloads": 30163
       },
       "game": {
         "title": "Star Fox 64",
@@ -274,7 +274,7 @@
           "htmlUrl": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled/releases/tag/v1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 45030
+        "totalDownloads": 45031
       },
       "game": {
         "title": "Donkey Kong 64",
@@ -728,7 +728,7 @@
           "htmlUrl": "https://github.com/cdlewis/snowboardkids2-recomp/releases/tag/v1.0.5"
         },
         "releaseCount": 4,
-        "totalDownloads": 7739
+        "totalDownloads": 7740
       },
       "game": {
         "title": "Snowboard Kids 2",
@@ -1017,6 +1017,7 @@
       },
       "requiredRom": {
         "description": "The Legend of Zelda: Twilight Princess (USA), imagem de disco de GameCube (.iso)",
+        "descriptionEn": "The Legend of Zelda: Twilight Princess (USA), GameCube disc image (.iso)",
         "sha1": []
       },
       "achievements": {
@@ -1045,7 +1046,7 @@
           "htmlUrl": "https://github.com/TwilitRealm/dusklight/releases/tag/v2.0.3"
         },
         "releaseCount": 24,
-        "totalDownloads": 1357893
+        "totalDownloads": 1357894
       },
       "game": {
         "title": "The Legend of Zelda: Twilight Princess",
@@ -1451,6 +1452,7 @@
       },
       "requiredRom": {
         "description": "Dump do seu PS4: God of War III Remastered (CUSA01623 ou CUSA01715, v01.00/01.02)",
+        "descriptionEn": "Your PS4 dump: God of War III Remastered (CUSA01623 or CUSA01715, v01.00/01.02)",
         "sha1": []
       },
       "achievements": {
@@ -1532,6 +1534,7 @@
       },
       "requiredRom": {
         "description": "Dump decriptado do seu PS4: Uncharted: The Nathan Drake Collection (ex.: CUSA02343, CUSA02320)",
+        "descriptionEn": "Your decrypted PS4 dump: Uncharted: The Nathan Drake Collection (e.g. CUSA02343, CUSA02320)",
         "sha1": []
       },
       "achievements": {
@@ -1551,7 +1554,7 @@
         "homepage": null,
         "license": "GPL-2.0",
         "topics": [],
-        "stars": 1116,
+        "stars": 1117,
         "firstReleaseAt": "2026-10-15T00:17:51Z",
         "latestRelease": {
           "tag": "v0.3.3",
@@ -1603,6 +1606,7 @@
       },
       "requiredRom": {
         "description": "Arquivos do seu Sonic Unleashed de Xbox 360 (o instalador do próprio jogo pede na 1ª execução)",
+        "descriptionEn": "Your Xbox 360 Sonic Unleashed files (the game's own installer asks for them on first run)",
         "sha1": []
       },
       "achievements": {
@@ -1678,6 +1682,7 @@
       },
       "requiredRom": {
         "description": "Arquivos do seu Skate 3 de Xbox 360",
+        "descriptionEn": "Your Xbox 360 Skate 3 files",
         "sha1": []
       },
       "achievements": {
@@ -1751,6 +1756,7 @@
       },
       "requiredRom": {
         "description": "Imagem do seu disco de PS1: Castlevania: Symphony of the Night (USA)",
+        "descriptionEn": "Your PS1 disc image: Castlevania: Symphony of the Night (USA)",
         "sha1": []
       },
       "achievements": {
@@ -1826,6 +1832,7 @@
       },
       "requiredRom": {
         "description": "Arquivos do seu Blue Dragon de Xbox 360",
+        "descriptionEn": "Your Xbox 360 Blue Dragon files",
         "sha1": []
       },
       "achievements": {
@@ -1927,7 +1934,7 @@
           "htmlUrl": "https://github.com/sonicdcer/MarioKart64Recomp/releases/tag/v0.9.2"
         },
         "releaseCount": 2,
-        "totalDownloads": 27412
+        "totalDownloads": 27413
       },
       "game": {
         "title": "Mario Kart 64",
@@ -1974,6 +1981,7 @@
       },
       "requiredRom": {
         "description": "WBFS ou ISO do seu disco de Wii: Kirby's Return to Dream Land (USA, SUKE01)",
+        "descriptionEn": "WBFS or ISO of your Wii disc: Kirby's Return to Dream Land (USA, SUKE01)",
         "sha1": []
       },
       "achievements": {
@@ -2048,6 +2056,7 @@
       },
       "requiredRom": {
         "description": "ISO ou RVZ do seu disco de Wii: Mario Strikers Charged (USA)",
+        "descriptionEn": "ISO or RVZ of your Wii disc: Mario Strikers Charged (USA)",
         "sha1": []
       },
       "achievements": {
@@ -2114,6 +2123,78 @@
           "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc88gu.jpg"
         ]
       }
+    },
+    {
+      "id": "nsmb-wii",
+      "name": "NSMB Wii Multiplayer Recompilation",
+      "repo": "WitherBlitz/NSMB-Wii-Multiplayer-Recompilation",
+      "originalTitle": "New Super Mario Bros. Wii",
+      "originalPlatform": "Wii",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-windows-x64.zip",
+          "executable": "NSMBW.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Arquivos extraídos (pelo Dolphin) do seu disco de Wii: New Super Mario Bros. Wii (USA, SMNE01, revisão 1)",
+        "descriptionEn": "Files extracted (with Dolphin) from your Wii disc: New Super Mario Bros. Wii (USA, SMNE01, revision 1)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 37961,
+      "igdbId": 2178,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/daa4c479f8ca6bccf503a440032e72c2.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/231141b34c82aa95e48810a9d1b33a79.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/f874d58af1fb1ddb0f3283870eaac0fd.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/697d9e52caed2849d7e146c5f8c8c0d5.ico"
+      },
+      "recomp": {
+        "description": "New Super Mario Bros. Wii running natively on Android and Windows: a static recompilation built on WiiCompiled. Bring your own game.",
+        "homepage": null,
+        "license": "GPL-3.0",
+        "topics": [],
+        "stars": 32,
+        "firstReleaseAt": "2026-10-07T15:43:51Z",
+        "latestRelease": {
+          "tag": "v0.1.1",
+          "name": "NSMBW 0.1.1: V-Sync, done right",
+          "publishedAt": "2026-10-14T00:12:09Z",
+          "htmlUrl": "https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation/releases/tag/v0.1.1"
+        },
+        "releaseCount": 15,
+        "totalDownloads": 5330
+      },
+      "game": {
+        "title": "New Super Mario Bros. Wii",
+        "releaseDate": "2009-11-12",
+        "developers": [
+          "Nintendo Entertainment Analysis & Development"
+        ],
+        "publishers": [
+          "Nintendo"
+        ],
+        "genres": [
+          "Platform",
+          "Adventure"
+        ],
+        "summary": "New Super Mario Bros. Wii is a side-scrolling 2.5D Mario platformer for the Wii and the tenth game in the Super Mario series. In addition to the single-player experience, New Super Mario Bros. Wii also features a multiplayer mode for up to four players. This is the first Super Mario game to feature co-op and vs. modes at the same time since Mario Bros. It features more items, new levels, and more enemies than the DS predecessor. The game introduces two new power-ups, the Propeller Mushroom and the Penguin Suit, which turn characters into their propeller and penguin forms, respectively.",
+        "rating": 81.5,
+        "url": "https://www.igdb.com/games/new-super-mario-bros-wii",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc88fq.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc88fr.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc88fy.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc88ft.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc88fw.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc88fv.jpg"
+        ]
+      },
+      "aiAssisted": true
     }
   ]
 }

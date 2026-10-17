@@ -90,8 +90,10 @@ impl AppState {
     }
 
     fn settings_view(&self) -> SettingsView {
-        let custom = self.settings.lock().unwrap().games_dir.clone();
+        let settings = self.settings.lock().unwrap();
+        let custom = settings.games_dir.clone();
         SettingsView {
+            language: settings.language.clone(),
             games_dir: custom
                 .clone()
                 .unwrap_or_else(|| self.default_games_dir.clone()),
@@ -185,6 +187,7 @@ struct SettingsView {
     games_dir: PathBuf,
     default_games_dir: PathBuf,
     is_default_games_dir: bool,
+    language: Option<String>,
 }
 
 #[tauri::command]
@@ -513,6 +516,23 @@ fn set_games_dir(state: State<'_, AppState>, path: Option<PathBuf>) -> Result<Se
     Ok(state.settings_view())
 }
 
+/// `language` é a escolha salva (`None` = seguir o sistema); `effective` é o
+/// idioma que a interface está usando, para as mensagens de erro baterem.
+#[tauri::command]
+fn set_language(state: State<'_, AppState>, language: Option<String>, effective: String) -> Result<SettingsView> {
+    let valid = |l: &str| matches!(l, "pt" | "en");
+    let language = language.filter(|l| valid(l));
+    error::set_english(effective == "en");
+    {
+        let mut current = state.settings.lock().unwrap();
+        if current.language != language {
+            current.language = language;
+            settings::save(&state.settings_path, &current)?;
+        }
+    }
+    Ok(state.settings_view())
+}
+
 /// `C:\RecompHub\Games` no Windows (ao lado do launcher, fácil de achar);
 /// nos outros sistemas, dentro da pasta de dados do app.
 fn default_games_dir(data_dir: &std::path::Path) -> PathBuf {
@@ -530,6 +550,8 @@ fn init_state(app: &AppHandle) -> Result<AppState> {
     let library_path = data_dir.join("library.json");
     let settings_path = data_dir.join("settings.json");
     let catalog_cache_path = cache_dir.join("catalog.json");
+    let settings = settings::load(&settings_path)?;
+    error::set_english(settings.language.as_deref() == Some("en"));
     let http = reqwest::Client::builder()
         .user_agent(concat!("RecompHub/", env!("CARGO_PKG_VERSION")))
         .build()?;
@@ -542,7 +564,7 @@ fn init_state(app: &AppHandle) -> Result<AppState> {
         http,
         default_games_dir: default_games_dir(&data_dir),
         data_dir: data_dir.clone(),
-        settings: Mutex::new(settings::load(&settings_path)?),
+        settings: Mutex::new(settings),
         settings_path,
         library: Mutex::new(state::load(&library_path)?),
         library_path,
@@ -584,6 +606,7 @@ pub fn run() {
             scan_games_dir,
             edit_trophies,
             set_games_dir,
+            set_language,
         ])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");

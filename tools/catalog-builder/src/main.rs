@@ -201,6 +201,7 @@ async fn build_game(
         recomp,
         game,
         trophy_provider,
+        ai_assisted: source.ai_assisted,
     }
 }
 

@@ -2,12 +2,13 @@ import { useStore } from "../store";
 import { GameArt } from "../components/GameArt";
 import { GameActions } from "../components/GameActions";
 import { InfoPanel, ProjectSection, ReleaseNotes, Screenshots } from "../components/GameDetails";
+import { t } from "../i18n";
 
 /** Página de um jogo do catálogo (vinda do Início ou do Explorar). */
 export function GamePage({ gameId }: { gameId: string }) {
   const { gameById } = useStore();
   const game = gameById(gameId);
-  if (!game) return <p className="page muted">Jogo não encontrado no catálogo.</p>;
+  if (!game) return <p className="page muted">{t("Jogo não encontrado no catálogo.")}</p>;
 
   return (
     <div className="page game-page">
@@ -25,8 +26,8 @@ export function GamePage({ gameId }: { gameId: string }) {
         <div className="detail-main">
           <ProjectSection game={game} />
           <section>
-            <h2 className="section-title">Sobre</h2>
-            <p className="summary">{game.game?.summary ?? game.recomp?.description ?? "Sem descrição."}</p>
+            <h2 className="section-title">{t("Sobre")}</h2>
+            <p className="summary">{game.game?.summary ?? game.recomp?.description ?? t("Sem descrição.")}</p>
           </section>
           <Screenshots game={game} />
           <ReleaseNotes game={game} />

@@ -51,6 +51,10 @@ pub struct SourceGame {
     /// Conquistas detectadas pelo próprio jogo (ex.: Dusklight).
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub trophy_provider: Option<TrophyProvider>,
+    /// Projeto feito em grande parte com IA (marcado no awesome-decomp-games);
+    /// o launcher mostra um aviso.
+    #[serde(default, skip_serializing_if = "std::ops::Not::not")]
+    pub ai_assisted: bool,
 }
 
 /// Conquistas que o próprio jogo detecta e grava num arquivo de progresso; o
@@ -107,6 +111,9 @@ pub struct PlatformAsset {
 #[serde(rename_all = "camelCase")]
 pub struct RequiredRom {
     pub description: String,
+    /// Mesma descrição em inglês, quando a original não serve para os dois idiomas.
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub description_en: Option<String>,
     #[serde(default)]
     pub sha1: Vec<String>,
 }
@@ -183,6 +190,8 @@ pub struct CatalogGame {
     pub game: Option<GameInfo>,
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub trophy_provider: Option<TrophyProvider>,
+    #[serde(default, skip_serializing_if = "std::ops::Not::not")]
+    pub ai_assisted: bool,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

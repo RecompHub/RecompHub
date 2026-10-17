@@ -3,6 +3,7 @@ import { check, type Update } from "@tauri-apps/plugin-updater";
 import { relaunch } from "@tauri-apps/plugin-process";
 import { useStore } from "../store";
 import { formatBytes } from "../format";
+import { t } from "../i18n";
 
 /**
  * Atualização do próprio launcher (GitHub Releases, assinada).
@@ -48,14 +49,15 @@ export function UpdateBanner() {
   return (
     <div className="update-banner" role="status">
       <span>
-        <strong>RecompHub {update.version}</strong> disponível
-        {update.currentVersion && <span className="muted"> (você tem {update.currentVersion})</span>}
+        <strong>RecompHub {update.version}</strong> {t("disponível")}
+        {update.currentVersion && <span className="muted"> {t("(você tem {version})", { version: update.currentVersion })}</span>}
       </span>
-      {error && <span className="update-error">Falhou: {error}</span>}
+      {error && <span className="update-error">{t("Falhou: {error}", { error })}</span>}
       {downloaded ? (
         <span className="muted">
-          Baixando {formatBytes(downloaded.done)}
-          {downloaded.total ? ` de ${formatBytes(downloaded.total)}` : ""}…
+          {downloaded.total
+            ? t("Baixando {done} de {total}…", { done: formatBytes(downloaded.done), total: formatBytes(downloaded.total) })
+            : t("Baixando {done}…", { done: formatBytes(downloaded.done) })}
         </span>
       ) : (
         <>
@@ -63,12 +65,12 @@ export function UpdateBanner() {
             className="btn btn-update"
             onClick={install}
             disabled={blocked}
-            title={blocked ? "Feche o jogo e aguarde as instalações terminarem" : undefined}
+            title={blocked ? t("Feche o jogo e aguarde as instalações terminarem") : undefined}
           >
-            Atualizar e reiniciar
+            {t("Atualizar e reiniciar")}
           </button>
           <button className="btn btn-ghost" onClick={() => setDismissed(true)}>
-            Depois
+            {t("Depois")}
           </button>
         </>
       )}

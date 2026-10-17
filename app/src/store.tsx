@@ -2,6 +2,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState, t
 import { listen } from "@tauri-apps/api/event";
 import { api } from "./api";
 import type { Catalog, Game, InstallProgress, Library, TrophyUnlocked } from "./types";
+import { t } from "./i18n";
 
 export type Route =
   | { page: "home" }
@@ -66,7 +67,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     try {
       setCatalog(await api.refreshCatalog());
     } catch (e) {
-      setError(`Não foi possível atualizar a lista de jogos: ${e}`);
+      setError(t("Não foi possível atualizar a lista de jogos: {error}", { error: String(e) }));
     } finally {
       setRefreshing(false);
     }

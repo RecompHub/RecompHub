@@ -7,6 +7,7 @@ import { ExplorePage } from "./pages/ExplorePage";
 import { LibraryPage } from "./pages/LibraryPage";
 import { GamePage } from "./pages/GamePage";
 import { SettingsPage } from "./pages/SettingsPage";
+import { LangProvider, t } from "./i18n";
 import "./App.css";
 
 function Shell() {
@@ -27,7 +28,7 @@ function Shell() {
         <div className="toast" role="alert">
           <span>{error}</span>
           <button className="btn btn-ghost" onClick={dismissError}>
-            Fechar
+            {t("Fechar")}
           </button>
         </div>
       )}
@@ -38,7 +39,9 @@ function Shell() {
 export default function App() {
   return (
     <StoreProvider>
-      <Shell />
+      <LangProvider>
+        <Shell />
+      </LangProvider>
     </StoreProvider>
   );
 }

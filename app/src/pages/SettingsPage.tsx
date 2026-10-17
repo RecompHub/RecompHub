@@ -3,9 +3,17 @@ import { getVersion } from "@tauri-apps/api/app";
 import { open } from "@tauri-apps/plugin-dialog";
 import { check } from "@tauri-apps/plugin-updater";
 import { api } from "../api";
+import { t, useLang, type LangChoice } from "../i18n";
 import type { SettingsView } from "../types";
 
+const LANGUAGES: { value: LangChoice; label: string }[] = [
+  { value: null, label: "Automático (idioma do sistema)" },
+  { value: "pt", label: "Português (Brasil)" },
+  { value: "en", label: "English" },
+];
+
 export function SettingsPage() {
+  const { choice, setChoice } = useLang();
   const [settings, setSettings] = useState<SettingsView | null>(null);
   const [version, setVersion] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -27,42 +35,69 @@ export function SettingsPage() {
   };
 
   const pickFolder = async () => {
-    const chosen = await open({ directory: true, defaultPath: settings?.gamesDir, title: "Pasta dos jogos" });
+    const chosen = await open({ directory: true, defaultPath: settings?.gamesDir, title: t("Pasta dos jogos") });
     if (typeof chosen === "string") await changeGamesDir(chosen);
   };
 
   const checkUpdates = async () => {
-    setUpdateStatus("Procurando…");
+    setUpdateStatus(t("Procurando…"));
     try {
       const update = await check();
       // Se houver, a faixa no topo do app oferece a instalação.
-      setUpdateStatus(update ? `Versão ${update.version} disponível — reabra o launcher para instalar.` : "Você está na versão mais recente.");
+      setUpdateStatus(
+        update
+          ? t("Versão {version} disponível — reabra o launcher para instalar.", { version: update.version })
+          : t("Você está na versão mais recente."),
+      );
     } catch (e) {
-      setUpdateStatus(`Não foi possível verificar: ${e}`);
+      setUpdateStatus(t("Não foi possível verificar: {error}", { error: String(e) }));
     }
   };
 
   return (
     <div className="page settings">
-      <h1 className="settings-title">Configurações</h1>
+      <h1 className="settings-title">{t("Configurações")}</h1>
 
       <section className="settings-section">
-        <h2 className="section-title">Jogos</h2>
+        <h2 className="section-title">{t("Geral")}</h2>
         <div className="setting">
           <div className="setting-text">
-            <strong>Pasta de instalação</strong>
+            <strong>{t("Idioma")}</strong>
+            <span className="muted small">{t("Idioma da interface do launcher.")}</span>
+          </div>
+          <div className="setting-actions">
+            <select
+              value={choice ?? "auto"}
+              onChange={(e) => setChoice(e.target.value === "auto" ? null : (e.target.value as LangChoice))}
+              aria-label={t("Idioma")}
+            >
+              {LANGUAGES.map((l) => (
+                <option key={l.value ?? "auto"} value={l.value ?? "auto"}>
+                  {l.value ? l.label : t(l.label)}
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <section className="settings-section">
+        <h2 className="section-title">{t("Jogos")}</h2>
+        <div className="setting">
+          <div className="setting-text">
+            <strong>{t("Pasta de instalação")}</strong>
             <span className="muted small">
-              Onde novos jogos são instalados. Jogos já instalados continuam na pasta atual.
+              {t("Onde novos jogos são instalados. Jogos já instalados continuam na pasta atual.")}
             </span>
             <code className="path">{settings?.gamesDir ?? "…"}</code>
           </div>
           <div className="setting-actions">
             <button className="btn btn-ghost" onClick={pickFolder}>
-              Alterar…
+              {t("Alterar…")}
             </button>
             {settings && !settings.isDefaultGamesDir && (
               <button className="btn btn-ghost" onClick={() => changeGamesDir(null)}>
-                Usar padrão
+                {t("Usar padrão")}
               </button>
             )}
           </div>
@@ -71,16 +106,16 @@ export function SettingsPage() {
       </section>
 
       <section className="settings-section">
-        <h2 className="section-title">Sobre</h2>
+        <h2 className="section-title">{t("Sobre")}</h2>
         <div className="setting">
           <div className="setting-text">
             <strong>RecompHub {version}</strong>
-            <span className="muted small">Atualizações do launcher vêm assinadas do GitHub Releases.</span>
+            <span className="muted small">{t("Atualizações do launcher vêm assinadas do GitHub Releases.")}</span>
             {updateStatus && <span className="small">{updateStatus}</span>}
           </div>
           <div className="setting-actions">
             <button className="btn btn-ghost" onClick={checkUpdates}>
-              Procurar atualizações
+              {t("Procurar atualizações")}
             </button>
           </div>
         </div>
