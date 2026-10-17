@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-17T10:51:20.838954800Z",
+  "generatedAt": "2026-10-17T10:57:29.109527500Z",
   "games": [
     {
       "id": "zelda64-mm",
@@ -48,7 +48,7 @@
           "htmlUrl": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 7,
-        "totalDownloads": 372599
+        "totalDownloads": 372600
       },
       "game": {
         "title": "The Legend of Zelda: Majora's Mask",
@@ -123,7 +123,7 @@
           "htmlUrl": "https://github.com/sonicdcer/Starfox64Recomp/releases/tag/1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 30164
+        "totalDownloads": 30165
       },
       "game": {
         "title": "Star Fox 64",
@@ -274,7 +274,7 @@
           "htmlUrl": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled/releases/tag/v1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 45039
+        "totalDownloads": 45042
       },
       "game": {
         "title": "Donkey Kong 64",
@@ -891,7 +891,7 @@
           "htmlUrl": "https://github.com/DahSidiAbdallah/ConkerBFDReloaded/releases/tag/v1.4.0"
         },
         "releaseCount": 13,
-        "totalDownloads": 6235
+        "totalDownloads": 6237
       },
       "game": {
         "title": "Conker's Bad Fur Day",
@@ -1046,7 +1046,7 @@
           "htmlUrl": "https://github.com/TwilitRealm/dusklight/releases/tag/v2.0.3"
         },
         "releaseCount": 24,
-        "totalDownloads": 1357983
+        "totalDownloads": 1358002
       },
       "game": {
         "title": "The Legend of Zelda: Twilight Princess",
@@ -1482,7 +1482,7 @@
           "vulkan",
           "windows"
         ],
-        "stars": 2993,
+        "stars": 2995,
         "firstReleaseAt": "2026-10-10T22:37:56Z",
         "latestRelease": {
           "tag": "windows-v2.4.1",
@@ -1491,7 +1491,7 @@
           "htmlUrl": "https://github.com/FelipePrado0/gow3_pc/releases/tag/windows-v2.4.1"
         },
         "releaseCount": 18,
-        "totalDownloads": 373773
+        "totalDownloads": 373787
       },
       "game": {
         "title": "God of War III: Remastered",
@@ -1805,7 +1805,7 @@
         "homepage": null,
         "license": "GPL-2.0",
         "topics": [],
-        "stars": 1122,
+        "stars": 1125,
         "firstReleaseAt": "2026-10-15T00:17:51Z",
         "latestRelease": {
           "tag": "v0.3.3",
@@ -1814,7 +1814,7 @@
           "htmlUrl": "https://github.com/Supermedo/uncharted_pc/releases/tag/v0.3.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 36979
+        "totalDownloads": 36982
       },
       "game": {
         "title": "Uncharted: The Nathan Drake Collection",
@@ -1962,7 +1962,7 @@
           "htmlUrl": "https://github.com/mchughalex/skate3recomp/releases/tag/v2.0.2"
         },
         "releaseCount": 9,
-        "totalDownloads": 114924
+        "totalDownloads": 114928
       },
       "game": {
         "title": "Skate 3",
@@ -2185,7 +2185,7 @@
           "htmlUrl": "https://github.com/sonicdcer/MarioKart64Recomp/releases/tag/v0.9.2"
         },
         "releaseCount": 2,
-        "totalDownloads": 27415
+        "totalDownloads": 27416
       },
       "game": {
         "title": "Mario Kart 64",
@@ -2340,7 +2340,7 @@
           "wii",
           "windows-app"
         ],
-        "stars": 40,
+        "stars": 41,
         "firstReleaseAt": "2026-10-10T19:10:23Z",
         "latestRelease": {
           "tag": "v1.0.9",
@@ -2418,7 +2418,7 @@
           "htmlUrl": "https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation/releases/tag/v0.1.1"
         },
         "releaseCount": 15,
-        "totalDownloads": 5338
+        "totalDownloads": 5340
       },
       "game": {
         "title": "New Super Mario Bros. Wii",
@@ -2500,7 +2500,7 @@
           "htmlUrl": "https://github.com/patchzyy/Wiicompiled/releases/tag/v0.2.34"
         },
         "releaseCount": 14,
-        "totalDownloads": 193177
+        "totalDownloads": 193199
       },
       "game": {
         "title": "Mario Kart Wii",
@@ -2574,7 +2574,7 @@
           "htmlUrl": "https://github.com/keepvaibin/nebula/releases/tag/v1.0.1"
         },
         "releaseCount": 7,
-        "totalDownloads": 6174
+        "totalDownloads": 6184
       },
       "game": {
         "title": "Super Mario Galaxy",
