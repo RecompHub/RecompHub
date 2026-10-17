@@ -12,6 +12,9 @@ pub struct Settings {
     /// Pasta onde novos jogos são instalados. `None` = padrão do app.
     #[serde(default)]
     pub games_dir: Option<PathBuf>,
+    /// Idioma da interface (`pt` ou `en`). `None` = segue o sistema.
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub language: Option<String>,
 }
 
 pub fn load(path: &Path) -> Result<Settings> {

@@ -23,4 +23,6 @@ export const api = {
     invoke<Library>("set_trophy", { gameId, key, unlocked }),
   getSettings: () => invoke<SettingsView>("get_settings"),
   setGamesDir: (path: string | null) => invoke<SettingsView>("set_games_dir", { path }),
+  setLanguage: (language: "pt" | "en" | null, effective: "pt" | "en") =>
+    invoke<SettingsView>("set_language", { language, effective }),
 };

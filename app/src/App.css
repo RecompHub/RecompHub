@@ -14,6 +14,8 @@
   --play: var(--accent);
   --play-hover: var(--accent-hover);
   --update: var(--accent);
+  --warn: #e0a526;
+  --warn-dim: #e0a52622;
   --topbar-h: 52px;
 
   font-family: "Segoe UI", system-ui, sans-serif;
@@ -343,6 +345,29 @@ h1, h2, h3, h4 {
   color: var(--on-accent);
 }
 
+.badge-ai {
+  margin-left: 8px;
+  vertical-align: middle;
+  background: var(--warn-dim);
+  color: var(--warn);
+}
+
+.ai-notice {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-left: 3px solid var(--warn);
+  border-radius: 3px;
+  background: var(--warn-dim);
+  font-size: 13px;
+}
+
+.ai-notice strong {
+  color: var(--warn);
+}
+
 .dot {
   width: 8px;
   height: 8px;
@@ -479,7 +504,8 @@ h1, h2, h3, h4 {
   gap: 6px;
 }
 
-.sort-row select {
+.sort-row select,
+.setting-actions select {
   flex: 1;
   padding: 6px 8px;
   border: 1px solid var(--border);

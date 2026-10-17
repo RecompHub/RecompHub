@@ -3,6 +3,7 @@ import { openUrl } from "@tauri-apps/plugin-opener";
 import { api } from "../api";
 import { formatCount, formatDate } from "../format";
 import type { Game, Release } from "../types";
+import { lang, t } from "../i18n";
 
 /** Ficha lateral com dados do recomp (GitHub) e do jogo original (IGDB). */
 export function InfoPanel({ game }: { game: Game }) {
@@ -11,48 +12,48 @@ export function InfoPanel({ game }: { game: Game }) {
   const repoUrl = `https://github.com/${game.repo}`;
   return (
     <aside className="info-panel">
-      <h3>Recomp</h3>
+      <h3>{t("Recomp")}</h3>
       <dl>
-        <dt>Versão</dt>
+        <dt>{t("Versão")}</dt>
         <dd>{r?.latestRelease?.tag ?? "—"}</dd>
-        <dt>Lançamento</dt>
+        <dt>{t("Lançamento")}</dt>
         <dd>{formatDate(r?.firstReleaseAt)}</dd>
-        <dt>Última atualização</dt>
+        <dt>{t("Última atualização")}</dt>
         <dd>{formatDate(r?.latestRelease?.publishedAt)}</dd>
-        <dt>Estrelas</dt>
+        <dt>{t("Estrelas")}</dt>
         <dd>★ {formatCount(r?.stars)}</dd>
-        <dt>Downloads</dt>
+        <dt>{t("Downloads")}</dt>
         <dd>{formatCount(r?.totalDownloads)}</dd>
-        <dt>Licença</dt>
+        <dt>{t("Licença")}</dt>
         <dd>{r?.license ?? "—"}</dd>
       </dl>
       <button className="link" onClick={() => openUrl(repoUrl)}>
         {game.repo} ↗
       </button>
 
-      <h3>Jogo original</h3>
+      <h3>{t("Jogo original")}</h3>
       <dl>
-        <dt>Plataforma</dt>
+        <dt>{t("Plataforma")}</dt>
         <dd>{game.originalPlatform}</dd>
-        <dt>Lançamento</dt>
+        <dt>{t("Lançamento")}</dt>
         <dd>{formatDate(g?.releaseDate)}</dd>
-        <dt>Desenvolvedora</dt>
+        <dt>{t("Desenvolvedora")}</dt>
         <dd>{g?.developers.join(", ") || "—"}</dd>
-        <dt>Publicadora</dt>
+        <dt>{t("Publicadora")}</dt>
         <dd>{g?.publishers.join(", ") || "—"}</dd>
-        <dt>Gêneros</dt>
+        <dt>{t("Gêneros")}</dt>
         <dd>{g?.genres.join(", ") || "—"}</dd>
         {g?.rating != null && (
           <>
-            <dt>Nota (IGDB)</dt>
+            <dt>{t("Nota (IGDB)")}</dt>
             <dd>{Math.round(g.rating)}/100</dd>
           </>
         )}
       </dl>
 
       <div className="rom-notice">
-        <strong>Requer sua própria ROM</strong>
-        <span>{game.requiredRom.description}</span>
+        <strong>{t("Requer sua própria ROM")}</strong>
+        <span>{lang() === "en" ? (game.requiredRom.descriptionEn ?? game.requiredRom.description) : game.requiredRom.description}</span>
       </div>
     </aside>
   );
@@ -64,13 +65,19 @@ export function ProjectSection({ game }: { game: Game }) {
   const repoUrl = `https://github.com/${game.repo}`;
   return (
     <section>
-      <h2 className="section-title">Projeto</h2>
+      <h2 className="section-title">{t("Projeto")}</h2>
       <div className="project-card">
         <div className="project-head">
           <strong className="project-name">{game.name}</strong>
-          <span className="muted small">por {owner}</span>
+          <span className="muted small">{t("por {owner}", { owner })}</span>
         </div>
         {game.recomp?.description && <p className="muted small project-desc">{game.recomp.description}</p>}
+        {game.aiAssisted && (
+          <div className="ai-notice">
+            <strong>{t("Feito com IA")}</strong>
+            <span>{t("Este projeto foi marcado como gerado em grande parte por IA. Pode ter mais bugs e menos manutenção que os outros.")}</span>
+          </div>
+        )}
         <button className="link" onClick={() => openUrl(repoUrl)}>
           {game.repo} ↗
         </button>
@@ -84,7 +91,7 @@ export function Screenshots({ game }: { game: Game }) {
   if (shots.length === 0) return null;
   return (
     <section>
-      <h2 className="section-title">Imagens</h2>
+      <h2 className="section-title">{t("Imagens")}</h2>
       <div className="screenshots">
         {shots.map((url) => (
           <img key={url} src={url} alt="" loading="lazy" />
@@ -107,18 +114,18 @@ export function ReleaseNotes({ game }: { game: Game }) {
 
   return (
     <section>
-      <h2 className="section-title">Notas da versão</h2>
-      {error && <p className="muted">Não foi possível carregar: {error}</p>}
-      {!release && !error && <p className="muted">Carregando…</p>}
+      <h2 className="section-title">{t("Notas da versão")}</h2>
+      {error && <p className="muted">{t("Não foi possível carregar: {error}", { error })}</p>}
+      {!release && !error && <p className="muted">{t("Carregando…")}</p>}
       {release && (
         <div className="release-notes">
           <div className="release-notes-head">
             <strong>{release.name || release.tagName}</strong>
             <span className="muted">{formatDate(release.publishedAt)}</span>
           </div>
-          <p>{release.body?.trim() || "Sem notas."}</p>
+          <p>{release.body?.trim() || t("Sem notas.")}</p>
           <button className="link" onClick={() => openUrl(release.htmlUrl)}>
-            Ver no GitHub ↗
+            {t("Ver no GitHub")} ↗
           </button>
         </div>
       )}

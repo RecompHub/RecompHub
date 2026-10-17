@@ -6,6 +6,7 @@ import { InfoPanel, ReleaseNotes } from "../components/GameDetails";
 import { TrophiesSection } from "../components/Trophies";
 import { formatDate, formatPlayTime, formatRelative, gameTitle } from "../format";
 import type { Game } from "../types";
+import { locale, t } from "../i18n";
 
 export function LibraryPage({ gameId }: { gameId?: string }) {
   const { catalog, library, navigate } = useStore();
@@ -14,9 +15,9 @@ export function LibraryPage({ gameId }: { gameId?: string }) {
   const games = (catalog?.games ?? [])
     .filter((g) => library[g.id])
     .filter((g) =>
-      [gameTitle(g), g.name].some((n) => n.toLocaleLowerCase("pt-BR").includes(query.trim().toLocaleLowerCase("pt-BR"))),
+      [gameTitle(g), g.name].some((n) => n.toLocaleLowerCase(locale()).includes(query.trim().toLocaleLowerCase(locale()))),
     )
-    .sort((a, b) => gameTitle(a).localeCompare(gameTitle(b), "pt-BR"));
+    .sort((a, b) => gameTitle(a).localeCompare(gameTitle(b), locale()));
   const installed = games.filter((g) => library[g.id].installed);
   const notInstalled = games.filter((g) => !library[g.id].installed);
   const selected = games.find((g) => g.id === gameId) ?? installed[0] ?? notInstalled[0];
@@ -27,12 +28,12 @@ export function LibraryPage({ gameId }: { gameId?: string }) {
         <input
           className="search"
           type="search"
-          placeholder="Buscar na biblioteca…"
+          placeholder={t("Buscar na biblioteca…")}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
-        <LibraryGroup title="Instalados" games={installed} selectedId={selected?.id} />
-        <LibraryGroup title="Não instalados" games={notInstalled} selectedId={selected?.id} />
+        <LibraryGroup title={t("Instalados")} games={installed} selectedId={selected?.id} />
+        <LibraryGroup title={t("Não instalados")} games={notInstalled} selectedId={selected?.id} />
       </aside>
 
       <section className="library-detail">
@@ -40,10 +41,10 @@ export function LibraryPage({ gameId }: { gameId?: string }) {
           <LibraryDetail game={selected} />
         ) : (
           <div className="empty">
-            <h2>Sua biblioteca está vazia</h2>
-            <p className="muted">Adicione jogos pela aba Explorar.</p>
+            <h2>{t("Sua biblioteca está vazia")}</h2>
+            <p className="muted">{t("Adicione jogos pela aba Explorar.")}</p>
             <button className="btn btn-big btn-install" onClick={() => navigate({ page: "explore" })}>
-              Explorar recomps
+              {t("Explorar recomps")}
             </button>
           </div>
         )}
@@ -79,9 +80,9 @@ function LibraryItem({ game, selected }: { game: Game; selected: boolean }) {
       >
         <GameArt game={game} kind="icon" className="library-icon" />
         <span className="library-name">{gameTitle(game)}</span>
-        {s.running && <span className="dot dot-running" title="Em execução" />}
-        {s.progress && <span className="dot dot-busy" title="Instalando" />}
-        {!s.running && !s.progress && s.updateAvailable && <span className="dot dot-update" title="Atualização disponível" />}
+        {s.running && <span className="dot dot-running" title={t("Em execução")} />}
+        {s.progress && <span className="dot dot-busy" title={t("Instalando")} />}
+        {!s.running && !s.progress && s.updateAvailable && <span className="dot dot-update" title={t("Atualização disponível")} />}
       </button>
     </li>
   );
@@ -104,12 +105,12 @@ function LibraryDetail({ game }: { game: Game }) {
       <div className="action-bar">
         <GameActions game={game} />
         <div className="stats">
-          <Stat label="Tempo de jogo" value={formatPlayTime(entry.playTimeSeconds)} />
-          <Stat label="Última vez" value={entry.lastPlayedAt ? formatRelative(entry.lastPlayedAt) : "—"} />
+          <Stat label={t("Tempo de jogo")} value={formatPlayTime(entry.playTimeSeconds)} />
+          <Stat label={t("Última vez")} value={entry.lastPlayedAt ? formatRelative(entry.lastPlayedAt) : "—"} />
           <Stat
-            label="Versão instalada"
+            label={t("Versão instalada")}
             value={s.installed ? s.installed.installedTag : "—"}
-            hint={s.updateAvailable ? `${game.recomp?.latestRelease?.tag} disponível` : undefined}
+            hint={s.updateAvailable ? t("{tag} disponível", { tag: game.recomp?.latestRelease?.tag ?? "" }) : undefined}
           />
         </div>
       </div>
@@ -120,7 +121,7 @@ function LibraryDetail({ game }: { game: Game }) {
             {s.installed && (
               <>
                 <button className="btn btn-ghost" onClick={() => store.openInstallDir(game.id)}>
-                  Abrir pasta
+                  {t("Abrir pasta")}
                 </button>
                 <button
                   className="btn btn-ghost"
@@ -128,27 +129,27 @@ function LibraryDetail({ game }: { game: Game }) {
                   onClick={() =>
                     confirm(
                       s.installed?.imported
-                        ? `Remover ${gameTitle(game)} do launcher? Os arquivos em ${s.installed.installPath} não serão apagados.`
-                        : `Desinstalar ${gameTitle(game)}? A pasta de instalação será apagada.`,
+                        ? t("Remover {game} do launcher? Os arquivos em {path} não serão apagados.", { game: gameTitle(game), path: s.installed.installPath })
+                        : t("Desinstalar {game}? A pasta de instalação será apagada.", { game: gameTitle(game) }),
                     ) && store.uninstall(game.id)
                   }
                 >
-                  {s.installed.imported ? "Remover do launcher" : "Desinstalar"}
+                  {t(s.installed.imported ? "Remover do launcher" : "Desinstalar")}
                 </button>
               </>
             )}
             {!s.installed && (
               <button className="btn btn-ghost" onClick={() => store.removeFromLibrary(game.id)}>
-                Remover da biblioteca
+                {t("Remover da biblioteca")}
               </button>
             )}
             <button className="btn btn-ghost" onClick={() => store.navigate({ page: "game", gameId: game.id })}>
-              Página do jogo
+              {t("Página do jogo")}
             </button>
           </div>
           {s.installed && (
             <p className="muted small">
-              {s.installed.imported ? "Importado" : "Instalado"} em {formatDate(s.installed.installedAt)} · {s.installed.installPath}
+              {t(s.installed.imported ? "Importado em {date}" : "Instalado em {date}", { date: formatDate(s.installed.installedAt) })} · {s.installed.installPath}
             </p>
           )}
           <TrophiesSection game={game} />

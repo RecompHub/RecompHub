@@ -13,11 +13,13 @@ export interface Game {
   originalTitle: string;
   originalPlatform: string;
   platforms: Record<string, PlatformAsset>;
-  requiredRom: { description: string; sha1: string[] };
+  requiredRom: { description: string; descriptionEn?: string; sha1: string[] };
   achievements: { enabled: boolean; supportedVersions: string[] };
   sgdbId?: number;
   trophyProvider?: { kind: string; trophies: { key: string }[] };
   igdbId?: number;
+  /** Projeto feito em grande parte com IA. */
+  aiAssisted?: boolean;
   images: Images;
   recomp?: RecompInfo;
   game?: GameInfo;
@@ -107,6 +109,7 @@ export interface SettingsView {
   gamesDir: string;
   defaultGamesDir: string;
   isDefaultGamesDir: boolean;
+  language?: "pt" | "en" | null;
 }
 
 export interface Trophy {

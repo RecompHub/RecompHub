@@ -1,4 +1,5 @@
 import { useStore, type Route } from "../store";
+import { t } from "../i18n";
 
 const TABS: { page: Route["page"]; label: string }[] = [
   { page: "home", label: "Início" },
@@ -13,7 +14,7 @@ export function TopBar() {
 
   return (
     <header className="topbar">
-      <button className="topbar-back" onClick={goBack} disabled={!canGoBack} title="Voltar">
+      <button className="topbar-back" onClick={goBack} disabled={!canGoBack} title={t("Voltar")}>
         ‹
       </button>
       <span className="brand">RecompHub</span>
@@ -24,18 +25,18 @@ export function TopBar() {
             className={`tab ${active === tab.page ? "tab-active" : ""}`}
             onClick={() => navigate({ page: tab.page } as Route)}
           >
-            {tab.label}
+            {t(tab.label)}
           </button>
         ))}
       </nav>
-      <button className="btn btn-ghost" onClick={refreshCatalog} disabled={refreshing} title="Baixar a lista de jogos mais recente">
-        {refreshing ? "Atualizando…" : "⟳ Atualizar lista"}
+      <button className="btn btn-ghost" onClick={refreshCatalog} disabled={refreshing} title={t("Baixar a lista de jogos mais recente")}>
+        {refreshing ? t("Atualizando…") : t("⟳ Atualizar lista")}
       </button>
       <button
         className={`topbar-icon ${route.page === "settings" ? "topbar-icon-active" : ""}`}
         onClick={() => navigate({ page: "settings" })}
-        title="Configurações"
-        aria-label="Configurações"
+        title={t("Configurações")}
+        aria-label={t("Configurações")}
       >
         ⚙
       </button>

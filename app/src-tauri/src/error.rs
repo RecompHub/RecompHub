@@ -1,3 +1,5 @@
+use std::sync::atomic::{AtomicBool, Ordering};
+
 use serde::{Serialize, Serializer};
 
 #[derive(Debug, thiserror::Error)]
@@ -42,9 +44,46 @@ pub enum Error {
 
 pub type Result<T> = std::result::Result<T, Error>;
 
+/// Idioma das mensagens enviadas ao frontend (o `Display` fica em português,
+/// para os logs). Definido pelas configurações do usuário.
+static ENGLISH: AtomicBool = AtomicBool::new(false);
+
+pub fn set_english(on: bool) {
+    ENGLISH.store(on, Ordering::Relaxed);
+}
+
+impl Error {
+    fn english(&self) -> String {
+        match self {
+            Error::UnknownGame(id) => format!("unknown game: {id}"),
+            Error::NotInstalled(id) => format!("game not installed: {id}"),
+            Error::UnsupportedPlatform(id, p) => format!("{id} has no build for this platform ({p})"),
+            Error::AssetNotFound(p) => format!("no release file matches {p}"),
+            Error::ExecutableNotFound(p) => format!("executable {p} not found in the package"),
+            Error::Busy(id) => format!("an operation is already in progress for {id}"),
+            Error::Running => "the game is running".into(),
+            Error::StillInstalled => "uninstall the game before removing it from the library".into(),
+            Error::InvalidGamesDir(d) => format!("games cannot be installed in {d}"),
+            Error::GitHubStatus(code) => format!("GitHub responded {code}"),
+            Error::CatalogStatus(code) => format!("remote catalog unavailable (HTTP {code})"),
+            Error::CatalogSchema(v) => format!("remote catalog uses a newer format (v{v}); update the launcher"),
+            Error::Http(e) => format!("network error: {e}"),
+            Error::Zip(e) => format!("invalid zip file: {e}"),
+            Error::Json(e) => format!("invalid JSON: {e}"),
+            Error::Glob(e) => format!("invalid pattern: {e}"),
+            Error::Io(e) => format!("I/O error: {e}"),
+            Error::Tauri(e) => e.to_string(),
+        }
+    }
+}
+
 // Os comandos do Tauri devolvem o erro ao frontend como texto.
 impl Serialize for Error {
     fn serialize<S: Serializer>(&self, serializer: S) -> std::result::Result<S::Ok, S::Error> {
-        serializer.serialize_str(&self.to_string())
+        if ENGLISH.load(Ordering::Relaxed) {
+            serializer.serialize_str(&self.english())
+        } else {
+            serializer.serialize_str(&self.to_string())
+        }
     }
 }

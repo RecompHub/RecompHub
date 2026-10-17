@@ -4,6 +4,7 @@ import { GameArt } from "../components/GameArt";
 import { GameCard } from "../components/GameCard";
 import { formatRelative } from "../format";
 import type { Game } from "../types";
+import { t } from "../i18n";
 
 const time = (iso: string | null | undefined) => (iso ? new Date(iso).getTime() : 0);
 const updatedAt = (g: Game) => time(g.recomp?.latestRelease?.publishedAt);
@@ -14,7 +15,7 @@ const SLIDE_MS = 6000;
 
 export function HomePage() {
   const { catalog } = useStore();
-  if (!catalog) return <p className="page muted">Carregando…</p>;
+  if (!catalog) return <p className="page muted">{t("Carregando…")}</p>;
 
   const byUpdate = [...catalog.games].sort((a, b) => updatedAt(b) - updatedAt(a));
   const byLaunch = [...catalog.games].sort((a, b) => launchedAt(b) - launchedAt(a));
@@ -23,8 +24,8 @@ export function HomePage() {
   return (
     <div className="page home">
       <UpdatesCarousel games={byUpdate.slice(0, SLIDES)} />
-      <Shelf title="Novos recomps" games={byLaunch} caption={(g) => `Lançado ${formatRelative(g.recomp?.firstReleaseAt)}`} />
-      <Shelf title="Mais populares" games={byStars} caption={(g) => `★ ${g.recomp?.stars ?? 0}`} />
+      <Shelf title={t("Novos recomps")} games={byLaunch} caption={(g) => t("Lançado {when}", { when: formatRelative(g.recomp?.firstReleaseAt) })} />
+      <Shelf title={t("Mais populares")} games={byStars} caption={(g) => `★ ${g.recomp?.stars ?? 0}`} />
     </div>
   );
 }
@@ -48,8 +49,8 @@ function UpdatesCarousel({ games }: { games: Game[] }) {
   return (
     <section
       className="carousel"
-      aria-roledescription="carrossel"
-      aria-label="Atualizações recentes"
+      aria-roledescription={t("carrossel")}
+      aria-label={t("Atualizações recentes")}
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
@@ -65,7 +66,7 @@ function UpdatesCarousel({ games }: { games: Game[] }) {
           >
             <GameArt game={g} kind="hero" className="feature-hero" />
             <div className="feature-overlay">
-              <span className="feature-label">Atualizado {formatRelative(release?.publishedAt)}</span>
+              <span className="feature-label">{t("Atualizado {when}", { when: formatRelative(release?.publishedAt) })}</span>
               <GameArt game={g} kind="logo" className="feature-logo" />
               <span className="feature-tag">
                 {g.name} · {release?.tag}
@@ -77,10 +78,10 @@ function UpdatesCarousel({ games }: { games: Game[] }) {
 
       {count > 1 && (
         <>
-          <button className="carousel-arrow carousel-prev" onClick={() => go(-1)} aria-label="Anterior">
+          <button className="carousel-arrow carousel-prev" onClick={() => go(-1)} aria-label={t("Anterior")}>
             ‹
           </button>
-          <button className="carousel-arrow carousel-next" onClick={() => go(1)} aria-label="Próximo">
+          <button className="carousel-arrow carousel-next" onClick={() => go(1)} aria-label={t("Próximo")}>
             ›
           </button>
           <div className="carousel-dots">
@@ -89,7 +90,7 @@ function UpdatesCarousel({ games }: { games: Game[] }) {
                 key={g.id}
                 className={`carousel-dot ${i === index ? "carousel-dot-active" : ""}`}
                 onClick={() => setIndex(i)}
-                aria-label={`Ir para o banner ${i + 1}`}
+                aria-label={t("Ir para o banner {n}", { n: i + 1 })}
               />
             ))}
           </div>

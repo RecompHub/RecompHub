@@ -439,6 +439,7 @@
       },
       "requiredRom": {
         "description": "The Legend of Zelda: Twilight Princess (USA), imagem de disco de GameCube (.iso)",
+        "descriptionEn": "The Legend of Zelda: Twilight Princess (USA), GameCube disc image (.iso)",
         "sha1": []
       },
       "achievements": {
@@ -481,6 +482,7 @@
       },
       "requiredRom": {
         "description": "Dump do seu PS4: God of War III Remastered (CUSA01623 ou CUSA01715, v01.00/01.02)",
+        "descriptionEn": "Your PS4 dump: God of War III Remastered (CUSA01623 or CUSA01715, v01.00/01.02)",
         "sha1": []
       },
       "achievements": {
@@ -510,6 +512,7 @@
       },
       "requiredRom": {
         "description": "Dump decriptado do seu PS4: Uncharted: The Nathan Drake Collection (ex.: CUSA02343, CUSA02320)",
+        "descriptionEn": "Your decrypted PS4 dump: Uncharted: The Nathan Drake Collection (e.g. CUSA02343, CUSA02320)",
         "sha1": []
       },
       "achievements": {
@@ -539,6 +542,7 @@
       },
       "requiredRom": {
         "description": "Arquivos do seu Sonic Unleashed de Xbox 360 (o instalador do próprio jogo pede na 1ª execução)",
+        "descriptionEn": "Your Xbox 360 Sonic Unleashed files (the game's own installer asks for them on first run)",
         "sha1": []
       },
       "achievements": {
@@ -572,6 +576,7 @@
       },
       "requiredRom": {
         "description": "Arquivos do seu Skate 3 de Xbox 360",
+        "descriptionEn": "Your Xbox 360 Skate 3 files",
         "sha1": []
       },
       "achievements": {
@@ -605,6 +610,7 @@
       },
       "requiredRom": {
         "description": "Imagem do seu disco de PS1: Castlevania: Symphony of the Night (USA)",
+        "descriptionEn": "Your PS1 disc image: Castlevania: Symphony of the Night (USA)",
         "sha1": []
       },
       "achievements": {
@@ -638,6 +644,7 @@
       },
       "requiredRom": {
         "description": "Arquivos do seu Blue Dragon de Xbox 360",
+        "descriptionEn": "Your Xbox 360 Blue Dragon files",
         "sha1": []
       },
       "achievements": {
@@ -704,6 +711,7 @@
       },
       "requiredRom": {
         "description": "WBFS ou ISO do seu disco de Wii: Kirby's Return to Dream Land (USA, SUKE01)",
+        "descriptionEn": "WBFS or ISO of your Wii disc: Kirby's Return to Dream Land (USA, SUKE01)",
         "sha1": []
       },
       "achievements": {
@@ -737,6 +745,7 @@
       },
       "requiredRom": {
         "description": "ISO ou RVZ do seu disco de Wii: Mario Strikers Charged (USA)",
+        "descriptionEn": "ISO or RVZ of your Wii disc: Mario Strikers Charged (USA)",
         "sha1": []
       },
       "achievements": {
@@ -751,6 +760,37 @@
         "icon": "https://cdn2.steamgriddb.com/icon/ac9815bef801f58de83804bce86984ad.png"
       },
       "igdbId": 2255
+    },
+    {
+      "id": "nsmb-wii",
+      "name": "NSMB Wii Multiplayer Recompilation",
+      "repo": "WitherBlitz/NSMB-Wii-Multiplayer-Recompilation",
+      "originalTitle": "New Super Mario Bros. Wii",
+      "originalPlatform": "Wii",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-windows-x64.zip",
+          "executable": "NSMBW.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Arquivos extraídos (pelo Dolphin) do seu disco de Wii: New Super Mario Bros. Wii (USA, SMNE01, revisão 1)",
+        "descriptionEn": "Files extracted (with Dolphin) from your Wii disc: New Super Mario Bros. Wii (USA, SMNE01, revision 1)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "aiAssisted": true,
+      "sgdbId": 37961,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/daa4c479f8ca6bccf503a440032e72c2.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/231141b34c82aa95e48810a9d1b33a79.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/f874d58af1fb1ddb0f3283870eaac0fd.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/697d9e52caed2849d7e146c5f8c8c0d5.ico"
+      },
+      "igdbId": 2178
     }
   ]
 }
