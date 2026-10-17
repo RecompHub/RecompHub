@@ -685,6 +685,72 @@
         "icon": "https://cdn2.steamgriddb.com/icon/f57e9defd1303332611ab2ca1994500d.png"
       },
       "igdbId": 2342
+    },
+    {
+      "id": "kirby-rtdl",
+      "name": "Kirby Wii Recomp",
+      "repo": "ExpansionPak/ModernGekko",
+      "originalTitle": "Kirby's Return to Dream Land",
+      "originalPlatform": "Wii",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "KirbyWiiRecomp-Windows-x86_64.zip",
+          "executable": "KirbyWiiRecomp.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "KirbyWiiRecomp-Linux-x86_64.zip",
+          "executable": "KirbyWiiRecomp"
+        }
+      },
+      "requiredRom": {
+        "description": "WBFS ou ISO do seu disco de Wii: Kirby's Return to Dream Land (USA, SUKE01)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 5245260,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/e63bb9e9a4b930959b8cc4259afc9ba4.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/fd1be5bb737d23e0236b52c9cb69d514.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/2cc73b24083105c3d488cc61b606d4f0.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/32c7d6f709a2415191dd6b7b20579da6.png"
+      },
+      "igdbId": 3725
+    },
+    {
+      "id": "mario-strikers-charged",
+      "name": "mscharged-port",
+      "repo": "yannicksuter/mscharged-port",
+      "originalTitle": "Mario Strikers Charged",
+      "originalPlatform": "Wii",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-windows-x86_64.zip",
+          "executable": "mscharged.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "*-linux-x86_64.tar.gz",
+          "executable": "mscharged"
+        }
+      },
+      "requiredRom": {
+        "description": "ISO ou RVZ do seu disco de Wii: Mario Strikers Charged (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 38376,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/c9814f056e558d72a9729ea56950fc9a.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/82b04cd5aa016d979fe048f3ddf0e8d3.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/8e80aa8666161beb9f25f5bed48f06c7.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/ac9815bef801f58de83804bce86984ad.png"
+      },
+      "igdbId": 2255
     }
   ]
 }
