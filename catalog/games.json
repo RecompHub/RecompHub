@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-17T00:19:55.026334500Z",
+  "generatedAt": "2026-10-17T00:23:20.456081403Z",
   "games": [
     {
       "id": "zelda64-mm",
@@ -48,7 +48,7 @@
           "htmlUrl": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 7,
-        "totalDownloads": 372340
+        "totalDownloads": 372348
       },
       "game": {
         "title": "The Legend of Zelda: Majora's Mask",
@@ -891,7 +891,7 @@
           "htmlUrl": "https://github.com/DahSidiAbdallah/ConkerBFDReloaded/releases/tag/v1.4.0"
         },
         "releaseCount": 13,
-        "totalDownloads": 5966
+        "totalDownloads": 5972
       },
       "game": {
         "title": "Conker's Bad Fur Day",
@@ -1045,7 +1045,7 @@
           "htmlUrl": "https://github.com/TwilitRealm/dusklight/releases/tag/v2.0.3"
         },
         "releaseCount": 24,
-        "totalDownloads": 1355640
+        "totalDownloads": 1355690
       },
       "game": {
         "title": "The Legend of Zelda: Twilight Princess",
