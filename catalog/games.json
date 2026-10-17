@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-17T00:59:35.782440478Z",
+  "generatedAt": "2026-10-17T09:43:30.858495400Z",
   "games": [
     {
       "id": "zelda64-mm",
@@ -48,7 +48,7 @@
           "htmlUrl": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 7,
-        "totalDownloads": 372367
+        "totalDownloads": 372570
       },
       "game": {
         "title": "The Legend of Zelda: Majora's Mask",
@@ -123,7 +123,7 @@
           "htmlUrl": "https://github.com/sonicdcer/Starfox64Recomp/releases/tag/1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 30136
+        "totalDownloads": 30157
       },
       "game": {
         "title": "Star Fox 64",
@@ -198,7 +198,7 @@
           "htmlUrl": "https://github.com/BanjoRecomp/BanjoRecomp/releases/tag/v1.0.2"
         },
         "releaseCount": 3,
-        "totalDownloads": 144804
+        "totalDownloads": 144936
       },
       "game": {
         "title": "Banjo-Kazooie",
@@ -265,7 +265,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 511,
+        "stars": 515,
         "firstReleaseAt": "2026-08-29T19:03:58Z",
         "latestRelease": {
           "tag": "v1.0.3",
@@ -274,7 +274,7 @@
           "htmlUrl": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled/releases/tag/v1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 44850
+        "totalDownloads": 45021
       },
       "game": {
         "title": "Donkey Kong 64",
@@ -355,7 +355,7 @@
           "htmlUrl": "https://github.com/klorfmorf/Goemon64Recomp/releases/tag/v0.2.0-dev"
         },
         "releaseCount": 5,
-        "totalDownloads": 22842
+        "totalDownloads": 22865
       },
       "game": {
         "title": "Mystical Ninja Starring Goemon",
@@ -430,7 +430,7 @@
           "htmlUrl": "https://github.com/RevoSucks/BM64Recomp/releases/tag/v1.0.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 20315
+        "totalDownloads": 20356
       },
       "game": {
         "title": "Bomberman 64",
@@ -505,7 +505,7 @@
           "htmlUrl": "https://github.com/MegaMan64Recomp/MegaMan64Recompiled/releases/tag/v0.9.1"
         },
         "releaseCount": 3,
-        "totalDownloads": 14615
+        "totalDownloads": 14640
       },
       "game": {
         "title": "Mega Man 64",
@@ -580,7 +580,7 @@
           "htmlUrl": "https://github.com/HarvestMoon64Recomp/HarvestMoon64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 6,
-        "totalDownloads": 9110
+        "totalDownloads": 9135
       },
       "game": {
         "title": "Harvest Moon 64",
@@ -651,7 +651,7 @@
           "htmlUrl": "https://github.com/theboy181/drmario64_recomp_plus/releases/tag/1.0.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 10699
+        "totalDownloads": 10711
       },
       "game": {
         "title": "Dr. Mario 64",
@@ -728,7 +728,7 @@
           "htmlUrl": "https://github.com/cdlewis/snowboardkids2-recomp/releases/tag/v1.0.5"
         },
         "releaseCount": 4,
-        "totalDownloads": 7719
+        "totalDownloads": 7738
       },
       "game": {
         "title": "Snowboard Kids 2",
@@ -803,7 +803,7 @@
           "steam-deck",
           "windows"
         ],
-        "stars": 110,
+        "stars": 111,
         "firstReleaseAt": "2026-09-05T16:30:20Z",
         "latestRelease": {
           "tag": "v1.1.4",
@@ -812,7 +812,7 @@
           "htmlUrl": "https://github.com/JackandBeans/Snap64Recomp/releases/tag/v1.1.4"
         },
         "releaseCount": 15,
-        "totalDownloads": 7714
+        "totalDownloads": 7765
       },
       "game": {
         "title": "Pokémon Snap",
@@ -882,7 +882,7 @@
           "recompilation",
           "rt64"
         ],
-        "stars": 90,
+        "stars": 91,
         "firstReleaseAt": "2026-10-01T00:51:32Z",
         "latestRelease": {
           "tag": "v1.4.0",
@@ -891,7 +891,7 @@
           "htmlUrl": "https://github.com/DahSidiAbdallah/ConkerBFDReloaded/releases/tag/v1.4.0"
         },
         "releaseCount": 13,
-        "totalDownloads": 5990
+        "totalDownloads": 6205
       },
       "game": {
         "title": "Conker's Bad Fur Day",
@@ -969,7 +969,7 @@
           "htmlUrl": "https://github.com/RevoSucks/CV64Recomp/releases/tag/v0.5.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 190
+        "totalDownloads": 195
       },
       "game": {
         "title": "Castlevania",
@@ -1036,7 +1036,7 @@
         "homepage": "https://twilitrealm.dev",
         "license": "CC0-1.0",
         "topics": [],
-        "stars": 5883,
+        "stars": 5892,
         "firstReleaseAt": "2026-04-24T03:44:05Z",
         "latestRelease": {
           "tag": "v2.0.3",
@@ -1045,7 +1045,7 @@
           "htmlUrl": "https://github.com/TwilitRealm/dusklight/releases/tag/v2.0.3"
         },
         "releaseCount": 24,
-        "totalDownloads": 1355901
+        "totalDownloads": 1357804
       },
       "game": {
         "title": "The Legend of Zelda: Twilight Princess",
@@ -1480,7 +1480,7 @@
           "vulkan",
           "windows"
         ],
-        "stars": 2890,
+        "stars": 2979,
         "firstReleaseAt": "2026-10-10T22:37:56Z",
         "latestRelease": {
           "tag": "windows-v2.4.1",
@@ -1489,7 +1489,7 @@
           "htmlUrl": "https://github.com/FelipePrado0/gow3_pc/releases/tag/windows-v2.4.1"
         },
         "releaseCount": 18,
-        "totalDownloads": 338072
+        "totalDownloads": 370117
       },
       "game": {
         "title": "God of War III: Remastered",
@@ -1551,7 +1551,7 @@
         "homepage": null,
         "license": "GPL-2.0",
         "topics": [],
-        "stars": 1016,
+        "stars": 1105,
         "firstReleaseAt": "2026-10-15T00:17:51Z",
         "latestRelease": {
           "tag": "v0.3.3",
@@ -1560,7 +1560,7 @@
           "htmlUrl": "https://github.com/Supermedo/uncharted_pc/releases/tag/v0.3.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 32097
+        "totalDownloads": 36264
       },
       "game": {
         "title": "Uncharted: The Nathan Drake Collection",
@@ -1622,7 +1622,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 5199,
+        "stars": 5201,
         "firstReleaseAt": "2025-03-01T11:01:14Z",
         "latestRelease": {
           "tag": "v1.0.3",
@@ -1631,7 +1631,7 @@
           "htmlUrl": "https://github.com/hedge-dev/UnleashedRecomp/releases/tag/v1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 723293
+        "totalDownloads": 723608
       },
       "game": {
         "title": "Sonic Unleashed",
@@ -1697,7 +1697,7 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 1640,
+        "stars": 1642,
         "firstReleaseAt": "2026-06-04T21:32:32Z",
         "latestRelease": {
           "tag": "v2.0.2",
@@ -1706,7 +1706,7 @@
           "htmlUrl": "https://github.com/mchughalex/skate3recomp/releases/tag/v2.0.2"
         },
         "releaseCount": 9,
-        "totalDownloads": 114087
+        "totalDownloads": 114845
       },
       "game": {
         "title": "Skate 3",
@@ -1770,7 +1770,7 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 906,
+        "stars": 908,
         "firstReleaseAt": "2026-08-02T21:38:11Z",
         "latestRelease": {
           "tag": "v0.5.1b",
@@ -1779,7 +1779,7 @@
           "htmlUrl": "https://github.com/BlackLabelHQ/SymphonyRecomp/releases/tag/v0.5.1b"
         },
         "releaseCount": 9,
-        "totalDownloads": 50904
+        "totalDownloads": 51191
       },
       "game": {
         "title": "Castlevania: Symphony of the Night",
@@ -1845,7 +1845,7 @@
         "homepage": null,
         "license": "BSD-3-Clause",
         "topics": [],
-        "stars": 797,
+        "stars": 798,
         "firstReleaseAt": "2026-08-23T01:33:50Z",
         "latestRelease": {
           "tag": "v1.3.1",
@@ -1854,7 +1854,7 @@
           "htmlUrl": "https://github.com/zolaware/reblue/releases/tag/v1.3.1"
         },
         "releaseCount": 21,
-        "totalDownloads": 52877
+        "totalDownloads": 53084
       },
       "game": {
         "title": "Blue Dragon",
@@ -1927,7 +1927,7 @@
           "htmlUrl": "https://github.com/sonicdcer/MarioKart64Recomp/releases/tag/v0.9.2"
         },
         "releaseCount": 2,
-        "totalDownloads": 27386
+        "totalDownloads": 27409
       },
       "game": {
         "title": "Mario Kart 64",
@@ -1953,6 +1953,165 @@
           "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc87rr.jpg",
           "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc87rp.jpg",
           "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc87ro.jpg"
+        ]
+      }
+    },
+    {
+      "id": "kirby-rtdl",
+      "name": "Kirby Wii Recomp",
+      "repo": "ExpansionPak/ModernGekko",
+      "originalTitle": "Kirby's Return to Dream Land",
+      "originalPlatform": "Wii",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "KirbyWiiRecomp-Linux-x86_64.zip",
+          "executable": "KirbyWiiRecomp"
+        },
+        "windows-x64": {
+          "assetPattern": "KirbyWiiRecomp-Windows-x86_64.zip",
+          "executable": "KirbyWiiRecomp.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "WBFS ou ISO do seu disco de Wii: Kirby's Return to Dream Land (USA, SUKE01)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 5245260,
+      "igdbId": 3725,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/e63bb9e9a4b930959b8cc4259afc9ba4.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/fd1be5bb737d23e0236b52c9cb69d514.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/2cc73b24083105c3d488cc61b606d4f0.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/32c7d6f709a2415191dd6b7b20579da6.png"
+      },
+      "recomp": {
+        "description": "Runtime for recompilations of GameCube games",
+        "homepage": null,
+        "license": "GPL-3.0",
+        "topics": [],
+        "stars": 171,
+        "firstReleaseAt": "2026-07-22T13:03:43Z",
+        "latestRelease": {
+          "tag": "kirby",
+          "name": "KirbyWii recomp",
+          "publishedAt": "2026-07-22T13:03:43Z",
+          "htmlUrl": "https://github.com/ExpansionPak/ModernGekko/releases/tag/kirby"
+        },
+        "releaseCount": 1,
+        "totalDownloads": 11584
+      },
+      "game": {
+        "title": "Kirby's Return to Dream Land",
+        "releaseDate": "2011-10-24",
+        "developers": [
+          "HAL Laboratory"
+        ],
+        "publishers": [
+          "Nintendo"
+        ],
+        "genres": [
+          "Platform",
+          "Adventure"
+        ],
+        "summary": "Kirby and his friends are back in an adventure designed to satisfy longtime Kirby fans and beginners alike. When an alien spaceship crashes in the otherwise peaceful realm of Pop Star, its pieces are scattered throughout the land. Players must guide Kirby as he retrieves the ship’s parts and helps the aliens return to their home planet. This time, however, he’s not alone. At any time, up to three more players can join in the fun and play as Meta Knight, King Dedede and Waddle Dee to help Kirby in his quest.",
+        "rating": 86.4,
+        "url": "https://www.igdb.com/games/kirbys-return-to-dream-land",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/kvqaqdlfklkpmbzllfqo.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/aeukmpcldgzcdqcsq2zy.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/jrbu1qwk82mhlrhvpgj1.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/lxbpsjapp9qlqxiktpbj.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/mtduch2cl1jcf9vse9pt.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/mhk1ls3cwot3z033hjl0.jpg"
+        ]
+      }
+    },
+    {
+      "id": "mario-strikers-charged",
+      "name": "mscharged-port",
+      "repo": "yannicksuter/mscharged-port",
+      "originalTitle": "Mario Strikers Charged",
+      "originalPlatform": "Wii",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "*-linux-x86_64.tar.gz",
+          "executable": "mscharged"
+        },
+        "windows-x64": {
+          "assetPattern": "*-windows-x86_64.zip",
+          "executable": "mscharged.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "ISO ou RVZ do seu disco de Wii: Mario Strikers Charged (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 38376,
+      "igdbId": 2255,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/c9814f056e558d72a9729ea56950fc9a.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/82b04cd5aa016d979fe048f3ddf0e8d3.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/8e80aa8666161beb9f25f5bed48f06c7.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/ac9815bef801f58de83804bce86984ad.png"
+      },
+      "recomp": {
+        "description": "Mario Strikers Charged for PC, Mac & Linux. Ported from decompiled code. Not a recompilation.",
+        "homepage": null,
+        "license": "CC0-1.0",
+        "topics": [
+          "linux",
+          "linux-app",
+          "mac-app",
+          "macos",
+          "mario-strikers-charged",
+          "nintendo",
+          "nintendo-port",
+          "port",
+          "steam-game",
+          "steam-os",
+          "wii",
+          "windows-app"
+        ],
+        "stars": 40,
+        "firstReleaseAt": "2026-10-10T19:10:23Z",
+        "latestRelease": {
+          "tag": "v1.0.9",
+          "name": "1.0.9 – DirectX 12, performance optimization, bug fixes and much more",
+          "publishedAt": "2026-10-15T17:22:00Z",
+          "htmlUrl": "https://github.com/previouslevelgames/recharged/releases/tag/v1.0.9"
+        },
+        "releaseCount": 11,
+        "totalDownloads": 691
+      },
+      "game": {
+        "title": "Mario Strikers Charged",
+        "releaseDate": "2007-05-25",
+        "developers": [
+          "Next Level Games"
+        ],
+        "publishers": [
+          "Nintendo"
+        ],
+        "genres": [
+          "Sport"
+        ],
+        "summary": "Mario Strikers Charged is a Mario soccer Wii game and the sequel to the Nintendo GameCube game Super Mario Strikers. Up to four players can participate in this game as play soccer, attempting to kick the ball into another opponent's goal. The soccer in this game, however, has several differences than the real soccer, such as the ability to tackle other players with a minimal penalty, using Mario-themed items to give players an advantage over their opponents, and playing with stage hazards effectively. This game places a higher emphasis on individual character attributes compared to its precedent, by not only assigning stats, but by also giving team captains a unique Super Ability and the Mega Strike, an opportunity to score up to six goals. Another introduced mechanic is the power level of the ball: indicated by the color of the glow, the shots of the ball become more quick and powerful the more active it is, thus making it easier to score goals with.",
+        "rating": 75.5,
+        "url": "https://www.igdb.com/games/mario-strikers-charged",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc88gs.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc88gr.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc88gt.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc88gq.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc88gu.jpg"
         ]
       }
     }
