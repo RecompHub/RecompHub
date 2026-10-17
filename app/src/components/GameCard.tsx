@@ -1,5 +1,6 @@
 import { useStore, useGameStatus } from "../store";
 import { GameArt } from "./GameArt";
+import { gameTitle } from "../format";
 import type { Game } from "../types";
 
 /** Capa vertical clicável, usada nas prateleiras da tela inicial. */
@@ -13,7 +14,7 @@ export function GameCard({ game, caption }: { game: Game; caption?: string }) {
         {s.installed && <span className="badge badge-installed">Instalado</span>}
         {!s.installed && s.inLibrary && <span className="badge">Na biblioteca</span>}
       </div>
-      <span className="game-card-name">{game.name}</span>
+      <span className="game-card-name">{gameTitle(game)}</span>
       {caption && <span className="game-card-caption">{caption}</span>}
     </button>
   );

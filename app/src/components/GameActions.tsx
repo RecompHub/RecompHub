@@ -1,6 +1,6 @@
 import { open } from "@tauri-apps/plugin-dialog";
 import { useStore, useGameStatus } from "../store";
-import { formatBytes } from "../format";
+import { formatBytes, gameTitle } from "../format";
 import type { Game } from "../types";
 
 /** Botão principal (Jogar / Instalar / Atualizar / progresso) de um jogo. */
@@ -54,7 +54,7 @@ export function GameActions({ game, showLibraryButton = false }: { game: Game; s
             className="btn btn-big btn-secondary"
             title="Já baixou esta recomp por conta própria? Aponte a pasta dela."
             onClick={async () => {
-              const dir = await open({ directory: true, title: `Pasta onde ${game.name} está instalado` });
+              const dir = await open({ directory: true, title: `Pasta onde ${gameTitle(game)} está instalado` });
               if (typeof dir === "string") await store.importInstall(game.id, dir);
             }}
           >

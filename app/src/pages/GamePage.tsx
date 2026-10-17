@@ -1,7 +1,7 @@
 import { useStore } from "../store";
 import { GameArt } from "../components/GameArt";
 import { GameActions } from "../components/GameActions";
-import { InfoPanel, ReleaseNotes, Screenshots } from "../components/GameDetails";
+import { InfoPanel, ProjectSection, ReleaseNotes, Screenshots } from "../components/GameDetails";
 
 /** Página de um jogo do catálogo (vinda do Início ou do Explorar). */
 export function GamePage({ gameId }: { gameId: string }) {
@@ -23,6 +23,7 @@ export function GamePage({ gameId }: { gameId: string }) {
 
       <div className="detail-grid">
         <div className="detail-main">
+          <ProjectSection game={game} />
           <section>
             <h2 className="section-title">Sobre</h2>
             <p className="summary">{game.game?.summary ?? game.recomp?.description ?? "Sem descrição."}</p>

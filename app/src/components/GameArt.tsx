@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { gameTitle } from "../format";
 import type { Game } from "../types";
 
 type Kind = "grid" | "hero" | "logo" | "icon";
@@ -16,7 +17,7 @@ export function GameArt({ game, kind, className = "" }: { game: Game; kind: Kind
       <img
         className={`art art-${kind} ${className}`}
         src={url}
-        alt={kind === "logo" ? game.name : ""}
+        alt={kind === "logo" ? gameTitle(game) : ""}
         loading="lazy"
         draggable={false}
         onError={() => setFailed(true)}
@@ -25,7 +26,7 @@ export function GameArt({ game, kind, className = "" }: { game: Game; kind: Kind
   }
 
   if (kind === "logo") {
-    return <h1 className={`art-logo-text ${className}`}>{game.name}</h1>;
+    return <h1 className={`art-logo-text ${className}`}>{gameTitle(game)}</h1>;
   }
   return (
     <div
@@ -34,7 +35,7 @@ export function GameArt({ game, kind, className = "" }: { game: Game; kind: Kind
       aria-hidden
     >
       {kind === "grid" && <span>{game.originalTitle}</span>}
-      {kind === "icon" && <span>{game.name.charAt(0)}</span>}
+      {kind === "icon" && <span>{gameTitle(game).charAt(0)}</span>}
     </div>
   );
 }

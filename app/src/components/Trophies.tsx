@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { api } from "../api";
 import { useStore } from "../store";
-import { formatDate } from "../format";
+import { formatDate, gameTitle } from "../format";
 import type { Game, TrophiesView, TrophyView } from "../types";
 
 const CATEGORY_LABELS: Record<string, string> = {
@@ -129,7 +129,7 @@ export function TrophyToasts() {
         <button key={u.toastId} className="trophy-toast" onClick={() => dismissUnlock(u.toastId)}>
           <span className="trophy-icon">🏆</span>
           <span className="trophy-text">
-            <span className="trophy-toast-label">Troféu desbloqueado · {gameById(u.gameId)?.name}</span>
+            <span className="trophy-toast-label">Troféu desbloqueado · {(() => { const g = gameById(u.gameId); return g ? gameTitle(g) : ""; })()}</span>
             <strong>{u.title}</strong>
             <span className="muted small">{u.description}</span>
           </span>

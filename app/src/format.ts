@@ -41,3 +41,9 @@ export function formatRelative(iso: string | null | undefined): string {
   const years = Math.floor(days / 365);
   return years === 1 ? "há 1 ano" : `há ${years} anos`;
 }
+
+/** Nome do jogo para exibição (IGDB, ou o título original). O nome do
+ * projeto recomp/port (`game.name`) aparece só dentro da página do jogo. */
+export function gameTitle(game: { game?: { title: string } | null; originalTitle: string }): string {
+  return game.game?.title || game.originalTitle;
+}
