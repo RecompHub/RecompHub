@@ -9,3 +9,6 @@ CLAUDE.md
 # Credenciais locais (Twitch/IGDB, etc.): nunca versionar
 .env
 .env.*
+
+# Configuração local do Claude Code (permissões desta máquina)
+.claude/settings.local.json

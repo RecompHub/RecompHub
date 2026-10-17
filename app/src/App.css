@@ -1028,3 +1028,113 @@ h1, h2, h3, h4 {
   accent-color: var(--accent);
   cursor: pointer;
 }
+
+/* ---------- Projeto (página do jogo) ---------- */
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px 16px;
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+  background: var(--panel);
+}
+
+.project-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.project-name {
+  font-size: 16px;
+}
+
+.project-desc {
+  margin: 0;
+}
+
+.project-card .link {
+  align-self: flex-start;
+}
+
+/* ---------- Carrossel do Início ---------- */
+
+.carousel {
+  position: relative;
+  height: 340px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.carousel-slide {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s ease;
+}
+
+.carousel-slide-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 56px;
+  margin-top: -28px;
+  border: none;
+  border-radius: 4px;
+  background: #000a;
+  color: var(--text);
+  font-size: 30px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.carousel:hover .carousel-arrow {
+  opacity: 1;
+}
+
+.carousel-arrow:hover {
+  background: #000d;
+  color: var(--accent);
+}
+
+.carousel-prev {
+  left: 12px;
+}
+
+.carousel-next {
+  right: 12px;
+}
+
+.carousel-dots {
+  position: absolute;
+  right: 24px;
+  bottom: 20px;
+  display: flex;
+  gap: 8px;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #fff6;
+  cursor: pointer;
+}
+
+.carousel-dot-active {
+  width: 26px;
+  border-radius: 5px;
+  background: var(--accent);
+}

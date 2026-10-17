@@ -4,7 +4,7 @@ import { GameArt } from "../components/GameArt";
 import { GameActions } from "../components/GameActions";
 import { InfoPanel, ReleaseNotes } from "../components/GameDetails";
 import { TrophiesSection } from "../components/Trophies";
-import { formatDate, formatPlayTime, formatRelative } from "../format";
+import { formatDate, formatPlayTime, formatRelative, gameTitle } from "../format";
 import type { Game } from "../types";
 
 export function LibraryPage({ gameId }: { gameId?: string }) {
@@ -13,8 +13,10 @@ export function LibraryPage({ gameId }: { gameId?: string }) {
 
   const games = (catalog?.games ?? [])
     .filter((g) => library[g.id])
-    .filter((g) => g.name.toLocaleLowerCase("pt-BR").includes(query.trim().toLocaleLowerCase("pt-BR")))
-    .sort((a, b) => a.name.localeCompare(b.name, "pt-BR"));
+    .filter((g) =>
+      [gameTitle(g), g.name].some((n) => n.toLocaleLowerCase("pt-BR").includes(query.trim().toLocaleLowerCase("pt-BR"))),
+    )
+    .sort((a, b) => gameTitle(a).localeCompare(gameTitle(b), "pt-BR"));
   const installed = games.filter((g) => library[g.id].installed);
   const notInstalled = games.filter((g) => !library[g.id].installed);
   const selected = games.find((g) => g.id === gameId) ?? installed[0] ?? notInstalled[0];
@@ -76,7 +78,7 @@ function LibraryItem({ game, selected }: { game: Game; selected: boolean }) {
         onClick={() => navigate({ page: "library", gameId: game.id })}
       >
         <GameArt game={game} kind="icon" className="library-icon" />
-        <span className="library-name">{game.name}</span>
+        <span className="library-name">{gameTitle(game)}</span>
         {s.running && <span className="dot dot-running" title="Em execução" />}
         {s.progress && <span className="dot dot-busy" title="Instalando" />}
         {!s.running && !s.progress && s.updateAvailable && <span className="dot dot-update" title="Atualização disponível" />}
@@ -126,8 +128,8 @@ function LibraryDetail({ game }: { game: Game }) {
                   onClick={() =>
                     confirm(
                       s.installed?.imported
-                        ? `Remover ${game.name} do launcher? Os arquivos em ${s.installed.installPath} não serão apagados.`
-                        : `Desinstalar ${game.name}? A pasta de instalação será apagada.`,
+                        ? `Remover ${gameTitle(game)} do launcher? Os arquivos em ${s.installed.installPath} não serão apagados.`
+                        : `Desinstalar ${gameTitle(game)}? A pasta de instalação será apagada.`,
                     ) && store.uninstall(game.id)
                   }
                 >

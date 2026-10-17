@@ -96,6 +96,9 @@ fn platform_id(platform: &str) -> Option<u32> {
         "GBA" => 24,
         "NDS" | "DS" => 20,
         "XBOX" => 11,
+        "X360" | "XBOX360" => 12,
+        "PS3" => 9,
+        "PS4" => 48,
         _ => return None,
     })
 }

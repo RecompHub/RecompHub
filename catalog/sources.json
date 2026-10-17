@@ -462,6 +462,229 @@
         "icon": "https://cdn2.steamgriddb.com/icon/feecee9f1643651799ede2740927317a.ico"
       },
       "igdbId": 1036
+    },
+    {
+      "id": "gow3",
+      "name": "gow3_pc",
+      "repo": "FelipePrado0/gow3_pc",
+      "originalTitle": "God of War III Remastered",
+      "originalPlatform": "PS4",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "gow3-windows.zip",
+          "executable": "God of War III.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "gow3-x86_64.AppImage",
+          "executable": "gow3-x86_64.AppImage"
+        }
+      },
+      "requiredRom": {
+        "description": "Dump do seu PS4: God of War III Remastered (CUSA01623 ou CUSA01715, v01.00/01.02)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 5246707,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/bc6a17604012da6895c1bacd28cdb9fa.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/27908be590d3ec381df976ecbf65df81.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/edd47ba7fa1bbff38973841c9cd0733c.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/65e0bce9207bd3a5a51e0d2b568a6214.ico"
+      },
+      "igdbId": 19959
+    },
+    {
+      "id": "uncharted-ndc",
+      "name": "uncharted_pc",
+      "repo": "Supermedo/uncharted_pc",
+      "originalTitle": "Uncharted: The Nathan Drake Collection",
+      "originalPlatform": "PS4",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "uncharted-windows.zip",
+          "executable": "Uncharted.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Dump decriptado do seu PS4: Uncharted: The Nathan Drake Collection (ex.: CUSA02343, CUSA02320)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 5246715,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/6374abaaafb1a4c0832a34ffa29b15b0.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/a5329a91ef79db75900bd9cab3d96e43.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/2aca752107ac2bde4cd02805118de503.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/da173c9a620a3fa4fb1142fd6c2db919.ico"
+      },
+      "igdbId": 10962
+    },
+    {
+      "id": "sonic-unleashed",
+      "name": "Unleashed Recompiled",
+      "repo": "hedge-dev/UnleashedRecomp",
+      "originalTitle": "Sonic Unleashed",
+      "originalPlatform": "X360",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-Windows.zip",
+          "executable": "UnleashedRecomp.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Arquivos do seu Sonic Unleashed de Xbox 360 (o instalador do próprio jogo pede na 1ª execução)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 34584,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/b80c0932cb6f7be27c8d37b4c847a8bd.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/2fc1df7ac6e00ffac3509b070b117ddc.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/ce3b5506fc4151c97d646dc6fce8b1f5.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/63a99723ebb3af94d52b474c3b21dbe1.ico"
+      },
+      "igdbId": 5169
+    },
+    {
+      "id": "skate3",
+      "name": "Skate 3 Recomp",
+      "repo": "mchughalex/skate3recomp",
+      "originalTitle": "Skate 3",
+      "originalPlatform": "X360",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-Windows.zip",
+          "executable": "skate3.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "*-Linux.zip",
+          "executable": "skate3"
+        }
+      },
+      "requiredRom": {
+        "description": "Arquivos do seu Skate 3 de Xbox 360",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 5249006,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/cb5afcadcac972f1c6d743c96936ebe3.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/c255c05246a081654a0267cbb725f5a7.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/a5ae86de28cfea2be65951dbb04567ee.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/dae9ad236c11ee65425921309851a162.ico"
+      },
+      "igdbId": 2587
+    },
+    {
+      "id": "sotn",
+      "name": "SymphonyRecomp",
+      "repo": "BlackLabelHQ/SymphonyRecomp",
+      "originalTitle": "Castlevania: Symphony of the Night",
+      "originalPlatform": "PS1",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-windows-x64.zip",
+          "executable": "sotn.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "*-linux-x64.tar.gz",
+          "executable": "sotn"
+        }
+      },
+      "requiredRom": {
+        "description": "Imagem do seu disco de PS1: Castlevania: Symphony of the Night (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 37654,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/13e50e203d8be253cc8cd7fbe1509c63.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/3b036b877a6a074d7dbfc706fe868c1d.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/e946209592563be0f01c844ab2170f0c.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/eadccc9ad3d1c5ce3861fabfbf759493.png"
+      },
+      "igdbId": 1128
+    },
+    {
+      "id": "blue-dragon",
+      "name": "reblue",
+      "repo": "zolaware/reblue",
+      "originalTitle": "Blue Dragon",
+      "originalPlatform": "X360",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-win-amd64.zip",
+          "executable": "reblue.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "*-x86_64.AppImage",
+          "executable": "*-x86_64.AppImage"
+        }
+      },
+      "requiredRom": {
+        "description": "Arquivos do seu Blue Dragon de Xbox 360",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 5254283,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/28e3bed162f123fc16f3084bbe61d98c.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/d111938e811c0ed7c4ee3e749b07b454.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/2bca094a39e0c412b871d67f1cfa5945.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/0373773367d222af429a7e5ab573a42d.png"
+      },
+      "igdbId": 6923
+    },
+    {
+      "id": "mk64",
+      "name": "Mario Kart 64: Recompiled",
+      "repo": "sonicdcer/MarioKart64Recomp",
+      "originalTitle": "Mario Kart 64",
+      "originalPlatform": "N64",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-Windows-RelWithDebInfo.zip",
+          "executable": "MarioKart64Recompiled.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "*-Linux-X64-Release.zip",
+          "executable": "MarioKart64Recompiled"
+        }
+      },
+      "requiredRom": {
+        "description": "Mario Kart 64 (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 21164,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/8908077ce7fd405516d81c2c929de429.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/abdeb6f575ac5c6676b747bca8d09cc2.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/1755c118e8859eb000eb6eca25369407.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/f57e9defd1303332611ab2ca1994500d.png"
+      },
+      "igdbId": 2342
     }
   ]
 }

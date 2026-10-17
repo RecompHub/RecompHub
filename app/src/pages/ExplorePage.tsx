@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { useStore } from "../store";
 import { GameArt } from "../components/GameArt";
-import { formatCount, formatDate, formatYear } from "../format";
+import { formatCount, formatDate, formatYear, gameTitle } from "../format";
 import type { Game } from "../types";
 
 type SortKey = "updated" | "recompRelease" | "gameRelease" | "name" | "stars" | "downloads";
@@ -10,7 +10,7 @@ const SORTS: { key: SortKey; label: string; value: (g: Game) => number | string 
   { key: "updated", label: "Última atualização", value: (g) => g.recomp?.latestRelease?.publishedAt ?? "" },
   { key: "recompRelease", label: "Lançamento do recomp", value: (g) => g.recomp?.firstReleaseAt ?? "" },
   { key: "gameRelease", label: "Lançamento do jogo", value: (g) => g.game?.releaseDate ?? "" },
-  { key: "name", label: "Nome", value: (g) => g.name.toLocaleLowerCase("pt-BR") },
+  { key: "name", label: "Nome", value: (g) => gameTitle(g).toLocaleLowerCase("pt-BR") },
   { key: "stars", label: "Estrelas no GitHub", value: (g) => g.recomp?.stars ?? 0 },
   { key: "downloads", label: "Downloads", value: (g) => g.recomp?.totalDownloads ?? 0 },
 ];
@@ -36,7 +36,7 @@ export function ExplorePage() {
   const results = useMemo(() => {
     const q = query.trim().toLocaleLowerCase("pt-BR");
     const filtered = games.filter((g) => {
-      if (q && ![g.name, g.originalTitle, g.repo].some((s) => s.toLocaleLowerCase("pt-BR").includes(q))) return false;
+      if (q && ![gameTitle(g), g.name, g.originalTitle, g.repo].some((s) => s.toLocaleLowerCase("pt-BR").includes(q))) return false;
       if (platforms.size && !platforms.has(g.originalPlatform)) return false;
       if (genres.size && !(g.game?.genres ?? []).some((x) => genres.has(x))) return false;
       if (onlySupported && !(platform in g.platforms)) return false;
@@ -112,9 +112,9 @@ export function ExplorePage() {
           <button key={g.id} className="result-row" onClick={() => navigate({ page: "game", gameId: g.id })}>
             <GameArt game={g} kind="grid" className="result-art" />
             <div className="result-main">
-              <strong>{g.name}</strong>
+              <strong>{gameTitle(g)}</strong>
               <span className="muted">
-                {[g.originalPlatform, g.game?.releaseDate && formatYear(g.game.releaseDate), g.game?.genres.join(", ")]
+                {[g.originalPlatform, g.game?.releaseDate && formatYear(g.game.releaseDate), g.game?.genres.join(", "), g.name]
                   .filter(Boolean)
                   .join(" · ")}
               </span>

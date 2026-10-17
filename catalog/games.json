@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-17T00:23:20.456081403Z",
+  "generatedAt": "2026-10-17T00:56:21.868280400Z",
   "games": [
     {
       "id": "zelda64-mm",
@@ -48,7 +48,7 @@
           "htmlUrl": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 7,
-        "totalDownloads": 372348
+        "totalDownloads": 372362
       },
       "game": {
         "title": "The Legend of Zelda: Majora's Mask",
@@ -123,7 +123,7 @@
           "htmlUrl": "https://github.com/sonicdcer/Starfox64Recomp/releases/tag/1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 30135
+        "totalDownloads": 30136
       },
       "game": {
         "title": "Star Fox 64",
@@ -198,7 +198,7 @@
           "htmlUrl": "https://github.com/BanjoRecomp/BanjoRecomp/releases/tag/v1.0.2"
         },
         "releaseCount": 3,
-        "totalDownloads": 144789
+        "totalDownloads": 144803
       },
       "game": {
         "title": "Banjo-Kazooie",
@@ -274,7 +274,7 @@
           "htmlUrl": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled/releases/tag/v1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 44835
+        "totalDownloads": 44849
       },
       "game": {
         "title": "Donkey Kong 64",
@@ -355,7 +355,7 @@
           "htmlUrl": "https://github.com/klorfmorf/Goemon64Recomp/releases/tag/v0.2.0-dev"
         },
         "releaseCount": 5,
-        "totalDownloads": 22839
+        "totalDownloads": 22842
       },
       "game": {
         "title": "Mystical Ninja Starring Goemon",
@@ -430,7 +430,7 @@
           "htmlUrl": "https://github.com/RevoSucks/BM64Recomp/releases/tag/v1.0.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 20309
+        "totalDownloads": 20315
       },
       "game": {
         "title": "Bomberman 64",
@@ -505,7 +505,7 @@
           "htmlUrl": "https://github.com/MegaMan64Recomp/MegaMan64Recompiled/releases/tag/v0.9.1"
         },
         "releaseCount": 3,
-        "totalDownloads": 14608
+        "totalDownloads": 14614
       },
       "game": {
         "title": "Mega Man 64",
@@ -580,7 +580,7 @@
           "htmlUrl": "https://github.com/HarvestMoon64Recomp/HarvestMoon64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 6,
-        "totalDownloads": 9105
+        "totalDownloads": 9110
       },
       "game": {
         "title": "Harvest Moon 64",
@@ -651,7 +651,7 @@
           "htmlUrl": "https://github.com/theboy181/drmario64_recomp_plus/releases/tag/1.0.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 10697
+        "totalDownloads": 10699
       },
       "game": {
         "title": "Dr. Mario 64",
@@ -728,7 +728,7 @@
           "htmlUrl": "https://github.com/cdlewis/snowboardkids2-recomp/releases/tag/v1.0.5"
         },
         "releaseCount": 4,
-        "totalDownloads": 7715
+        "totalDownloads": 7719
       },
       "game": {
         "title": "Snowboard Kids 2",
@@ -803,7 +803,7 @@
           "steam-deck",
           "windows"
         ],
-        "stars": 109,
+        "stars": 110,
         "firstReleaseAt": "2026-09-05T16:30:20Z",
         "latestRelease": {
           "tag": "v1.1.4",
@@ -812,7 +812,7 @@
           "htmlUrl": "https://github.com/JackandBeans/Snap64Recomp/releases/tag/v1.1.4"
         },
         "releaseCount": 15,
-        "totalDownloads": 7706
+        "totalDownloads": 7714
       },
       "game": {
         "title": "Pokémon Snap",
@@ -891,7 +891,7 @@
           "htmlUrl": "https://github.com/DahSidiAbdallah/ConkerBFDReloaded/releases/tag/v1.4.0"
         },
         "releaseCount": 13,
-        "totalDownloads": 5972
+        "totalDownloads": 5989
       },
       "game": {
         "title": "Conker's Bad Fur Day",
@@ -969,7 +969,7 @@
           "htmlUrl": "https://github.com/RevoSucks/CV64Recomp/releases/tag/v0.5.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 189
+        "totalDownloads": 190
       },
       "game": {
         "title": "Castlevania",
@@ -1036,7 +1036,7 @@
         "homepage": "https://twilitrealm.dev",
         "license": "CC0-1.0",
         "topics": [],
-        "stars": 5882,
+        "stars": 5883,
         "firstReleaseAt": "2026-04-24T03:44:05Z",
         "latestRelease": {
           "tag": "v2.0.3",
@@ -1045,7 +1045,7 @@
           "htmlUrl": "https://github.com/TwilitRealm/dusklight/releases/tag/v2.0.3"
         },
         "releaseCount": 24,
-        "totalDownloads": 1355690
+        "totalDownloads": 1355892
       },
       "game": {
         "title": "The Legend of Zelda: Twilight Princess",
@@ -1430,6 +1430,529 @@
             "category": "glitched",
             "goal": 0
           }
+        ]
+      }
+    },
+    {
+      "id": "gow3",
+      "name": "gow3_pc",
+      "repo": "FelipePrado0/gow3_pc",
+      "originalTitle": "God of War III Remastered",
+      "originalPlatform": "PS4",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "gow3-x86_64.AppImage",
+          "executable": "gow3-x86_64.AppImage"
+        },
+        "windows-x64": {
+          "assetPattern": "gow3-windows.zip",
+          "executable": "God of War III.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Dump do seu PS4: God of War III Remastered (CUSA01623 ou CUSA01715, v01.00/01.02)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 5246707,
+      "igdbId": 19959,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/bc6a17604012da6895c1bacd28cdb9fa.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/27908be590d3ec381df976ecbf65df81.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/edd47ba7fa1bbff38973841c9cd0733c.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/65e0bce9207bd3a5a51e0d2b568a6214.ico"
+      },
+      "recomp": {
+        "description": "God of War III Remastered (PS4) for Windows and Linux (experimental AppImage). Original x86-64 code runs directly on the CPU with a custom runtime; graphics use shadPS4's Vulkan video core and cuesta4's fixes. Launcher, in-game menu, controller icons and up to 240 FPS. Requires your own game dump. No game files included.",
+        "homepage": "https://github.com/FelipePrado0/gow3_pc/releases/latest",
+        "license": "GPL-2.0",
+        "topics": [
+          "appimage",
+          "game-preservation",
+          "god-of-war",
+          "linux",
+          "pc-port",
+          "ps4",
+          "shadps4",
+          "vulkan",
+          "windows"
+        ],
+        "stars": 2888,
+        "firstReleaseAt": "2026-10-10T22:37:56Z",
+        "latestRelease": {
+          "tag": "windows-v2.4.1",
+          "name": "God of War III Remastered for PC 2.4.1",
+          "publishedAt": "2026-10-16T22:58:58Z",
+          "htmlUrl": "https://github.com/FelipePrado0/gow3_pc/releases/tag/windows-v2.4.1"
+        },
+        "releaseCount": 18,
+        "totalDownloads": 338067
+      },
+      "game": {
+        "title": "God of War III: Remastered",
+        "releaseDate": "2015-07-14",
+        "developers": [
+          "Red Kite Games",
+          "Santa Monica Studio"
+        ],
+        "publishers": [
+          "Sony Computer Entertainment"
+        ],
+        "genres": [
+          "Hack and slash/Beat 'em up",
+          "Adventure"
+        ],
+        "summary": "Set in the realm of brutal Greek mythology, God of War III Remastered is the critically acclaimed single-player game that allows players to take on the fearless role of the ex-Spartan warrior, Kratos, as he rises from the darkest depths of Hades to scale the very heights of Mount Olympus to seek his bloody revenge. Armed with double-chained blades and an array of new weapons and magic, Kratos must take on mythology’s deadliest creatures while solving intricate puzzles throughout his merciless quest to destroy Olympus.",
+        "rating": 83.1,
+        "url": "https://www.igdb.com/games/god-of-war-iii-remastered",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/dgjpvcrpkeeqetrkzzfz.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/dejvzcjimmnq9ay2lzju.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/rlbusmby8zlziuyq0yqt.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/pcaociesn3spuvsdu5mr.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/vjpxhf0vqgbumm1vixiw.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scsrd5.jpg"
+        ]
+      }
+    },
+    {
+      "id": "uncharted-ndc",
+      "name": "uncharted_pc",
+      "repo": "Supermedo/uncharted_pc",
+      "originalTitle": "Uncharted: The Nathan Drake Collection",
+      "originalPlatform": "PS4",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "uncharted-windows.zip",
+          "executable": "Uncharted.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Dump decriptado do seu PS4: Uncharted: The Nathan Drake Collection (ex.: CUSA02343, CUSA02320)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 5246715,
+      "igdbId": 10962,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/6374abaaafb1a4c0832a34ffa29b15b0.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/a5329a91ef79db75900bd9cab3d96e43.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/2aca752107ac2bde4cd02805118de503.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/da173c9a620a3fa4fb1142fd6c2db919.ico"
+      },
+      "recomp": {
+        "description": "Uncharted: The Nathan Drake Collection running natively on Windows - by SuperMedo",
+        "homepage": null,
+        "license": "GPL-2.0",
+        "topics": [],
+        "stars": 1014,
+        "firstReleaseAt": "2026-10-15T00:17:51Z",
+        "latestRelease": {
+          "tag": "v0.3.3",
+          "name": "Uncharted for Windows 0.3.3",
+          "publishedAt": "2026-10-15T21:49:02Z",
+          "htmlUrl": "https://github.com/Supermedo/uncharted_pc/releases/tag/v0.3.3"
+        },
+        "releaseCount": 4,
+        "totalDownloads": 32097
+      },
+      "game": {
+        "title": "Uncharted: The Nathan Drake Collection",
+        "releaseDate": "2015-10-07",
+        "developers": [
+          "Naughty Dog"
+        ],
+        "publishers": [
+          "Sony Computer Entertainment"
+        ],
+        "genres": [
+          "Shooter",
+          "Platform",
+          "Puzzle",
+          "Adventure"
+        ],
+        "summary": "Uncharted: The Nathan Drake Collection is a remastered compilation of the action-adventure shooter platform video games Drake's Fortune, Among Thieves, and Drake's Deception. Ported by Bluepoint Games, the collection was released exclusively for the PlayStation 4 on October 7, 2015 in Europe and October 9th, 2015 in North America.\n\nThe Nathan Drake Collection features the original three games in the Uncharted series with 1080p resolution, 60 frames per second, better lighting, textures and models. The collection also implements a \"Photo Mode\", a mode where the player can freeze the game at any moment to take personalized screenshots, derived from Naughty Dog's other remastered entry, The Last of Us Remastered, as well as new trophies. The ported games only include their respective single-player modes.\n\nThe pre-ordered version of The Nathan Drake Collection includes the \"Nathan Drake Pack\", which consists of single-player skins of iconic Nathan Drake outfits, as well as two weapons: the Golden AK-47 and Golden 92FS - 9mm. Pre-ordering the collection as a digital download through the PlayStation Store would also give an exclusive Uncharted: The Nathan Drake Collection PlayStation 4 dynamic theme.\n\nPurchasing The Nathan Drake Collection, and owning a valid subscription to PlayStation Plus, before the expiry date of December 13, 2015 would grant the player exclusive access to the multiplayer beta of A Thief's End.",
+        "rating": 86.4,
+        "url": "https://www.igdb.com/games/uncharted-the-nathan-drake-collection",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/oyb4up4ur3hpdjcjbqww.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/xqjanod1ofnkukyo1klu.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/kbdl0vqkt8nsj3wsv3mf.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/uqgvxu06y3brb5jlvowl.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/wbckadayuylzkcgdtbes.jpg"
+        ]
+      }
+    },
+    {
+      "id": "sonic-unleashed",
+      "name": "Unleashed Recompiled",
+      "repo": "hedge-dev/UnleashedRecomp",
+      "originalTitle": "Sonic Unleashed",
+      "originalPlatform": "X360",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-Windows.zip",
+          "executable": "UnleashedRecomp.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Arquivos do seu Sonic Unleashed de Xbox 360 (o instalador do próprio jogo pede na 1ª execução)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 34584,
+      "igdbId": 5169,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/b80c0932cb6f7be27c8d37b4c847a8bd.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/2fc1df7ac6e00ffac3509b070b117ddc.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/ce3b5506fc4151c97d646dc6fce8b1f5.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/63a99723ebb3af94d52b474c3b21dbe1.ico"
+      },
+      "recomp": {
+        "description": "An unofficial PC port of the Xbox 360 version of Sonic Unleashed created through the process of static recompilation.",
+        "homepage": null,
+        "license": "GPL-3.0",
+        "topics": [],
+        "stars": 5199,
+        "firstReleaseAt": "2025-03-01T11:01:14Z",
+        "latestRelease": {
+          "tag": "v1.0.3",
+          "name": "v1.0.3",
+          "publishedAt": "2025-04-03T22:04:45Z",
+          "htmlUrl": "https://github.com/hedge-dev/UnleashedRecomp/releases/tag/v1.0.3"
+        },
+        "releaseCount": 4,
+        "totalDownloads": 723292
+      },
+      "game": {
+        "title": "Sonic Unleashed",
+        "releaseDate": "2008-11-20",
+        "developers": [
+          "Sonic Team"
+        ],
+        "publishers": [
+          "Sega"
+        ],
+        "genres": [
+          "Platform",
+          "Hack and slash/Beat 'em up",
+          "Adventure"
+        ],
+        "summary": "Gameplay in Sonic Unleashed focuses on two modes of platforming play: fast-paced levels that take place during daytime, showcasing Sonic's trademark speed as seen in previous games in the series, and slower, night-time levels, during which Sonic's Werehog form emerges, and gameplay switches to an action-based, brawler style of play, in which Sonic battles Gaia enemies",
+        "rating": 62.4,
+        "url": "https://www.igdb.com/games/sonic-unleashed",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/gutdg1wyavytpzatxecd.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/dups1f6syfawran5chdu.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/mzl5ppz8az1el5wd5pkh.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ux5yvtduv8jydqp7vgg0.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/g2c8ak7iqzpjoj0vnfoj.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/uueqhjieekguhjxw6mnb.jpg"
+        ]
+      }
+    },
+    {
+      "id": "skate3",
+      "name": "Skate 3 Recomp",
+      "repo": "mchughalex/skate3recomp",
+      "originalTitle": "Skate 3",
+      "originalPlatform": "X360",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "*-Linux.zip",
+          "executable": "skate3"
+        },
+        "windows-x64": {
+          "assetPattern": "*-Windows.zip",
+          "executable": "skate3.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Arquivos do seu Skate 3 de Xbox 360",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 5249006,
+      "igdbId": 2587,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/cb5afcadcac972f1c6d743c96936ebe3.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/c255c05246a081654a0267cbb725f5a7.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/a5ae86de28cfea2be65951dbb04567ee.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/dae9ad236c11ee65425921309851a162.ico"
+      },
+      "recomp": {
+        "description": "A native recompilation of Skate 3 for Windows, Linux, and macOS.",
+        "homepage": null,
+        "license": null,
+        "topics": [],
+        "stars": 1640,
+        "firstReleaseAt": "2026-06-04T21:32:32Z",
+        "latestRelease": {
+          "tag": "v2.0.2",
+          "name": "v2.0.2",
+          "publishedAt": "2026-07-24T21:21:06Z",
+          "htmlUrl": "https://github.com/mchughalex/skate3recomp/releases/tag/v2.0.2"
+        },
+        "releaseCount": 9,
+        "totalDownloads": 114085
+      },
+      "game": {
+        "title": "Skate 3",
+        "releaseDate": "2010-05-11",
+        "developers": [
+          "EA Black Box"
+        ],
+        "publishers": [
+          "Electronic Arts"
+        ],
+        "genres": [
+          "Sport"
+        ],
+        "summary": "Skate 3 features an all-new co-op mode where teammates can complete challenges together while advancing each other’s careers. From rewarding epic bails and fails with a beefed up Hall of Meat mode to honing your craft with the all-new skate.School, players of all skill levels have multiple ways to “kill it” in the game. The franchise also continues to raise the bar for user created content with the skate.Create feature suite, an innovative toolset that empowers gamers to truly express their skate style by creating their own graphics, videos, and skate parks.",
+        "rating": 81.6,
+        "url": "https://www.igdb.com/games/skate-3",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ivtb6bl53kaxyxyu31nn.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/tyeswo9gl8iprzarxjtj.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/oxl4triyxkvm4gdxlh9w.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/usdbbfw9cze7djeev7en.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/kvozrnjsuy9yk5ov6mrx.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc99kf.jpg"
+        ]
+      }
+    },
+    {
+      "id": "sotn",
+      "name": "SymphonyRecomp",
+      "repo": "BlackLabelHQ/SymphonyRecomp",
+      "originalTitle": "Castlevania: Symphony of the Night",
+      "originalPlatform": "PS1",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "*-linux-x64.tar.gz",
+          "executable": "sotn"
+        },
+        "windows-x64": {
+          "assetPattern": "*-windows-x64.zip",
+          "executable": "sotn.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Imagem do seu disco de PS1: Castlevania: Symphony of the Night (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 37654,
+      "igdbId": 1128,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/13e50e203d8be253cc8cd7fbe1509c63.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/3b036b877a6a074d7dbfc706fe868c1d.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/e946209592563be0f01c844ab2170f0c.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/eadccc9ad3d1c5ce3861fabfbf759493.png"
+      },
+      "recomp": {
+        "description": "Recompilation project for Castlevania: Symphony of the Night",
+        "homepage": null,
+        "license": null,
+        "topics": [],
+        "stars": 906,
+        "firstReleaseAt": "2026-08-02T21:38:11Z",
+        "latestRelease": {
+          "tag": "v0.5.1b",
+          "name": "v0.5.1b",
+          "publishedAt": "2026-08-19T01:28:39Z",
+          "htmlUrl": "https://github.com/BlackLabelHQ/SymphonyRecomp/releases/tag/v0.5.1b"
+        },
+        "releaseCount": 9,
+        "totalDownloads": 50904
+      },
+      "game": {
+        "title": "Castlevania: Symphony of the Night",
+        "releaseDate": "1997-03-20",
+        "developers": [
+          "Konami Computer Entertainment Tokyo"
+        ],
+        "publishers": [
+          "Konami"
+        ],
+        "genres": [
+          "Platform",
+          "Role-playing (RPG)",
+          "Adventure"
+        ],
+        "summary": "Having been awoken from his eternal slumber by the reappearance of Castlevania, Alucard must once again face the evil minions of darkness. Use your vampiric powers, along with weapons, potions, and other magical relics to change the tide of battle.\n\nA mixture of platform and role-playing action with many hidden areas and secrets. Can you discover them all?",
+        "rating": 92.2,
+        "url": "https://www.igdb.com/games/castlevania-symphony-of-the-night",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ioxxz5cyqrb56cginhj6.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/nl5xkzm1tlmerrgcqrw2.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/schy4n.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scz9kp.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/schjh3.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/schjh4.jpg"
+        ]
+      }
+    },
+    {
+      "id": "blue-dragon",
+      "name": "reblue",
+      "repo": "zolaware/reblue",
+      "originalTitle": "Blue Dragon",
+      "originalPlatform": "X360",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "*-x86_64.AppImage",
+          "executable": "*-x86_64.AppImage"
+        },
+        "windows-x64": {
+          "assetPattern": "*-win-amd64.zip",
+          "executable": "reblue.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Arquivos do seu Blue Dragon de Xbox 360",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 5254283,
+      "igdbId": 6923,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/28e3bed162f123fc16f3084bbe61d98c.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/d111938e811c0ed7c4ee3e749b07b454.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/2bca094a39e0c412b871d67f1cfa5945.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/0373773367d222af429a7e5ab573a42d.png"
+      },
+      "recomp": {
+        "description": "Recompilation of Blue Dragon",
+        "homepage": null,
+        "license": "BSD-3-Clause",
+        "topics": [],
+        "stars": 797,
+        "firstReleaseAt": "2026-08-23T01:33:50Z",
+        "latestRelease": {
+          "tag": "v1.3.1",
+          "name": "reblue v1.3.1",
+          "publishedAt": "2026-10-05T14:07:04Z",
+          "htmlUrl": "https://github.com/zolaware/reblue/releases/tag/v1.3.1"
+        },
+        "releaseCount": 21,
+        "totalDownloads": 52877
+      },
+      "game": {
+        "title": "Blue Dragon",
+        "releaseDate": "2006-12-07",
+        "developers": [
+          "Artoon",
+          "Mistwalker",
+          "Bird Studio"
+        ],
+        "publishers": [
+          "Microsoft Game Studios"
+        ],
+        "genres": [
+          "Role-playing (RPG)",
+          "Adventure"
+        ],
+        "summary": "\"Hironobu Sakaguchi, the Father of the Final Fantasy series, and Artoon present the world of Blue Dragon on Xbox 360. Featuring the character design of Akira Toriyama, the Father of \"Dragon Ball Z\", and music by Nobuo Uematsu, the composer for Final Fantasy, Blue Dragon is an epic role-playing game (RPG) centered on five youngsters who possess miraculous strength and magical power to control shadow creatures that mirror the actions of their masters.\"\n\nBlue Dragon follows the story of five friends (Shu, Jiro, Kluke, Zola, and Marumaro) as they travel across the world to confront Nene, the evil ruler of the Grand Kingdom. The setting inspired separate anime and manga adaptations, although these follow the story to different degrees and feature a different cast of characters. The game follows a traditional role-playing design, based around exploration and turn-based combat.\n\nThe gameplay of Blue Dragon uses turn-based gameplay elements seen in older Japanese role-playing video games. The game world contains two major types of areas: towns, in which the player can rest and purchase items, and dungeon-like areas, with numerous foes to be defeated.",
+        "rating": 79.8,
+        "url": "https://www.igdb.com/games/blue-dragon",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/himsfs8cd3z7crwynk4t.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/vfyy49mvh6vskugeiwfg.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/hlmr5pis8dddo0dgdmlb.jpg"
+        ]
+      }
+    },
+    {
+      "id": "mk64",
+      "name": "Mario Kart 64: Recompiled",
+      "repo": "sonicdcer/MarioKart64Recomp",
+      "originalTitle": "Mario Kart 64",
+      "originalPlatform": "N64",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "*-Linux-X64-Release.zip",
+          "executable": "MarioKart64Recompiled"
+        },
+        "windows-x64": {
+          "assetPattern": "*-Windows-RelWithDebInfo.zip",
+          "executable": "MarioKart64Recompiled.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Mario Kart 64 (USA)",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 21164,
+      "igdbId": 2342,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/8908077ce7fd405516d81c2c929de429.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/abdeb6f575ac5c6676b747bca8d09cc2.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/1755c118e8859eb000eb6eca25369407.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/f57e9defd1303332611ab2ca1994500d.png"
+      },
+      "recomp": {
+        "description": "Mario Kart 64 for PC (Windows/Linux/MacOS)",
+        "homepage": null,
+        "license": "GPL-3.0",
+        "topics": [],
+        "stars": 612,
+        "firstReleaseAt": "2025-08-17T20:39:37Z",
+        "latestRelease": {
+          "tag": "v0.9.2",
+          "name": "MarioKart 64: Recompiled 0.9.2",
+          "publishedAt": "2026-02-13T17:30:04Z",
+          "htmlUrl": "https://github.com/sonicdcer/MarioKart64Recomp/releases/tag/v0.9.2"
+        },
+        "releaseCount": 2,
+        "totalDownloads": 27386
+      },
+      "game": {
+        "title": "Mario Kart 64",
+        "releaseDate": "1996-12-14",
+        "developers": [
+          "Nintendo Entertainment Analysis & Development"
+        ],
+        "publishers": [
+          "Nintendo",
+          "iQue"
+        ],
+        "genres": [
+          "Racing",
+          "Arcade"
+        ],
+        "summary": "Mario Kart 64 is the second main installment of the Mario Kart series. It is the first game in the series to use three-dimensional graphics, however, the characters and items in this game are still two-dimensional, pre-rendered sprites. The game offers two camera angles and three engine sizes: 50cc, 100cc and 150cc. Each kart has distinctive handling, acceleration and top speed capabilities. Shells that you fire at rival racers, Bananas that make them skid out and Lightning Bolts that make them small and very slow are just a few of the game's unique power-ups.",
+        "rating": 81.6,
+        "url": "https://www.igdb.com/games/mario-kart-64",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc87rq.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc87rl.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc87rm.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc87rr.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc87rp.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc87ro.jpg"
         ]
       }
     }

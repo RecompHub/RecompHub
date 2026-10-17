@@ -58,6 +58,27 @@ export function InfoPanel({ game }: { game: Game }) {
   );
 }
 
+/** Projeto recomp/port por trás do jogo (o título do jogo fica no topo da página). */
+export function ProjectSection({ game }: { game: Game }) {
+  const owner = game.repo.split("/")[0];
+  const repoUrl = `https://github.com/${game.repo}`;
+  return (
+    <section>
+      <h2 className="section-title">Projeto</h2>
+      <div className="project-card">
+        <div className="project-head">
+          <strong className="project-name">{game.name}</strong>
+          <span className="muted small">por {owner}</span>
+        </div>
+        {game.recomp?.description && <p className="muted small project-desc">{game.recomp.description}</p>}
+        <button className="link" onClick={() => openUrl(repoUrl)}>
+          {game.repo} ↗
+        </button>
+      </div>
+    </section>
+  );
+}
+
 export function Screenshots({ game }: { game: Game }) {
   const shots = game.game?.screenshots ?? [];
   if (shots.length === 0) return null;
