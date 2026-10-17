@@ -72,6 +72,16 @@ export function ProjectSection({ game }: { game: Game }) {
           <span className="muted small">{t("por {owner}", { owner })}</span>
         </div>
         {game.recomp?.description && <p className="muted small project-desc">{game.recomp.description}</p>}
+        {Object.values(game.platforms).some((p) => p.installer) && (
+          <div className="rom-notice">
+            <strong>{t("Instalador do projeto")}</strong>
+            <span>
+              {t(
+                "Este jogo é instalado pelo instalador do próprio projeto, que compila o jogo no seu PC a partir do seu disco. Pode demorar bastante e ocupar vários GB durante a instalação.",
+              )}
+            </span>
+          </div>
+        )}
         {game.aiAssisted && (
           <div className="ai-notice">
             <strong>{t("Feito com IA")}</strong>

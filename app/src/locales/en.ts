@@ -99,6 +99,16 @@ export const EN: Record<string, string> = {
   "Pasta onde {game} está instalado": "Folder where {game} is installed",
   "Já tenho instalado…": "Already installed…",
   "Adicionar à biblioteca": "Add to library",
+  "Imagem do disco de {game}": "Disc image of {game}",
+  "Imagem de disco": "Disc image",
+  "Instalando {pct}%": "Installing {pct}%",
+  "Siga as instruções na janela do instalador…": "Follow the instructions in the installer window…",
+  "Pode demorar bastante: o jogo está sendo compilado no seu PC.": "This can take a while: the game is being compiled on your PC.",
+  "Instalador do projeto": "Project installer",
+  "Este jogo é instalado pelo instalador do próprio projeto, que compila o jogo no seu PC a partir do seu disco. Pode demorar bastante e ocupar vários GB durante a instalação.":
+    "This game is installed by the project's own installer, which compiles the game on your PC from your disc. It can take a while and use several GB during installation.",
+  "Remover {game} do launcher? O jogo continua instalado; para apagá-lo, use o desinstalador do projeto em Configurações do Windows → Aplicativos.":
+    "Remove {game} from the launcher? The game stays installed; to delete it, use the project's uninstaller in Windows Settings → Apps.",
 
   // Biblioteca
   "Buscar na biblioteca…": "Search library…",

@@ -8,6 +8,7 @@ mod github;
 mod install;
 mod launch;
 mod settings;
+mod setup;
 mod state;
 
 use std::collections::HashSet;
@@ -38,6 +39,7 @@ struct AppState {
     default_games_dir: PathBuf,
     settings_path: PathBuf,
     settings: Mutex<Settings>,
+    cache_dir: PathBuf,
     library_path: PathBuf,
     library: Mutex<Library>,
     /// Jogos com instalação/remoção em andamento.
@@ -254,10 +256,15 @@ async fn install_game(
     app: AppHandle,
     state: State<'_, AppState>,
     game_id: String,
+    rom: Option<PathBuf>,
 ) -> Result<Library> {
     let _guard = BusyGuard::acquire(&state, &game_id)?;
     let game = state.game(&game_id)?;
     let platform = state.platform_asset(&game)?;
+    // Antes de baixar centenas de MB do instalador.
+    if platform.installer.as_ref().is_some_and(setup::needs_rom) && rom.is_none() {
+        return Err(Error::RomRequired);
+    }
     let release = state.github.latest_release(&game.repo).await?;
     // Atualização acontece onde o jogo já está (inclusive se foi importado).
     let target = match state.installed_game(&game_id) {
@@ -265,16 +272,26 @@ async fn install_game(
         Err(_) => state.games_dir().join(&game_id),
     };
 
-    let installed = install::install(&state.http, &target, platform, &release, |progress| {
-        let _ = app.emit(
-            "install-progress",
-            InstallProgressEvent {
-                game_id: game_id.clone(),
-                progress,
-            },
-        );
-    })
-    .await?;
+    let emit = {
+        let app = app.clone();
+        let game_id = game_id.clone();
+        move |progress| {
+            let _ = app.emit(
+                "install-progress",
+                InstallProgressEvent {
+                    game_id: game_id.clone(),
+                    progress,
+                },
+            );
+        }
+    };
+    let installed = match &platform.installer {
+        // O instalador do projeto decide onde o jogo fica.
+        Some(installer) => {
+            setup::install(&state.http, &state.cache_dir, platform, installer, &release, rom, emit).await?
+        }
+        None => install::install(&state.http, &target, platform, &release, emit).await?,
+    };
 
     state.update_library(|library| {
         library
@@ -317,7 +334,26 @@ fn launch_game(app: AppHandle, state: State<'_, AppState>, game_id: String) -> R
     if state.busy.lock().unwrap().contains(&game_id) {
         return Err(Error::Busy(game_id));
     }
-    let installed = state.installed_game(&game_id)?;
+    let mut installed = state.installed_game(&game_id)?;
+    // O instalador do projeto pode ter se atualizado sozinho (outra pasta de versão).
+    if installed.external {
+        let game = state.game(&game_id)?;
+        let platform = state.platform_asset(&game)?;
+        if let Some(installer) = &platform.installer
+            && let Ok(Some(found)) = setup::detect(installer, platform)
+            && found.executable != installed.executable
+        {
+            installed.executable = found.executable;
+            installed.executable_hash = found.executable_hash;
+            let updated = installed.clone();
+            let id = game_id.clone();
+            state.update_library(move |library| {
+                if let Some(entry) = library.get_mut(&id) {
+                    entry.installed = Some(updated);
+                }
+            })?;
+        }
+    }
     let executable = installed.install_path.join(&installed.executable);
     if !executable.exists() {
         return Err(Error::ExecutableNotFound(executable.display().to_string()));
@@ -465,6 +501,13 @@ fn scan_games_dir(state: State<'_, AppState>) -> Result<Library> {
         let Some(platform) = game.platforms.get(&state.platform) else {
             continue;
         };
+        // Jogo de instalador próprio já instalado por fora do launcher.
+        if let Some(installer) = &platform.installer {
+            if let Ok(Some(installed)) = setup::detect(installer, platform) {
+                found.push((game.id, installed));
+            }
+            continue;
+        }
         let folder = folders.iter().find(|f| {
             f.file_name()
                 .and_then(|n| n.to_str())
@@ -565,6 +608,7 @@ fn init_state(app: &AppHandle) -> Result<AppState> {
         default_games_dir: default_games_dir(&data_dir),
         data_dir: data_dir.clone(),
         settings: Mutex::new(settings),
+        cache_dir: cache_dir.clone(),
         settings_path,
         library: Mutex::new(state::load(&library_path)?),
         library_path,

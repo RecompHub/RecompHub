@@ -791,6 +791,81 @@
         "icon": "https://cdn2.steamgriddb.com/icon/697d9e52caed2849d7e146c5f8c8c0d5.ico"
       },
       "igdbId": 2178
+    },
+    {
+      "id": "mario-kart-wii",
+      "name": "WiiCompiled",
+      "repo": "patchzyy/Wiicompiled",
+      "originalTitle": "Mario Kart Wii",
+      "originalPlatform": "Wii",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "WiiCompiled-Setup.exe",
+          "executable": "WiiCompiled.exe",
+          "installer": {
+            "installDir": "%LOCALAPPDATA%/Programs/WiiCompiled",
+            "args": [
+              "--silent",
+              "--progress-json",
+              "--game",
+              "{rom}"
+            ],
+            "progressJson": true
+          }
+        }
+      },
+      "requiredRom": {
+        "description": "Imagem do seu disco de Wii: Mario Kart Wii (Europa/PAL, RMCP01, sem modificações), em ISO, WBFS, RVZ, WIA, GCZ ou CISO. Cerca de 20 GB livres durante a instalação.",
+        "descriptionEn": "Your Wii disc image: Mario Kart Wii (Europe/PAL, RMCP01, unmodified), as ISO, WBFS, RVZ, WIA, GCZ or CISO. About 20 GB free during installation.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "aiAssisted": true,
+      "igdbId": 2183,
+      "sgdbId": 36054,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/3fb22546e0a13fb8b5d7345218eef2a5.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/c4bfbf68f5d8d0f8b9a0752ca08ea01d.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/860320be12a1c050cd7731794e231bd3.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/e7758fe5b033ed143e73a3cbafa3ff2f.ico"
+      }
+    },
+    {
+      "id": "super-mario-galaxy",
+      "name": "Nebula",
+      "repo": "keepvaibin/nebula",
+      "originalTitle": "Super Mario Galaxy",
+      "originalPlatform": "Wii",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "Nebula-Setup.exe",
+          "executable": "Nebula.exe",
+          "installer": {
+            "installDir": "%LOCALAPPDATA%/Programs/Nebula"
+          }
+        }
+      },
+      "requiredRom": {
+        "description": "Seu disco de Wii: Super Mario Galaxy (EUA, RMGE01, revisão 0), em ISO, RVZ ou pasta extraída. O instalador do Nebula pede o arquivo. Cerca de 16 GB livres durante a instalação.",
+        "descriptionEn": "Your Wii disc: Super Mario Galaxy (USA, RMGE01, revision 0), as ISO, RVZ or extracted folder. The Nebula installer asks for it. About 16 GB free during installation.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "aiAssisted": true,
+      "igdbId": 1077,
+      "sgdbId": 36389,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/850660ba5cb014184e5cc0e6b3d4c6bb.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/5e9fb672ee46be628a141b594d7c6f3e.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/faafda66202d234463057972460c04f5.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/654ad60ebd1ae29cedc37da04b6b0672.png"
+      }
     }
   ]
 }

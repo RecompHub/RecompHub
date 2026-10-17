@@ -28,6 +28,8 @@ export interface Game {
 export interface PlatformAsset {
   assetPattern: string;
   executable: string;
+  /** O asset é o instalador do próprio projeto (ver app/src-tauri/src/setup.rs). */
+  installer?: { installDir: string; args?: string[]; progressJson?: boolean };
 }
 
 export interface Images {
@@ -87,6 +89,8 @@ export interface InstalledGame {
   executableHash: string;
   /** Instalada fora do launcher; desinstalar não apaga os arquivos. */
   imported: boolean;
+  /** Instalado pelo instalador do próprio projeto; remover não apaga os arquivos. */
+  external?: boolean;
 }
 
 /** Release completa, buscada sob demanda (notas da versão). */
@@ -100,9 +104,11 @@ export interface Release {
 
 export interface InstallProgress {
   gameId: string;
-  stage: "download" | "extract";
+  stage: "download" | "extract" | "setup";
+  /** Na etapa "setup", é a porcentagem (total 100) ou 0/0 quando o instalador não informa. */
   downloaded: number;
   total: number;
+  message?: string;
 }
 
 export interface SettingsView {
