@@ -143,6 +143,12 @@ export const EN: Record<string, string> = {
   "Glitches": "Glitches",
   "Conquistas do próprio Dusklight": "Dusklight's own achievements",
   "Conquistas do próprio jogo": "The game's own achievements",
+  "Troféus oficiais do jogo original": "Official trophies of the original game",
+  "Marque as que você já fez.": "Check the ones you have done.",
+  "Platina": "Platinum",
+  "Ouro": "Gold",
+  "Prata": "Silver",
+  "Bronze": "Bronze",
   "Marque as que você já fez; a detecção automática virá numa versão futura.":
     "Check the ones you have done; automatic detection will come in a future version.",
   "Arquivo de troféus inválido: {error}": "Invalid trophy file: {error}",

@@ -59,13 +59,18 @@ pub struct SourceGame {
 
 /// Conquistas que o próprio jogo detecta e grava num arquivo de progresso; o
 /// launcher só lê esse arquivo. Hoje: `kind = "dusklight"`, que grava
-/// `{ "<chave>": { "progress": n, "unlocked": bool } }`.
+/// `{ "<chave>": { "progress": n, "unlocked": bool } }`, e `kind = "psn"`
+/// (troféus oficiais do jogo original, sem arquivo de progresso).
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct TrophyProvider {
     pub kind: String,
     /// Arquivo de progresso por sistema (`windows`, `linux`, `macos`).
     /// `%APPDATA%`, `%LOCALAPPDATA%` e `~` são expandidos pelo launcher.
+    /// Vazio quando o jogo não grava progresso (ex.: `kind = "psn"`, lista
+    /// oficial de troféus do console, só marcada à mão). Sempre serializado:
+    /// launchers até a v0.5.0 exigem o campo.
+    #[serde(default)]
     pub progress_file: BTreeMap<String, String>,
     /// Só no `sources.json`: caminho (em `catalog/`) com as definições, que o
     /// builder copia para `trophies`.

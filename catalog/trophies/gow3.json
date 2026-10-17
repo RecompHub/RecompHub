@@ -1,0 +1,250 @@
+{
+  "source": "Lista oficial de troféus de God of War III Remastered (PS4), conferida em godofwar.fandom.com/wiki/Trophies/God_of_War_III",
+  "trophies": [
+    {
+      "key": "king_of_the_hill",
+      "title": "King of the Hill",
+      "description": "Unlock all trophies",
+      "category": "platinum",
+      "goal": 0
+    },
+    {
+      "key": "vengeance_complete",
+      "title": "Vengeance Complete",
+      "description": "Beat the game",
+      "category": "gold",
+      "goal": 0
+    },
+    {
+      "key": "up_to_the_challenge",
+      "title": "Up to the Challenge",
+      "description": "Beat the Challenge of Olympus",
+      "category": "gold",
+      "goal": 0
+    },
+    {
+      "key": "unhuman",
+      "title": "Unhuman",
+      "description": "Beat Titan Mode",
+      "category": "gold",
+      "goal": 0
+    },
+    {
+      "key": "priceless",
+      "title": "Priceless",
+      "description": "Collect all of the ‘Godly Possessions’",
+      "category": "gold",
+      "goal": 0
+    },
+    {
+      "key": "amazed",
+      "title": "aMAZEd",
+      "description": "Beat the Labyrinth without dying or failing",
+      "category": "gold",
+      "goal": 0
+    },
+    {
+      "key": "hitting_your_stride",
+      "title": "Hitting Your Stride",
+      "description": "Upgrade any weapon to the next level",
+      "category": "silver",
+      "goal": 0
+    },
+    {
+      "key": "sibling_rivalry",
+      "title": "Sibling Rivalry",
+      "description": "Kill Hercules",
+      "category": "silver",
+      "goal": 0
+    },
+    {
+      "key": "titan_slayer",
+      "title": "Titan Slayer",
+      "description": "Kill Cronos",
+      "category": "silver",
+      "goal": 0
+    },
+    {
+      "key": "retribution",
+      "title": "Retribution",
+      "description": "Kill Zeus",
+      "category": "silver",
+      "goal": 0
+    },
+    {
+      "key": "depths_below",
+      "title": "Depths Below",
+      "description": "Kill Hades",
+      "category": "silver",
+      "goal": 0
+    },
+    {
+      "key": "freezer_burn",
+      "title": "Freezer Burn",
+      "description": "Acquire the Boreas Icestorm",
+      "category": "silver",
+      "goal": 0
+    },
+    {
+      "key": "seeing_things_from_a_different_perspective",
+      "title": "Seeing things from a different perspective",
+      "description": "Solve Hera's Gardens",
+      "category": "silver",
+      "goal": 0
+    },
+    {
+      "key": "eye_candy",
+      "title": "Eye Candy",
+      "description": "Collect all of the Gorgon Eyes",
+      "category": "silver",
+      "goal": 0
+    },
+    {
+      "key": "feather_plucker",
+      "title": "Feather Plucker",
+      "description": "Collect all of the Phoenix Feathers",
+      "category": "silver",
+      "goal": 0
+    },
+    {
+      "key": "horn_of_plenty",
+      "title": "Horn of Plenty",
+      "description": "Collect all of the Minotaur Horns",
+      "category": "silver",
+      "goal": 0
+    },
+    {
+      "key": "maxed_out",
+      "title": "Maxed Out!",
+      "description": "Completely upgrade all weapons",
+      "category": "silver",
+      "goal": 0
+    },
+    {
+      "key": "releasing_the_floodgates",
+      "title": "Releasing the Floodgates",
+      "description": "Kill Poseidon",
+      "category": "bronze",
+      "goal": 0
+    },
+    {
+      "key": "burnt_to_a_crisp",
+      "title": "Burnt to a Crisp",
+      "description": "Acquire the Bow of Apollo",
+      "category": "bronze",
+      "goal": 0
+    },
+    {
+      "key": "mr_hand",
+      "title": "Mr. Hand",
+      "description": "Discover the secret 'Hades Arm' room",
+      "category": "bronze",
+      "goal": 0
+    },
+    {
+      "key": "shine_lord",
+      "title": "Shine Lord",
+      "description": "Kill Helios",
+      "category": "bronze",
+      "goal": 0
+    },
+    {
+      "key": "shoe_delivery",
+      "title": "Shoe Delivery",
+      "description": "Kill Hermes and acquire his Boots",
+      "category": "bronze",
+      "goal": 0
+    },
+    {
+      "key": "ladies_man",
+      "title": "Ladies Man",
+      "description": "Successfully entertain Aphrodite",
+      "category": "bronze",
+      "goal": 0
+    },
+    {
+      "key": "handy_man",
+      "title": "Handy Man",
+      "description": "Sever Gaia’s hand",
+      "category": "bronze",
+      "goal": 0
+    },
+    {
+      "key": "open_sesame",
+      "title": "Open Sesame",
+      "description": "Open the Gates of Tisiphone",
+      "category": "bronze",
+      "goal": 0
+    },
+    {
+      "key": "rescue_me",
+      "title": "Rescue Me",
+      "description": "Save Pandora",
+      "category": "bronze",
+      "goal": 0
+    },
+    {
+      "key": "three_wise_men",
+      "title": "Three Wise Men",
+      "description": "Solve the Three Judges",
+      "category": "bronze",
+      "goal": 0
+    },
+    {
+      "key": "hit_man",
+      "title": "Hit Man",
+      "description": "Perform a 1000-hit combo",
+      "category": "bronze",
+      "goal": 0
+    },
+    {
+      "key": "torn_up",
+      "title": "Torn Up",
+      "description": "Rip apart 1 Olympus Sentry",
+      "category": "bronze",
+      "goal": 0
+    },
+    {
+      "key": "nice_tan",
+      "title": "Nice Tan",
+      "description": "Blind 100 enemies with the Head of Helios",
+      "category": "bronze",
+      "goal": 0
+    },
+    {
+      "key": "obedience_school",
+      "title": "Obedience School",
+      "description": "Deliver 50 kicks to Hounds",
+      "category": "bronze",
+      "goal": 0
+    },
+    {
+      "key": "it_s_getting_hot_in_here",
+      "title": "It’s getting hot in here...",
+      "description": "Burn 100 enemies with the Bow of Apollo",
+      "category": "bronze",
+      "goal": 0
+    },
+    {
+      "key": "souled_out",
+      "title": "Souled Out",
+      "description": "Summon every Soul with the Claws of Hades",
+      "category": "bronze",
+      "goal": 0
+    },
+    {
+      "key": "bloody_hell",
+      "title": "Bloody Hell",
+      "description": "Cover Kratos in 500 buckets of blood by killing the enemies",
+      "category": "bronze",
+      "goal": 0
+    },
+    {
+      "key": "no_guts_no_glory",
+      "title": "No Guts, No Glory",
+      "description": "Gut 3 Centaur Generals",
+      "category": "bronze",
+      "goal": 0
+    }
+  ]
+}

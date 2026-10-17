@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-17T10:46:24.834603287Z",
+  "generatedAt": "2026-10-17T10:57:29.109527500Z",
   "games": [
     {
       "id": "zelda64-mm",
@@ -48,7 +48,7 @@
           "htmlUrl": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 7,
-        "totalDownloads": 372598
+        "totalDownloads": 372600
       },
       "game": {
         "title": "The Legend of Zelda: Majora's Mask",
@@ -123,7 +123,7 @@
           "htmlUrl": "https://github.com/sonicdcer/Starfox64Recomp/releases/tag/1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 30163
+        "totalDownloads": 30165
       },
       "game": {
         "title": "Star Fox 64",
@@ -274,7 +274,7 @@
           "htmlUrl": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled/releases/tag/v1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 45039
+        "totalDownloads": 45042
       },
       "game": {
         "title": "Donkey Kong 64",
@@ -355,7 +355,7 @@
           "htmlUrl": "https://github.com/klorfmorf/Goemon64Recomp/releases/tag/v0.2.0-dev"
         },
         "releaseCount": 5,
-        "totalDownloads": 22867
+        "totalDownloads": 22868
       },
       "game": {
         "title": "Mystical Ninja Starring Goemon",
@@ -728,7 +728,7 @@
           "htmlUrl": "https://github.com/cdlewis/snowboardkids2-recomp/releases/tag/v1.0.5"
         },
         "releaseCount": 4,
-        "totalDownloads": 7740
+        "totalDownloads": 7742
       },
       "game": {
         "title": "Snowboard Kids 2",
@@ -891,7 +891,7 @@
           "htmlUrl": "https://github.com/DahSidiAbdallah/ConkerBFDReloaded/releases/tag/v1.4.0"
         },
         "releaseCount": 13,
-        "totalDownloads": 6230
+        "totalDownloads": 6237
       },
       "game": {
         "title": "Conker's Bad Fur Day",
@@ -1046,7 +1046,7 @@
           "htmlUrl": "https://github.com/TwilitRealm/dusklight/releases/tag/v2.0.3"
         },
         "releaseCount": 24,
-        "totalDownloads": 1357979
+        "totalDownloads": 1358002
       },
       "game": {
         "title": "The Legend of Zelda: Twilight Princess",
@@ -1456,7 +1456,7 @@
         "sha1": []
       },
       "achievements": {
-        "enabled": false,
+        "enabled": true,
         "supportedVersions": []
       },
       "sgdbId": 5246707,
@@ -1482,7 +1482,7 @@
           "vulkan",
           "windows"
         ],
-        "stars": 2991,
+        "stars": 2995,
         "firstReleaseAt": "2026-10-10T22:37:56Z",
         "latestRelease": {
           "tag": "windows-v2.4.1",
@@ -1491,7 +1491,7 @@
           "htmlUrl": "https://github.com/FelipePrado0/gow3_pc/releases/tag/windows-v2.4.1"
         },
         "releaseCount": 18,
-        "totalDownloads": 373244
+        "totalDownloads": 373787
       },
       "game": {
         "title": "God of War III: Remastered",
@@ -1517,6 +1517,257 @@
           "https://images.igdb.com/igdb/image/upload/t_screenshot_big/pcaociesn3spuvsdu5mr.jpg",
           "https://images.igdb.com/igdb/image/upload/t_screenshot_big/vjpxhf0vqgbumm1vixiw.jpg",
           "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scsrd5.jpg"
+        ]
+      },
+      "trophyProvider": {
+        "kind": "psn",
+        "progressFile": {},
+        "trophies": [
+          {
+            "key": "king_of_the_hill",
+            "title": "King of the Hill",
+            "description": "Unlock all trophies",
+            "category": "platinum",
+            "goal": 0
+          },
+          {
+            "key": "vengeance_complete",
+            "title": "Vengeance Complete",
+            "description": "Beat the game",
+            "category": "gold",
+            "goal": 0
+          },
+          {
+            "key": "up_to_the_challenge",
+            "title": "Up to the Challenge",
+            "description": "Beat the Challenge of Olympus",
+            "category": "gold",
+            "goal": 0
+          },
+          {
+            "key": "unhuman",
+            "title": "Unhuman",
+            "description": "Beat Titan Mode",
+            "category": "gold",
+            "goal": 0
+          },
+          {
+            "key": "priceless",
+            "title": "Priceless",
+            "description": "Collect all of the ‘Godly Possessions’",
+            "category": "gold",
+            "goal": 0
+          },
+          {
+            "key": "amazed",
+            "title": "aMAZEd",
+            "description": "Beat the Labyrinth without dying or failing",
+            "category": "gold",
+            "goal": 0
+          },
+          {
+            "key": "hitting_your_stride",
+            "title": "Hitting Your Stride",
+            "description": "Upgrade any weapon to the next level",
+            "category": "silver",
+            "goal": 0
+          },
+          {
+            "key": "sibling_rivalry",
+            "title": "Sibling Rivalry",
+            "description": "Kill Hercules",
+            "category": "silver",
+            "goal": 0
+          },
+          {
+            "key": "titan_slayer",
+            "title": "Titan Slayer",
+            "description": "Kill Cronos",
+            "category": "silver",
+            "goal": 0
+          },
+          {
+            "key": "retribution",
+            "title": "Retribution",
+            "description": "Kill Zeus",
+            "category": "silver",
+            "goal": 0
+          },
+          {
+            "key": "depths_below",
+            "title": "Depths Below",
+            "description": "Kill Hades",
+            "category": "silver",
+            "goal": 0
+          },
+          {
+            "key": "freezer_burn",
+            "title": "Freezer Burn",
+            "description": "Acquire the Boreas Icestorm",
+            "category": "silver",
+            "goal": 0
+          },
+          {
+            "key": "seeing_things_from_a_different_perspective",
+            "title": "Seeing things from a different perspective",
+            "description": "Solve Hera's Gardens",
+            "category": "silver",
+            "goal": 0
+          },
+          {
+            "key": "eye_candy",
+            "title": "Eye Candy",
+            "description": "Collect all of the Gorgon Eyes",
+            "category": "silver",
+            "goal": 0
+          },
+          {
+            "key": "feather_plucker",
+            "title": "Feather Plucker",
+            "description": "Collect all of the Phoenix Feathers",
+            "category": "silver",
+            "goal": 0
+          },
+          {
+            "key": "horn_of_plenty",
+            "title": "Horn of Plenty",
+            "description": "Collect all of the Minotaur Horns",
+            "category": "silver",
+            "goal": 0
+          },
+          {
+            "key": "maxed_out",
+            "title": "Maxed Out!",
+            "description": "Completely upgrade all weapons",
+            "category": "silver",
+            "goal": 0
+          },
+          {
+            "key": "releasing_the_floodgates",
+            "title": "Releasing the Floodgates",
+            "description": "Kill Poseidon",
+            "category": "bronze",
+            "goal": 0
+          },
+          {
+            "key": "burnt_to_a_crisp",
+            "title": "Burnt to a Crisp",
+            "description": "Acquire the Bow of Apollo",
+            "category": "bronze",
+            "goal": 0
+          },
+          {
+            "key": "mr_hand",
+            "title": "Mr. Hand",
+            "description": "Discover the secret 'Hades Arm' room",
+            "category": "bronze",
+            "goal": 0
+          },
+          {
+            "key": "shine_lord",
+            "title": "Shine Lord",
+            "description": "Kill Helios",
+            "category": "bronze",
+            "goal": 0
+          },
+          {
+            "key": "shoe_delivery",
+            "title": "Shoe Delivery",
+            "description": "Kill Hermes and acquire his Boots",
+            "category": "bronze",
+            "goal": 0
+          },
+          {
+            "key": "ladies_man",
+            "title": "Ladies Man",
+            "description": "Successfully entertain Aphrodite",
+            "category": "bronze",
+            "goal": 0
+          },
+          {
+            "key": "handy_man",
+            "title": "Handy Man",
+            "description": "Sever Gaia’s hand",
+            "category": "bronze",
+            "goal": 0
+          },
+          {
+            "key": "open_sesame",
+            "title": "Open Sesame",
+            "description": "Open the Gates of Tisiphone",
+            "category": "bronze",
+            "goal": 0
+          },
+          {
+            "key": "rescue_me",
+            "title": "Rescue Me",
+            "description": "Save Pandora",
+            "category": "bronze",
+            "goal": 0
+          },
+          {
+            "key": "three_wise_men",
+            "title": "Three Wise Men",
+            "description": "Solve the Three Judges",
+            "category": "bronze",
+            "goal": 0
+          },
+          {
+            "key": "hit_man",
+            "title": "Hit Man",
+            "description": "Perform a 1000-hit combo",
+            "category": "bronze",
+            "goal": 0
+          },
+          {
+            "key": "torn_up",
+            "title": "Torn Up",
+            "description": "Rip apart 1 Olympus Sentry",
+            "category": "bronze",
+            "goal": 0
+          },
+          {
+            "key": "nice_tan",
+            "title": "Nice Tan",
+            "description": "Blind 100 enemies with the Head of Helios",
+            "category": "bronze",
+            "goal": 0
+          },
+          {
+            "key": "obedience_school",
+            "title": "Obedience School",
+            "description": "Deliver 50 kicks to Hounds",
+            "category": "bronze",
+            "goal": 0
+          },
+          {
+            "key": "it_s_getting_hot_in_here",
+            "title": "It’s getting hot in here...",
+            "description": "Burn 100 enemies with the Bow of Apollo",
+            "category": "bronze",
+            "goal": 0
+          },
+          {
+            "key": "souled_out",
+            "title": "Souled Out",
+            "description": "Summon every Soul with the Claws of Hades",
+            "category": "bronze",
+            "goal": 0
+          },
+          {
+            "key": "bloody_hell",
+            "title": "Bloody Hell",
+            "description": "Cover Kratos in 500 buckets of blood by killing the enemies",
+            "category": "bronze",
+            "goal": 0
+          },
+          {
+            "key": "no_guts_no_glory",
+            "title": "No Guts, No Glory",
+            "description": "Gut 3 Centaur Generals",
+            "category": "bronze",
+            "goal": 0
+          }
         ]
       }
     },
@@ -1554,7 +1805,7 @@
         "homepage": null,
         "license": "GPL-2.0",
         "topics": [],
-        "stars": 1121,
+        "stars": 1125,
         "firstReleaseAt": "2026-10-15T00:17:51Z",
         "latestRelease": {
           "tag": "v0.3.3",
@@ -1563,7 +1814,7 @@
           "htmlUrl": "https://github.com/Supermedo/uncharted_pc/releases/tag/v0.3.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 36883
+        "totalDownloads": 36982
       },
       "game": {
         "title": "Uncharted: The Nathan Drake Collection",
@@ -1635,7 +1886,7 @@
           "htmlUrl": "https://github.com/hedge-dev/UnleashedRecomp/releases/tag/v1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 723637
+        "totalDownloads": 723642
       },
       "game": {
         "title": "Sonic Unleashed",
@@ -1711,7 +1962,7 @@
           "htmlUrl": "https://github.com/mchughalex/skate3recomp/releases/tag/v2.0.2"
         },
         "releaseCount": 9,
-        "totalDownloads": 114914
+        "totalDownloads": 114928
       },
       "game": {
         "title": "Skate 3",
@@ -1785,7 +2036,7 @@
           "htmlUrl": "https://github.com/BlackLabelHQ/SymphonyRecomp/releases/tag/v0.5.1b"
         },
         "releaseCount": 9,
-        "totalDownloads": 51211
+        "totalDownloads": 51217
       },
       "game": {
         "title": "Castlevania: Symphony of the Night",
@@ -1934,7 +2185,7 @@
           "htmlUrl": "https://github.com/sonicdcer/MarioKart64Recomp/releases/tag/v0.9.2"
         },
         "releaseCount": 2,
-        "totalDownloads": 27415
+        "totalDownloads": 27416
       },
       "game": {
         "title": "Mario Kart 64",
@@ -2089,7 +2340,7 @@
           "wii",
           "windows-app"
         ],
-        "stars": 40,
+        "stars": 41,
         "firstReleaseAt": "2026-10-10T19:10:23Z",
         "latestRelease": {
           "tag": "v1.0.9",
@@ -2167,7 +2418,7 @@
           "htmlUrl": "https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation/releases/tag/v0.1.1"
         },
         "releaseCount": 15,
-        "totalDownloads": 5338
+        "totalDownloads": 5340
       },
       "game": {
         "title": "New Super Mario Bros. Wii",
@@ -2249,7 +2500,7 @@
           "htmlUrl": "https://github.com/patchzyy/Wiicompiled/releases/tag/v0.2.34"
         },
         "releaseCount": 14,
-        "totalDownloads": 193176
+        "totalDownloads": 193199
       },
       "game": {
         "title": "Mario Kart Wii",
@@ -2323,7 +2574,7 @@
           "htmlUrl": "https://github.com/keepvaibin/nebula/releases/tag/v1.0.1"
         },
         "releaseCount": 7,
-        "totalDownloads": 6174
+        "totalDownloads": 6184
       },
       "game": {
         "title": "Super Mario Galaxy",
