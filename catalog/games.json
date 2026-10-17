@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-17T10:43:12.633413Z",
+  "generatedAt": "2026-10-17T10:46:24.834603287Z",
   "games": [
     {
       "id": "zelda64-mm",
@@ -198,7 +198,7 @@
           "htmlUrl": "https://github.com/BanjoRecomp/BanjoRecomp/releases/tag/v1.0.2"
         },
         "releaseCount": 3,
-        "totalDownloads": 144943
+        "totalDownloads": 144947
       },
       "game": {
         "title": "Banjo-Kazooie",
@@ -812,7 +812,7 @@
           "htmlUrl": "https://github.com/JackandBeans/Snap64Recomp/releases/tag/v1.1.4"
         },
         "releaseCount": 15,
-        "totalDownloads": 7773
+        "totalDownloads": 7774
       },
       "game": {
         "title": "Pokémon Snap",
@@ -1046,7 +1046,7 @@
           "htmlUrl": "https://github.com/TwilitRealm/dusklight/releases/tag/v2.0.3"
         },
         "releaseCount": 24,
-        "totalDownloads": 1357973
+        "totalDownloads": 1357979
       },
       "game": {
         "title": "The Legend of Zelda: Twilight Princess",
@@ -1491,7 +1491,7 @@
           "htmlUrl": "https://github.com/FelipePrado0/gow3_pc/releases/tag/windows-v2.4.1"
         },
         "releaseCount": 18,
-        "totalDownloads": 373237
+        "totalDownloads": 373244
       },
       "game": {
         "title": "God of War III: Remastered",
@@ -1635,7 +1635,7 @@
           "htmlUrl": "https://github.com/hedge-dev/UnleashedRecomp/releases/tag/v1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 723634
+        "totalDownloads": 723637
       },
       "game": {
         "title": "Sonic Unleashed",
@@ -1711,7 +1711,7 @@
           "htmlUrl": "https://github.com/mchughalex/skate3recomp/releases/tag/v2.0.2"
         },
         "releaseCount": 9,
-        "totalDownloads": 114913
+        "totalDownloads": 114914
       },
       "game": {
         "title": "Skate 3",
@@ -2249,7 +2249,7 @@
           "htmlUrl": "https://github.com/patchzyy/Wiicompiled/releases/tag/v0.2.34"
         },
         "releaseCount": 14,
-        "totalDownloads": 193173
+        "totalDownloads": 193176
       },
       "game": {
         "title": "Mario Kart Wii",
@@ -2323,7 +2323,7 @@
           "htmlUrl": "https://github.com/keepvaibin/nebula/releases/tag/v1.0.1"
         },
         "releaseCount": 7,
-        "totalDownloads": 6171
+        "totalDownloads": 6174
       },
       "game": {
         "title": "Super Mario Galaxy",
