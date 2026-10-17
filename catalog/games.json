@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-17T00:56:21.868280400Z",
+  "generatedAt": "2026-10-17T00:59:35.782440478Z",
   "games": [
     {
       "id": "zelda64-mm",
@@ -48,7 +48,7 @@
           "htmlUrl": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 7,
-        "totalDownloads": 372362
+        "totalDownloads": 372367
       },
       "game": {
         "title": "The Legend of Zelda: Majora's Mask",
@@ -198,7 +198,7 @@
           "htmlUrl": "https://github.com/BanjoRecomp/BanjoRecomp/releases/tag/v1.0.2"
         },
         "releaseCount": 3,
-        "totalDownloads": 144803
+        "totalDownloads": 144804
       },
       "game": {
         "title": "Banjo-Kazooie",
@@ -274,7 +274,7 @@
           "htmlUrl": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled/releases/tag/v1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 44849
+        "totalDownloads": 44850
       },
       "game": {
         "title": "Donkey Kong 64",
@@ -505,7 +505,7 @@
           "htmlUrl": "https://github.com/MegaMan64Recomp/MegaMan64Recompiled/releases/tag/v0.9.1"
         },
         "releaseCount": 3,
-        "totalDownloads": 14614
+        "totalDownloads": 14615
       },
       "game": {
         "title": "Mega Man 64",
@@ -891,7 +891,7 @@
           "htmlUrl": "https://github.com/DahSidiAbdallah/ConkerBFDReloaded/releases/tag/v1.4.0"
         },
         "releaseCount": 13,
-        "totalDownloads": 5989
+        "totalDownloads": 5990
       },
       "game": {
         "title": "Conker's Bad Fur Day",
@@ -1045,7 +1045,7 @@
           "htmlUrl": "https://github.com/TwilitRealm/dusklight/releases/tag/v2.0.3"
         },
         "releaseCount": 24,
-        "totalDownloads": 1355892
+        "totalDownloads": 1355901
       },
       "game": {
         "title": "The Legend of Zelda: Twilight Princess",
@@ -1480,7 +1480,7 @@
           "vulkan",
           "windows"
         ],
-        "stars": 2888,
+        "stars": 2890,
         "firstReleaseAt": "2026-10-10T22:37:56Z",
         "latestRelease": {
           "tag": "windows-v2.4.1",
@@ -1489,7 +1489,7 @@
           "htmlUrl": "https://github.com/FelipePrado0/gow3_pc/releases/tag/windows-v2.4.1"
         },
         "releaseCount": 18,
-        "totalDownloads": 338067
+        "totalDownloads": 338072
       },
       "game": {
         "title": "God of War III: Remastered",
@@ -1551,7 +1551,7 @@
         "homepage": null,
         "license": "GPL-2.0",
         "topics": [],
-        "stars": 1014,
+        "stars": 1016,
         "firstReleaseAt": "2026-10-15T00:17:51Z",
         "latestRelease": {
           "tag": "v0.3.3",
@@ -1631,7 +1631,7 @@
           "htmlUrl": "https://github.com/hedge-dev/UnleashedRecomp/releases/tag/v1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 723292
+        "totalDownloads": 723293
       },
       "game": {
         "title": "Sonic Unleashed",
@@ -1706,7 +1706,7 @@
           "htmlUrl": "https://github.com/mchughalex/skate3recomp/releases/tag/v2.0.2"
         },
         "releaseCount": 9,
-        "totalDownloads": 114085
+        "totalDownloads": 114087
       },
       "game": {
         "title": "Skate 3",
