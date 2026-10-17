@@ -30,7 +30,8 @@
         "hero": "https://cdn2.steamgriddb.com/hero/25fa2d39a0143f1f30c36eece145a526.png",
         "logo": "https://cdn2.steamgriddb.com/logo/fe8c15fed5f808006ce95eddb7366e35.png",
         "icon": "https://cdn2.steamgriddb.com/icon/30b4f25f536778f198568a0030e8a586.ico"
-      }
+      },
+      "igdbId": 1030
     },
     {
       "id": "starfox64",
@@ -62,7 +63,8 @@
         "hero": "https://cdn2.steamgriddb.com/hero/44adaadb095f40b587f4b409ac55799b.png",
         "logo": "https://cdn2.steamgriddb.com/logo/ad3019b856147c17e82a5bead782d2a8.png",
         "icon": "https://cdn2.steamgriddb.com/icon/9fbcbcb41e52efd7dbcb96e8a5c4cb63.ico"
-      }
+      },
+      "igdbId": 2591
     },
     {
       "id": "banjo-kazooie",
@@ -94,7 +96,8 @@
         "hero": "https://cdn2.steamgriddb.com/hero/17326d10d511828f6b34fa6d751739e2.png",
         "logo": "https://cdn2.steamgriddb.com/logo/ce5193a069bea027a60e06c57a106eb6.png",
         "icon": "https://cdn2.steamgriddb.com/icon/c133fb1bb634af68c5088f3438848bfd.png"
-      }
+      },
+      "igdbId": 2148
     },
     {
       "id": "dk64",
@@ -126,7 +129,8 @@
         "hero": "https://cdn2.steamgriddb.com/hero/dd6e83b6da55d90f5740e0dd3f3e5a13.png",
         "logo": "https://cdn2.steamgriddb.com/logo/6933b5648c59d618bbb30986c84080fe.png",
         "icon": "https://cdn2.steamgriddb.com/icon/bd46c557fbdb2e0f92a082793598803d.ico"
-      }
+      },
+      "igdbId": 1096
     },
     {
       "id": "goemon64",
@@ -158,7 +162,8 @@
         "hero": "https://cdn2.steamgriddb.com/hero/058a4a63fccbdb3d0b0ab0e8f7a8951c.png",
         "logo": "https://cdn2.steamgriddb.com/logo/421740375847b6249d9383615831c23b.png",
         "icon": "https://cdn2.steamgriddb.com/icon/5cbd31d6a0809f253c2679d508ecb6c2.png"
-      }
+      },
+      "igdbId": 3545
     },
     {
       "id": "bomberman64",
@@ -190,7 +195,8 @@
         "hero": "https://cdn2.steamgriddb.com/hero/3a06105cf87a4a0d2b22ca218aca4783.png",
         "logo": "https://cdn2.steamgriddb.com/logo/afb79a9be5cd9762572a008088d3153e.png",
         "icon": "https://cdn2.steamgriddb.com/icon/bb6c7fdc54b738a6fdc09a851afa12fb.png"
-      }
+      },
+      "igdbId": 3451
     },
     {
       "id": "megaman64",
@@ -222,7 +228,8 @@
         "hero": "https://cdn2.steamgriddb.com/hero/423971c507756f83500704f0e8d9214b.png",
         "logo": "https://cdn2.steamgriddb.com/logo/f612c7d25f5690ad41496fcfdbf8d1a8.png",
         "icon": "https://cdn2.steamgriddb.com/icon/850618e22f83f152773d2a3e51168812.png"
-      }
+      },
+      "igdbId": 10614
     },
     {
       "id": "harvestmoon64",
@@ -254,7 +261,8 @@
         "hero": "https://cdn2.steamgriddb.com/hero/4a65fd714997aaca6455b8d338cc61c6.png",
         "logo": "https://cdn2.steamgriddb.com/logo/609a199881ca4ba9c95688235cd6ac5c.png",
         "icon": "https://cdn2.steamgriddb.com/icon/4a15fc6d75970e9607efa44697977f2b.ico"
-      }
+      },
+      "igdbId": 3378
     },
     {
       "id": "drmario64",
@@ -282,7 +290,8 @@
         "hero": "https://cdn2.steamgriddb.com/hero/3a0d1535e1f1929f76f28f007a57584c.jpg",
         "logo": "https://cdn2.steamgriddb.com/logo/6052639706e0beb2fabeaf09d667f9b9.png",
         "icon": "https://cdn2.steamgriddb.com/icon/f665651bcc641391820b462874c05e16.png"
-      }
+      },
+      "igdbId": 3475
     },
     {
       "id": "snowboardkids2",
@@ -314,7 +323,8 @@
         "hero": "https://cdn2.steamgriddb.com/hero/4ee0331f55ba0c795f89feffdfdf1e77.png",
         "logo": "https://cdn2.steamgriddb.com/logo/3bbf7cb52c81e8125532adff3b21a6b4.png",
         "icon": "https://cdn2.steamgriddb.com/icon/25780194564b89eb52c5689daa6f3ee9.png"
-      }
+      },
+      "igdbId": 3343
     },
     {
       "id": "pokemon-snap",
@@ -346,7 +356,8 @@
         "hero": "https://cdn2.steamgriddb.com/hero/4c07fe24771249c343e70c32289c1192.png",
         "logo": "https://cdn2.steamgriddb.com/logo/2f635a9fe4a4d8d1ec9e3a111cc02f4b.png",
         "icon": "https://cdn2.steamgriddb.com/icon/46673d49b30de9f06adfcdd257a7556b.png"
-      }
+      },
+      "igdbId": 2324
     },
     {
       "id": "conker",
@@ -374,7 +385,8 @@
         "hero": "https://cdn2.steamgriddb.com/hero/1a04f965818a8533f5613003c7db243d.png",
         "logo": "https://cdn2.steamgriddb.com/logo/ce840aa9583592e71f3db26ee6e41703.png",
         "icon": "https://cdn2.steamgriddb.com/icon/7cfe973cfd3353ecacc3ec1e53a1c5ea.png"
-      }
+      },
+      "igdbId": 1286
     },
     {
       "id": "castlevania64",
@@ -406,7 +418,8 @@
         "hero": "https://cdn2.steamgriddb.com/hero/b16539e3ff2250a2bf164a92b030633c.jpg",
         "logo": "https://cdn2.steamgriddb.com/logo/72a7dd9f91089b8fabd3edc4c9db7ed1.png",
         "icon": "https://cdn2.steamgriddb.com/icon/1ecb6468735bde11b1d125b787158088.png"
-      }
+      },
+      "igdbId": 1130
     },
     {
       "id": "dusklight",
@@ -447,7 +460,8 @@
         "hero": "https://cdn2.steamgriddb.com/hero/e105b88b3e1ac23ec811a708cd7edebf.png",
         "logo": "https://cdn2.steamgriddb.com/logo/2d8b6c92b659a90e7ef716f811d8bba1.png",
         "icon": "https://cdn2.steamgriddb.com/icon/feecee9f1643651799ede2740927317a.ico"
-      }
+      },
+      "igdbId": 1036
     }
   ]
 }

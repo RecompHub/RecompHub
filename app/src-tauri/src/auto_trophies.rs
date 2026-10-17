@@ -1,17 +1,159 @@
-//! Troféus durante o jogo (Fase 1): lê a RDRAM do processo da recomp de fora
-//! e avalia as condições com a rcheevos (~60 vezes por segundo).
+//! **Conquistas automáticas — guardadas para implantação futura.**
 //!
-//! As definições ficam em `<pasta de dados>/trophies/<id do jogo>.json`,
-//! editáveis pelo usuário enquanto não existe servidor.
+//! Só compila com a feature `auto-trophies` (`cargo build --features
+//! auto-trophies`). Hoje o launcher usa a lista manual (o usuário marca e
+//! desmarca); este módulo é o que, no futuro, marca sozinho enquanto o jogo
+//! roda. Dois caminhos, ambos testados de ponta a ponta (ver PRs #8 e #9):
+//!
+//! - **Provedor do próprio jogo** (ex.: Dusklight): acompanha o arquivo de
+//!   progresso que o jogo grava (`achievements.json`) e marca o que ele
+//!   desbloquear, com notificação do Windows.
+//! - **Condições do RetroAchievements**: lê a RDRAM do processo da recomp de
+//!   fora e avalia com a rcheevos (~60×/s); definições em
+//!   `<pasta de dados>/trophies/<id do jogo>.json`, escritas pelo usuário.
+//!
+//! As marcações vão para o mesmo lugar da lista manual
+//! (`LibraryEntry::trophies`), então ligar a feature não muda a interface.
 
 use std::collections::{BTreeMap, HashSet};
 use std::path::{Path, PathBuf};
 use std::sync::Arc;
 use std::sync::atomic::{AtomicBool, Ordering};
 
+use serde::Serialize;
+use tauri::{AppHandle, Emitter, Manager};
+use tauri_plugin_notification::NotificationExt;
+use tauri_plugin_opener::OpenerExt;
+
 pub use recomphub_catalog::{Trophy, TrophySet};
 
-use crate::error::Result;
+use crate::error::{Error, Result};
+use crate::{AppState, TrophiesView, TrophyView};
+
+#[derive(Clone, Serialize)]
+#[serde(rename_all = "camelCase")]
+struct TrophyUnlockedEvent {
+    game_id: String,
+    key: String,
+    title: String,
+    description: String,
+}
+
+/// Começa a acompanhar o jogo recém-aberto (`pid`) até `alive` virar falso.
+pub fn start_watch(app: &AppHandle, state: &AppState, game_id: &str, pid: u32, alive: Arc<AtomicBool>) {
+    let unlock = {
+        let app = app.clone();
+        let game_id = game_id.to_string();
+        move |key: String, title: &str, description: &str| {
+            let state = app.state::<AppState>();
+            let _ = state.update_library(|library| {
+                if let Some(entry) = library.get_mut(&game_id) {
+                    entry.trophies.entry(key.clone()).or_insert_with(chrono::Local::now);
+                }
+            });
+            // Notificação do sistema: aparece por cima do jogo em tela cheia,
+            // onde a janela do launcher não é vista.
+            let _ = app
+                .notification()
+                .builder()
+                .title(format!("🏆 Troféu desbloqueado: {title}"))
+                .body(description)
+                .show();
+            let _ = app.emit(
+                "trophy-unlocked",
+                TrophyUnlockedEvent {
+                    game_id: game_id.clone(),
+                    key,
+                    title: title.to_string(),
+                    description: description.to_string(),
+                },
+            );
+        }
+    };
+
+    // Conquistas do próprio jogo: basta acompanhar o arquivo de progresso.
+    if let Some(provider) = state.game(game_id).ok().and_then(|g| g.trophy_provider) {
+        let Some(path) = provider_progress_path(&provider) else {
+            return;
+        };
+        std::thread::spawn(move || {
+            watch_provider(path, alive, provider.trophies, |t| {
+                unlock(t.key.clone(), &t.title, &t.description)
+            });
+        });
+        return;
+    }
+
+    // Troféus escritos pelo usuário (condições do RA): lê a RDRAM do processo.
+    let path = definitions_path(&state.data_dir, game_id);
+    let Ok(Some(set)) = load(&path) else {
+        return;
+    };
+    let already: HashSet<u32> = state
+        .library
+        .lock()
+        .unwrap()
+        .get(game_id)
+        .map(|e| e.trophies.keys().filter_map(|k| k.parse().ok()).collect())
+        .unwrap_or_default();
+    std::thread::spawn(move || {
+        watch(pid, alive, set, already, |t| {
+            unlock(t.id.to_string(), &t.title, &t.description)
+        });
+    });
+}
+
+/// Lista dos troféus com condições escritos pelo usuário, se o jogo tiver o
+/// arquivo. `None` = usar a lista normal do catálogo.
+pub fn file_trophies_view(state: &AppState, game_id: &str) -> Option<TrophiesView> {
+    let path = definitions_path(&state.data_dir, game_id);
+    let (set, load_error) = match load(&path) {
+        Ok(Some(set)) => (set, None),
+        Ok(None) => return None,
+        Err(e) => (TrophySet { game_id: game_id.into(), trophies: Vec::new() }, Some(e.to_string())),
+    };
+    let seen = state
+        .library
+        .lock()
+        .unwrap()
+        .get(game_id)
+        .map(|e| e.trophies.clone())
+        .unwrap_or_default();
+    let mut errors = validate(&set);
+    let trophies = set
+        .trophies
+        .into_iter()
+        .map(|t| {
+            let key = t.id.to_string();
+            let unlocked_at = seen.get(&key).copied();
+            TrophyView {
+                error: errors.remove(&t.id),
+                key,
+                title: t.title,
+                description: t.description,
+                points: t.points,
+                category: String::new(),
+                goal: 0,
+                progress: unlocked_at.is_some() as u32,
+                unlocked: unlocked_at.is_some(),
+                unlocked_at,
+            }
+        })
+        .collect();
+    Some(TrophiesView { path, trophies, load_error, provider: None })
+}
+
+/// Abre o arquivo de troféus do jogo no editor padrão (cria um modelo se não existir).
+pub fn edit(app: &AppHandle, state: &AppState, game_id: &str) -> Result<()> {
+    state.game(game_id)?;
+    let path = definitions_path(&state.data_dir, game_id);
+    if !path.exists() {
+        write_template(&path, game_id)?;
+    }
+    app.opener()
+        .open_path(path.to_string_lossy(), None::<&str>)
+        .map_err(|e| Error::Io(std::io::Error::other(e.to_string())))
+}
 
 pub fn definitions_path(data_dir: &Path, game_id: &str) -> PathBuf {
     data_dir.join("trophies").join(format!("{game_id}.json"))
@@ -122,6 +264,8 @@ pub use recomphub_catalog::{ExternalTrophy, TrophyProvider};
 #[derive(Debug, Clone, Default, serde::Deserialize)]
 pub struct ProviderEntry {
     #[serde(default)]
+    /// Contadores (ex.: 12/60); ainda não exibido.
+    #[allow(dead_code)]
     pub progress: i64,
     #[serde(default)]
     pub unlocked: bool,

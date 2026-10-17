@@ -1012,3 +1012,19 @@ h1, h2, h3, h4 {
   max-width: 220px;
   margin: 0;
 }
+
+.trophy-toggle {
+  cursor: pointer;
+}
+
+.trophy-toggle:hover {
+  background: var(--panel-hover);
+}
+
+.trophy-check {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  accent-color: var(--accent);
+  cursor: pointer;
+}

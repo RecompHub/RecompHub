@@ -13,27 +13,20 @@ const CATEGORY_LABELS: Record<string, string> = {
 };
 
 const PROVIDER_LABELS: Record<string, string> = {
-  dusklight: "Conquistas detectadas pelo próprio Dusklight",
+  dusklight: "Conquistas do próprio Dusklight",
 };
 
-/** Lista de troféus do jogo na Biblioteca. */
+/** Lista de conquistas do jogo na Biblioteca, marcadas à mão pelo usuário. */
 export function TrophiesSection({ game }: { game: Game }) {
-  const { library, running } = useStore();
+  const { library, setTrophy } = useStore();
   const [view, setView] = useState<TrophiesView | null>(null);
-  const unlockedCount = Object.keys(library[game.id]?.trophies ?? {}).length;
-  const isRunning = running.has(game.id);
+  const marks = library[game.id]?.trophies ?? {};
+  const marksKey = Object.keys(marks).sort().join(",");
 
-  const reload = () => api.getTrophies(game.id).then(setView).catch(() => setView(null));
-
-  // Recarrega ao trocar de jogo, a cada desbloqueio e ao fechar o jogo.
+  // Recarrega ao trocar de jogo e a cada marcação.
   useEffect(() => {
-    reload();
-  }, [game.id, unlockedCount, isRunning]);
-
-  const edit = async () => {
-    await api.editTrophies(game.id);
-    reload();
-  };
+    api.getTrophies(game.id).then(setView).catch(() => setView(null));
+  }, [game.id, marksKey]);
 
   const trophies = view?.trophies ?? [];
   const done = trophies.filter((t) => t.unlocked).length;
@@ -53,16 +46,6 @@ export function TrophiesSection({ game }: { game: Game }) {
         <h2 className="section-title">
           Troféus {trophies.length > 0 && <span className="muted">· {done}/{trophies.length}</span>}
         </h2>
-        <div className="trophies-actions">
-          {!provider && (
-            <button className="btn btn-ghost" onClick={edit} title={view?.path}>
-              {trophies.length ? "Editar troféus" : "Criar troféus"}
-            </button>
-          )}
-          <button className="btn btn-ghost" onClick={reload}>
-            Recarregar
-          </button>
-        </div>
       </div>
 
       {trophies.length > 0 && (
@@ -73,17 +56,15 @@ export function TrophiesSection({ game }: { game: Game }) {
 
       {provider && (
         <p className="muted small">
-          {PROVIDER_LABELS[provider] ?? "Conquistas do próprio jogo"}. Atualizam enquanto você joga pelo RecompHub.
+          {PROVIDER_LABELS[provider] ?? "Conquistas do próprio jogo"}. Marque as que você já fez; a detecção
+          automática virá numa versão futura.
         </p>
       )}
 
       {view?.loadError && <p className="settings-error">Arquivo de troféus inválido: {view.loadError}</p>}
 
       {trophies.length === 0 && !view?.loadError && (
-        <p className="muted small">
-          Nenhum troféu definido. Experimental: os troféus são escritos num arquivo local, com condições no formato
-          do RetroAchievements, e avaliados enquanto o jogo roda.
-        </p>
+        <p className="muted small">Este jogo ainda não tem uma lista de conquistas.</p>
       )}
 
       {[...groups].map(([category, list]) => (
@@ -98,7 +79,7 @@ export function TrophiesSection({ game }: { game: Game }) {
           )}
           <ul className="trophy-list">
             {list.map((t) => (
-              <TrophyRow key={t.key} trophy={t} />
+              <TrophyRow key={t.key} trophy={t} onToggle={(on) => setTrophy(game.id, t.key, on)} />
             ))}
           </ul>
         </div>
@@ -107,30 +88,28 @@ export function TrophiesSection({ game }: { game: Game }) {
   );
 }
 
-function TrophyRow({ trophy: t }: { trophy: TrophyView }) {
-  const counter = t.goal > 1;
+function TrophyRow({ trophy: t, onToggle }: { trophy: TrophyView; onToggle: (unlocked: boolean) => void }) {
   return (
-    <li className={`trophy ${t.unlocked ? "trophy-unlocked" : ""}`}>
-      <span className="trophy-icon">{t.unlocked ? "🏆" : "🔒"}</span>
-      <div className="trophy-text">
-        <strong>{t.title}</strong>
-        <span className="muted small">{t.description}</span>
-        {counter && !t.unlocked && (
-          <div className="trophy-counter">
-            <div className="trophy-progress">
-              <div style={{ width: `${Math.min(100, (t.progress / t.goal) * 100)}%` }} />
-            </div>
-            <span className="small">
-              {t.progress}/{t.goal}
-            </span>
-          </div>
-        )}
-        {t.error && <span className="trophy-error">Condição inválida: {t.error}</span>}
-      </div>
-      <div className="trophy-meta">
-        {t.points > 0 && <span>{t.points} pts</span>}
-        {t.unlockedAt && <span className="muted small">{formatDate(t.unlockedAt)}</span>}
-      </div>
+    <li>
+      <label className={`trophy trophy-toggle ${t.unlocked ? "trophy-unlocked" : ""}`}>
+        <input
+          type="checkbox"
+          className="trophy-check"
+          checked={t.unlocked}
+          onChange={(e) => onToggle(e.target.checked)}
+          aria-label={`${t.title}: ${t.unlocked ? "feita" : "não feita"}`}
+        />
+        <span className="trophy-icon">{t.unlocked ? "🏆" : "🔒"}</span>
+        <span className="trophy-text">
+          <strong>{t.title}</strong>
+          <span className="muted small">{t.description}</span>
+          {t.error && <span className="trophy-error">Condição inválida: {t.error}</span>}
+        </span>
+        <span className="trophy-meta">
+          {t.points > 0 && <span>{t.points} pts</span>}
+          {t.unlockedAt && <span className="muted small">{formatDate(t.unlockedAt)}</span>}
+        </span>
+      </label>
     </li>
   );
 }

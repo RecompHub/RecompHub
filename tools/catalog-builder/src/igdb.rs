@@ -1,7 +1,10 @@
 //! Dados do jogo original no IGDB (https://api-docs.igdb.com).
 //! Credenciais: um app em https://dev.twitch.tv/console (client id + secret).
 
+use std::time::{Duration, Instant};
+
 use anyhow::{Context, Result};
+use reqwest::StatusCode;
 use chrono::DateTime;
 use recomphub_catalog::GameInfo;
 use serde::Deserialize;
@@ -12,10 +15,34 @@ const FIELDS: &str = "fields name,first_release_date,summary,total_rating,url,ge
     involved_companies.company.name;";
 const MAX_SCREENSHOTS: usize = 6;
 
+/// 4 req/s no máximo, com folga.
+const MIN_INTERVAL: Duration = Duration::from_millis(260);
+
 pub struct Igdb {
     http: reqwest::Client,
     client_id: String,
-    token: String,
+    secret: String,
+    token: tokio::sync::Mutex<String>,
+    last_request: tokio::sync::Mutex<Option<Instant>>,
+}
+
+/// Token de app (client credentials). Dura ~60 dias; o builder roda e termina,
+/// então basta um por execução (e renovar se vier 401).
+async fn fetch_token(http: &reqwest::Client, client_id: &str, secret: &str) -> Result<String> {
+    let token: Token = http
+        .post("https://id.twitch.tv/oauth2/token")
+        .query(&[
+            ("client_id", client_id),
+            ("client_secret", secret),
+            ("grant_type", "client_credentials"),
+        ])
+        .send()
+        .await?
+        .error_for_status()
+        .context("autenticação na Twitch")?
+        .json()
+        .await?;
+    Ok(token.access_token)
 }
 
 #[derive(Deserialize)]
@@ -74,35 +101,53 @@ fn platform_id(platform: &str) -> Option<u32> {
 }
 
 impl Igdb {
-    pub async fn connect(http: reqwest::Client, client_id: String, secret: &str) -> Result<Self> {
-        let token: Token = http
-            .post("https://id.twitch.tv/oauth2/token")
-            .query(&[
-                ("client_id", client_id.as_str()),
-                ("client_secret", secret),
-                ("grant_type", "client_credentials"),
-            ])
-            .send()
-            .await?
-            .error_for_status()
-            .context("autenticação na Twitch")?
-            .json()
-            .await?;
-        Ok(Self { http, client_id, token: token.access_token })
+    pub async fn connect(http: reqwest::Client, client_id: String, secret: String) -> Result<Self> {
+        let token = fetch_token(&http, &client_id, &secret).await?;
+        Ok(Self {
+            http,
+            client_id,
+            secret,
+            token: tokio::sync::Mutex::new(token),
+            last_request: tokio::sync::Mutex::new(None),
+        })
     }
 
+    /// Respeita o limite do IGDB (4 req/s), tenta de novo com espera crescente
+    /// em 429 e renova o token uma vez em 401. Nunca registra token nem segredo.
     async fn query(&self, body: String) -> Result<Vec<Game>> {
-        Ok(self
-            .http
-            .post(format!("{API}/games"))
-            .header("Client-ID", &self.client_id)
-            .bearer_auth(&self.token)
-            .body(body)
-            .send()
-            .await?
-            .error_for_status()?
-            .json()
-            .await?)
+        let mut renewed = false;
+        let mut backoff = Duration::from_millis(500);
+        for _ in 0..6 {
+            {
+                let mut last = self.last_request.lock().await;
+                if let Some(t) = *last {
+                    let wait = MIN_INTERVAL.saturating_sub(t.elapsed());
+                    tokio::time::sleep(wait).await;
+                }
+                *last = Some(Instant::now());
+            }
+            let token = self.token.lock().await.clone();
+            let response = self
+                .http
+                .post(format!("{API}/games"))
+                .header("Client-ID", &self.client_id)
+                .bearer_auth(token)
+                .body(body.clone())
+                .send()
+                .await?;
+            match response.status() {
+                StatusCode::TOO_MANY_REQUESTS => {
+                    tokio::time::sleep(backoff).await;
+                    backoff *= 2;
+                }
+                StatusCode::UNAUTHORIZED if !renewed => {
+                    renewed = true;
+                    *self.token.lock().await = fetch_token(&self.http, &self.client_id, &self.secret).await?;
+                }
+                _ => return Ok(response.error_for_status()?.json().await?),
+            }
+        }
+        anyhow::bail!("IGDB continuou recusando a consulta (limite de requisições)")
     }
 
     /// Por id quando fixado no `sources.json`; senão busca pelo título.
