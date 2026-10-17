@@ -11,11 +11,19 @@ const CATEGORY_LABELS: Record<string, string> = {
   minigame: "Minigames",
   misc: "Diversos",
   glitched: "Glitches",
+  platinum: "Platina",
+  gold: "Ouro",
+  silver: "Prata",
+  bronze: "Bronze",
 };
 
 const PROVIDER_LABELS: Record<string, string> = {
   dusklight: "Conquistas do próprio Dusklight",
+  psn: "Troféus oficiais do jogo original",
 };
+
+// Jogos cujo próprio port detecta as conquistas (detecção automática futura).
+const AUTO_PROVIDERS = new Set(["dusklight"]);
 
 /** Lista de conquistas do jogo na Biblioteca, marcadas à mão pelo usuário. */
 export function TrophiesSection({ game }: { game: Game }) {
@@ -58,7 +66,11 @@ export function TrophiesSection({ game }: { game: Game }) {
       {provider && (
         <p className="muted small">
           {t(PROVIDER_LABELS[provider] ?? "Conquistas do próprio jogo")}.{" "}
-          {t("Marque as que você já fez; a detecção automática virá numa versão futura.")}
+          {t(
+            AUTO_PROVIDERS.has(provider)
+              ? "Marque as que você já fez; a detecção automática virá numa versão futura."
+              : "Marque as que você já fez.",
+          )}
         </p>
       )}
 

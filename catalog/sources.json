@@ -486,7 +486,7 @@
         "sha1": []
       },
       "achievements": {
-        "enabled": false,
+        "enabled": true,
         "supportedVersions": []
       },
       "sgdbId": 5246707,
@@ -496,7 +496,12 @@
         "logo": "https://cdn2.steamgriddb.com/logo/edd47ba7fa1bbff38973841c9cd0733c.png",
         "icon": "https://cdn2.steamgriddb.com/icon/65e0bce9207bd3a5a51e0d2b568a6214.ico"
       },
-      "igdbId": 19959
+      "igdbId": 19959,
+      "trophyProvider": {
+        "kind": "psn",
+        "progressFile": {},
+        "definitions": "trophies/gow3.json"
+      }
     },
     {
       "id": "uncharted-ndc",
