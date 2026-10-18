@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-18T12:09:24.249105860Z",
+  "generatedAt": "2026-10-18T12:23:07.751246Z",
   "games": [
     {
       "id": "zelda64-mm",
@@ -32,7 +32,7 @@
         "grid": "https://cdn2.steamgriddb.com/grid/958c6e525626a72dc5722a63f638a80b.png",
         "hero": "https://cdn2.steamgriddb.com/hero/25fa2d39a0143f1f30c36eece145a526.png",
         "logo": "https://cdn2.steamgriddb.com/logo/fe8c15fed5f808006ce95eddb7366e35.png",
-        "icon": "https://cdn2.steamgriddb.com/icon/30b4f25f536778f198568a0030e8a586.ico"
+        "icon": "https://cdn2.steamgriddb.com/icon/4e0928de075538c593fbdabb0c5ef2c3.png"
       },
       "recomp": {
         "description": "Static recompilation of Majora's Mask (and soon Ocarina of Time) for PC (Windows/Linux/Mac)",
@@ -48,7 +48,7 @@
           "htmlUrl": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 7,
-        "totalDownloads": 373327
+        "totalDownloads": 373331
       },
       "game": {
         "title": "The Legend of Zelda: Majora's Mask",
@@ -198,7 +198,7 @@
           "htmlUrl": "https://github.com/BanjoRecomp/BanjoRecomp/releases/tag/v1.0.2"
         },
         "releaseCount": 3,
-        "totalDownloads": 145468
+        "totalDownloads": 145470
       },
       "game": {
         "title": "Banjo-Kazooie",
@@ -258,7 +258,7 @@
         "grid": "https://cdn2.steamgriddb.com/grid/86f7d456aa5848c284f7940bdecdef5d.png",
         "hero": "https://cdn2.steamgriddb.com/hero/dd6e83b6da55d90f5740e0dd3f3e5a13.png",
         "logo": "https://cdn2.steamgriddb.com/logo/6933b5648c59d618bbb30986c84080fe.png",
-        "icon": "https://cdn2.steamgriddb.com/icon/bd46c557fbdb2e0f92a082793598803d.ico"
+        "icon": "https://cdn2.steamgriddb.com/icon/cfa3cd042a8f3e4fef1c323e4496c7d9.png"
       },
       "recomp": {
         "description": null,
@@ -274,7 +274,7 @@
           "htmlUrl": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled/releases/tag/v1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 45520
+        "totalDownloads": 45523
       },
       "game": {
         "title": "Donkey Kong 64",
@@ -430,7 +430,7 @@
           "htmlUrl": "https://github.com/RevoSucks/BM64Recomp/releases/tag/v1.0.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 20492
+        "totalDownloads": 20500
       },
       "game": {
         "title": "Bomberman 64",
@@ -728,7 +728,7 @@
           "htmlUrl": "https://github.com/cdlewis/snowboardkids2-recomp/releases/tag/v2.0.2"
         },
         "releaseCount": 5,
-        "totalDownloads": 7924
+        "totalDownloads": 7927
       },
       "game": {
         "title": "Snowboard Kids 2",
@@ -812,7 +812,7 @@
           "htmlUrl": "https://github.com/JackandBeans/Snap64Recomp/releases/tag/v1.1.5"
         },
         "releaseCount": 16,
-        "totalDownloads": 8137
+        "totalDownloads": 8138
       },
       "game": {
         "title": "Pokémon Snap",
@@ -891,7 +891,7 @@
           "htmlUrl": "https://github.com/DahSidiAbdallah/ConkerBFDReloaded/releases/tag/v1.4.1"
         },
         "releaseCount": 14,
-        "totalDownloads": 6843
+        "totalDownloads": 6848
       },
       "game": {
         "title": "Conker's Bad Fur Day",
@@ -969,7 +969,7 @@
           "htmlUrl": "https://github.com/RevoSucks/CV64Recomp/releases/tag/v0.5.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 219
+        "totalDownloads": 227
       },
       "game": {
         "title": "Castlevania",
@@ -1046,7 +1046,7 @@
           "htmlUrl": "https://github.com/TwilitRealm/dusklight/releases/tag/v2.0.3"
         },
         "releaseCount": 24,
-        "totalDownloads": 1364622
+        "totalDownloads": 1364670
       },
       "game": {
         "title": "The Legend of Zelda: Twilight Princess",
@@ -1482,7 +1482,7 @@
           "vulkan",
           "windows"
         ],
-        "stars": 3274,
+        "stars": 3275,
         "firstReleaseAt": "2026-10-10T22:37:56Z",
         "latestRelease": {
           "tag": "windows-v2.5.0",
@@ -1491,7 +1491,7 @@
           "htmlUrl": "https://github.com/FelipePrado0/gow3_pc/releases/tag/windows-v2.5.0"
         },
         "releaseCount": 19,
-        "totalDownloads": 468331
+        "totalDownloads": 469484
       },
       "game": {
         "title": "God of War III: Remastered",
@@ -1798,14 +1798,14 @@
         "grid": "https://cdn2.steamgriddb.com/grid/6374abaaafb1a4c0832a34ffa29b15b0.png",
         "hero": "https://cdn2.steamgriddb.com/hero/a5329a91ef79db75900bd9cab3d96e43.png",
         "logo": "https://cdn2.steamgriddb.com/logo/2aca752107ac2bde4cd02805118de503.png",
-        "icon": "https://cdn2.steamgriddb.com/icon/da173c9a620a3fa4fb1142fd6c2db919.ico"
+        "icon": "https://cdn2.steamgriddb.com/icon/325a09bfc61a2bf28c271d89bf6a5d7d.ico"
       },
       "recomp": {
         "description": "Uncharted: The Nathan Drake Collection running natively on Windows - by SuperMedo",
         "homepage": null,
         "license": "GPL-2.0",
         "topics": [],
-        "stars": 1355,
+        "stars": 1360,
         "firstReleaseAt": "2026-10-15T00:17:51Z",
         "latestRelease": {
           "tag": "v0.3.6",
@@ -1814,7 +1814,7 @@
           "htmlUrl": "https://github.com/Supermedo/uncharted_pc/releases/tag/v0.3.6"
         },
         "releaseCount": 7,
-        "totalDownloads": 54060
+        "totalDownloads": 54307
       },
       "game": {
         "title": "Uncharted: The Nathan Drake Collection",
@@ -1870,7 +1870,7 @@
         "grid": "https://cdn2.steamgriddb.com/grid/b80c0932cb6f7be27c8d37b4c847a8bd.png",
         "hero": "https://cdn2.steamgriddb.com/hero/2fc1df7ac6e00ffac3509b070b117ddc.png",
         "logo": "https://cdn2.steamgriddb.com/logo/ce3b5506fc4151c97d646dc6fce8b1f5.png",
-        "icon": "https://cdn2.steamgriddb.com/icon/63a99723ebb3af94d52b474c3b21dbe1.ico"
+        "icon": "https://cdn2.steamgriddb.com/icon/299660a5cc678ea724e901eab05f0aaa.png"
       },
       "recomp": {
         "description": "An unofficial PC port of the Xbox 360 version of Sonic Unleashed created through the process of static recompilation.",
@@ -1886,7 +1886,7 @@
           "htmlUrl": "https://github.com/hedge-dev/UnleashedRecomp/releases/tag/v1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 724647
+        "totalDownloads": 724650
       },
       "game": {
         "title": "Sonic Unleashed",
@@ -1946,7 +1946,7 @@
         "grid": "https://cdn2.steamgriddb.com/grid/cb5afcadcac972f1c6d743c96936ebe3.png",
         "hero": "https://cdn2.steamgriddb.com/hero/c255c05246a081654a0267cbb725f5a7.png",
         "logo": "https://cdn2.steamgriddb.com/logo/a5ae86de28cfea2be65951dbb04567ee.png",
-        "icon": "https://cdn2.steamgriddb.com/icon/dae9ad236c11ee65425921309851a162.ico"
+        "icon": "https://cdn2.steamgriddb.com/icon/7183145a2a3e0ce2b68cd3735186b1d5.png"
       },
       "recomp": {
         "description": "A native recompilation of Skate 3 for Windows, Linux, and macOS.",
@@ -1962,7 +1962,7 @@
           "htmlUrl": "https://github.com/mchughalex/skate3recomp/releases/tag/v2.0.2"
         },
         "releaseCount": 9,
-        "totalDownloads": 117405
+        "totalDownloads": 117425
       },
       "game": {
         "title": "Skate 3",
@@ -2036,7 +2036,7 @@
           "htmlUrl": "https://github.com/BlackLabelHQ/SymphonyRecomp/releases/tag/v0.5.1b"
         },
         "releaseCount": 9,
-        "totalDownloads": 52079
+        "totalDownloads": 52085
       },
       "game": {
         "title": "Castlevania: Symphony of the Night",
@@ -2112,7 +2112,7 @@
           "htmlUrl": "https://github.com/zolaware/reblue/releases/tag/v1.3.1"
         },
         "releaseCount": 21,
-        "totalDownloads": 53658
+        "totalDownloads": 53664
       },
       "game": {
         "title": "Blue Dragon",
@@ -2349,7 +2349,7 @@
           "htmlUrl": "https://github.com/previouslevelgames/recharged/releases/tag/v1.0.10"
         },
         "releaseCount": 13,
-        "totalDownloads": 829
+        "totalDownloads": 847
       },
       "game": {
         "title": "Mario Strikers Charged",
@@ -2402,7 +2402,7 @@
         "grid": "https://cdn2.steamgriddb.com/grid/daa4c479f8ca6bccf503a440032e72c2.png",
         "hero": "https://cdn2.steamgriddb.com/hero/231141b34c82aa95e48810a9d1b33a79.png",
         "logo": "https://cdn2.steamgriddb.com/logo/f874d58af1fb1ddb0f3283870eaac0fd.png",
-        "icon": "https://cdn2.steamgriddb.com/icon/697d9e52caed2849d7e146c5f8c8c0d5.ico"
+        "icon": "https://cdn2.steamgriddb.com/icon/1a0a283bfe7c549dee6c638a05200e32.png"
       },
       "recomp": {
         "description": "New Super Mario Bros. Wii running natively on Android and Windows: a static recompilation built on WiiCompiled. Bring your own game.",
@@ -2418,7 +2418,7 @@
           "htmlUrl": "https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation/releases/tag/v0.1.1"
         },
         "releaseCount": 15,
-        "totalDownloads": 6319
+        "totalDownloads": 6330
       },
       "game": {
         "title": "New Super Mario Bros. Wii",
@@ -2500,7 +2500,7 @@
           "htmlUrl": "https://github.com/patchzyy/Wiicompiled/releases/tag/v0.2.34"
         },
         "releaseCount": 14,
-        "totalDownloads": 195467
+        "totalDownloads": 195499
       },
       "game": {
         "title": "Mario Kart Wii",
@@ -2574,7 +2574,7 @@
           "htmlUrl": "https://github.com/keepvaibin/nebula/releases/tag/v1.0.1"
         },
         "releaseCount": 7,
-        "totalDownloads": 7972
+        "totalDownloads": 7992
       },
       "game": {
         "title": "Super Mario Galaxy",
@@ -2641,7 +2641,7 @@
         "homepage": "https://shipofharkinian.com",
         "license": null,
         "topics": [],
-        "stars": 5659,
+        "stars": 5660,
         "firstReleaseAt": "2023-08-14T21:22:21Z",
         "latestRelease": {
           "tag": "9.3.0",
@@ -2650,7 +2650,7 @@
           "htmlUrl": "https://github.com/HarbourMasters/Shipwright/releases/tag/9.3.0"
         },
         "releaseCount": 52,
-        "totalDownloads": 2332332
+        "totalDownloads": 2332403
       },
       "game": {
         "title": "The Legend of Zelda: Ocarina of Time",
@@ -2712,7 +2712,7 @@
         "grid": "https://cdn2.steamgriddb.com/grid/958c6e525626a72dc5722a63f638a80b.png",
         "hero": "https://cdn2.steamgriddb.com/hero/25fa2d39a0143f1f30c36eece145a526.png",
         "logo": "https://cdn2.steamgriddb.com/logo/fe8c15fed5f808006ce95eddb7366e35.png",
-        "icon": "https://cdn2.steamgriddb.com/icon/30b4f25f536778f198568a0030e8a586.ico"
+        "icon": "https://cdn2.steamgriddb.com/icon/4e0928de075538c593fbdabb0c5ef2c3.png"
       },
       "recomp": {
         "description": null,
@@ -2728,7 +2728,7 @@
           "htmlUrl": "https://github.com/2ship2harkinian/2ship2harkinian/releases/tag/5.0.1"
         },
         "releaseCount": 16,
-        "totalDownloads": 713142
+        "totalDownloads": 713151
       },
       "game": {
         "title": "The Legend of Zelda: Majora's Mask",
@@ -2804,7 +2804,7 @@
           "htmlUrl": "https://github.com/HarbourMasters/Starship/releases/tag/v2.0.0"
         },
         "releaseCount": 2,
-        "totalDownloads": 225573
+        "totalDownloads": 225577
       },
       "game": {
         "title": "Star Fox 64",
@@ -2880,7 +2880,7 @@
           "htmlUrl": "https://github.com/HarbourMasters/SpaghettiKart/releases/tag/1.0.0"
         },
         "releaseCount": 3,
-        "totalDownloads": 235779
+        "totalDownloads": 235791
       },
       "game": {
         "title": "Mario Kart 64",
@@ -2965,7 +2965,7 @@
           "htmlUrl": "https://github.com/coop-deluxe/sm64coopdx/releases/tag/v1.5.1"
         },
         "releaseCount": 16,
-        "totalDownloads": 1683479
+        "totalDownloads": 1683498
       },
       "game": {
         "title": "Super Mario 64",
@@ -3038,7 +3038,7 @@
           "htmlUrl": "https://github.com/perfect-dark-pc-port/perfect_dark/releases/tag/ci-dev-build"
         },
         "releaseCount": 1,
-        "totalDownloads": 15750
+        "totalDownloads": 15755
       },
       "game": {
         "title": "Perfect Dark",
@@ -3116,7 +3116,7 @@
           "htmlUrl": "https://github.com/open-goal/launcher/releases/tag/v2.11.2"
         },
         "releaseCount": 90,
-        "totalDownloads": 498789
+        "totalDownloads": 498797
       },
       "game": {
         "title": "Jak and Daxter: The Precursor Legacy",
@@ -3195,7 +3195,7 @@
           "htmlUrl": "https://github.com/open-goal/launcher/releases/tag/v2.11.2"
         },
         "releaseCount": 90,
-        "totalDownloads": 498789
+        "totalDownloads": 498797
       },
       "game": {
         "title": "Jak II",
@@ -3267,7 +3267,7 @@
           "htmlUrl": "https://github.com/thiagordsfx/urban-reign-recomp/releases/tag/v1.3.0"
         },
         "releaseCount": 6,
-        "totalDownloads": 636
+        "totalDownloads": 639
       },
       "game": {
         "title": "Urban Reign",
@@ -3327,7 +3327,7 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 84,
+        "stars": 85,
         "firstReleaseAt": "2026-10-13T11:13:53Z",
         "latestRelease": {
           "tag": "v0.5.5",
@@ -3336,7 +3336,7 @@
           "htmlUrl": "https://github.com/obaidr1/hercules-recompiled/releases/tag/v0.5.5"
         },
         "releaseCount": 10,
-        "totalDownloads": 3604
+        "totalDownloads": 3616
       },
       "game": {
         "title": "Disney's Hercules Action Game",
@@ -3409,7 +3409,7 @@
           "htmlUrl": "https://github.com/OAleex/ShaolinMonksRecomp/releases/tag/0.1.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 719
+        "totalDownloads": 729
       },
       "game": {
         "title": "Mortal Kombat: Shaolin Monks",
