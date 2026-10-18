@@ -301,11 +301,11 @@
       "originalPlatform": "N64",
       "platforms": {
         "windows-x64": {
-          "assetPattern": "*-Windows-RelWithDebInfo.zip",
+          "assetPattern": "*-Windows.zip",
           "executable": "SnowboardKids2Recompiled.exe"
         },
         "linux-x64": {
-          "assetPattern": "*-Linux-X64-Release.tar.gz",
+          "assetPattern": "*-Linux-X64.tar.gz",
           "executable": "SnowboardKids2Recompiled"
         }
       },
@@ -871,6 +871,377 @@
         "logo": "https://cdn2.steamgriddb.com/logo/faafda66202d234463057972460c04f5.png",
         "icon": "https://cdn2.steamgriddb.com/icon/654ad60ebd1ae29cedc37da04b6b0672.png"
       }
+    },
+    {
+      "id": "zelda-oot-soh",
+      "name": "Ship of Harkinian",
+      "repo": "HarbourMasters/Shipwright",
+      "originalTitle": "The Legend of Zelda: Ocarina of Time",
+      "originalPlatform": "N64",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-Win64.zip",
+          "executable": "soh.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "*.appimage",
+          "executable": "*.appimage"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua ROM de N64 (ou GameCube) de Ocarina of Time. O Ship of Harkinian pede o arquivo na primeira execução.",
+        "descriptionEn": "Your N64 (or GameCube) Ocarina of Time ROM. Ship of Harkinian asks for it on first run.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "aiAssisted": true,
+      "sgdbId": 21202,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/ed89e6477ff6a465891a5f17f77948ae.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/1595af6435015c77a7149e92a551338e.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/e440113dde9d989caff2c0f405ad1334.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/a896144046a1b5bd6e3e034d00b4f73a.png"
+      },
+      "igdbId": 1029
+    },
+    {
+      "id": "zelda-mm-2ship",
+      "name": "2 Ship 2 Harkinian",
+      "repo": "2ship2harkinian/2ship2harkinian",
+      "originalTitle": "The Legend of Zelda: Majora's Mask",
+      "originalPlatform": "N64",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-Win64.zip",
+          "executable": "2ship.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "*-Linux.zip",
+          "executable": "2ship.appimage"
+        }
+      },
+      "requiredRom": {
+        "description": "The Legend of Zelda: Majora's Mask (USA). O 2 Ship pede a ROM na primeira execução.",
+        "descriptionEn": "The Legend of Zelda: Majora's Mask (USA). 2 Ship asks for the ROM on first run.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 34302,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/958c6e525626a72dc5722a63f638a80b.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/25fa2d39a0143f1f30c36eece145a526.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/fe8c15fed5f808006ce95eddb7366e35.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/30b4f25f536778f198568a0030e8a586.ico"
+      },
+      "igdbId": 1030
+    },
+    {
+      "id": "starfox64-starship",
+      "name": "Starship",
+      "repo": "HarbourMasters/Starship",
+      "originalTitle": "Star Fox 64",
+      "originalPlatform": "N64",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-Windows.zip",
+          "executable": "Starship.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "*-Linux.zip",
+          "executable": "starship.appimage"
+        }
+      },
+      "requiredRom": {
+        "description": "Star Fox 64 (USA). O Starship pede a ROM na primeira execução.",
+        "descriptionEn": "Star Fox 64 (USA). Starship asks for the ROM on first run.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 36615,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/9122b7acc2588eff1d20211ce8fb8798.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/44adaadb095f40b587f4b409ac55799b.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/ad3019b856147c17e82a5bead782d2a8.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/9fbcbcb41e52efd7dbcb96e8a5c4cb63.ico"
+      },
+      "igdbId": 2591
+    },
+    {
+      "id": "mk64-spaghettikart",
+      "name": "SpaghettiKart",
+      "repo": "HarbourMasters/SpaghettiKart",
+      "originalTitle": "Mario Kart 64",
+      "originalPlatform": "N64",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "spaghetti-windows.zip",
+          "executable": "Spaghettify.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "spaghetti-linux.zip",
+          "executable": "spaghetti.appimage"
+        }
+      },
+      "requiredRom": {
+        "description": "Mario Kart 64 (USA). O SpaghettiKart pede a ROM na primeira execução.",
+        "descriptionEn": "Mario Kart 64 (USA). SpaghettiKart asks for the ROM on first run.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "aiAssisted": true,
+      "sgdbId": 21164,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/8908077ce7fd405516d81c2c929de429.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/abdeb6f575ac5c6676b747bca8d09cc2.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/1755c118e8859eb000eb6eca25369407.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/f57e9defd1303332611ab2ca1994500d.png"
+      },
+      "igdbId": 2342
+    },
+    {
+      "id": "sm64coopdx",
+      "name": "sm64coopdx",
+      "repo": "coop-deluxe/sm64coopdx",
+      "originalTitle": "Super Mario 64",
+      "originalPlatform": "N64",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "sm64coopdx_Windows.zip",
+          "executable": "sm64coopdx.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "sm64coopdx_Linux.zip",
+          "executable": "sm64coopdx"
+        }
+      },
+      "requiredRom": {
+        "description": "Super Mario 64 (USA), .z64. O sm64coopdx pede a ROM na primeira execução.",
+        "descriptionEn": "Super Mario 64 (USA), .z64. sm64coopdx asks for the ROM on first run.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 37177,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/f293653ffa5c0e53453463a82401dbec.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/2b423dc1a327648b419922ee8980e8dd.jpg",
+        "logo": "https://cdn2.steamgriddb.com/logo/26d88423fc6da243ffddf161ca712757.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/d09bf41544a3365a46c9077ebb5e35c3.ico"
+      },
+      "igdbId": 1074
+    },
+    {
+      "id": "perfect-dark",
+      "name": "Perfect Dark PC port",
+      "repo": "perfect-dark-pc-port/perfect_dark",
+      "originalTitle": "Perfect Dark",
+      "originalPlatform": "N64",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "pd-x86_64-windows.zip",
+          "executable": "pd.x86_64.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Perfect Dark (NTSC, versão final) com o nome pd.ntsc-final.z64, dentro da pasta data do jogo.",
+        "descriptionEn": "Perfect Dark (NTSC final) named pd.ntsc-final.z64, inside the game's data folder.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 37787,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/f2eaa301f9c53bb10fb8e5b9d3d0ea9c.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/eb454ad6be830064d49727814426bb6e.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/5590ca803d2831d2a3dff3fa3eaca6f4.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/64314c17210c549a854f1f1c7adce8b6.ico"
+      },
+      "igdbId": 1463
+    },
+    {
+      "id": "jak1",
+      "name": "OpenGOAL",
+      "repo": "open-goal/launcher",
+      "originalTitle": "Jak and Daxter: The Precursor Legacy",
+      "originalPlatform": "PS2",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "OpenGOAL-Launcher_*_x64_en-US.msi",
+          "executable": "OpenGOAL-Launcher.exe",
+          "installer": {
+            "installDir": "%ProgramFiles%/OpenGOAL-Launcher"
+          }
+        },
+        "linux-x64": {
+          "assetPattern": "OpenGOAL-Launcher_*_amd64.AppImage",
+          "executable": "*.AppImage"
+        }
+      },
+      "requiredRom": {
+        "description": "Imagem do seu disco de PS2: Jak and Daxter: The Precursor Legacy (ISO). Instale o jogo pelo OpenGOAL Launcher, que extrai os arquivos do disco.",
+        "descriptionEn": "Your PS2 disc image: Jak and Daxter: The Precursor Legacy (ISO). Install the game from the OpenGOAL Launcher, which extracts the disc files.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 37452,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/a86c4aec1bcf14eb30646ed8df2d2401.jpg",
+        "hero": "https://cdn2.steamgriddb.com/hero/56add98fbde1aae192249d26d8dcb354.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/852c296dfa59522f563aef29d8d0adf6.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/7a20fd764fa23d34b52bd85bf5cb49a6.png"
+      },
+      "igdbId": 1528
+    },
+    {
+      "id": "jak2",
+      "name": "OpenGOAL",
+      "repo": "open-goal/launcher",
+      "originalTitle": "Jak II",
+      "originalPlatform": "PS2",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "OpenGOAL-Launcher_*_x64_en-US.msi",
+          "executable": "OpenGOAL-Launcher.exe",
+          "installer": {
+            "installDir": "%ProgramFiles%/OpenGOAL-Launcher"
+          }
+        },
+        "linux-x64": {
+          "assetPattern": "OpenGOAL-Launcher_*_amd64.AppImage",
+          "executable": "*.AppImage"
+        }
+      },
+      "requiredRom": {
+        "description": "Imagem do seu disco de PS2: Jak II (ISO). Instale o jogo pelo OpenGOAL Launcher, que extrai os arquivos do disco.",
+        "descriptionEn": "Your PS2 disc image: Jak II (ISO). Install the game from the OpenGOAL Launcher, which extracts the disc files.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 36801,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/67111ba17799dbe2a3d3a58657de7060.jpg",
+        "hero": "https://cdn2.steamgriddb.com/hero/84ddfb34126fc3a48ee38d7044e87276.jpg",
+        "logo": "https://cdn2.steamgriddb.com/logo/aef546f29283b6ccef3c61f58fb8e79b.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/52a7494159529c38b9c69e9946ba4f27.ico"
+      },
+      "igdbId": 1529
+    },
+    {
+      "id": "urban-reign",
+      "name": "Urban Reign PC",
+      "repo": "thiagordsfx/urban-reign-recomp",
+      "originalTitle": "Urban Reign",
+      "originalPlatform": "PS2",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "UrbanReignPC-*.zip",
+          "executable": "Urban Reign.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Imagem do seu disco de PS2: Urban Reign (USA, SLUS-21209), .iso. Escolha o arquivo na aba Game do launcher do projeto.",
+        "descriptionEn": "Your PS2 disc image: Urban Reign (USA, SLUS-21209), .iso. Pick it in the Game tab of the project's launcher.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 4612,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/792ca3582ecbe9f10b573a05455edd10.jpg",
+        "hero": "https://cdn2.steamgriddb.com/hero/51b2395680b833ec1f7b1a44a0bafe05.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/82b05ac4ebef496529bb27f3c6786782.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/0f7f9b5535079ff1dd10737feb5e1ce3.png"
+      },
+      "igdbId": 19776
+    },
+    {
+      "id": "hercules",
+      "name": "Hercules Recompiled",
+      "repo": "obaidr1/hercules-recompiled",
+      "originalTitle": "Disney's Hercules",
+      "originalPlatform": "PS1",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-windows-x64.zip",
+          "executable": "Hercules_Recompiled.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "*-linux-x64.zip",
+          "executable": "Hercules_Recompiled"
+        }
+      },
+      "requiredRom": {
+        "description": "Imagem do seu disco de PS1: Disney's Hercules (USA, SLUS-01029).",
+        "descriptionEn": "Your PS1 disc image: Disney's Hercules (USA, SLUS-01029).",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 4923414,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/a4256857d2bedfe2545111324296db10.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/0b518a250c90421f0a3b4f32e8312e3d.jpg",
+        "logo": "https://cdn2.steamgriddb.com/logo/4042483f5c2c4015e2a6abd47aa76b6f.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/ec5ec3ab3ae96eb7f5981a59ab485279.ico"
+      },
+      "igdbId": 9814
+    },
+    {
+      "id": "mk-shaolin-monks",
+      "name": "ShaolinMonksRecomp",
+      "repo": "OAleex/ShaolinMonksRecomp",
+      "originalTitle": "Mortal Kombat: Shaolin Monks",
+      "originalPlatform": "XBOX",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-Windows-x64.zip",
+          "executable": "ShaolinMonksRecomp.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Seu Mortal Kombat: Shaolin Monks de Xbox (EUA/Europa): ISO, XISO, ZIP, pasta extraída ou default.xbe.",
+        "descriptionEn": "Your Xbox Mortal Kombat: Shaolin Monks (USA/Europe): ISO, XISO, ZIP, extracted folder or default.xbe.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "aiAssisted": true,
+      "sgdbId": 37375,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/338c5458fadf5e13bddfcb4819942d15.jpg",
+        "hero": "https://cdn2.steamgriddb.com/hero/ba8d0823c02b67588d1d0184f242f778.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/f585a5b60d11ea3cdccb72174a0d418d.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/0ad3140ed0cf59e84008db87c8c1106c.png"
+      },
+      "igdbId": 1614
     }
   ]
 }

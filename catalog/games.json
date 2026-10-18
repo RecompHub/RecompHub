@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-17T11:00:57.157484732Z",
+  "generatedAt": "2026-10-18T12:03:12.906573100Z",
   "games": [
     {
       "id": "zelda64-mm",
@@ -39,7 +39,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 7447,
+        "stars": 7457,
         "firstReleaseAt": "2024-05-10T05:07:15Z",
         "latestRelease": {
           "tag": "v1.2.2",
@@ -48,7 +48,7 @@
           "htmlUrl": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 7,
-        "totalDownloads": 372600
+        "totalDownloads": 373327
       },
       "game": {
         "title": "The Legend of Zelda: Majora's Mask",
@@ -114,7 +114,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 384,
+        "stars": 388,
         "firstReleaseAt": "2025-12-24T22:22:59Z",
         "latestRelease": {
           "tag": "1.0.3",
@@ -123,7 +123,7 @@
           "htmlUrl": "https://github.com/sonicdcer/Starfox64Recomp/releases/tag/1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 30165
+        "totalDownloads": 30240
       },
       "game": {
         "title": "Star Fox 64",
@@ -189,7 +189,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 2047,
+        "stars": 2052,
         "firstReleaseAt": "2026-01-24T19:29:09Z",
         "latestRelease": {
           "tag": "v1.0.2",
@@ -198,7 +198,7 @@
           "htmlUrl": "https://github.com/BanjoRecomp/BanjoRecomp/releases/tag/v1.0.2"
         },
         "releaseCount": 3,
-        "totalDownloads": 144947
+        "totalDownloads": 145468
       },
       "game": {
         "title": "Banjo-Kazooie",
@@ -265,7 +265,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 515,
+        "stars": 519,
         "firstReleaseAt": "2026-08-29T19:03:58Z",
         "latestRelease": {
           "tag": "v1.0.3",
@@ -274,7 +274,7 @@
           "htmlUrl": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled/releases/tag/v1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 45044
+        "totalDownloads": 45518
       },
       "game": {
         "title": "Donkey Kong 64",
@@ -346,7 +346,7 @@
           "pc-port",
           "recompilation"
         ],
-        "stars": 317,
+        "stars": 320,
         "firstReleaseAt": "2025-02-20T23:53:16Z",
         "latestRelease": {
           "tag": "v0.2.0-dev",
@@ -355,7 +355,7 @@
           "htmlUrl": "https://github.com/klorfmorf/Goemon64Recomp/releases/tag/v0.2.0-dev"
         },
         "releaseCount": 5,
-        "totalDownloads": 22868
+        "totalDownloads": 22956
       },
       "game": {
         "title": "Mystical Ninja Starring Goemon",
@@ -421,7 +421,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 298,
+        "stars": 302,
         "firstReleaseAt": "2026-03-22T22:47:19Z",
         "latestRelease": {
           "tag": "v1.0.0",
@@ -430,7 +430,7 @@
           "htmlUrl": "https://github.com/RevoSucks/BM64Recomp/releases/tag/v1.0.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 20363
+        "totalDownloads": 20492
       },
       "game": {
         "title": "Bomberman 64",
@@ -496,7 +496,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 270,
+        "stars": 273,
         "firstReleaseAt": "2025-05-03T02:37:18Z",
         "latestRelease": {
           "tag": "v0.9.1",
@@ -505,7 +505,7 @@
           "htmlUrl": "https://github.com/MegaMan64Recomp/MegaMan64Recompiled/releases/tag/v0.9.1"
         },
         "releaseCount": 3,
-        "totalDownloads": 14645
+        "totalDownloads": 14739
       },
       "game": {
         "title": "Mega Man 64",
@@ -571,7 +571,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 164,
+        "stars": 169,
         "firstReleaseAt": "2026-06-27T05:24:02Z",
         "latestRelease": {
           "tag": "v1.2.2",
@@ -580,7 +580,7 @@
           "htmlUrl": "https://github.com/HarvestMoon64Recomp/HarvestMoon64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 6,
-        "totalDownloads": 9136
+        "totalDownloads": 9227
       },
       "game": {
         "title": "Harvest Moon 64",
@@ -642,7 +642,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 153,
+        "stars": 154,
         "firstReleaseAt": "2025-12-18T04:36:00Z",
         "latestRelease": {
           "tag": "1.0.0",
@@ -651,7 +651,7 @@
           "htmlUrl": "https://github.com/theboy181/drmario64_recomp_plus/releases/tag/1.0.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 10712
+        "totalDownloads": 10767
       },
       "game": {
         "title": "Dr. Mario 64",
@@ -686,11 +686,11 @@
       "originalPlatform": "N64",
       "platforms": {
         "linux-x64": {
-          "assetPattern": "*-Linux-X64-Release.tar.gz",
+          "assetPattern": "*-Linux-X64.tar.gz",
           "executable": "SnowboardKids2Recompiled"
         },
         "windows-x64": {
-          "assetPattern": "*-Windows-RelWithDebInfo.zip",
+          "assetPattern": "*-Windows.zip",
           "executable": "SnowboardKids2Recompiled.exe"
         }
       },
@@ -719,16 +719,16 @@
           "nintendo",
           "recompilation"
         ],
-        "stars": 108,
+        "stars": 109,
         "firstReleaseAt": "2026-06-21T18:50:51Z",
         "latestRelease": {
-          "tag": "v1.0.5",
-          "name": "Snowboard Kids 2: Recompiled v1.0.5",
-          "publishedAt": "2026-06-21T18:50:51Z",
-          "htmlUrl": "https://github.com/cdlewis/snowboardkids2-recomp/releases/tag/v1.0.5"
+          "tag": "v2.0.2",
+          "name": "Snowboard Kids 2: Recompiled v2.0.2",
+          "publishedAt": "2026-10-17T21:17:34Z",
+          "htmlUrl": "https://github.com/cdlewis/snowboardkids2-recomp/releases/tag/v2.0.2"
         },
-        "releaseCount": 4,
-        "totalDownloads": 7742
+        "releaseCount": 5,
+        "totalDownloads": 7924
       },
       "game": {
         "title": "Snowboard Kids 2",
@@ -803,16 +803,16 @@
           "steam-deck",
           "windows"
         ],
-        "stars": 111,
+        "stars": 115,
         "firstReleaseAt": "2026-09-05T16:30:20Z",
         "latestRelease": {
-          "tag": "v1.1.4",
-          "name": "Snap64 Recomp 1.1.4",
-          "publishedAt": "2026-10-11T15:40:53Z",
-          "htmlUrl": "https://github.com/JackandBeans/Snap64Recomp/releases/tag/v1.1.4"
+          "tag": "v1.1.5",
+          "name": "Snap64 Recomp 1.1.5",
+          "publishedAt": "2026-10-17T21:01:57Z",
+          "htmlUrl": "https://github.com/JackandBeans/Snap64Recomp/releases/tag/v1.1.5"
         },
-        "releaseCount": 15,
-        "totalDownloads": 7774
+        "releaseCount": 16,
+        "totalDownloads": 8136
       },
       "game": {
         "title": "Pokémon Snap",
@@ -882,16 +882,16 @@
           "recompilation",
           "rt64"
         ],
-        "stars": 91,
+        "stars": 97,
         "firstReleaseAt": "2026-10-01T00:51:32Z",
         "latestRelease": {
-          "tag": "v1.4.0",
-          "name": "Conker's Bad Fur Day: Reloaded 1.4.0",
-          "publishedAt": "2026-10-16T23:35:10Z",
-          "htmlUrl": "https://github.com/DahSidiAbdallah/ConkerBFDReloaded/releases/tag/v1.4.0"
+          "tag": "v1.4.1",
+          "name": "Conker's Bad Fur Day: Reloaded 1.4.1",
+          "publishedAt": "2026-10-17T14:37:10Z",
+          "htmlUrl": "https://github.com/DahSidiAbdallah/ConkerBFDReloaded/releases/tag/v1.4.1"
         },
-        "releaseCount": 13,
-        "totalDownloads": 6237
+        "releaseCount": 14,
+        "totalDownloads": 6843
       },
       "game": {
         "title": "Conker's Bad Fur Day",
@@ -960,7 +960,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 13,
+        "stars": 15,
         "firstReleaseAt": "2026-10-06T03:02:16Z",
         "latestRelease": {
           "tag": "v0.5.0",
@@ -969,7 +969,7 @@
           "htmlUrl": "https://github.com/RevoSucks/CV64Recomp/releases/tag/v0.5.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 195
+        "totalDownloads": 219
       },
       "game": {
         "title": "Castlevania",
@@ -1037,7 +1037,7 @@
         "homepage": "https://twilitrealm.dev",
         "license": "CC0-1.0",
         "topics": [],
-        "stars": 5894,
+        "stars": 5921,
         "firstReleaseAt": "2026-04-24T03:44:05Z",
         "latestRelease": {
           "tag": "v2.0.3",
@@ -1046,7 +1046,7 @@
           "htmlUrl": "https://github.com/TwilitRealm/dusklight/releases/tag/v2.0.3"
         },
         "releaseCount": 24,
-        "totalDownloads": 1358018
+        "totalDownloads": 1364617
       },
       "game": {
         "title": "The Legend of Zelda: Twilight Princess",
@@ -1482,16 +1482,16 @@
           "vulkan",
           "windows"
         ],
-        "stars": 2995,
+        "stars": 3273,
         "firstReleaseAt": "2026-10-10T22:37:56Z",
         "latestRelease": {
-          "tag": "windows-v2.4.1",
-          "name": "God of War III Remastered for PC 2.4.1",
-          "publishedAt": "2026-10-16T22:58:58Z",
-          "htmlUrl": "https://github.com/FelipePrado0/gow3_pc/releases/tag/windows-v2.4.1"
+          "tag": "windows-v2.5.0",
+          "name": "God of War III Remastered for PC 2.5.0",
+          "publishedAt": "2026-10-18T06:10:15Z",
+          "htmlUrl": "https://github.com/FelipePrado0/gow3_pc/releases/tag/windows-v2.5.0"
         },
-        "releaseCount": 18,
-        "totalDownloads": 374283
+        "releaseCount": 19,
+        "totalDownloads": 468310
       },
       "game": {
         "title": "God of War III: Remastered",
@@ -1805,16 +1805,16 @@
         "homepage": null,
         "license": "GPL-2.0",
         "topics": [],
-        "stars": 1128,
+        "stars": 1354,
         "firstReleaseAt": "2026-10-15T00:17:51Z",
         "latestRelease": {
-          "tag": "v0.3.3",
-          "name": "Uncharted for Windows 0.3.3",
-          "publishedAt": "2026-10-15T21:49:02Z",
-          "htmlUrl": "https://github.com/Supermedo/uncharted_pc/releases/tag/v0.3.3"
+          "tag": "v0.3.6",
+          "name": "Uncharted for Windows 0.3.6",
+          "publishedAt": "2026-10-17T23:37:21Z",
+          "htmlUrl": "https://github.com/Supermedo/uncharted_pc/releases/tag/v0.3.6"
         },
-        "releaseCount": 4,
-        "totalDownloads": 37068
+        "releaseCount": 7,
+        "totalDownloads": 54059
       },
       "game": {
         "title": "Uncharted: The Nathan Drake Collection",
@@ -1877,7 +1877,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 5201,
+        "stars": 5215,
         "firstReleaseAt": "2025-03-01T11:01:14Z",
         "latestRelease": {
           "tag": "v1.0.3",
@@ -1886,7 +1886,7 @@
           "htmlUrl": "https://github.com/hedge-dev/UnleashedRecomp/releases/tag/v1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 723642
+        "totalDownloads": 724645
       },
       "game": {
         "title": "Sonic Unleashed",
@@ -1953,7 +1953,7 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 1644,
+        "stars": 1662,
         "firstReleaseAt": "2026-06-04T21:32:32Z",
         "latestRelease": {
           "tag": "v2.0.2",
@@ -1962,7 +1962,7 @@
           "htmlUrl": "https://github.com/mchughalex/skate3recomp/releases/tag/v2.0.2"
         },
         "releaseCount": 9,
-        "totalDownloads": 114941
+        "totalDownloads": 117404
       },
       "game": {
         "title": "Skate 3",
@@ -2027,7 +2027,7 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 908,
+        "stars": 918,
         "firstReleaseAt": "2026-08-02T21:38:11Z",
         "latestRelease": {
           "tag": "v0.5.1b",
@@ -2036,7 +2036,7 @@
           "htmlUrl": "https://github.com/BlackLabelHQ/SymphonyRecomp/releases/tag/v0.5.1b"
         },
         "releaseCount": 9,
-        "totalDownloads": 51217
+        "totalDownloads": 52078
       },
       "game": {
         "title": "Castlevania: Symphony of the Night",
@@ -2103,7 +2103,7 @@
         "homepage": null,
         "license": "BSD-3-Clause",
         "topics": [],
-        "stars": 798,
+        "stars": 810,
         "firstReleaseAt": "2026-08-23T01:33:50Z",
         "latestRelease": {
           "tag": "v1.3.1",
@@ -2112,7 +2112,7 @@
           "htmlUrl": "https://github.com/zolaware/reblue/releases/tag/v1.3.1"
         },
         "releaseCount": 21,
-        "totalDownloads": 53098
+        "totalDownloads": 53658
       },
       "game": {
         "title": "Blue Dragon",
@@ -2176,7 +2176,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 612,
+        "stars": 615,
         "firstReleaseAt": "2025-08-17T20:39:37Z",
         "latestRelease": {
           "tag": "v0.9.2",
@@ -2185,7 +2185,7 @@
           "htmlUrl": "https://github.com/sonicdcer/MarioKart64Recomp/releases/tag/v0.9.2"
         },
         "releaseCount": 2,
-        "totalDownloads": 27416
+        "totalDownloads": 27492
       },
       "game": {
         "title": "Mario Kart 64",
@@ -2252,7 +2252,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 171,
+        "stars": 172,
         "firstReleaseAt": "2026-07-22T13:03:43Z",
         "latestRelease": {
           "tag": "kirby",
@@ -2261,7 +2261,7 @@
           "htmlUrl": "https://github.com/ExpansionPak/ModernGekko/releases/tag/kirby"
         },
         "releaseCount": 1,
-        "totalDownloads": 11590
+        "totalDownloads": 11762
       },
       "game": {
         "title": "Kirby's Return to Dream Land",
@@ -2340,16 +2340,16 @@
           "wii",
           "windows-app"
         ],
-        "stars": 41,
+        "stars": 50,
         "firstReleaseAt": "2026-10-10T19:10:23Z",
         "latestRelease": {
-          "tag": "v1.0.9",
-          "name": "1.0.9 – DirectX 12, performance optimization, bug fixes and much more",
-          "publishedAt": "2026-10-15T17:22:00Z",
-          "htmlUrl": "https://github.com/previouslevelgames/recharged/releases/tag/v1.0.9"
+          "tag": "v1.0.10",
+          "name": "1.0.10 – Recharged, European version, launcher updates and sound levels",
+          "publishedAt": "2026-10-17T21:03:11Z",
+          "htmlUrl": "https://github.com/previouslevelgames/recharged/releases/tag/v1.0.10"
         },
-        "releaseCount": 11,
-        "totalDownloads": 692
+        "releaseCount": 13,
+        "totalDownloads": 827
       },
       "game": {
         "title": "Mario Strikers Charged",
@@ -2409,7 +2409,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 32,
+        "stars": 34,
         "firstReleaseAt": "2026-10-07T15:43:51Z",
         "latestRelease": {
           "tag": "v0.1.1",
@@ -2418,7 +2418,7 @@
           "htmlUrl": "https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation/releases/tag/v0.1.1"
         },
         "releaseCount": 15,
-        "totalDownloads": 5340
+        "totalDownloads": 6316
       },
       "game": {
         "title": "New Super Mario Bros. Wii",
@@ -2491,7 +2491,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 1173,
+        "stars": 1185,
         "firstReleaseAt": "2026-08-23T20:28:40Z",
         "latestRelease": {
           "tag": "v0.2.34",
@@ -2500,7 +2500,7 @@
           "htmlUrl": "https://github.com/patchzyy/Wiicompiled/releases/tag/v0.2.34"
         },
         "releaseCount": 14,
-        "totalDownloads": 193210
+        "totalDownloads": 195464
       },
       "game": {
         "title": "Mario Kart Wii",
@@ -2565,7 +2565,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 200,
+        "stars": 222,
         "firstReleaseAt": "2026-10-06T20:43:37Z",
         "latestRelease": {
           "tag": "v1.0.1",
@@ -2574,7 +2574,7 @@
           "htmlUrl": "https://github.com/keepvaibin/nebula/releases/tag/v1.0.1"
         },
         "releaseCount": 7,
-        "totalDownloads": 6192
+        "totalDownloads": 7972
       },
       "game": {
         "title": "Super Mario Galaxy",
@@ -2599,6 +2599,843 @@
           "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sclnv9.jpg",
           "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8831.jpg",
           "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sclnv8.jpg"
+        ]
+      },
+      "aiAssisted": true
+    },
+    {
+      "id": "zelda-oot-soh",
+      "name": "Ship of Harkinian",
+      "repo": "HarbourMasters/Shipwright",
+      "originalTitle": "The Legend of Zelda: Ocarina of Time",
+      "originalPlatform": "N64",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "*.appimage",
+          "executable": "*.appimage"
+        },
+        "windows-x64": {
+          "assetPattern": "*-Win64.zip",
+          "executable": "soh.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua ROM de N64 (ou GameCube) de Ocarina of Time. O Ship of Harkinian pede o arquivo na primeira execução.",
+        "descriptionEn": "Your N64 (or GameCube) Ocarina of Time ROM. Ship of Harkinian asks for it on first run.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 21202,
+      "igdbId": 1029,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/ed89e6477ff6a465891a5f17f77948ae.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/1595af6435015c77a7149e92a551338e.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/e440113dde9d989caff2c0f405ad1334.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/a896144046a1b5bd6e3e034d00b4f73a.png"
+      },
+      "recomp": {
+        "description": null,
+        "homepage": "https://shipofharkinian.com",
+        "license": null,
+        "topics": [],
+        "stars": 5659,
+        "firstReleaseAt": "2023-08-14T21:22:21Z",
+        "latestRelease": {
+          "tag": "9.3.0",
+          "name": "Dewey Alpha 9.3.0",
+          "publishedAt": "2026-10-06T02:44:55Z",
+          "htmlUrl": "https://github.com/HarbourMasters/Shipwright/releases/tag/9.3.0"
+        },
+        "releaseCount": 52,
+        "totalDownloads": 2332318
+      },
+      "game": {
+        "title": "The Legend of Zelda: Ocarina of Time",
+        "releaseDate": "1998-11-21",
+        "developers": [
+          "Nintendo Entertainment Analysis & Development"
+        ],
+        "publishers": [
+          "Nintendo",
+          "Gradiente",
+          "iQue"
+        ],
+        "genres": [
+          "Puzzle",
+          "Adventure"
+        ],
+        "summary": "The Legend of Zelda: Ocarina of Time is the fifth main installment of The Legend of Zelda series and the first to be released for the Nintendo 64. It was one of the most highly anticipated games of its age, and is listed among the greatest video games ever created by numerous websites and magazines. The gameplay of Ocarina of Time was revolutionary for its time, it has arguably made more of an impact on later games in the series than any of its predecessors even though they had the same cores of exploration, dungeons, puzzles and item usage. Among the gameplay mechanics, one of the most noteworthy is the time-traveling system. The game begins with the player controlling the child Link, but later on an adult Link becomes a playable character as well and each of them has certain unique abilities. Ocarina of Time also introduces the use of music to solve puzzles: as new songs are learned, they can be used to solve puzzles, gain access to new areas and warp to different locations. Dungeon exploration is somewhat more puzzle-oriented than in earlier games but they are not too complex.",
+        "rating": 91.5,
+        "url": "https://www.igdb.com/games/the-legend-of-zelda-ocarina-of-time",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sckeaj.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sckeag.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sckeap.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sckeah.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sckeai.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sckeaf.jpg"
+        ]
+      },
+      "aiAssisted": true
+    },
+    {
+      "id": "zelda-mm-2ship",
+      "name": "2 Ship 2 Harkinian",
+      "repo": "2ship2harkinian/2ship2harkinian",
+      "originalTitle": "The Legend of Zelda: Majora's Mask",
+      "originalPlatform": "N64",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "*-Linux.zip",
+          "executable": "2ship.appimage"
+        },
+        "windows-x64": {
+          "assetPattern": "*-Win64.zip",
+          "executable": "2ship.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "The Legend of Zelda: Majora's Mask (USA). O 2 Ship pede a ROM na primeira execução.",
+        "descriptionEn": "The Legend of Zelda: Majora's Mask (USA). 2 Ship asks for the ROM on first run.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 34302,
+      "igdbId": 1030,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/958c6e525626a72dc5722a63f638a80b.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/25fa2d39a0143f1f30c36eece145a526.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/fe8c15fed5f808006ce95eddb7366e35.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/30b4f25f536778f198568a0030e8a586.ico"
+      },
+      "recomp": {
+        "description": null,
+        "homepage": null,
+        "license": "CC0-1.0",
+        "topics": [],
+        "stars": 2339,
+        "firstReleaseAt": "2024-05-27T01:01:57Z",
+        "latestRelease": {
+          "tag": "5.0.1",
+          "name": "Battler Bravo 5.0.1",
+          "publishedAt": "2026-08-25T17:54:43Z",
+          "htmlUrl": "https://github.com/2ship2harkinian/2ship2harkinian/releases/tag/5.0.1"
+        },
+        "releaseCount": 16,
+        "totalDownloads": 713142
+      },
+      "game": {
+        "title": "The Legend of Zelda: Majora's Mask",
+        "releaseDate": "2000-04-27",
+        "developers": [
+          "Nintendo EAD Software Development Group No.3"
+        ],
+        "publishers": [
+          "Nintendo",
+          "Gradiente"
+        ],
+        "genres": [
+          "Puzzle",
+          "Adventure"
+        ],
+        "summary": "The Legend of Zelda: Majora's Mask is a direct sequel to Ocarina of Time, it utilizes the same engine and visual style as its predecessor. The game retains the traditional elements of Zelda games as well as those introduced in Ocarina of Time, such as active blocking with a shield, various throwing items, and the usage of melodies played on the ocarina to solve puzzles. Compared to the previous Zelda games, this installment is more oriented towards interaction with NPCs and has a larger variety of items, optional quests, and mini-games. It also includes a time system that spans three days, and this cycle must be reset periodically to progress through the game.",
+        "rating": 88.3,
+        "url": "https://www.igdb.com/games/the-legend-of-zelda-majora-s-mask",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sckeb7.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sckeb0.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sckeb2.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sckeb3.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sckeay.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sckeaz.jpg"
+        ]
+      }
+    },
+    {
+      "id": "starfox64-starship",
+      "name": "Starship",
+      "repo": "HarbourMasters/Starship",
+      "originalTitle": "Star Fox 64",
+      "originalPlatform": "N64",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "*-Linux.zip",
+          "executable": "starship.appimage"
+        },
+        "windows-x64": {
+          "assetPattern": "*-Windows.zip",
+          "executable": "Starship.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Star Fox 64 (USA). O Starship pede a ROM na primeira execução.",
+        "descriptionEn": "Star Fox 64 (USA). Starship asks for the ROM on first run.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 36615,
+      "igdbId": 2591,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/9122b7acc2588eff1d20211ce8fb8798.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/44adaadb095f40b587f4b409ac55799b.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/ad3019b856147c17e82a5bead782d2a8.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/9fbcbcb41e52efd7dbcb96e8a5c4cb63.ico"
+      },
+      "recomp": {
+        "description": "SF64 PC Port",
+        "homepage": null,
+        "license": "CC0-1.0",
+        "topics": [],
+        "stars": 2104,
+        "firstReleaseAt": "2024-12-22T22:44:26Z",
+        "latestRelease": {
+          "tag": "v2.0.0",
+          "name": "Starship - Barnard Alfa",
+          "publishedAt": "2025-05-25T03:43:32Z",
+          "htmlUrl": "https://github.com/HarbourMasters/Starship/releases/tag/v2.0.0"
+        },
+        "releaseCount": 2,
+        "totalDownloads": 225573
+      },
+      "game": {
+        "title": "Star Fox 64",
+        "releaseDate": "1997-04-27",
+        "developers": [
+          "Nintendo Entertainment Analysis & Development"
+        ],
+        "publishers": [
+          "Nintendo",
+          "Gradiente",
+          "iQue"
+        ],
+        "genres": [
+          "Shooter"
+        ],
+        "summary": "The update to the 16-bit Super NES title continues the original's on-rails 3D shooting action on the Nintendo 64. Starring Fox McCloud, Peppy Hare, Falco Lombardi, and Slippy Toad, this new 64-bit version contains 15 plus levels, easy, medium, and difficult paths, forward-scrolling levels as well as full 3D realms, and a three-part multiplayer mode using a four-player split screen. In addition to plenty of Arwing action, the game introduces a new hover tank and even features a submarine level. The 8-megabyte cartridge also boasts voice samples from 23 different characters instead of the original's animal noises. Star Fox 64 was the first game to feature Rumble Pak support. A Rumble Pak bundle and standalone version of the game were sold. Released in Europe under the name Lylat Wars.",
+        "rating": 86.3,
+        "url": "https://www.igdb.com/games/star-fox-64",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/jtsefknmlxh6p47b5cci.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/miplpreqvfh0e8ur9tav.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/bzjyvrfnovi3qbp8k7l2.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/k5xbessch3uiczvhfhvp.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/kfvivvasj0olxyacgpjp.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/erdq99jtwyxvjod7lr0r.jpg"
+        ]
+      }
+    },
+    {
+      "id": "mk64-spaghettikart",
+      "name": "SpaghettiKart",
+      "repo": "HarbourMasters/SpaghettiKart",
+      "originalTitle": "Mario Kart 64",
+      "originalPlatform": "N64",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "spaghetti-linux.zip",
+          "executable": "spaghetti.appimage"
+        },
+        "windows-x64": {
+          "assetPattern": "spaghetti-windows.zip",
+          "executable": "Spaghettify.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Mario Kart 64 (USA). O SpaghettiKart pede a ROM na primeira execução.",
+        "descriptionEn": "Mario Kart 64 (USA). SpaghettiKart asks for the ROM on first run.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 21164,
+      "igdbId": 2342,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/8908077ce7fd405516d81c2c929de429.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/abdeb6f575ac5c6676b747bca8d09cc2.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/1755c118e8859eb000eb6eca25369407.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/f57e9defd1303332611ab2ca1994500d.png"
+      },
+      "recomp": {
+        "description": "I have spaghetti, now i just need a kart",
+        "homepage": "https://harbourmasters.github.io/SpaghettiKart/",
+        "license": null,
+        "topics": [],
+        "stars": 2422,
+        "firstReleaseAt": "2025-11-15T22:21:45Z",
+        "latestRelease": {
+          "tag": "1.0.0",
+          "name": "Bolognese Alfa 1.0.0",
+          "publishedAt": "2026-02-25T02:26:04Z",
+          "htmlUrl": "https://github.com/HarbourMasters/SpaghettiKart/releases/tag/1.0.0"
+        },
+        "releaseCount": 3,
+        "totalDownloads": 235779
+      },
+      "game": {
+        "title": "Mario Kart 64",
+        "releaseDate": "1996-12-14",
+        "developers": [
+          "Nintendo Entertainment Analysis & Development"
+        ],
+        "publishers": [
+          "Nintendo",
+          "iQue"
+        ],
+        "genres": [
+          "Racing",
+          "Arcade"
+        ],
+        "summary": "Mario Kart 64 is the second main installment of the Mario Kart series. It is the first game in the series to use three-dimensional graphics, however, the characters and items in this game are still two-dimensional, pre-rendered sprites. The game offers two camera angles and three engine sizes: 50cc, 100cc and 150cc. Each kart has distinctive handling, acceleration and top speed capabilities. Shells that you fire at rival racers, Bananas that make them skid out and Lightning Bolts that make them small and very slow are just a few of the game's unique power-ups.",
+        "rating": 81.6,
+        "url": "https://www.igdb.com/games/mario-kart-64",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc87rq.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc87rl.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc87rm.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc87rr.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc87rp.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc87ro.jpg"
+        ]
+      },
+      "aiAssisted": true
+    },
+    {
+      "id": "sm64coopdx",
+      "name": "sm64coopdx",
+      "repo": "coop-deluxe/sm64coopdx",
+      "originalTitle": "Super Mario 64",
+      "originalPlatform": "N64",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "sm64coopdx_Linux.zip",
+          "executable": "sm64coopdx"
+        },
+        "windows-x64": {
+          "assetPattern": "sm64coopdx_Windows.zip",
+          "executable": "sm64coopdx.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Super Mario 64 (USA), .z64. O sm64coopdx pede a ROM na primeira execução.",
+        "descriptionEn": "Super Mario 64 (USA), .z64. sm64coopdx asks for the ROM on first run.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 37177,
+      "igdbId": 1074,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/f293653ffa5c0e53453463a82401dbec.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/2b423dc1a327648b419922ee8980e8dd.jpg",
+        "logo": "https://cdn2.steamgriddb.com/logo/26d88423fc6da243ffddf161ca712757.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/d09bf41544a3365a46c9077ebb5e35c3.ico"
+      },
+      "recomp": {
+        "description": "An official continuation of https://github.com/djoslin0/sm64ex-coop on sm64coopdx for the enhancements and progress it already has.",
+        "homepage": "https://sm64coopdx.com",
+        "license": null,
+        "topics": [
+          "fan-project",
+          "fanproject",
+          "fork",
+          "lua",
+          "mario",
+          "sm64",
+          "sm64ex-coop"
+        ],
+        "stars": 1451,
+        "firstReleaseAt": "2024-07-02T00:02:31Z",
+        "latestRelease": {
+          "tag": "v1.5.1",
+          "name": "Super Mario 64 Coop Deluxe v1.5.1",
+          "publishedAt": "2026-06-01T02:00:11Z",
+          "htmlUrl": "https://github.com/coop-deluxe/sm64coopdx/releases/tag/v1.5.1"
+        },
+        "releaseCount": 16,
+        "totalDownloads": 1683479
+      },
+      "game": {
+        "title": "Super Mario 64",
+        "releaseDate": "1996-06-23",
+        "developers": [
+          "Nintendo Entertainment Analysis & Development"
+        ],
+        "publishers": [
+          "Nintendo",
+          "Playtronic",
+          "Gradiente"
+        ],
+        "genres": [
+          "Platform",
+          "Adventure"
+        ],
+        "summary": "Mario is super in a whole new way! Combining the finest 3-D graphics ever developed for a video game and an explosive soundtrack, Super Mario 64 becomes a new standard for video games. It's packed with bruising battles, daunting obstacle courses, and underwater adventures. Retrieve the Power Stars from their hidden locations and confront your arch-nemesis— Bowser, King of the Koopas!\n\n• Run freely in a grassy meadow, tip-toe through a gloomy dungeon, climb to the top of a mountain, or take a swim in the moat!\n• Leap headfirst into a watery painting and soon you'll be searching for the surface in an underwater realm!\n• On-the-fly, 3-D rendered gameplay delivers the action of ruthless enemy attacks from every angle!\n• Find the Caps that give Mario super powers and ponder the mysteries of the pyramid; you can even race Koopas for fabulous prizes!\n• With the Nintendo 64 Controller and its analog\nControl Stick, Mario can crawl, kick down obstacles, swim, do reverse flips, and even stick the landing on his backwards somersault!\n• Saved game information is stored for up to four players in memory.",
+        "rating": 88.8,
+        "url": "https://www.igdb.com/games/super-mario-64",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8e2l.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8e2o.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8e2q.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8e2m.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sce8zv.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sce8zw.jpg"
+        ]
+      }
+    },
+    {
+      "id": "perfect-dark",
+      "name": "Perfect Dark PC port",
+      "repo": "perfect-dark-pc-port/perfect_dark",
+      "originalTitle": "Perfect Dark",
+      "originalPlatform": "N64",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "pd-x86_64-windows.zip",
+          "executable": "pd.x86_64.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Perfect Dark (NTSC, versão final) com o nome pd.ntsc-final.z64, dentro da pasta data do jogo.",
+        "descriptionEn": "Perfect Dark (NTSC final) named pd.ntsc-final.z64, inside the game's data folder.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 37787,
+      "igdbId": 1463,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/f2eaa301f9c53bb10fb8e5b9d3d0ea9c.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/eb454ad6be830064d49727814426bb6e.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/5590ca803d2831d2a3dff3fa3eaca6f4.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/64314c17210c549a854f1f1c7adce8b6.ico"
+      },
+      "recomp": {
+        "description": "work in progress port of n64decomp/perfect_dark to modern platforms",
+        "homepage": null,
+        "license": "MIT",
+        "topics": [],
+        "stars": 2059,
+        "firstReleaseAt": "2024-05-14T09:41:23Z",
+        "latestRelease": {
+          "tag": "ci-dev-build",
+          "name": "Latest automatic build (port branch)",
+          "publishedAt": "2024-05-14T09:41:23Z",
+          "htmlUrl": "https://github.com/perfect-dark-pc-port/perfect_dark/releases/tag/ci-dev-build"
+        },
+        "releaseCount": 1,
+        "totalDownloads": 15749
+      },
+      "game": {
+        "title": "Perfect Dark",
+        "releaseDate": "2000-05-22",
+        "developers": [
+          "Rare"
+        ],
+        "publishers": [
+          "Rare",
+          "Nintendo",
+          "Gradiente"
+        ],
+        "genres": [
+          "Shooter",
+          "Tactical"
+        ],
+        "summary": "Perfect Dark is a first-person shooter video game developed by Rare and published by Nintendo for the Nintendo 64 video game console. It is considered the spiritual successor to Rare's earlier first-person shooter GoldenEye 007, with which it shares many gameplay features. Perfect Dark was first released in North America on 22 May 2000; PAL and NTSC-J releases followed soon afterwards. A separate Game Boy Color game, also titled Perfect Dark, was released in August 2000 as a supplement to the game and allows certain features within the Nintendo 64 game to alternatively be unlocked via a Transfer Pak.\n\nThe game features a single-player mode consisting of 17 main missions in which the player assumes the role of Carrington Institute agent Joanna Dark as she attempts to stop a conspiracy by rival corporation dataDyne. It also features a range of multiplayer options, including a co-operative mode and traditional deathmatch settings. Technically, it is one of the most advanced games developed for the Nintendo 64, with an optional high resolution graphics mode and Dolby Surround Sound. A Nintendo 64 Expansion Pak is required to access the game's campaign and most of the multiplayer features.",
+        "rating": 79.4,
+        "url": "https://www.igdb.com/games/perfect-dark",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/qgymwdn8d4eumgy3sinr.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/wbt0qr3k2yc5ekwmqgjm.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/hclz5xo5lajlfflmqvcr.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/oonmhnivi2rbdwusgdox.jpg"
+        ]
+      }
+    },
+    {
+      "id": "jak1",
+      "name": "OpenGOAL",
+      "repo": "open-goal/launcher",
+      "originalTitle": "Jak and Daxter: The Precursor Legacy",
+      "originalPlatform": "PS2",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "OpenGOAL-Launcher_*_amd64.AppImage",
+          "executable": "*.AppImage"
+        },
+        "windows-x64": {
+          "assetPattern": "OpenGOAL-Launcher_*_x64_en-US.msi",
+          "executable": "OpenGOAL-Launcher.exe",
+          "installer": {
+            "installDir": "%ProgramFiles%/OpenGOAL-Launcher"
+          }
+        }
+      },
+      "requiredRom": {
+        "description": "Imagem do seu disco de PS2: Jak and Daxter: The Precursor Legacy (ISO). Instale o jogo pelo OpenGOAL Launcher, que extrai os arquivos do disco.",
+        "descriptionEn": "Your PS2 disc image: Jak and Daxter: The Precursor Legacy (ISO). Install the game from the OpenGOAL Launcher, which extracts the disc files.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 37452,
+      "igdbId": 1528,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/a86c4aec1bcf14eb30646ed8df2d2401.jpg",
+        "hero": "https://cdn2.steamgriddb.com/hero/56add98fbde1aae192249d26d8dcb354.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/852c296dfa59522f563aef29d8d0adf6.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/7a20fd764fa23d34b52bd85bf5cb49a6.png"
+      },
+      "recomp": {
+        "description": "A launcher for the OpenGOAL Project to simplify usage and installation",
+        "homepage": null,
+        "license": "ISC",
+        "topics": [],
+        "stars": 240,
+        "firstReleaseAt": "2022-08-12T00:52:30Z",
+        "latestRelease": {
+          "tag": "v2.11.2",
+          "name": "v2.11.2",
+          "publishedAt": "2026-10-09T18:23:28Z",
+          "htmlUrl": "https://github.com/open-goal/launcher/releases/tag/v2.11.2"
+        },
+        "releaseCount": 90,
+        "totalDownloads": 498785
+      },
+      "game": {
+        "title": "Jak and Daxter: The Precursor Legacy",
+        "releaseDate": "2001-12-03",
+        "developers": [
+          "Naughty Dog"
+        ],
+        "publishers": [
+          "Sony Computer Entertainment"
+        ],
+        "genres": [
+          "Platform",
+          "Racing",
+          "Adventure"
+        ],
+        "summary": "Jak and Daxter: The Precursor Legacy is a 2001 platform video game developed by Naughty Dog and published by Sony Computer Entertainment for the Sony PlayStation 2 on December 4, 2001, as the first game of the Jak and Daxter series. The game follows the protagonist, a young teenager named Jak, as he tries to help his friend Daxter after he is transformed into an \"ottsel\", a fictional hybrid of an otter and a weasel.\n\nThe game offers a large range of missions, collectables and objectives, often in the form of minigames, which provide a variety of gameplay experiences, as well as puzzles and platforming stages, which are completed by the player to proceed with the story.",
+        "rating": 85.1,
+        "url": "https://www.igdb.com/games/jak-and-daxter-the-precursor-legacy",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sctt1b.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sctt19.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sctt1a.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sctt17.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sctt18.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sctt1e.jpg"
+        ]
+      }
+    },
+    {
+      "id": "jak2",
+      "name": "OpenGOAL",
+      "repo": "open-goal/launcher",
+      "originalTitle": "Jak II",
+      "originalPlatform": "PS2",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "OpenGOAL-Launcher_*_amd64.AppImage",
+          "executable": "*.AppImage"
+        },
+        "windows-x64": {
+          "assetPattern": "OpenGOAL-Launcher_*_x64_en-US.msi",
+          "executable": "OpenGOAL-Launcher.exe",
+          "installer": {
+            "installDir": "%ProgramFiles%/OpenGOAL-Launcher"
+          }
+        }
+      },
+      "requiredRom": {
+        "description": "Imagem do seu disco de PS2: Jak II (ISO). Instale o jogo pelo OpenGOAL Launcher, que extrai os arquivos do disco.",
+        "descriptionEn": "Your PS2 disc image: Jak II (ISO). Install the game from the OpenGOAL Launcher, which extracts the disc files.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 36801,
+      "igdbId": 1529,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/67111ba17799dbe2a3d3a58657de7060.jpg",
+        "hero": "https://cdn2.steamgriddb.com/hero/84ddfb34126fc3a48ee38d7044e87276.jpg",
+        "logo": "https://cdn2.steamgriddb.com/logo/aef546f29283b6ccef3c61f58fb8e79b.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/52a7494159529c38b9c69e9946ba4f27.ico"
+      },
+      "recomp": {
+        "description": "A launcher for the OpenGOAL Project to simplify usage and installation",
+        "homepage": null,
+        "license": "ISC",
+        "topics": [],
+        "stars": 240,
+        "firstReleaseAt": "2022-08-12T00:52:30Z",
+        "latestRelease": {
+          "tag": "v2.11.2",
+          "name": "v2.11.2",
+          "publishedAt": "2026-10-09T18:23:28Z",
+          "htmlUrl": "https://github.com/open-goal/launcher/releases/tag/v2.11.2"
+        },
+        "releaseCount": 90,
+        "totalDownloads": 498785
+      },
+      "game": {
+        "title": "Jak II",
+        "releaseDate": "2003-10-14",
+        "developers": [
+          "Naughty Dog"
+        ],
+        "publishers": [
+          "Sony Computer Entertainment"
+        ],
+        "genres": [
+          "Shooter",
+          "Platform",
+          "Adventure"
+        ],
+        "summary": "Jak II is an open-world platform, third-person shooter, and an action-adventure video game. It is the second game of the Jak and Daxter series and a sequel to Jak and Daxter: The Precursor Legacy.",
+        "rating": 84.9,
+        "url": "https://www.igdb.com/games/jak-ii",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8cpq.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8cpt.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8cpu.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ootzvrhe5etbqihdgsov.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8cpp.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8cps.jpg"
+        ]
+      }
+    },
+    {
+      "id": "urban-reign",
+      "name": "Urban Reign PC",
+      "repo": "thiagordsfx/urban-reign-recomp",
+      "originalTitle": "Urban Reign",
+      "originalPlatform": "PS2",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "UrbanReignPC-*.zip",
+          "executable": "Urban Reign.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Imagem do seu disco de PS2: Urban Reign (USA, SLUS-21209), .iso. Escolha o arquivo na aba Game do launcher do projeto.",
+        "descriptionEn": "Your PS2 disc image: Urban Reign (USA, SLUS-21209), .iso. Pick it in the Game tab of the project's launcher.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 4612,
+      "igdbId": 19776,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/792ca3582ecbe9f10b573a05455edd10.jpg",
+        "hero": "https://cdn2.steamgriddb.com/hero/51b2395680b833ec1f7b1a44a0bafe05.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/82b05ac4ebef496529bb27f3c6786782.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/0f7f9b5535079ff1dd10737feb5e1ce3.png"
+      },
+      "recomp": {
+        "description": "Urban Reign (PS2) static recompilation: native PC port with 60 FPS, high resolution, HD textures and up to 8 players",
+        "homepage": null,
+        "license": "GPL-3.0",
+        "topics": [],
+        "stars": 37,
+        "firstReleaseAt": "2026-10-12T22:04:37Z",
+        "latestRelease": {
+          "tag": "v1.3.0",
+          "name": "Urban Reign PC Port 1.3.0",
+          "publishedAt": "2026-10-13T23:39:49Z",
+          "htmlUrl": "https://github.com/thiagordsfx/urban-reign-recomp/releases/tag/v1.3.0"
+        },
+        "releaseCount": 6,
+        "totalDownloads": 636
+      },
+      "game": {
+        "title": "Urban Reign",
+        "releaseDate": "2005-09-13",
+        "developers": [
+          "Namco"
+        ],
+        "publishers": [
+          "Namco"
+        ],
+        "genres": [
+          "Hack and slash/Beat 'em up"
+        ],
+        "summary": "Urban Reign is a Namco-produced 3D brawler, done in the tradition of Double Dragon and Final Fight.",
+        "rating": 52.9,
+        "url": "https://www.igdb.com/games/urban-reign",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scsu0u.jpg"
+        ]
+      }
+    },
+    {
+      "id": "hercules",
+      "name": "Hercules Recompiled",
+      "repo": "obaidr1/hercules-recompiled",
+      "originalTitle": "Disney's Hercules",
+      "originalPlatform": "PS1",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "*-linux-x64.zip",
+          "executable": "Hercules_Recompiled"
+        },
+        "windows-x64": {
+          "assetPattern": "*-windows-x64.zip",
+          "executable": "Hercules_Recompiled.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Imagem do seu disco de PS1: Disney's Hercules (USA, SLUS-01029).",
+        "descriptionEn": "Your PS1 disc image: Disney's Hercules (USA, SLUS-01029).",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 4923414,
+      "igdbId": 9814,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/a4256857d2bedfe2545111324296db10.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/0b518a250c90421f0a3b4f32e8312e3d.jpg",
+        "logo": "https://cdn2.steamgriddb.com/logo/4042483f5c2c4015e2a6abd47aa76b6f.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/ec5ec3ab3ae96eb7f5981a59ab485279.ico"
+      },
+      "recomp": {
+        "description": "Native PC port of the 1997 PlayStation game Disney's Hercules (SCES-00893) plus its decompilation. No game data included.",
+        "homepage": null,
+        "license": null,
+        "topics": [],
+        "stars": 84,
+        "firstReleaseAt": "2026-10-13T11:13:53Z",
+        "latestRelease": {
+          "tag": "v0.5.5",
+          "name": "v0.5.5",
+          "publishedAt": "2026-10-18T11:19:53Z",
+          "htmlUrl": "https://github.com/obaidr1/hercules-recompiled/releases/tag/v0.5.5"
+        },
+        "releaseCount": 10,
+        "totalDownloads": 3603
+      },
+      "game": {
+        "title": "Disney's Hercules Action Game",
+        "releaseDate": "1997-07-03",
+        "developers": [
+          "Eurocom Entertainment Software"
+        ],
+        "publishers": [
+          "Virgin Interactive Entertainment",
+          "Disney Interactive Studios",
+          "Sony Computer Entertainment"
+        ],
+        "genres": [
+          "Platform",
+          "Arcade"
+        ],
+        "summary": "Disney's Hercules Action Game is a platform game mainly two-dimensional, although in many missions the player can walk to other planes via pathways or stairs. There are ten levels and three difficulty modes: Beginner, Medium, and Herculean. Hercules can jump, grab ledges, swing on poles, and jump while running. He has a variety of attack moves at his disposal.",
+        "rating": 67.7,
+        "url": "https://www.igdb.com/games/disneys-hercules-action-game",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scjfkn.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scjfko.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scjfkr.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scjfkl.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scjfkm.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scjfkp.jpg"
+        ]
+      }
+    },
+    {
+      "id": "mk-shaolin-monks",
+      "name": "ShaolinMonksRecomp",
+      "repo": "OAleex/ShaolinMonksRecomp",
+      "originalTitle": "Mortal Kombat: Shaolin Monks",
+      "originalPlatform": "XBOX",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "*-Windows-x64.zip",
+          "executable": "ShaolinMonksRecomp.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Seu Mortal Kombat: Shaolin Monks de Xbox (EUA/Europa): ISO, XISO, ZIP, pasta extraída ou default.xbe.",
+        "descriptionEn": "Your Xbox Mortal Kombat: Shaolin Monks (USA/Europe): ISO, XISO, ZIP, extracted folder or default.xbe.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 37375,
+      "igdbId": 1614,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/338c5458fadf5e13bddfcb4819942d15.jpg",
+        "hero": "https://cdn2.steamgriddb.com/hero/ba8d0823c02b67588d1d0184f242f778.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/f585a5b60d11ea3cdccb72174a0d418d.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/0ad3140ed0cf59e84008db87c8c1106c.png"
+      },
+      "recomp": {
+        "description": "Native port of Mortal Kombat: Shaolin Monks (Xbox) through static recompilation.",
+        "homepage": null,
+        "license": "GPL-2.0",
+        "topics": [],
+        "stars": 49,
+        "firstReleaseAt": "2026-10-17T14:34:25Z",
+        "latestRelease": {
+          "tag": "0.1.0",
+          "name": "Shaolin Monks Recomp v0.1.0",
+          "publishedAt": "2026-10-17T14:34:25Z",
+          "htmlUrl": "https://github.com/OAleex/ShaolinMonksRecomp/releases/tag/0.1.0"
+        },
+        "releaseCount": 1,
+        "totalDownloads": 719
+      },
+      "game": {
+        "title": "Mortal Kombat: Shaolin Monks",
+        "releaseDate": "2005-09-19",
+        "developers": [
+          "Mortal Kombat Team",
+          "Midway Studios San Diego",
+          "Midway Studios Los Angeles"
+        ],
+        "publishers": [
+          "Midway Games"
+        ],
+        "genres": [
+          "Fighting",
+          "Hack and slash/Beat 'em up"
+        ],
+        "summary": "Mortal Kombat: Shaolin Monks is an action-adventure beat 'em up video game set in the Mortal Kombat universe. Players take on the roles of the iconic Shaolin monks Liu Kang and Kung Lao, either solo or in cooperative mode, as they defend Earthrealm against the threats of Outworld. The game offers a reimagining of the storyline from Mortal Kombat II.",
+        "rating": 71.3,
+        "url": "https://www.igdb.com/games/mortal-kombat-shaolin-monks",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc81kn.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc81km.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc81ki.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc81kl.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc81kj.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc81kh.jpg"
         ]
       },
       "aiAssisted": true
