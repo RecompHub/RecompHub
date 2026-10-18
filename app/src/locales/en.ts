@@ -126,7 +126,9 @@ export const EN: Record<string, string> = {
   "Abrir pasta": "Open folder",
   "Remover {game} do launcher? Os arquivos em {path} não serão apagados.":
     "Remove {game} from the launcher? The files in {path} will not be deleted.",
-  "Desinstalar {game}? A pasta de instalação será apagada.": "Uninstall {game}? The install folder will be deleted.",
+  "Desinstalar {game}? Os arquivos instalados pelo launcher serão apagados; ROM, saves e outros arquivos seus na pasta continuam lá.":
+    "Uninstall {game}? The files the launcher installed will be deleted; your ROM, saves and other files in the folder stay.",
+  "Cancelar": "Cancel",
   "Remover do launcher": "Remove from launcher",
   "Desinstalar": "Uninstall",
   "Remover da biblioteca": "Remove from library",

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { confirm } from "@tauri-apps/plugin-dialog";
 import { useStore, useGameStatus } from "../store";
 import { GameArt } from "../components/GameArt";
 import { GameActions } from "../components/GameActions";
@@ -126,18 +127,34 @@ function LibraryDetail({ game }: { game: Game }) {
                 <button
                   className="btn btn-ghost"
                   disabled={s.running || !!s.progress}
-                  onClick={() =>
-                    confirm(
+                  onClick={async () => {
+                    // O confirm do navegador vira assíncrono no Tauri (plugin de diálogo):
+                    // é preciso esperar a resposta antes de desinstalar.
+                    const forget = s.installed?.imported || s.installed?.external;
+                    const ok = await confirm(
                       s.installed?.external
                         ? t(
                             "Remover {game} do launcher? O jogo continua instalado; para apagá-lo, use o desinstalador do projeto em Configurações do Windows → Aplicativos.",
                             { game: gameTitle(game) },
                           )
                         : s.installed?.imported
-                        ? t("Remover {game} do launcher? Os arquivos em {path} não serão apagados.", { game: gameTitle(game), path: s.installed.installPath })
-                        : t("Desinstalar {game}? A pasta de instalação será apagada.", { game: gameTitle(game) }),
-                    ) && store.uninstall(game.id)
-                  }
+                          ? t("Remover {game} do launcher? Os arquivos em {path} não serão apagados.", {
+                              game: gameTitle(game),
+                              path: s.installed.installPath,
+                            })
+                          : t(
+                              "Desinstalar {game}? Os arquivos instalados pelo launcher serão apagados; ROM, saves e outros arquivos seus na pasta continuam lá.",
+                              { game: gameTitle(game) },
+                            ),
+                      {
+                        title: gameTitle(game),
+                        kind: "warning",
+                        okLabel: t(forget ? "Remover do launcher" : "Desinstalar"),
+                        cancelLabel: t("Cancelar"),
+                      },
+                    );
+                    if (ok) await store.uninstall(game.id);
+                  }}
                 >
                   {t(s.installed.imported || s.installed.external ? "Remover do launcher" : "Desinstalar")}
                 </button>
