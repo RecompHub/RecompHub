@@ -6,13 +6,17 @@ type Kind = "grid" | "hero" | "logo" | "icon";
 
 /**
  * Imagem do SteamGridDB com placeholder quando falta a imagem ou ela não carrega.
- * O logo, sem imagem, vira o nome do jogo em texto.
+ * O ícone que não abre (ex.: .ico malformado) cai para a capa; o logo, sem
+ * imagem, vira o nome do jogo em texto.
  */
 export function GameArt({ game, kind, className = "" }: { game: Game; kind: Kind; className?: string }) {
-  const url = game.images[kind];
-  const [failed, setFailed] = useState(false);
+  const candidates = [game.images[kind], kind === "icon" ? game.images.grid : undefined].filter(
+    (u): u is string => !!u,
+  );
+  const [attempt, setAttempt] = useState(0);
+  const url = candidates[attempt];
 
-  if (url && !failed) {
+  if (url) {
     return (
       <img
         className={`art art-${kind} ${className}`}
@@ -20,7 +24,7 @@ export function GameArt({ game, kind, className = "" }: { game: Game; kind: Kind
         alt={kind === "logo" ? gameTitle(game) : ""}
         loading="lazy"
         draggable={false}
-        onError={() => setFailed(true)}
+        onError={() => setAttempt((a) => a + 1)}
       />
     );
   }
