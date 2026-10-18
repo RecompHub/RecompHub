@@ -1,6 +1,6 @@
 [package]
 name = "recomphub"
-version = "0.7.0"
+version = "0.7.1"
 description = "Launcher de jogos recomp com sistema de conquistas"
 authors = ["RecompHub"]
 edition = "2024"
