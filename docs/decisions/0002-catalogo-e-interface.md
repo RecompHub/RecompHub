@@ -123,4 +123,5 @@ Alguns projetos não publicam o jogo pronto, e sim um instalador que compila o j
 - Depois procura `executable` em `installDir`. Quando há várias pastas de versão, fica com o executável mais recente, e essa busca é refeita a cada vez que o jogo abre.
 - Os arquivos são do instalador: "Remover do launcher" não apaga nada. Quem desinstala é o próprio projeto, em Configurações do Windows → Aplicativos.
 - Jogos já instalados por fora aparecem sozinhos na biblioteca (`scan_games_dir`).
+- Pacotes `.msi` (ex.: OpenGOAL Launcher, usado por Jak 1 e Jak II) rodam com `msiexec /i`; o código 3010 (pede reinício) conta como sucesso.
 - Código: `app/src-tauri/src/setup.rs`.

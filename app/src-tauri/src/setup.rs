@@ -118,7 +118,15 @@ enum Event {
 /// Executa o instalador e espera ele terminar. Com `progress_json`, roda sem
 /// janela e repassa o progresso; sem, abre a janela do próprio instalador.
 fn run(setup: &Path, args: &[String], log: &Path, progress_json: bool, on_progress: &impl Fn(Progress)) -> Result<()> {
-    let mut command = Command::new(setup);
+    // Pacotes .msi (ex.: OpenGOAL Launcher) rodam pelo Windows Installer.
+    let is_msi = setup.extension().is_some_and(|e| e.eq_ignore_ascii_case("msi"));
+    let mut command = if is_msi {
+        let mut msiexec = Command::new("msiexec");
+        msiexec.arg("/i").arg(setup);
+        msiexec
+    } else {
+        Command::new(setup)
+    };
     command.args(args);
     if let Some(dir) = setup.parent() {
         command.current_dir(dir);
@@ -132,7 +140,8 @@ fn run(setup: &Path, args: &[String], log: &Path, progress_json: bool, on_progre
 
     if !progress_json {
         let status = command.status()?;
-        return if status.success() {
+        // 3010: o Windows Installer terminou, mas pede reinício.
+        return if status.success() || (is_msi && status.code() == Some(3010)) {
             Ok(())
         } else {
             Err(Error::InstallerFailed(format!("código {}", status.code().unwrap_or(-1))))
