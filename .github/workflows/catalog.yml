@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: catalog
@@ -29,9 +30,22 @@ jobs:
         with:
           key: catalog-builder
 
+      # Um projeto que renomeou os pacotes não pode travar o catálogo inteiro:
+      # as falhas vão para um relatório (e uma issue), e o resto é publicado.
+      # Só um erro sem games.json gravado (ex.: API fora do ar) falha o job.
       - name: Gerar games.json
-        run: cargo run --release -p catalog-builder
+        id: build
+        run: |
+          set +e
+          cargo run --release -p catalog-builder 2>&1 | tee builder.log
+          code=${PIPESTATUS[0]}
+          set -e
+          if [ "$code" -ne 0 ] && ! grep -q "games.json gravado" builder.log; then
+            exit "$code"
+          fi
+          if [ -s "$CATALOG_REPORT" ]; then echo "failed=true" >> "$GITHUB_OUTPUT"; fi
         env:
+          CATALOG_REPORT: ${{ runner.temp }}/catalog-report.md
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SGDB_API_KEY: ${{ secrets.SGDB_API_KEY }}
           IGDB_CLIENT_ID: ${{ secrets.IGDB_CLIENT_ID }}
@@ -50,3 +64,33 @@ jobs:
           # A main pode ter avançado enquanto o builder rodava.
           git pull --rebase origin main
           git push origin HEAD:main
+
+      - name: Abrir ou atualizar a issue de falhas
+        if: steps.build.outputs.failed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPORT: ${{ runner.temp }}/catalog-report.md
+        run: |
+          {
+            echo "O builder do catálogo não conseguiu atualizar estes jogos em $(date -u +%Y-%m-%d). Os dados anteriores deles foram mantidos e o resto do catálogo foi publicado."
+            echo
+            cat "$REPORT"
+            echo
+            echo "Normalmente é um projeto que renomeou os arquivos da release: ajuste o \`assetPattern\` em \`catalog/sources.json\`. Execução: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          } > body.md
+          number=$(gh issue list --state open --search "in:title \"Catálogo: jogos com falha\"" --json number --jq '.[0].number')
+          if [ -n "$number" ]; then
+            gh issue edit "$number" --body-file body.md
+          else
+            gh issue create --title "Catálogo: jogos com falha" --body-file body.md
+          fi
+
+      - name: Fechar a issue de falhas quando tudo voltar
+        if: steps.build.outputs.failed != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          number=$(gh issue list --state open --search "in:title \"Catálogo: jogos com falha\"" --json number --jq '.[0].number')
+          if [ -n "$number" ]; then
+            gh issue close "$number" --comment "Todos os jogos do catálogo atualizaram sem falhas."
+          fi
