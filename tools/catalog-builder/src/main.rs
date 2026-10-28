@@ -70,7 +70,7 @@ async fn main() -> Result<()> {
     }
 
     let mut games = Vec::new();
-    let mut failures = 0;
+    let mut failures = Vec::new();
     for source in sources.games {
         let prev = previous_games.get(source.id.as_str()).copied();
         println!("• {}", source.name);
@@ -88,8 +88,14 @@ async fn main() -> Result<()> {
     let mut json = serde_json::to_string_pretty(&catalog)?;
     json.push('\n');
     std::fs::write(dir.join("games.json"), json)?;
-    println!("games.json gravado ({} jogos, {failures} falhas)", catalog.games.len());
-    if failures > 0 {
+    println!("games.json gravado ({} jogos, {} falhas)", catalog.games.len(), failures.len());
+    // Para o Action abrir/atualizar uma issue em vez de travar o catálogo.
+    if let Some(report) = env("CATALOG_REPORT") {
+        let lines: Vec<String> = failures.iter().map(|f| format!("- {f}
+")).collect();
+        std::fs::write(report, lines.concat())?;
+    }
+    if !failures.is_empty() {
         std::process::exit(1);
     }
     Ok(())
@@ -104,16 +110,17 @@ struct Ctx<'a> {
 }
 
 /// Cada fonte que falhar mantém os dados anteriores daquele jogo; a falha é
-/// contada para o processo sair com erro no fim.
+/// anotada para o processo sair com erro no fim (e ir para o relatório).
 async fn build_game(
     ctx: &Ctx<'_>,
     source: SourceGame,
     prev: Option<&CatalogGame>,
-    failures: &mut u32,
+    failures: &mut Vec<String>,
 ) -> CatalogGame {
+    let label = format!("`{}` ({})", source.id, source.repo);
     let mut fail = |what: &str, e: anyhow::Error| {
         eprintln!("  erro em {what}: {e:#}");
-        *failures += 1;
+        failures.push(format!("{label}: {what}: {e:#}"));
     };
 
     let recomp = match ctx.gh.recomp_info(&source.repo).await {
