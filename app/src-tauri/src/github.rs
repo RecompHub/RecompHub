@@ -100,6 +100,24 @@ impl GitHub {
         };
 
         let status = response.status();
+        // `/releases/latest` ignora pré-lançamentos: um projeto que só publica
+        // alphas/betas (ex.: Savage Wind) responde 404 ali.
+        if status == StatusCode::NOT_FOUND {
+            return match self.newest_release(repo).await {
+                Ok(release) => {
+                    self.write_cache(
+                        &cache_path,
+                        &CachedRelease {
+                            etag: None,
+                            fetched_at: Utc::now(),
+                            release: release.clone(),
+                        },
+                    );
+                    Ok(release)
+                }
+                Err(e) => cached.map(|c| c.release).ok_or(e),
+            };
+        }
         if status == StatusCode::NOT_MODIFIED {
             if let Some(mut c) = cached {
                 c.fetched_at = Utc::now();
@@ -130,6 +148,22 @@ impl GitHub {
         Ok(release)
     }
 
+    /// A release mais recente que não é rascunho, preferindo uma estável; o
+    /// mesmo critério do catalog-builder.
+    async fn newest_release(&self, repo: &str) -> Result<Release> {
+        let response = self
+            .http
+            .get(format!("{API}/repos/{repo}/releases?per_page=30"))
+            .header(header::ACCEPT, "application/vnd.github+json")
+            .send()
+            .await?;
+        if !response.status().is_success() {
+            return Err(Error::GitHubStatus(response.status().as_u16()));
+        }
+        let listed: Vec<serde_json::Value> = response.json().await?;
+        pick_newest(listed).ok_or(Error::GitHubStatus(StatusCode::NOT_FOUND.as_u16()))
+    }
+
     // Falhar ao gravar o cache não deve impedir o uso da resposta.
     fn write_cache(&self, path: &std::path::Path, entry: &CachedRelease) {
         let _ = std::fs::create_dir_all(&self.cache_dir);
@@ -140,7 +174,7 @@ impl GitHub {
 }
 
 #[cfg(test)]
-mod tests {
+mod newest_tests {
     use super::*;
 
     fn release(names: &[&str]) -> Release {
@@ -179,5 +213,38 @@ mod tests {
         let r: Release = serde_json::from_str(from_api).unwrap();
         let roundtrip: Release = serde_json::from_str(&serde_json::to_string(&r).unwrap()).unwrap();
         assert_eq!(roundtrip.assets[0].browser_download_url, "d");
+    }
+}
+
+/// A lista da API vem da mais nova para a mais antiga.
+fn pick_newest(listed: Vec<serde_json::Value>) -> Option<Release> {
+    let flag = |v: &serde_json::Value, k: &str| v.get(k).and_then(|x| x.as_bool()).unwrap_or(false);
+    let published: Vec<_> = listed.into_iter().filter(|v| !flag(v, "draft")).collect();
+    let chosen = published
+        .iter()
+        .position(|v| !flag(v, "prerelease"))
+        .or(if published.is_empty() { None } else { Some(0) })?;
+    serde_json::from_value(published.into_iter().nth(chosen)?).ok()
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    fn release(tag: &str, draft: bool, prerelease: bool) -> serde_json::Value {
+        serde_json::json!({
+            "tag_name": tag, "name": tag, "published_at": "2026-11-01T00:00:00Z", "body": null,
+            "html_url": format!("https://github.com/x/y/releases/tag/{tag}"),
+            "draft": draft, "prerelease": prerelease, "assets": []
+        })
+    }
+
+    #[test]
+    fn prefers_stable_then_newest_prerelease() {
+        let stable = pick_newest(vec![release("v2-alpha", false, true), release("v1", false, false)]).unwrap();
+        assert_eq!(stable.tag_name, "v1");
+        let only_alphas = pick_newest(vec![release("draft", true, false), release("a.4", false, true), release("a.3", false, true)]).unwrap();
+        assert_eq!(only_alphas.tag_name, "a.4");
+        assert!(pick_newest(vec![release("draft", true, false)]).is_none());
     }
 }
