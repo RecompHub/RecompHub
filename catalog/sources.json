@@ -2159,11 +2159,11 @@
       "originalPlatform": "SWITCH",
       "platforms": {
         "windows-x64": {
-          "assetPattern": "SkyRecomp-*-Windows.zip",
+          "assetPattern": "SkyRecomp-v*.*.*-Windows.zip",
           "executable": "skyrecomp.exe"
         },
         "linux-x64": {
-          "assetPattern": "Sky.Recomp-*-linux-x86_64.AppImage",
+          "assetPattern": "Sky.Recomp-v*.*.*-linux-x86_64.AppImage",
           "executable": "*.AppImage"
         }
       },
@@ -2524,41 +2524,6 @@
       "igdbId": 6943
     },
     {
-      "id": "super-mario-sunshine",
-      "name": "SMS PC Port",
-      "repo": "TekRantGaming/sms-pc-port",
-      "originalTitle": "Super Mario Sunshine",
-      "originalPlatform": "GC",
-      "platforms": {
-        "windows-x64": {
-          "assetPattern": "SMS-PC-Port-*-windows-x64.zip",
-          "executable": "sms.exe"
-        },
-        "linux-x64": {
-          "assetPattern": "SMS-PC-Port-*-linux-x86_64.AppImage",
-          "executable": "*.AppImage"
-        }
-      },
-      "requiredRom": {
-        "description": "Sua cópia do jogo original (GameCube). Veja na página do projeto qual versão e formato ele aceita.",
-        "descriptionEn": "Your own copy of the original game (GameCube). Check the project page for the version and format it accepts.",
-        "sha1": []
-      },
-      "achievements": {
-        "enabled": false,
-        "supportedVersions": []
-      },
-      "aiAssisted": true,
-      "sgdbId": 34899,
-      "images": {
-        "grid": "https://cdn2.steamgriddb.com/grid/f5e97c0193978d636807084bf658fc1c.png",
-        "hero": "https://cdn2.steamgriddb.com/hero/3e04f019562baeb10f41e7b9fb14c6be.png",
-        "logo": "https://cdn2.steamgriddb.com/logo/b33128cb0089003ddfb5199e1b679652.png",
-        "icon": "https://cdn2.steamgriddb.com/icon/460b491b917d4185ed1f5be97229721a.png"
-      },
-      "igdbId": 1075
-    },
-    {
       "id": "yugioh-forbidden-memories",
       "name": "Yu-Gi-Oh! FM Recompiled",
       "repo": "Unchiga/Yu-Gi-Oh-Forbidden-Memories-Recompiled",
@@ -2654,6 +2619,848 @@
         "icon": "https://cdn2.steamgriddb.com/icon/3fde5a9cf31274d0c3b094531120d8b3.png"
       },
       "igdbId": 2254
+    },
+    {
+      "id": "god-of-war-pcport",
+      "name": "God of War PC Port",
+      "repo": "danielalves96/gow-pc-port",
+      "originalTitle": "God of War",
+      "originalPlatform": "PS2",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "God-Of-War-PC-Launcher_*_x64-portable.zip",
+          "executable": "God Of War - PC Launcher.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "God.Of.War.-.PC.Launcher_*_amd64.AppImage",
+          "executable": "*.AppImage"
+        }
+      },
+      "requiredRom": {
+        "description": "Imagem do seu disco de PS2: God of War (EUA, SCUS-97399). O launcher do projeto lê o disco e monta o jogo no seu PC.",
+        "descriptionEn": "Your PS2 disc image: God of War (USA, SCUS-97399). The project launcher reads the disc and builds the game on your PC.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "aiAssisted": true,
+      "sgdbId": 36454,
+      "igdbId": 549,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/72d0eaa80cc3412fda4a133ca1f884e8.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/261474eb96c1fdc6456d2abef7019e45.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/cd17d3ce3b64f227987cd92cd701cc58.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/5cc33dfe7e069a757ca0fcbe6b95c89e.ico"
+      }
+    },
+    {
+      "id": "god-of-war-native",
+      "name": "GOW Native PC",
+      "repo": "Vnnc1/gow-native-pc",
+      "originalTitle": "God of War",
+      "originalPlatform": "PS2",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "gow-native-pc-windows.zip",
+          "executable": "gow-launcher.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Imagem do seu disco de PS2: God of War (EUA, SCUS-97399). O launcher do projeto lê o disco e monta o jogo no seu PC.",
+        "descriptionEn": "Your PS2 disc image: God of War (USA, SCUS-97399). The project launcher reads the disc and builds the game on your PC.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "aiAssisted": true,
+      "sgdbId": 36454,
+      "igdbId": 549,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/72d0eaa80cc3412fda4a133ca1f884e8.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/261474eb96c1fdc6456d2abef7019e45.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/cd17d3ce3b64f227987cd92cd701cc58.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/5cc33dfe7e069a757ca0fcbe6b95c89e.ico"
+      }
+    },
+    {
+      "id": "god-of-war-psp",
+      "name": "GoW PSP Recomp",
+      "repo": "DrummingBird1/gow-psp-recomp",
+      "originalTitle": "God of War: Chains of Olympus",
+      "originalPlatform": "PSP",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "GoW_PSP_Launcher-*.zip",
+          "executable": "GoWLauncher.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Suas ISOs de PSP: God of War: Chains of Olympus e/ou Ghost of Sparta. O launcher do projeto pede os arquivos.",
+        "descriptionEn": "Your PSP ISOs: God of War: Chains of Olympus and/or Ghost of Sparta. The project launcher asks for them.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 36385,
+      "igdbId": 552,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/63719b0a1928ddc9f968cb69bffe2f81.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/955cb567b6e38f4c6b3f28cc857fc38c.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/863ae4a798069192865306197bff9428.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/5c34112c98cb69d21f716eccde7ea8cc.ico"
+      }
+    },
+    {
+      "id": "halo-ce",
+      "name": "OpenCE",
+      "repo": "OpenCommunityEdition/OpenCE",
+      "originalTitle": "Halo: Combat Evolved",
+      "originalPlatform": "XBOX",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "halo-windows-release.zip",
+          "executable": "halo.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (Xbox). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (Xbox). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "aiAssisted": true,
+      "sgdbId": 38383,
+      "igdbId": 740,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/09a146c8d1cfdbdb54ceb60ede93cdab.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/1a6d2e708873df49ad05540c37e8d36a.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/d56b9fc4b0f1be8871f5e1c40c0067e7.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/045cf83ab0722e782cf72d14e44adf98.png"
+      }
+    },
+    {
+      "id": "animal-crossing",
+      "name": "Nookery",
+      "repo": "flyngmt/Nookery",
+      "originalTitle": "Animal Crossing",
+      "originalPlatform": "GC",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "Nookery-*-windows-x86_64.zip",
+          "executable": "Nookery.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "Nookery-*-linux-x86_64.AppImage",
+          "executable": "*.AppImage"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (GameCube). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (GameCube). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 34931,
+      "igdbId": 2655,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/d9e16849e6c8440f27574666b9e9735a.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/8a061f5bc5b5bf7596bfc81024ddf032.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/968b15768f3d19770471e9436d97913c.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/162c8a1cc0a8f18f8120a829f749e37f.png"
+      }
+    },
+    {
+      "id": "mhgu",
+      "name": "MHGU Recomp",
+      "repo": "morerokk/MHGURecomp",
+      "originalTitle": "Monster Hunter Generations Ultimate",
+      "originalPlatform": "SWITCH",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "Windows-MHGURecomp.*.zip",
+          "executable": "mhgurecomp.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (Switch). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (Switch). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "aiAssisted": true,
+      "sgdbId": 5264579,
+      "igdbId": 25623,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/7bf071f0838651b1a74f71df5003b3ca.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/2cfc7c2a1eabaff9fdcc09b009e8edad.jpg",
+        "logo": "https://cdn2.steamgriddb.com/logo/8cb958257e5a77381e730fc3ce4b8b32.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/07cdfd23373b17c6b337251c22b7ea57.png"
+      }
+    },
+    {
+      "id": "metroid-dread",
+      "name": "Metroid Dread Recomp",
+      "repo": "yozander2009-stack/Metroid-Dread-Recomp",
+      "originalTitle": "Metroid Dread",
+      "originalPlatform": "SWITCH",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "MetroidDread-PC-*.zip",
+          "executable": "Metroid Dread.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "Metroid_Dread-x86_64.AppImage",
+          "executable": "*.AppImage"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (Switch). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (Switch). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "aiAssisted": true,
+      "sgdbId": 5257930,
+      "igdbId": 15698,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/63c07e376dcf5799fc02381033f7c121.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/aa5d5b1b36318c95dffe1d6c4e153f2d.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/feb78ee29377237a3bfa93e3b61c1655.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/ff5a32529137a0ce614e6a37307423c5.ico"
+      }
+    },
+    {
+      "id": "killzone-shadow-fall",
+      "name": "killzone-shadowfall-pc",
+      "repo": "lesca-191204/killzone-shadowfall-pc",
+      "originalTitle": "Killzone Shadow Fall",
+      "originalPlatform": "PS4",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "KillzoneShadowFall-*-windows.zip",
+          "executable": "Killzone Shadow Fall.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (PS4). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (PS4). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "aiAssisted": true,
+      "sgdbId": 5246679,
+      "igdbId": 1937,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/001c051f536279e94d0902528a70187d.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/5cfcc1972d5e8972ace3c90e609f0f58.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/44e97bac42b33fc4d3873d6c3f8cb118.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/868b7df964b1af24c8c0a9e43a330c6a.ico"
+      }
+    },
+    {
+      "id": "gravity-rush",
+      "name": "Gravity Rush PC",
+      "repo": "LucaPazienza/gravityrush_pc",
+      "originalTitle": "Gravity Rush Remastered",
+      "originalPlatform": "PS4",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "GravityRush-PC-*-Windows.zip",
+          "executable": "Gravity Rush Launcher.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (PS4). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (PS4). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "aiAssisted": true,
+      "sgdbId": 5270660,
+      "igdbId": 12529,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/a5681ddbdf84643ab575935222d497f4.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/678e94cac0c753109537c922cab1baf4.jpg",
+        "logo": "https://cdn2.steamgriddb.com/logo/03731c9f1594352ccea95aae83fb690f.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/5d234349ef54d486d92682ae848d9ca4.ico"
+      }
+    },
+    {
+      "id": "gta-vcs",
+      "name": "VCS Recomp",
+      "repo": "gothamor/gta-vcs-recomp",
+      "originalTitle": "Grand Theft Auto: Vice City Stories",
+      "originalPlatform": "PS2",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "VCS-Recomp-*-windows.zip",
+          "executable": "VCSLauncher.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "VCS-Recomp-*-x86_64.AppImage",
+          "executable": "*.AppImage"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (PS2). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (PS2). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "aiAssisted": true,
+      "sgdbId": 34363,
+      "igdbId": 3262,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/c8aa48a3667e7a29486f3f978b0e0279.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/ab88830c7df1320ff8e0fc8203fbc80c.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/e17a5a399de92e1d01a56c50afb2a68e.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/95192c98732387165bf8e396c0f2dad2.ico"
+      }
+    },
+    {
+      "id": "gears-of-war",
+      "name": "COGBox",
+      "repo": "Shagg88/COGBox",
+      "originalTitle": "Gears of War 2",
+      "originalPlatform": "X360",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "COGBox-*.zip",
+          "executable": "CogBox.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (Xbox 360). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (Xbox 360). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "aiAssisted": true,
+      "sgdbId": 37163,
+      "igdbId": 548,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/537be42935b21c04fac5d9913777f7ee.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/599aa45a1ee37feb6f32e6aee8189c57.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/2f9a86313dbaaaa5e9c04d480df2ac41.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/39af1f025c7f7363e643a6d7868934a0.ico"
+      }
+    },
+    {
+      "id": "dragons-crown-pro",
+      "name": "Dragon's Crown Pro PC",
+      "repo": "saulob/dragons-crown-pro-pc",
+      "originalTitle": "Dragon's Crown Pro",
+      "originalPlatform": "PS4",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "DragonsCrownProPC-*-windows-x64.zip",
+          "executable": "dragons_crown_pro.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "DragonsCrownProPC-*-x86_64.AppImage",
+          "executable": "*.AppImage"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (PS4). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (PS4). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "aiAssisted": true,
+      "sgdbId": 5426974,
+      "igdbId": 68283,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/75ee1d77d340cb0a97ddf66a3daf85af.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/1d04bcd683377838580d82db48fb5c87.jpg",
+        "logo": "https://cdn2.steamgriddb.com/logo/eba9f1a976a8f27e7e0d3a428571b9bb.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/6f6e723c18a99b7d6e16a4e348565ee9.png"
+      }
+    },
+    {
+      "id": "king-kong",
+      "name": "King Kong Recompiled",
+      "repo": "TekRantGaming/king-kong-recompiled",
+      "originalTitle": "Peter Jackson's King Kong",
+      "originalPlatform": "X360",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "KingKong-*-windows-x64.zip",
+          "executable": "king_kong.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "KingKong-linux-x86_64.AppImage",
+          "executable": "*.AppImage"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (Xbox 360). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (Xbox 360). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "aiAssisted": true,
+      "sgdbId": 5249080,
+      "igdbId": 248543,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/95eb83542315080493f9a00e01920fe6.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/e3fc72518f213ad1f39ed9306da322b0.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/5785c3651a5d911fca2b311b48c0896d.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/beac08d527fe5ca7c17e38b19584ae48.ico"
+      }
+    },
+    {
+      "id": "pokemon-lets-go",
+      "name": "Let's Go Recomp",
+      "repo": "raulzrrs/letsgo-recomp",
+      "originalTitle": "Pokémon: Let's Go, Pikachu!",
+      "originalPlatform": "SWITCH",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "LetsGoRecomp-*-windows.zip",
+          "executable": "LetsGoRecomp.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (Switch). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (Switch). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "aiAssisted": true,
+      "sgdbId": 5246182,
+      "igdbId": 25877,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/0d2bb68b98bd5246fe99a698c9a3aa3e.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/ab7a710458b8378b523e39143a6764d6.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/b37242925ffe0da400d9b98c254b9fcd.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/c7529b8e425f81f2d9b65a162002f19d.png"
+      }
+    },
+    {
+      "id": "medievil",
+      "name": "MediEvilRecomp",
+      "repo": "BlackLabelHQ/MediEvilRecomp",
+      "originalTitle": "MediEvil",
+      "originalPlatform": "PS1",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "MediEvilRecomp-*-windows-x64.zip",
+          "executable": "medievil.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (PS1). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (PS1). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 38204,
+      "igdbId": 4000,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/b8b0e9685190772ecdb089f0b4a0369f.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/430579c489bddb6b10e67206face1d18.jpg",
+        "logo": "https://cdn2.steamgriddb.com/logo/a188af0bc920853d3673ab71c5f2a440.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/54591b5c8d4291c395119bdbdb3a4ee9.ico"
+      }
+    },
+    {
+      "id": "viva-pinata-tip",
+      "name": "reTiP",
+      "repo": "SolarCookies/TiP-Recomp",
+      "originalTitle": "Viva Piñata: Trouble in Paradise",
+      "originalPlatform": "X360",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "retip_*_windows_amd64.zip",
+          "executable": "retip.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (Xbox 360). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (Xbox 360). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 5262214,
+      "igdbId": 7238,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/e9437348054c27c0951c7d9d59bac04f.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/b5e9c7ea20276c57e2e893343186fffd.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/303d0012fd8d7ef9e9f6917dc6e938f0.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/b41785e01b7f3ae10e9cbdb6dc452ed0.png"
+      }
+    },
+    {
+      "id": "pgr4",
+      "name": "PGR4 Recomp",
+      "repo": "beatrixzy/PGR4-Recomp",
+      "originalTitle": "Project Gotham Racing 4",
+      "originalPlatform": "X360",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "PGR4-Recomp-*.zip",
+          "executable": "pgr4_recompiled.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (Xbox 360). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (Xbox 360). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 5253137,
+      "igdbId": 2540,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/90e6b40f3728f30b437e6b71ccda6d0b.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/0dbb3fb9a5cd1d5f8a9075b5bb8070aa.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/7c6c82bb528ebd24198e2d387d207f80.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/fd52865dec24ba68bd106c7aa29afa9b.ico"
+      }
+    },
+    {
+      "id": "dbz-budokai-hd",
+      "name": "DBZ Budokai 3 HD Collection",
+      "repo": "novapowers0/DBZ-Budokai-3-HD-Collection",
+      "originalTitle": "Dragon Ball Z: Budokai HD Collection",
+      "originalPlatform": "X360",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "DBZ-Budokai-3-HD-Collection-v*.zip",
+          "executable": "dbz3.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (Xbox 360). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (Xbox 360). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "aiAssisted": true,
+      "sgdbId": 5277034,
+      "igdbId": 21701,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/d29cbe5ceb0a45d87a1050e9a1718255.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/464272b1e3b0587b021173121d26ccf0.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/2f160fd9502f850571df4f60a6f96fc4.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/61501c1f651da2774f8bb6bbec365d84.png"
+      }
+    },
+    {
+      "id": "naruto-rise-of-a-ninja",
+      "name": "Naruto Rise Recomp",
+      "repo": "jorjbarbosa/naruto-rise-recomp",
+      "originalTitle": "Naruto: Rise of a Ninja",
+      "originalPlatform": "X360",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "naruto-rise-recomp-win-amd64.zip",
+          "executable": "narutorise.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "NarutoRise-*-Linux-x86_64.AppImage",
+          "executable": "*.AppImage"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (Xbox 360). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (Xbox 360). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "aiAssisted": true,
+      "sgdbId": 5268809,
+      "igdbId": 7101,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/f1cab1954b1fc4ff1914fc819d30f3c1.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/84b077a6d1ec15291624d4ccdfd9dd77.jpg",
+        "logo": "https://cdn2.steamgriddb.com/logo/ee82b11edbd4f34a1081986fb2ecf895.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/38ed4039c0b33e2ec51cc4579405d03e.png"
+      }
+    },
+    {
+      "id": "banjo-nuts-and-bolts",
+      "name": "reNut",
+      "repo": "masterspike52/reNut",
+      "originalTitle": "Banjo-Kazooie: Nuts & Bolts",
+      "originalPlatform": "X360",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "renut.zip",
+          "executable": "renut.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "renut-x86_64.AppImage",
+          "executable": "*.AppImage"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (Xbox 360). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (Xbox 360). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "aiAssisted": true,
+      "sgdbId": 37213,
+      "igdbId": 3008,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/17faa600670ae46a32ff83f76e83806a.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/af37a90a983595fef5aeac638e129534.jpg",
+        "logo": "https://cdn2.steamgriddb.com/logo/c1fb11cad73eaf23ee236ed67e04a36e.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/f88920d4589dae7abec2eb05fca153e3.png"
+      }
+    },
+    {
+      "id": "metroid-prime-2",
+      "name": "Metroid Prime 2 Port",
+      "repo": "Odrannnn/MetroidPrime2Port",
+      "originalTitle": "Metroid Prime 2: Echoes",
+      "originalPlatform": "GC",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "metroid-prime2-port-*-windows-x86_64.zip",
+          "executable": "metroid_prime2_port.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "MetroidPrime2-x86_64.AppImage",
+          "executable": "*.AppImage"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (GameCube). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (GameCube). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "aiAssisted": true,
+      "sgdbId": 36244,
+      "igdbId": 1108,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/a811009cca17955a869190961a215997.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/c0f971d8cd24364f2029fcb9ac7b71f5.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/4158f6d19559955bae372bb00f6204e4.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/a597e50502f5ff68e3e25b9114205d4a.png"
+      }
+    },
+    {
+      "id": "super-mario-maker-2",
+      "name": "SMM2 Recomp",
+      "repo": "smm2recomp/smm2recomp",
+      "originalTitle": "Super Mario Maker 2",
+      "originalPlatform": "SWITCH",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "SMM2Recomp-windows-x86_64.zip",
+          "executable": "smm2recomp.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (Switch). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (Switch). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 5249544,
+      "igdbId": 115276,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/1a3377beff1ae18422f3a8dfe9ef7231.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/8c4967fa62628e93463f33c2bbd9ee53.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/cca7069645df38802fe9c7a0f4d83548.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/a131005bc99e0505cc970be992378a4f.ico"
+      }
+    },
+    {
+      "id": "mega-man-x",
+      "name": "MegaManXSNESRecomp",
+      "repo": "mstan/MegaManXSNESRecomp",
+      "originalTitle": "Mega Man X",
+      "originalPlatform": "SNES",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "MegaManXSNESRecomp-windows-*.zip",
+          "executable": "MegaManXSNESRecomp.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (SNES). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (SNES). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "aiAssisted": true,
+      "sgdbId": 35466,
+      "igdbId": 1741,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/e24927b595bdddebb71671d11f76f067.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/87fb64db8a74fa38e6778aea4d9e0f6c.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/e2a23af417a2344fe3a23e652924091f.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/6b3829244a3cb6ef04f4f11733faa5a2.ico"
+      }
+    },
+    {
+      "id": "mega-man-x4",
+      "name": "MegaManX4Recomp",
+      "repo": "mstan/MegaManX4Recomp",
+      "originalTitle": "Mega Man X4",
+      "originalPlatform": "PS1",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "MegaManX4Recomp-*-windows-x64.zip",
+          "executable": "MegaManX4Recomp.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "MegaManX4Recomp-*-linux-x86_64.AppImage",
+          "executable": "*.AppImage"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (PS1). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (PS1). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "aiAssisted": true,
+      "sgdbId": 38080,
+      "igdbId": 1744,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/1a8e3803ba73d4c2d88022c00c79cef7.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/910c8aa6d76100df69a6ea11c2a39ed1.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/b13245211331d16e2a04423665d4b3a8.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/d5e6ff260692ebb551aa687db5b759b2.ico"
+      }
+    },
+    {
+      "id": "animal-crossing-nh",
+      "name": "ACNHRecomp",
+      "repo": "Nycolazs/ACNHRecomp",
+      "originalTitle": "Animal Crossing: New Horizons",
+      "originalPlatform": "SWITCH",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "ACNHRecomp-*-windows-x64.zip",
+          "executable": "ACNHRecomp Launcher.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (Switch). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (Switch). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "aiAssisted": true,
+      "sgdbId": 5257932,
+      "igdbId": 109462,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/078d2a1275f0d53cda67d165440aeb50.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/3649a6a2557a26ada5a5751518e711f7.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/7eef53dcebed55c152535e6e01682c80.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/e6051b3bfe716cc4a38c2f39ec199873.png"
+      }
+    },
+    {
+      "id": "god-of-war-2-hd",
+      "name": "Gow2HD-Windows",
+      "repo": "sethlikepie/Gow2HD-Windows",
+      "originalTitle": "God of War II HD",
+      "originalPlatform": "PS3",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "Gow2HD-Windows.exe",
+          "executable": "gow2hd.exe",
+          "installer": {
+            "installDir": "%LOCALAPPDATA%/GoW2-Windows"
+          }
+        }
+      },
+      "requiredRom": {
+        "description": "Seu God of War II HD de PS3 (EUA, NPUA80491 v01.00): a pasta do jogo instalado ou o pacote PSN, mais o arquivo de licença .rap. O instalador do projeto pede os arquivos e compila o jogo no seu PC.",
+        "descriptionEn": "Your PS3 God of War II HD (USA, NPUA80491 v01.00): the installed game folder or the PSN package, plus the .rap licence file. The project installer asks for them and builds the game on your PC.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 35531,
+      "igdbId": 117882,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/7f5c8cbd9c1a9f0fbbb793d440dfd8e3.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/5b6f477594a1fa41586e0ee57d76daba.jpg",
+        "logo": "https://cdn2.steamgriddb.com/logo/f2c5b1f06bfe59954cb2a56858c2ed98.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/6c524f9d5d7027454a783c841250ba71.png"
+      }
     }
   ]
 }
