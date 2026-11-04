@@ -105,6 +105,7 @@ fn platform_id(platform: &str) -> Option<u32> {
         "GBC" => 22,
         "GENESIS" | "MEGADRIVE" => 29,
         "ARCADE" => 52,
+        "PSP" => 38,
         _ => return None,
     })
 }

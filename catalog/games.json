@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-03T13:47:56.230765784Z",
+  "generatedAt": "2026-11-04T00:13:56.659743600Z",
   "games": [
     {
       "id": "zelda64-mm",
@@ -39,7 +39,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 7582,
+        "stars": 7585,
         "firstReleaseAt": "2024-05-10T05:07:15Z",
         "latestRelease": {
           "tag": "v1.2.2",
@@ -48,7 +48,7 @@
           "htmlUrl": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 7,
-        "totalDownloads": 384205
+        "totalDownloads": 384593
       },
       "game": {
         "title": "The Legend of Zelda: Majora's Mask",
@@ -123,7 +123,7 @@
           "htmlUrl": "https://github.com/sonicdcer/Starfox64Recomp/releases/tag/1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 31455
+        "totalDownloads": 31498
       },
       "game": {
         "title": "Star Fox 64",
@@ -189,7 +189,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 2115,
+        "stars": 2116,
         "firstReleaseAt": "2026-01-24T19:29:09Z",
         "latestRelease": {
           "tag": "v1.0.2",
@@ -198,7 +198,7 @@
           "htmlUrl": "https://github.com/BanjoRecomp/BanjoRecomp/releases/tag/v1.0.2"
         },
         "releaseCount": 3,
-        "totalDownloads": 152674
+        "totalDownloads": 152901
       },
       "game": {
         "title": "Banjo-Kazooie",
@@ -265,7 +265,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 570,
+        "stars": 571,
         "firstReleaseAt": "2026-08-29T19:03:58Z",
         "latestRelease": {
           "tag": "v1.0.3",
@@ -274,7 +274,7 @@
           "htmlUrl": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled/releases/tag/v1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 52614
+        "totalDownloads": 52834
       },
       "game": {
         "title": "Donkey Kong 64",
@@ -355,7 +355,7 @@
           "htmlUrl": "https://github.com/klorfmorf/Goemon64Recomp/releases/tag/v0.2.0-dev"
         },
         "releaseCount": 5,
-        "totalDownloads": 24167
+        "totalDownloads": 24206
       },
       "game": {
         "title": "Mystical Ninja Starring Goemon",
@@ -430,7 +430,7 @@
           "htmlUrl": "https://github.com/RevoSucks/BM64Recomp/releases/tag/v1.0.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 22410
+        "totalDownloads": 22451
       },
       "game": {
         "title": "Bomberman 64",
@@ -505,7 +505,7 @@
           "htmlUrl": "https://github.com/MegaMan64Recomp/MegaMan64Recompiled/releases/tag/v0.9.1"
         },
         "releaseCount": 3,
-        "totalDownloads": 16174
+        "totalDownloads": 16209
       },
       "game": {
         "title": "Mega Man 64",
@@ -580,7 +580,7 @@
           "htmlUrl": "https://github.com/HarvestMoon64Recomp/HarvestMoon64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 6,
-        "totalDownloads": 10623
+        "totalDownloads": 10659
       },
       "game": {
         "title": "Harvest Moon 64",
@@ -651,7 +651,7 @@
           "htmlUrl": "https://github.com/theboy181/drmario64_recomp_plus/releases/tag/1.0.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 11308
+        "totalDownloads": 11320
       },
       "game": {
         "title": "Dr. Mario 64",
@@ -728,7 +728,7 @@
           "htmlUrl": "https://github.com/cdlewis/snowboardkids2-recomp/releases/tag/v2.0.2"
         },
         "releaseCount": 5,
-        "totalDownloads": 9647
+        "totalDownloads": 9675
       },
       "game": {
         "title": "Snowboard Kids 2",
@@ -803,7 +803,7 @@
           "steam-deck",
           "windows"
         ],
-        "stars": 129,
+        "stars": 130,
         "firstReleaseAt": "2026-09-05T16:30:20Z",
         "latestRelease": {
           "tag": "v1.1.6",
@@ -812,7 +812,7 @@
           "htmlUrl": "https://github.com/JackandBeans/Snap64Recomp/releases/tag/v1.1.6"
         },
         "releaseCount": 17,
-        "totalDownloads": 12300
+        "totalDownloads": 12397
       },
       "game": {
         "title": "Pokémon Snap",
@@ -882,7 +882,7 @@
           "recompilation",
           "rt64"
         ],
-        "stars": 170,
+        "stars": 172,
         "firstReleaseAt": "2026-10-01T00:51:32Z",
         "latestRelease": {
           "tag": "v1.4.7",
@@ -891,7 +891,7 @@
           "htmlUrl": "https://github.com/DahSidiAbdallah/ConkerBFDReloaded/releases/tag/v1.4.7"
         },
         "releaseCount": 20,
-        "totalDownloads": 19792
+        "totalDownloads": 20040
       },
       "game": {
         "title": "Conker's Bad Fur Day",
@@ -969,7 +969,7 @@
           "htmlUrl": "https://github.com/RevoSucks/CV64Recomp/releases/tag/v0.5.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 464
+        "totalDownloads": 465
       },
       "game": {
         "title": "Castlevania",
@@ -1037,7 +1037,7 @@
         "homepage": "https://twilitrealm.dev",
         "license": "CC0-1.0",
         "topics": [],
-        "stars": 6215,
+        "stars": 6221,
         "firstReleaseAt": "2026-04-24T03:44:05Z",
         "latestRelease": {
           "tag": "v2.0.3",
@@ -1046,7 +1046,7 @@
           "htmlUrl": "https://github.com/TwilitRealm/dusklight/releases/tag/v2.0.3"
         },
         "releaseCount": 24,
-        "totalDownloads": 1451803
+        "totalDownloads": 1454118
       },
       "game": {
         "title": "The Legend of Zelda: Twilight Princess",
@@ -1483,7 +1483,7 @@
           "vulkan",
           "windows"
         ],
-        "stars": 4546,
+        "stars": 4569,
         "firstReleaseAt": "2026-10-10T22:37:56Z",
         "latestRelease": {
           "tag": "windows-v3.0.0",
@@ -1492,7 +1492,7 @@
           "htmlUrl": "https://github.com/FelipePrado0/SpartanPort/releases/tag/windows-v3.0.0"
         },
         "releaseCount": 25,
-        "totalDownloads": 646536
+        "totalDownloads": 652286
       },
       "game": {
         "title": "God of War III: Remastered",
@@ -1806,16 +1806,16 @@
         "homepage": null,
         "license": "GPL-2.0",
         "topics": [],
-        "stars": 2160,
+        "stars": 2167,
         "firstReleaseAt": "2026-10-15T00:17:51Z",
         "latestRelease": {
-          "tag": "v0.3.11",
-          "name": "Uncharted for Windows 0.3.11",
-          "publishedAt": "2026-10-30T22:28:42Z",
-          "htmlUrl": "https://github.com/Supermedo/uncharted_pc/releases/tag/v0.3.11"
+          "tag": "v0.3.12",
+          "name": "Uncharted for Windows 0.3.12",
+          "publishedAt": "2026-11-03T22:51:41Z",
+          "htmlUrl": "https://github.com/Supermedo/uncharted_pc/releases/tag/v0.3.12"
         },
-        "releaseCount": 12,
-        "totalDownloads": 157067
+        "releaseCount": 13,
+        "totalDownloads": 158754
       },
       "game": {
         "title": "Uncharted: The Nathan Drake Collection",
@@ -1878,7 +1878,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 5331,
+        "stars": 5333,
         "firstReleaseAt": "2025-03-01T11:01:14Z",
         "latestRelease": {
           "tag": "v1.0.3",
@@ -1887,7 +1887,7 @@
           "htmlUrl": "https://github.com/hedge-dev/UnleashedRecomp/releases/tag/v1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 741844
+        "totalDownloads": 742432
       },
       "game": {
         "title": "Sonic Unleashed",
@@ -1954,7 +1954,7 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 1783,
+        "stars": 1785,
         "firstReleaseAt": "2026-06-04T21:32:32Z",
         "latestRelease": {
           "tag": "v2.0.2",
@@ -1963,7 +1963,7 @@
           "htmlUrl": "https://github.com/mchughalex/skate3recomp/releases/tag/v2.0.2"
         },
         "releaseCount": 9,
-        "totalDownloads": 141759
+        "totalDownloads": 142257
       },
       "game": {
         "title": "Skate 3",
@@ -2028,7 +2028,7 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 1057,
+        "stars": 1061,
         "firstReleaseAt": "2026-08-02T21:38:11Z",
         "latestRelease": {
           "tag": "v1.1.2p",
@@ -2037,7 +2037,7 @@
           "htmlUrl": "https://github.com/BlackLabelHQ/SymphonyRecomp/releases/tag/v1.1.2p"
         },
         "releaseCount": 13,
-        "totalDownloads": 70131
+        "totalDownloads": 71200
       },
       "game": {
         "title": "Castlevania: Symphony of the Night",
@@ -2104,7 +2104,7 @@
         "homepage": null,
         "license": "BSD-3-Clause",
         "topics": [],
-        "stars": 892,
+        "stars": 893,
         "firstReleaseAt": "2026-08-23T01:33:50Z",
         "latestRelease": {
           "tag": "v1.3.1",
@@ -2113,7 +2113,7 @@
           "htmlUrl": "https://github.com/zolaware/reblue/releases/tag/v1.3.1"
         },
         "releaseCount": 21,
-        "totalDownloads": 59983
+        "totalDownloads": 60136
       },
       "game": {
         "title": "Blue Dragon",
@@ -2177,7 +2177,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 621,
+        "stars": 622,
         "firstReleaseAt": "2025-08-17T20:39:37Z",
         "latestRelease": {
           "tag": "v0.9.2",
@@ -2186,7 +2186,7 @@
           "htmlUrl": "https://github.com/sonicdcer/MarioKart64Recomp/releases/tag/v0.9.2"
         },
         "releaseCount": 2,
-        "totalDownloads": 28930
+        "totalDownloads": 29052
       },
       "game": {
         "title": "Mario Kart 64",
@@ -2262,7 +2262,7 @@
           "htmlUrl": "https://github.com/ExpansionPak/ModernGekko/releases/tag/kirby"
         },
         "releaseCount": 1,
-        "totalDownloads": 13616
+        "totalDownloads": 13682
       },
       "game": {
         "title": "Kirby's Return to Dream Land",
@@ -2350,7 +2350,7 @@
           "htmlUrl": "https://github.com/previouslevelgames/recharged/releases/tag/v1.1.1"
         },
         "releaseCount": 21,
-        "totalDownloads": 12249
+        "totalDownloads": 12486
       },
       "game": {
         "title": "Mario Strikers Charged",
@@ -2406,11 +2406,11 @@
         "icon": "https://cdn2.steamgriddb.com/icon/1a0a283bfe7c549dee6c638a05200e32.png"
       },
       "recomp": {
-        "description": "New Super Mario Bros. Wii running natively on Android and Windows: a static recompilation built on WiiCompiled. Bring your own game.",
+        "description": "New Super Mario Bros. Wii running natively on Android and Windows: a static recompilation built on WiiCompiled. Bring your own game. Languages: English, Spanish (Español), French (Français).",
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 177,
+        "stars": 179,
         "firstReleaseAt": "2026-10-07T15:43:51Z",
         "latestRelease": {
           "tag": "v0.3.1",
@@ -2419,7 +2419,7 @@
           "htmlUrl": "https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation/releases/tag/v0.3.1"
         },
         "releaseCount": 20,
-        "totalDownloads": 35646
+        "totalDownloads": 36459
       },
       "game": {
         "title": "New Super Mario Bros. Wii",
@@ -2492,7 +2492,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 1332,
+        "stars": 1336,
         "firstReleaseAt": "2026-08-23T20:28:40Z",
         "latestRelease": {
           "tag": "v0.9.3",
@@ -2501,7 +2501,7 @@
           "htmlUrl": "https://github.com/patchzyy/Wiicompiled/releases/tag/v0.9.3"
         },
         "releaseCount": 20,
-        "totalDownloads": 238473
+        "totalDownloads": 239154
       },
       "game": {
         "title": "Mario Kart Wii",
@@ -2566,7 +2566,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 529,
+        "stars": 534,
         "firstReleaseAt": "2026-10-13T16:15:43Z",
         "latestRelease": {
           "tag": "v1.0.2",
@@ -2575,7 +2575,7 @@
           "htmlUrl": "https://github.com/keepvaibin/nebula/releases/tag/v1.0.2"
         },
         "releaseCount": 3,
-        "totalDownloads": 30411
+        "totalDownloads": 30917
       },
       "game": {
         "title": "Super Mario Galaxy",
@@ -2642,7 +2642,7 @@
         "homepage": "https://shipofharkinian.com",
         "license": null,
         "topics": [],
-        "stars": 5832,
+        "stars": 5834,
         "firstReleaseAt": "2023-08-14T21:22:21Z",
         "latestRelease": {
           "tag": "9.3.1",
@@ -2651,7 +2651,7 @@
           "htmlUrl": "https://github.com/HarbourMasters/Shipwright/releases/tag/9.3.1"
         },
         "releaseCount": 53,
-        "totalDownloads": 2407757
+        "totalDownloads": 2410086
       },
       "game": {
         "title": "The Legend of Zelda: Ocarina of Time",
@@ -2720,7 +2720,7 @@
         "homepage": null,
         "license": "CC0-1.0",
         "topics": [],
-        "stars": 2421,
+        "stars": 2423,
         "firstReleaseAt": "2024-05-27T01:01:57Z",
         "latestRelease": {
           "tag": "5.0.1",
@@ -2729,7 +2729,7 @@
           "htmlUrl": "https://github.com/2ship2harkinian/2ship2harkinian/releases/tag/5.0.1"
         },
         "releaseCount": 16,
-        "totalDownloads": 729462
+        "totalDownloads": 729864
       },
       "game": {
         "title": "The Legend of Zelda: Majora's Mask",
@@ -2796,7 +2796,7 @@
         "homepage": null,
         "license": "CC0-1.0",
         "topics": [],
-        "stars": 2130,
+        "stars": 2132,
         "firstReleaseAt": "2024-12-22T22:44:26Z",
         "latestRelease": {
           "tag": "v2.0.0",
@@ -2805,7 +2805,7 @@
           "htmlUrl": "https://github.com/HarbourMasters/Starship/releases/tag/v2.0.0"
         },
         "releaseCount": 2,
-        "totalDownloads": 230980
+        "totalDownloads": 231136
       },
       "game": {
         "title": "Star Fox 64",
@@ -2872,7 +2872,7 @@
         "homepage": "https://harbourmasters.github.io/SpaghettiKart/",
         "license": null,
         "topics": [],
-        "stars": 2481,
+        "stars": 2483,
         "firstReleaseAt": "2025-11-15T22:21:45Z",
         "latestRelease": {
           "tag": "1.0.0",
@@ -2881,7 +2881,7 @@
           "htmlUrl": "https://github.com/HarbourMasters/SpaghettiKart/releases/tag/1.0.0"
         },
         "releaseCount": 3,
-        "totalDownloads": 246439
+        "totalDownloads": 246670
       },
       "game": {
         "title": "Mario Kart 64",
@@ -2957,7 +2957,7 @@
           "sm64",
           "sm64ex-coop"
         ],
-        "stars": 1512,
+        "stars": 1515,
         "firstReleaseAt": "2024-07-02T00:02:31Z",
         "latestRelease": {
           "tag": "v1.5.1",
@@ -2966,7 +2966,7 @@
           "htmlUrl": "https://github.com/coop-deluxe/sm64coopdx/releases/tag/v1.5.1"
         },
         "releaseCount": 16,
-        "totalDownloads": 1713228
+        "totalDownloads": 1713979
       },
       "game": {
         "title": "Super Mario 64",
@@ -3039,7 +3039,7 @@
           "htmlUrl": "https://github.com/perfect-dark-pc-port/perfect_dark/releases/tag/ci-dev-build"
         },
         "releaseCount": 1,
-        "totalDownloads": 20565
+        "totalDownloads": 20687
       },
       "game": {
         "title": "Perfect Dark",
@@ -3117,7 +3117,7 @@
           "htmlUrl": "https://github.com/open-goal/launcher/releases/tag/v2.11.2"
         },
         "releaseCount": 90,
-        "totalDownloads": 510064
+        "totalDownloads": 510269
       },
       "game": {
         "title": "Jak and Daxter: The Precursor Legacy",
@@ -3196,7 +3196,7 @@
           "htmlUrl": "https://github.com/open-goal/launcher/releases/tag/v2.11.2"
         },
         "releaseCount": 90,
-        "totalDownloads": 510064
+        "totalDownloads": 510269
       },
       "game": {
         "title": "Jak II",
@@ -3259,7 +3259,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 74,
+        "stars": 75,
         "firstReleaseAt": "2026-10-12T22:04:37Z",
         "latestRelease": {
           "tag": "v1.4.1",
@@ -3268,7 +3268,7 @@
           "htmlUrl": "https://github.com/thiagordsfx/urban-reign-recomp/releases/tag/v1.4.1"
         },
         "releaseCount": 8,
-        "totalDownloads": 3604
+        "totalDownloads": 3693
       },
       "game": {
         "title": "Urban Reign",
@@ -3337,7 +3337,7 @@
           "htmlUrl": "https://github.com/obaidr1/hercules-recompiled/releases/tag/v0.5.6"
         },
         "releaseCount": 11,
-        "totalDownloads": 9049
+        "totalDownloads": 9186
       },
       "game": {
         "title": "Disney's Hercules Action Game",
@@ -3401,7 +3401,7 @@
         "homepage": null,
         "license": "GPL-2.0",
         "topics": [],
-        "stars": 319,
+        "stars": 322,
         "firstReleaseAt": "2026-10-25T23:52:21Z",
         "latestRelease": {
           "tag": "v0.4.1",
@@ -3410,7 +3410,7 @@
           "htmlUrl": "https://github.com/OAleex/OpenShao/releases/tag/v0.4.1"
         },
         "releaseCount": 3,
-        "totalDownloads": 8809
+        "totalDownloads": 9089
       },
       "game": {
         "title": "Mortal Kombat: Shaolin Monks",
@@ -3475,7 +3475,7 @@
         "homepage": "https://discord.gg/AJJbJAzNNJ",
         "license": null,
         "topics": [],
-        "stars": 4979,
+        "stars": 4978,
         "firstReleaseAt": "2023-08-17T01:18:40Z",
         "latestRelease": {
           "tag": "v0.3",
@@ -3484,7 +3484,7 @@
           "htmlUrl": "https://github.com/snesrev/zelda3/releases/tag/v0.3"
         },
         "releaseCount": 1,
-        "totalDownloads": 23769
+        "totalDownloads": 23817
       },
       "game": {
         "title": "The Legend of Zelda: A Link to the Past",
@@ -3550,7 +3550,7 @@
         "homepage": "https://discord.gg/yTMG8c4Bqm",
         "license": "GPL-2.0",
         "topics": [],
-        "stars": 5085,
+        "stars": 5104,
         "firstReleaseAt": "2026-10-06T17:55:21Z",
         "latestRelease": {
           "tag": "windows-v1.9.7",
@@ -3559,7 +3559,7 @@
           "htmlUrl": "https://github.com/Supermedo/bloodborne_pc/releases/tag/windows-v1.9.7"
         },
         "releaseCount": 27,
-        "totalDownloads": 695511
+        "totalDownloads": 700818
       },
       "game": {
         "title": "Bloodborne",
@@ -3626,7 +3626,7 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 4102,
+        "stars": 4104,
         "firstReleaseAt": "2026-07-18T01:21:55Z",
         "latestRelease": {
           "tag": "v0.4.0",
@@ -3635,7 +3635,7 @@
           "htmlUrl": "https://github.com/bryanthaboi/gen1recomp/releases/tag/v0.4.0"
         },
         "releaseCount": 276,
-        "totalDownloads": 1403717
+        "totalDownloads": 1405931
       },
       "game": {
         "title": "Pokémon Red Version",
@@ -3699,7 +3699,7 @@
         "homepage": "https://www.patreon.com/loreanxavier",
         "license": null,
         "topics": [],
-        "stars": 2369,
+        "stars": 2384,
         "firstReleaseAt": "2026-10-07T10:02:44Z",
         "latestRelease": {
           "tag": "v1.0.8",
@@ -3708,7 +3708,7 @@
           "htmlUrl": "https://github.com/LoreanXavier/pt-pc/releases/tag/v1.0.8"
         },
         "releaseCount": 9,
-        "totalDownloads": 180388
+        "totalDownloads": 181115
       },
       "game": {
         "title": "P.T.",
@@ -3774,7 +3774,7 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 2105,
+        "stars": 2112,
         "firstReleaseAt": "2026-10-23T23:56:49Z",
         "latestRelease": {
           "tag": "beta_5.4",
@@ -3782,8 +3782,8 @@
           "publishedAt": "2026-10-29T17:34:40Z",
           "htmlUrl": "https://github.com/peiikai/LASRecomp/releases/tag/beta_5.4"
         },
-        "releaseCount": 8,
-        "totalDownloads": 19645
+        "releaseCount": 7,
+        "totalDownloads": 19824
       },
       "game": {
         "title": "The Legend of Zelda: Link's Awakening",
@@ -3846,16 +3846,16 @@
         "homepage": null,
         "license": "GPL-2.0",
         "topics": [],
-        "stars": 1704,
+        "stars": 1714,
         "firstReleaseAt": "2026-10-19T20:42:30Z",
         "latestRelease": {
-          "tag": "v0.71",
-          "name": "v0.71 — Time Attack mosaic and crash fix · New launcher",
-          "publishedAt": "2026-11-02T19:50:45Z",
-          "htmlUrl": "https://github.com/AjncSystem/ShadowOfTheColossus-PC/releases/tag/v0.71"
+          "tag": "v0.72",
+          "name": "v0.72 — Improvements on by default · AMD FSR 4.1 upscaler · PS4 grass in play modes",
+          "publishedAt": "2026-11-03T21:48:49Z",
+          "htmlUrl": "https://github.com/AjncSystem/ShadowOfTheColossus-PC/releases/tag/v0.72"
         },
-        "releaseCount": 16,
-        "totalDownloads": 66217
+        "releaseCount": 17,
+        "totalDownloads": 68237
       },
       "game": {
         "title": "Shadow of the Colossus",
@@ -3923,7 +3923,7 @@
         "homepage": null,
         "license": "MPL-2.0",
         "topics": [],
-        "stars": 1261,
+        "stars": 1269,
         "firstReleaseAt": "2026-10-05T22:12:13Z",
         "latestRelease": {
           "tag": "v0.5.0",
@@ -3932,7 +3932,7 @@
           "htmlUrl": "https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp/releases/tag/v0.5.0"
         },
         "releaseCount": 21,
-        "totalDownloads": 85819
+        "totalDownloads": 86190
       },
       "game": {
         "title": "The Legend of Zelda: The Wind Waker HD",
@@ -4008,7 +4008,7 @@
           "vulkan",
           "windows"
         ],
-        "stars": 1050,
+        "stars": 1057,
         "firstReleaseAt": "2026-10-14T21:52:17Z",
         "latestRelease": {
           "tag": "v1.0",
@@ -4017,7 +4017,7 @@
           "htmlUrl": "https://github.com/HayatoG/iss_pc/releases/tag/v1.0"
         },
         "releaseCount": 40,
-        "totalDownloads": 91134
+        "totalDownloads": 91729
       },
       "game": {
         "title": "Infamous: Second Son",
@@ -4086,7 +4086,7 @@
           "windows",
           "xbox-360"
         ],
-        "stars": 989,
+        "stars": 995,
         "firstReleaseAt": "2026-08-25T22:17:51Z",
         "latestRelease": {
           "tag": "v0.7.1",
@@ -4095,7 +4095,7 @@
           "htmlUrl": "https://github.com/arcanite24/pinyon-shift/releases/tag/v0.7.1"
         },
         "releaseCount": 20,
-        "totalDownloads": 71832
+        "totalDownloads": 72257
       },
       "game": {
         "title": "Forza Horizon",
@@ -4154,7 +4154,7 @@
         "homepage": "http://reassembler.blogspot.com",
         "license": null,
         "topics": [],
-        "stars": 893,
+        "stars": 892,
         "firstReleaseAt": "2021-03-15T19:58:04Z",
         "latestRelease": {
           "tag": "v0.34",
@@ -4163,7 +4163,7 @@
           "htmlUrl": "https://github.com/djyt/cannonball/releases/tag/v0.34"
         },
         "releaseCount": 4,
-        "totalDownloads": 15338
+        "totalDownloads": 15355
       },
       "game": {
         "title": "OutRun",
@@ -4229,7 +4229,7 @@
         "homepage": "https://ghostship.net64.dev/",
         "license": "MIT",
         "topics": [],
-        "stars": 884,
+        "stars": 887,
         "firstReleaseAt": "2026-01-18T03:32:47Z",
         "latestRelease": {
           "tag": "3.0.0",
@@ -4238,7 +4238,7 @@
           "htmlUrl": "https://github.com/HarbourMasters/Ghostship/releases/tag/3.0.0"
         },
         "releaseCount": 5,
-        "totalDownloads": 140605
+        "totalDownloads": 141071
       },
       "game": {
         "title": "Super Mario 64",
@@ -4306,7 +4306,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 908,
+        "stars": 909,
         "firstReleaseAt": "2026-09-06T04:28:07Z",
         "latestRelease": {
           "tag": "v1.1.0",
@@ -4315,7 +4315,7 @@
           "htmlUrl": "https://github.com/freefrank/LostOdysseyRecomp/releases/tag/v1.1.0"
         },
         "releaseCount": 71,
-        "totalDownloads": 119725
+        "totalDownloads": 120691
       },
       "game": {
         "title": "Lost Odyssey",
@@ -4394,7 +4394,7 @@
           "survival-horror",
           "xbox"
         ],
-        "stars": 817,
+        "stars": 819,
         "firstReleaseAt": "2026-03-10T02:30:11Z",
         "latestRelease": {
           "tag": "crossplatform-beta",
@@ -4403,7 +4403,7 @@
           "htmlUrl": "https://github.com/SlickAmogus/silent-hill-decomp/releases/tag/crossplatform-beta"
         },
         "releaseCount": 15,
-        "totalDownloads": 55907
+        "totalDownloads": 58013
       },
       "game": {
         "title": "Silent Hill",
@@ -4466,7 +4466,7 @@
         "homepage": null,
         "license": "GPL-2.0",
         "topics": [],
-        "stars": 895,
+        "stars": 902,
         "firstReleaseAt": "2026-10-16T20:44:24Z",
         "latestRelease": {
           "tag": "v0.4.1",
@@ -4475,7 +4475,7 @@
           "htmlUrl": "https://github.com/OverkillLabs3/driveclub-recomp/releases/tag/v0.4.1"
         },
         "releaseCount": 13,
-        "totalDownloads": 62786
+        "totalDownloads": 64250
       },
       "game": {
         "title": "Driveclub",
@@ -4536,7 +4536,7 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 830,
+        "stars": 835,
         "firstReleaseAt": "2026-09-02T15:50:13Z",
         "latestRelease": {
           "tag": "v0.8.5-beta",
@@ -4545,7 +4545,7 @@
           "htmlUrl": "https://github.com/florinp93/hells-gate-recomp/releases/tag/v0.8.5-beta"
         },
         "releaseCount": 27,
-        "totalDownloads": 79118
+        "totalDownloads": 79962
       },
       "game": {
         "title": "Dante's Inferno",
@@ -4608,7 +4608,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 678,
+        "stars": 679,
         "firstReleaseAt": "2022-01-09T11:22:27Z",
         "latestRelease": {
           "tag": "v26.03.28.0-stable",
@@ -4617,7 +4617,7 @@
           "htmlUrl": "https://github.com/Eukaryot/sonic3air/releases/tag/v26.03.28.0-stable"
         },
         "releaseCount": 36,
-        "totalDownloads": 1892114
+        "totalDownloads": 1893226
       },
       "game": {
         "title": "Sonic the Hedgehog 3 & Knuckles",
@@ -4683,7 +4683,7 @@
           "vulkan",
           "windows"
         ],
-        "stars": 701,
+        "stars": 703,
         "firstReleaseAt": "2026-10-12T18:22:03Z",
         "latestRelease": {
           "tag": "v0.4",
@@ -4692,7 +4692,7 @@
           "htmlUrl": "https://github.com/GetLostIn/CTR-NitroFueled-PC/releases/tag/v0.4"
         },
         "releaseCount": 5,
-        "totalDownloads": 47515
+        "totalDownloads": 47728
       },
       "game": {
         "title": "Crash Team Racing Nitro-Fueled",
@@ -4765,7 +4765,7 @@
           "htmlUrl": "https://github.com/snesrev/smw/releases/tag/v0.1"
         },
         "releaseCount": 1,
-        "totalDownloads": 24590
+        "totalDownloads": 24617
       },
       "game": {
         "title": "Super Mario World",
@@ -4834,7 +4834,7 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 582,
+        "stars": 581,
         "firstReleaseAt": "2026-09-14T04:32:32Z",
         "latestRelease": {
           "tag": "v0.4.2",
@@ -4843,7 +4843,7 @@
           "htmlUrl": "https://github.com/999sian/melee-pc/releases/tag/v0.4.2"
         },
         "releaseCount": 20,
-        "totalDownloads": 52148
+        "totalDownloads": 52460
       },
       "game": {
         "title": "Super Smash Bros. Melee",
@@ -4906,7 +4906,7 @@
         "homepage": null,
         "license": "MIT",
         "topics": [],
-        "stars": 606,
+        "stars": 607,
         "firstReleaseAt": "2026-09-06T04:00:03Z",
         "latestRelease": {
           "tag": "1.5.0",
@@ -4915,7 +4915,7 @@
           "htmlUrl": "https://github.com/himdo/Fable-2-Recomp/releases/tag/1.5.0"
         },
         "releaseCount": 9,
-        "totalDownloads": 27822
+        "totalDownloads": 27992
       },
       "game": {
         "title": "Fable II",
@@ -4990,7 +4990,7 @@
           "htmlUrl": "https://github.com/BodbDearg/PsyDoom/releases/tag/releases/1.1.1"
         },
         "releaseCount": 27,
-        "totalDownloads": 27634
+        "totalDownloads": 27666
       },
       "game": {
         "title": "Doom",
@@ -5063,16 +5063,16 @@
           "webgpu",
           "windows"
         ],
-        "stars": 635,
+        "stars": 640,
         "firstReleaseAt": "2026-09-27T14:23:41Z",
         "latestRelease": {
-          "tag": "v0.39.0",
-          "name": "v0.39.0",
-          "publishedAt": "2026-11-02T22:08:00Z",
-          "htmlUrl": "https://github.com/Odrannnn/MetroidPrimePort/releases/tag/v0.39.0"
+          "tag": "v0.40.0",
+          "name": "v0.40.0",
+          "publishedAt": "2026-11-03T20:45:04Z",
+          "htmlUrl": "https://github.com/Odrannnn/MetroidPrimePort/releases/tag/v0.40.0"
         },
-        "releaseCount": 47,
-        "totalDownloads": 65562
+        "releaseCount": 48,
+        "totalDownloads": 66949
       },
       "game": {
         "title": "Metroid Prime",
@@ -5149,7 +5149,7 @@
           "htmlUrl": "https://github.com/HarbourMasters/PaperBoat/releases/tag/1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 47347
+        "totalDownloads": 47534
       },
       "game": {
         "title": "Paper Mario",
@@ -5225,7 +5225,7 @@
           "htmlUrl": "https://github.com/JRickey/BattleShip/releases/tag/v1.6"
         },
         "releaseCount": 33,
-        "totalDownloads": 71201
+        "totalDownloads": 71392
       },
       "game": {
         "title": "Super Smash Bros.",
@@ -5292,7 +5292,7 @@
         "topics": [
           "padmint"
         ],
-        "stars": 553,
+        "stars": 554,
         "firstReleaseAt": "2026-09-29T13:53:58Z",
         "latestRelease": {
           "tag": "v0.10.0",
@@ -5301,7 +5301,7 @@
           "htmlUrl": "https://github.com/chrissotraidis/bluewake/releases/tag/v0.10.0"
         },
         "releaseCount": 8,
-        "totalDownloads": 30109
+        "totalDownloads": 30477
       },
       "game": {
         "title": "The Legend of Zelda: The Wind Waker",
@@ -5377,7 +5377,7 @@
           "vulkan",
           "windows"
         ],
-        "stars": 536,
+        "stars": 539,
         "firstReleaseAt": "2026-10-14T21:34:21Z",
         "latestRelease": {
           "tag": "v2026.10.27-4825a99",
@@ -5386,7 +5386,7 @@
           "htmlUrl": "https://github.com/HayatoG/tlg_pc/releases/tag/v2026.10.27-4825a99"
         },
         "releaseCount": 17,
-        "totalDownloads": 29125
+        "totalDownloads": 29456
       },
       "game": {
         "title": "The Last Guardian",
@@ -5465,16 +5465,16 @@
           "steam-deck",
           "windows"
         ],
-        "stars": 496,
+        "stars": 501,
         "firstReleaseAt": "2026-10-06T00:17:26Z",
         "latestRelease": {
-          "tag": "v0.9.7",
-          "name": "v0.9.7",
-          "publishedAt": "2026-11-01T06:12:01Z",
-          "htmlUrl": "https://github.com/nathanialf/ico-pc/releases/tag/v0.9.7"
+          "tag": "v0.10.0",
+          "name": "v0.10.0",
+          "publishedAt": "2026-11-03T15:32:35Z",
+          "htmlUrl": "https://github.com/nathanialf/ico-pc/releases/tag/v0.10.0"
         },
-        "releaseCount": 41,
-        "totalDownloads": 32136
+        "releaseCount": 42,
+        "totalDownloads": 32856
       },
       "game": {
         "title": "Ico",
@@ -5542,7 +5542,7 @@
         "homepage": null,
         "license": "BSD-3-Clause",
         "topics": [],
-        "stars": 481,
+        "stars": 482,
         "firstReleaseAt": "2026-10-04T20:43:09Z",
         "latestRelease": {
           "tag": "v1.1",
@@ -5551,7 +5551,7 @@
           "htmlUrl": "https://github.com/goliathret/EdgeOfTimeRecomp/releases/tag/v1.1"
         },
         "releaseCount": 2,
-        "totalDownloads": 16961
+        "totalDownloads": 17169
       },
       "game": {
         "title": "Spider-Man: Edge of Time",
@@ -5587,11 +5587,11 @@
       "originalPlatform": "SWITCH",
       "platforms": {
         "linux-x64": {
-          "assetPattern": "Sky.Recomp-*-linux-x86_64.AppImage",
+          "assetPattern": "Sky.Recomp-v*.*.*-linux-x86_64.AppImage",
           "executable": "*.AppImage"
         },
         "windows-x64": {
-          "assetPattern": "SkyRecomp-*-Windows.zip",
+          "assetPattern": "SkyRecomp-v*.*.*-Windows.zip",
           "executable": "skyrecomp.exe"
         }
       },
@@ -5617,7 +5617,7 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 534,
+        "stars": 538,
         "firstReleaseAt": "2026-10-17T19:18:06Z",
         "latestRelease": {
           "tag": "v2.1.0",
@@ -5626,7 +5626,7 @@
           "htmlUrl": "https://github.com/Apolinario-coder/SkyRecomp/releases/tag/v2.1.0"
         },
         "releaseCount": 10,
-        "totalDownloads": 13992
+        "totalDownloads": 14599
       },
       "game": {
         "title": "The Legend of Zelda: Skyward Sword HD",
@@ -5698,7 +5698,7 @@
           "htmlUrl": "https://github.com/UNDERdecoded/Gen2Recomped/releases/tag/v0.8.49"
         },
         "releaseCount": 142,
-        "totalDownloads": 171065
+        "totalDownloads": 171439
       },
       "game": {
         "title": "Pokémon Gold Version",
@@ -5761,16 +5761,16 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 455,
+        "stars": 456,
         "firstReleaseAt": "2026-10-11T20:44:19Z",
         "latestRelease": {
-          "tag": "v2.6.1",
-          "name": "Tekken 6 Native Online v2.6.1",
-          "publishedAt": "2026-11-01T09:02:35Z",
-          "htmlUrl": "https://github.com/Ekspym/Tekken6-native-online/releases/tag/v2.6.1"
+          "tag": "v2.7.1",
+          "name": "Tekken 6 Native Online v2.7.1",
+          "publishedAt": "2026-11-03T18:50:14Z",
+          "htmlUrl": "https://github.com/Ekspym/Tekken6-native-online/releases/tag/v2.7.1"
         },
-        "releaseCount": 41,
-        "totalDownloads": 179858
+        "releaseCount": 43,
+        "totalDownloads": 182098
       },
       "game": {
         "title": "Tekken 6",
@@ -5835,7 +5835,7 @@
         "homepage": "https://discord.gg/Heag4zPJbx",
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 412,
+        "stars": 413,
         "firstReleaseAt": "2026-07-08T05:20:16Z",
         "latestRelease": {
           "tag": "v0.0.6.5",
@@ -5844,7 +5844,7 @@
           "htmlUrl": "https://github.com/YesterMester/TheSimpsonsGameRecomp/releases/tag/v0.0.6.5"
         },
         "releaseCount": 21,
-        "totalDownloads": 31283
+        "totalDownloads": 31558
       },
       "game": {
         "title": "The Simpsons Game",
@@ -5909,7 +5909,7 @@
           "nintendo-gamecube",
           "super-mario-strikers"
         ],
-        "stars": 379,
+        "stars": 380,
         "firstReleaseAt": "2026-09-13T12:44:41Z",
         "latestRelease": {
           "tag": "v1.3.0",
@@ -5918,7 +5918,7 @@
           "htmlUrl": "https://github.com/new-coke/strikers/releases/tag/v1.3.0"
         },
         "releaseCount": 8,
-        "totalDownloads": 25612
+        "totalDownloads": 25846
       },
       "game": {
         "title": "Super Mario Strikers",
@@ -5987,7 +5987,7 @@
           "htmlUrl": "https://github.com/mateussmeneses/theorder1886-port/releases/tag/windows-v0.7.9"
         },
         "releaseCount": 27,
-        "totalDownloads": 31373
+        "totalDownloads": 31619
       },
       "game": {
         "title": "The Order: 1886",
@@ -6073,7 +6073,7 @@
           "htmlUrl": "https://github.com/LittleBitUA/DownpourRecomp/releases/tag/v1.1.8"
         },
         "releaseCount": 10,
-        "totalDownloads": 18591
+        "totalDownloads": 18780
       },
       "game": {
         "title": "Silent Hill: Downpour",
@@ -6135,16 +6135,16 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 311,
+        "stars": 313,
         "firstReleaseAt": "2026-08-08T19:38:40Z",
         "latestRelease": {
-          "tag": "v1.2.1",
-          "name": "G-Diffuser 1.2.1 - The Small Improvements and Fixes Update",
-          "publishedAt": "2026-11-03T06:26:37Z",
-          "htmlUrl": "https://github.com/Zorkats/G-Diffuser/releases/tag/v1.2.1"
+          "tag": "v1.2.2",
+          "name": "G-Diffuser 1.2.2 - Save and Import Hotfix",
+          "publishedAt": "2026-11-03T20:25:18Z",
+          "htmlUrl": "https://github.com/Zorkats/G-Diffuser/releases/tag/v1.2.2"
         },
-        "releaseCount": 8,
-        "totalDownloads": 16380
+        "releaseCount": 9,
+        "totalDownloads": 16801
       },
       "game": {
         "title": "F-Zero X",
@@ -6218,7 +6218,7 @@
           "htmlUrl": "https://github.com/Rainchus/Quest64-Recomp/releases/tag/v0.1"
         },
         "releaseCount": 1,
-        "totalDownloads": 8213
+        "totalDownloads": 8228
       },
       "game": {
         "title": "Quest 64",
@@ -6281,7 +6281,7 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 305,
+        "stars": 309,
         "firstReleaseAt": "2026-10-16T01:39:30Z",
         "latestRelease": {
           "tag": "v1.1.6",
@@ -6290,7 +6290,7 @@
           "htmlUrl": "https://github.com/rob646464/luigis-mansion-recompiled/releases/tag/v1.1.6"
         },
         "releaseCount": 9,
-        "totalDownloads": 15936
+        "totalDownloads": 16673
       },
       "game": {
         "title": "Luigi's Mansion",
@@ -6361,7 +6361,7 @@
           "htmlUrl": "https://github.com/elliotttate/DKC1Recomp/releases/tag/v0.0.17"
         },
         "releaseCount": 16,
-        "totalDownloads": 17180
+        "totalDownloads": 17281
       },
       "game": {
         "title": "Donkey Kong Country",
@@ -6433,7 +6433,7 @@
           "windows",
           "xbox360"
         ],
-        "stars": 290,
+        "stars": 291,
         "firstReleaseAt": "2026-08-05T02:16:24Z",
         "latestRelease": {
           "tag": "0.6.0",
@@ -6442,7 +6442,7 @@
           "htmlUrl": "https://github.com/psxrestore/Condemned2Recomp/releases/tag/0.6.0"
         },
         "releaseCount": 13,
-        "totalDownloads": 9383
+        "totalDownloads": 9586
       },
       "game": {
         "title": "Condemned 2: Bloodshot",
@@ -6468,89 +6468,6 @@
           "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sccow0.jpg"
         ]
       }
-    },
-    {
-      "id": "super-mario-sunshine",
-      "name": "SMS PC Port",
-      "repo": "TekRantGaming/sms-pc-port",
-      "originalTitle": "Super Mario Sunshine",
-      "originalPlatform": "GC",
-      "platforms": {
-        "linux-x64": {
-          "assetPattern": "SMS-PC-Port-*-linux-x86_64.AppImage",
-          "executable": "*.AppImage"
-        },
-        "windows-x64": {
-          "assetPattern": "SMS-PC-Port-*-windows-x64.zip",
-          "executable": "sms.exe"
-        }
-      },
-      "requiredRom": {
-        "description": "Sua cópia do jogo original (GameCube). Veja na página do projeto qual versão e formato ele aceita.",
-        "descriptionEn": "Your own copy of the original game (GameCube). Check the project page for the version and format it accepts.",
-        "sha1": []
-      },
-      "achievements": {
-        "enabled": false,
-        "supportedVersions": []
-      },
-      "sgdbId": 34899,
-      "igdbId": 1075,
-      "images": {
-        "grid": "https://cdn2.steamgriddb.com/grid/f5e97c0193978d636807084bf658fc1c.png",
-        "hero": "https://cdn2.steamgriddb.com/hero/3e04f019562baeb10f41e7b9fb14c6be.png",
-        "logo": "https://cdn2.steamgriddb.com/logo/b33128cb0089003ddfb5199e1b679652.png",
-        "icon": "https://cdn2.steamgriddb.com/icon/460b491b917d4185ed1f5be97229721a.png"
-      },
-      "recomp": {
-        "description": "Native PC port of Super Mario Sunshine with a launcher: up to 8x resolution, MSAA, fullscreen, HD texture installer, free camera and mouse look. Windows and Linux. Bring your own disc.",
-        "homepage": "https://github.com/TekRantGaming/sms-pc-port/releases/latest",
-        "license": null,
-        "topics": [
-          "decompilation",
-          "gamecube",
-          "launcher",
-          "pc-port",
-          "super-mario-sunshine"
-        ],
-        "stars": 268,
-        "firstReleaseAt": "2026-10-01T22:11:26Z",
-        "latestRelease": {
-          "tag": "v2.1.0",
-          "name": "Super Mario Sunshine PC Port v2.1.0",
-          "publishedAt": "2026-10-06T22:32:23Z",
-          "htmlUrl": "https://github.com/TekRantGaming/sms-pc-port/releases/tag/v2.1.0"
-        },
-        "releaseCount": 7,
-        "totalDownloads": 9262
-      },
-      "game": {
-        "title": "Super Mario Sunshine",
-        "releaseDate": "2002-07-19",
-        "developers": [
-          "Nintendo Entertainment Analysis & Development"
-        ],
-        "publishers": [
-          "Nintendo",
-          "Gradiente"
-        ],
-        "genres": [
-          "Platform",
-          "Adventure"
-        ],
-        "summary": "Super Mario Sunshine is a Mario action-adventure 3D platformer. It follows Super Mario 64, and is the second 3D Mario platformer. Gameplay features a combination of action and puzzle solving, with numerous stages and multiple episodes to each stage, and plenty of hidden secrets and surprises. This game introduced many recurring characters and bosses in the Mario series, including Toadsworth, Bowser Jr., Petey Piranha, Gooper Blooper, Piantas, Nokis, Shadow Mario, and F.L.U.D.D. Super Mario Sunshine pays homage to Mario's Italian heritage and upbringing, with many of the locations in the game having Italian names and sometimes referencing Italian culture.",
-        "rating": 85.8,
-        "url": "https://www.igdb.com/games/super-mario-sunshine",
-        "screenshots": [
-          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc882o.jpg",
-          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc882m.jpg",
-          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc882n.jpg",
-          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc882r.jpg",
-          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sczbx1.jpg",
-          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sczbwy.jpg"
-        ]
-      },
-      "aiAssisted": true
     },
     {
       "id": "yugioh-forbidden-memories",
@@ -6586,7 +6503,7 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 281,
+        "stars": 282,
         "firstReleaseAt": "2026-09-26T17:29:57Z",
         "latestRelease": {
           "tag": "v0.3.0",
@@ -6595,7 +6512,7 @@
           "htmlUrl": "https://github.com/Unchiga/Yu-Gi-Oh-Forbidden-Memories-Recompiled/releases/tag/v0.3.0"
         },
         "releaseCount": 12,
-        "totalDownloads": 47453
+        "totalDownloads": 47934
       },
       "game": {
         "title": "Yu-Gi-Oh! Forbidden Memories",
@@ -6670,7 +6587,7 @@
           "htmlUrl": "https://github.com/ThatGuyMcd/DKR-R/releases/tag/Version1.0.12"
         },
         "releaseCount": 16,
-        "totalDownloads": 35210
+        "totalDownloads": 35407
       },
       "game": {
         "title": "Diddy Kong Racing",
@@ -6733,7 +6650,7 @@
         "homepage": null,
         "license": "AGPL-3.0",
         "topics": [],
-        "stars": 683,
+        "stars": 691,
         "firstReleaseAt": "2026-10-06T08:28:15Z",
         "latestRelease": {
           "tag": "v0.1.39.6",
@@ -6742,7 +6659,7 @@
           "htmlUrl": "https://github.com/z3xox/Tenkaichi3Decomp/releases/tag/v0.1.39.6"
         },
         "releaseCount": 60,
-        "totalDownloads": 200079
+        "totalDownloads": 204189
       },
       "game": {
         "title": "Dragon Ball Z: Budokai Tenkaichi 3",
@@ -6770,6 +6687,1982 @@
         ]
       },
       "aiAssisted": true
+    },
+    {
+      "id": "god-of-war-pcport",
+      "name": "God of War PC Port",
+      "repo": "danielalves96/gow-pc-port",
+      "originalTitle": "God of War",
+      "originalPlatform": "PS2",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "God.Of.War.-.PC.Launcher_*_amd64.AppImage",
+          "executable": "*.AppImage"
+        },
+        "windows-x64": {
+          "assetPattern": "God-Of-War-PC-Launcher_*_x64-portable.zip",
+          "executable": "God Of War - PC Launcher.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Imagem do seu disco de PS2: God of War (EUA, SCUS-97399). O launcher do projeto lê o disco e monta o jogo no seu PC.",
+        "descriptionEn": "Your PS2 disc image: God of War (USA, SCUS-97399). The project launcher reads the disc and builds the game on your PC.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 36454,
+      "igdbId": 549,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/72d0eaa80cc3412fda4a133ca1f884e8.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/261474eb96c1fdc6456d2abef7019e45.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/cd17d3ce3b64f227987cd92cd701cc58.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/5cc33dfe7e069a757ca0fcbe6b95c89e.ico"
+      },
+      "recomp": {
+        "description": "Unofficial native PC port of God of War (2005, PS2) for Windows, with experimental Linux support. Statically recompiled to C++, not an emulator. OpenGL renderer, launcher, cheat menu, widescreen, 60 FPS. Bring your own game dump: no game files included.",
+        "homepage": null,
+        "license": "GPL-3.0",
+        "topics": [],
+        "stars": 122,
+        "firstReleaseAt": "2026-10-31T01:47:36Z",
+        "latestRelease": {
+          "tag": "launcher-v0.2.9",
+          "name": "v0.2.9",
+          "publishedAt": "2026-11-03T14:20:58Z",
+          "htmlUrl": "https://github.com/danielalves96/gow-pc-port/releases/tag/launcher-v0.2.9"
+        },
+        "releaseCount": 11,
+        "totalDownloads": 9408
+      },
+      "game": {
+        "title": "God of War",
+        "releaseDate": "2005-03-22",
+        "developers": [
+          "SCE Santa Monica Studio"
+        ],
+        "publishers": [
+          "Capcom",
+          "Sony Computer Entertainment"
+        ],
+        "genres": [
+          "Puzzle",
+          "Hack and slash/Beat 'em up",
+          "Adventure"
+        ],
+        "summary": "God of War is an action-adventure hack-and-slash video game developed by Santa Monica Studio and published by Sony Computer Entertainment (SCE). Initially launched for the PlayStation 2, the game stands as the first instalment in the God of War series and the third in chronological order. Loosely inspired by Greek mythology, it unfolds in ancient Greece with vengeance as its central theme. The player takes on the role of Kratos, the protagonist, a Spartan warrior devoted to the Olympian gods. Tasked by the goddess Athena, Kratos is assigned to eliminate Ares, the God of War and Kratos' former mentor. Ares had deceitfully manipulated Kratos into killing his wife and daughter. As Ares attacks Athens fueled by hatred for Athena, Kratos embarks on a quest to locate Pandora's Box, the sole object capable of permanently stopping the vengeful god.",
+        "rating": 88.4,
+        "url": "https://www.igdb.com/games/god-of-war",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/j11tguq3dy5fqmpsipsp.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scz9kj.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scz9ki.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scz9kg.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scz9kh.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/rewytwkukyvkcs6mlzsq.jpg"
+        ]
+      },
+      "aiAssisted": true
+    },
+    {
+      "id": "god-of-war-native",
+      "name": "GOW Native PC",
+      "repo": "Vnnc1/gow-native-pc",
+      "originalTitle": "God of War",
+      "originalPlatform": "PS2",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "gow-native-pc-windows.zip",
+          "executable": "gow-launcher.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Imagem do seu disco de PS2: God of War (EUA, SCUS-97399). O launcher do projeto lê o disco e monta o jogo no seu PC.",
+        "descriptionEn": "Your PS2 disc image: God of War (USA, SCUS-97399). The project launcher reads the disc and builds the game on your PC.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 36454,
+      "igdbId": 549,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/72d0eaa80cc3412fda4a133ca1f884e8.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/261474eb96c1fdc6456d2abef7019e45.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/cd17d3ce3b64f227987cd92cd701cc58.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/5cc33dfe7e069a757ca0fcbe6b95c89e.ico"
+      },
+      "recomp": {
+        "description": "Native Windows PC port of God of War (PS2), built by statically recompiling MIPS R5900 code to C++ with PS2Recomp. Includes an installer launcher, one-click build, fan-translation support and a 60 fps target. No game files included: you need your own copy.",
+        "homepage": null,
+        "license": "GPL-3.0",
+        "topics": [
+          "cpp",
+          "emulation",
+          "game-port",
+          "god-of-war",
+          "launcher",
+          "mips",
+          "native-port",
+          "pc-port",
+          "playstation-2",
+          "ps2",
+          "recompilation",
+          "static-recompilation",
+          "windows"
+        ],
+        "stars": 190,
+        "firstReleaseAt": "2026-10-25T07:36:56Z",
+        "latestRelease": {
+          "tag": "v0.5.0",
+          "name": "v0.5.0 — Experimental Linux, CHD import, regional editions and accessibility improvements",
+          "publishedAt": "2026-11-03T00:10:26Z",
+          "htmlUrl": "https://github.com/Vnnc1/gow-native-pc/releases/tag/v0.5.0"
+        },
+        "releaseCount": 6,
+        "totalDownloads": 7243
+      },
+      "game": {
+        "title": "God of War",
+        "releaseDate": "2005-03-22",
+        "developers": [
+          "SCE Santa Monica Studio"
+        ],
+        "publishers": [
+          "Capcom",
+          "Sony Computer Entertainment"
+        ],
+        "genres": [
+          "Puzzle",
+          "Hack and slash/Beat 'em up",
+          "Adventure"
+        ],
+        "summary": "God of War is an action-adventure hack-and-slash video game developed by Santa Monica Studio and published by Sony Computer Entertainment (SCE). Initially launched for the PlayStation 2, the game stands as the first instalment in the God of War series and the third in chronological order. Loosely inspired by Greek mythology, it unfolds in ancient Greece with vengeance as its central theme. The player takes on the role of Kratos, the protagonist, a Spartan warrior devoted to the Olympian gods. Tasked by the goddess Athena, Kratos is assigned to eliminate Ares, the God of War and Kratos' former mentor. Ares had deceitfully manipulated Kratos into killing his wife and daughter. As Ares attacks Athens fueled by hatred for Athena, Kratos embarks on a quest to locate Pandora's Box, the sole object capable of permanently stopping the vengeful god.",
+        "rating": 88.4,
+        "url": "https://www.igdb.com/games/god-of-war",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/j11tguq3dy5fqmpsipsp.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scz9kj.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scz9ki.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scz9kg.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scz9kh.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/rewytwkukyvkcs6mlzsq.jpg"
+        ]
+      },
+      "aiAssisted": true
+    },
+    {
+      "id": "god-of-war-psp",
+      "name": "GoW PSP Recomp",
+      "repo": "DrummingBird1/gow-psp-recomp",
+      "originalTitle": "God of War: Chains of Olympus",
+      "originalPlatform": "PSP",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "GoW_PSP_Launcher-*.zip",
+          "executable": "GoWLauncher.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Suas ISOs de PSP: God of War: Chains of Olympus e/ou Ghost of Sparta. O launcher do projeto pede os arquivos.",
+        "descriptionEn": "Your PSP ISOs: God of War: Chains of Olympus and/or Ghost of Sparta. The project launcher asks for them.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 36385,
+      "igdbId": 552,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/63719b0a1928ddc9f968cb69bffe2f81.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/955cb567b6e38f4c6b3f28cc857fc38c.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/863ae4a798069192865306197bff9428.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/5c34112c98cb69d21f716eccde7ea8cc.ico"
+      },
+      "recomp": {
+        "description": "Unofficial native PC ports of God of War: Chains of Olympus and Ghost of Sparta (PSP) by static recompilation. Bring your own disc.",
+        "homepage": "https://github.com/DrummingBird1/gow-psp-recomp/releases/latest",
+        "license": "GPL-3.0",
+        "topics": [
+          "chains-of-olympus",
+          "game-port",
+          "ghost-of-sparta",
+          "god-of-war",
+          "pc-port",
+          "psp",
+          "recompiler",
+          "reverse-engineering",
+          "sdl3",
+          "static-recompilation",
+          "windows"
+        ],
+        "stars": 173,
+        "firstReleaseAt": "2026-10-17T14:27:25Z",
+        "latestRelease": {
+          "tag": "v1.4.0",
+          "name": "v1.4.0",
+          "publishedAt": "2026-10-30T12:03:15Z",
+          "htmlUrl": "https://github.com/DrummingBird1/gow-psp-recomp/releases/tag/v1.4.0"
+        },
+        "releaseCount": 8,
+        "totalDownloads": 10403
+      },
+      "game": {
+        "title": "God of War: Chains of Olympus",
+        "releaseDate": "2008-03-04",
+        "developers": [
+          "Ready At Dawn",
+          "SCE Santa Monica Studio"
+        ],
+        "publishers": [
+          "Sony Computer Entertainment",
+          "Capcom"
+        ],
+        "genres": [
+          "Hack and slash/Beat 'em up",
+          "Adventure"
+        ],
+        "summary": "Kratos makes his inaugural appearance on a portable gaming platform in the third instalment of the God of War series. Chains of Olympus serves as a prequel, unfolding its narrative a decade before the events in the original God of War. While retaining the familiar gameplay dynamics of its predecessors, subtle modifications enhance the overall experience. Kratos embarks on a journey through various levels, engaging in relentless combat against foes and formidable bosses, deciphering puzzles based on manipulating boxes, and participating in quick-time events. Throughout his odyssey, he amasses red orbs to fortify his weapons and abilities, secures Gorgon eyeballs to augment his health, and acquires Phoenix feathers to amplify his magical prowess.\n\nThe game's controls underwent refinement to harmonize with the reduced button configuration of the PSP. Dodging, for instance, now necessitates the utilization of both shoulder buttons and the analogue stick. The iconic Blades of Chaos, synonymous with the God of War series, make a return, accompanied by an array of new weapons and magical spells such as the Sun Shield, Efreet spell, and Light of Dawn.\n\nThe narrative unfolds as the Gods dispatch Kratos to the city of Attica, charging him with the defence against an encroaching Persian army. However, as Morpheus unleashes chaos, Kratos finds himself compelled to harness his formidable powers to once again rescue the world from impending doom.",
+        "rating": 82.4,
+        "url": "https://www.igdb.com/games/god-of-war-chains-of-olympus",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/bp60neg9fkomybevg2gj.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/jiu9jyrdhjjtdyneaeyt.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/weetjsuipylyhf0syhyj.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/r08ba57pljeqc7vrouxw.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/znjxuhzoct9dyoulog0j.jpg"
+        ]
+      }
+    },
+    {
+      "id": "halo-ce",
+      "name": "OpenCE",
+      "repo": "OpenCommunityEdition/OpenCE",
+      "originalTitle": "Halo: Combat Evolved",
+      "originalPlatform": "XBOX",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "halo-windows-release.zip",
+          "executable": "halo.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (Xbox). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (Xbox). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 38383,
+      "igdbId": 740,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/09a146c8d1cfdbdb54ceb60ede93cdab.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/1a6d2e708873df49ad05540c37e8d36a.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/d56b9fc4b0f1be8871f5e1c40c0067e7.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/045cf83ab0722e782cf72d14e44adf98.png"
+      },
+      "recomp": {
+        "description": "Halo: Combat Evolved (for original Xbox) ported to Windows, Linux and Android",
+        "homepage": "https://halocombatevolved.com/",
+        "license": "AGPL-3.0",
+        "topics": [],
+        "stars": 1924,
+        "firstReleaseAt": "2026-10-29T12:38:59Z",
+        "latestRelease": {
+          "tag": "build-337",
+          "name": "Build 337 (899219c)",
+          "publishedAt": "2026-11-01T02:34:12Z",
+          "htmlUrl": "https://github.com/OpenCommunityEdition/OpenCE/releases/tag/build-337"
+        },
+        "releaseCount": 5,
+        "totalDownloads": 24865
+      },
+      "game": {
+        "title": "Halo: Combat Evolved",
+        "releaseDate": "2001-11-15",
+        "developers": [
+          "Bungie"
+        ],
+        "publishers": [
+          "Microsoft Game Studios",
+          "MacSoft Games"
+        ],
+        "genres": [
+          "Shooter"
+        ],
+        "summary": "Bent on Humankind's extermination, a powerful fellowship of alien races known as the Covenant is wiping out Earth's fledgling interstellar empire. Climb into the boots of Master Chief, a biologically altered super-soldier, as you and the other surviving defenders of a devastated colony-world make a desperate attempt to lure the alien fleet away from earth. Shot down and marooned on the ancient ring-world Halo, you begin a guerilla-war against the Covenant. Fight for humanity against an alien onslaught as you race to uncover the mysteries of Halo.",
+        "rating": 84.9,
+        "url": "https://www.igdb.com/games/halo-combat-evolved",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/exkvyg7tunws33xpqv9i.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ypa0eo6w0nouqaibnwdl.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/azc4afiufxszg4dcgdo6.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/eijng8zvsqwpsggrbz5j.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/rimcyjzsezjx0f6swttl.jpg"
+        ]
+      },
+      "aiAssisted": true
+    },
+    {
+      "id": "animal-crossing",
+      "name": "Nookery",
+      "repo": "flyngmt/Nookery",
+      "originalTitle": "Animal Crossing",
+      "originalPlatform": "GC",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "Nookery-*-linux-x86_64.AppImage",
+          "executable": "*.AppImage"
+        },
+        "windows-x64": {
+          "assetPattern": "Nookery-*-windows-x86_64.zip",
+          "executable": "Nookery.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (GameCube). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (GameCube). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 34931,
+      "igdbId": 2655,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/d9e16849e6c8440f27574666b9e9735a.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/8a061f5bc5b5bf7596bfc81024ddf032.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/968b15768f3d19770471e9436d97913c.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/162c8a1cc0a8f18f8120a829f749e37f.png"
+      },
+      "recomp": {
+        "description": "Unofficial Windows/Linux/macOS/Android/iOS Port of Animal Crossing Gamecube",
+        "homepage": null,
+        "license": null,
+        "topics": [],
+        "stars": 1542,
+        "firstReleaseAt": "2026-03-13T23:42:48Z",
+        "latestRelease": {
+          "tag": "v1.0.0",
+          "name": "v1.0.0",
+          "publishedAt": "2026-11-02T19:31:17Z",
+          "htmlUrl": "https://github.com/flyngmt/Nookery/releases/tag/v1.0.0"
+        },
+        "releaseCount": 10,
+        "totalDownloads": 35857
+      },
+      "game": {
+        "title": "Animal Crossing",
+        "releaseDate": "2002-09-16",
+        "developers": [
+          "Nintendo Entertainment Analysis & Development"
+        ],
+        "publishers": [
+          "Nintendo"
+        ],
+        "genres": [
+          "Simulator"
+        ],
+        "summary": "Occasionally strange but completely addictive, Nintendo's Animal Crossing for the GameCube is not so much a game as a simulation of life on a small town. Players begin the game by setting out to live life on their own in a colorful town, where they are greeted by a seemingly endless supply of things to do and characters to meet.\n\nTime passes in Animal Crossing in real-time, as the month, day, season, and time of day matches that of the player's. Holiday seasons come and go in Animal Crossing, just as they would in the real world. Experience the freedom to fish, decorate your house, go bug catching, garden, write letters, and even play original Nintendo NES games in this imaginative, and addictive game.",
+        "rating": 79.1,
+        "url": "https://www.igdb.com/games/animal-crossing",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/kh1d0asirrpszulxodag.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/bwhzcusldk2z5mbmn5kh.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/d63d56jchpcrcqaf60pn.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/oxubrjpt5bzzm44ratlp.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/r1zsdyp097c8wjakvhhq.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/smcboybvcjijlenojl79.jpg"
+        ]
+      }
+    },
+    {
+      "id": "mhgu",
+      "name": "MHGU Recomp",
+      "repo": "morerokk/MHGURecomp",
+      "originalTitle": "Monster Hunter Generations Ultimate",
+      "originalPlatform": "SWITCH",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "Windows-MHGURecomp.*.zip",
+          "executable": "mhgurecomp.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (Switch). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (Switch). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 5264579,
+      "igdbId": 25623,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/7bf071f0838651b1a74f71df5003b3ca.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/2cfc7c2a1eabaff9fdcc09b009e8edad.jpg",
+        "logo": "https://cdn2.steamgriddb.com/logo/8cb958257e5a77381e730fc3ce4b8b32.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/07cdfd23373b17c6b337251c22b7ea57.png"
+      },
+      "recomp": {
+        "description": "A native PC port of Monster Hunter Generations Ultimate. Requires the game's files to play or build.",
+        "homepage": null,
+        "license": "MIT",
+        "topics": [],
+        "stars": 407,
+        "firstReleaseAt": "2026-10-22T14:46:06Z",
+        "latestRelease": {
+          "tag": "0.14.0",
+          "name": "0.14.0 - Bugfixes, Android fixes",
+          "publishedAt": "2026-11-03T22:13:34Z",
+          "htmlUrl": "https://github.com/morerokk/MHGURecomp/releases/tag/0.14.0"
+        },
+        "releaseCount": 39,
+        "totalDownloads": 23336
+      },
+      "game": {
+        "title": "Monster Hunter Generations Ultimate",
+        "releaseDate": "2017-03-18",
+        "developers": [
+          "Capcom"
+        ],
+        "publishers": [
+          "Capcom"
+        ],
+        "genres": [
+          "Role-playing (RPG)",
+          "Hack and slash/Beat 'em up"
+        ],
+        "summary": "An enhanced version of Monster Hunter Generations. It features new monsters, hunting styles, and the more challenging G-Rank quests.\n\nGame data from Monster Hunter Generations can be carried over, with a one way transfer, to Monster Hunter Generations Ultimate. Game data can also be moved between the 3DS and the Switch version of the game.",
+        "rating": 81.0,
+        "url": "https://www.igdb.com/games/monster-hunter-generations-ultimate",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ly4vwylafc8px6tit1qc.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/hpqfcwff4hkokqftewos.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/amgmfldyn0cwtebjtenj.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/grsc1ibqorw2u6gezem2.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/gzwj7vjsf6nm3wwguwni.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/heaq0emejcfii281djmw.jpg"
+        ]
+      },
+      "aiAssisted": true
+    },
+    {
+      "id": "metroid-dread",
+      "name": "Metroid Dread Recomp",
+      "repo": "yozander2009-stack/Metroid-Dread-Recomp",
+      "originalTitle": "Metroid Dread",
+      "originalPlatform": "SWITCH",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "Metroid_Dread-x86_64.AppImage",
+          "executable": "*.AppImage"
+        },
+        "windows-x64": {
+          "assetPattern": "MetroidDread-PC-*.zip",
+          "executable": "Metroid Dread.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (Switch). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (Switch). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 5257930,
+      "igdbId": 15698,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/63c07e376dcf5799fc02381033f7c121.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/aa5d5b1b36318c95dffe1d6c4e153f2d.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/feb78ee29377237a3bfa93e3b61c1655.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/ff5a32529137a0ce614e6a37307423c5.ico"
+      },
+      "recomp": {
+        "description": "Metroid Dread recomp ",
+        "homepage": null,
+        "license": "Apache-2.0",
+        "topics": [],
+        "stars": 338,
+        "firstReleaseAt": "2026-10-22T23:46:03Z",
+        "latestRelease": {
+          "tag": "v0.5.0",
+          "name": "v0.5.0",
+          "publishedAt": "2026-10-30T19:06:22Z",
+          "htmlUrl": "https://github.com/yozander2009-stack/Metroid-Dread-Recomp/releases/tag/v0.5.0"
+        },
+        "releaseCount": 6,
+        "totalDownloads": 44282
+      },
+      "game": {
+        "title": "Metroid Dread",
+        "releaseDate": "2021-10-07",
+        "developers": [
+          "Nintendo Entertainment Planning & Development",
+          "MercurySteam",
+          "Nintendo EPD Production Group No. 7"
+        ],
+        "publishers": [
+          "Nintendo"
+        ],
+        "genres": [
+          "Shooter",
+          "Platform",
+          "Adventure"
+        ],
+        "summary": "Join intergalactic bounty hunter Samus Aran in her first new 2D Metroid story in 19 years. Samus’ story continues after the events of the Metroid Fusion game when she descends upon planet ZDR to investigate a mysterious transmission sent to the Galactic Federation. The remote planet has become overrun by vicious alien lifeforms and chilling mechanical menaces. Samus is more agile and capable than ever, but can she overcome the inhuman threat stalking the depths of ZDR?",
+        "rating": 84.1,
+        "url": "https://www.igdb.com/games/metroid-dread",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scaif6.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scahuj.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scaif7.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scaif8.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scaif9.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scahug.jpg"
+        ]
+      },
+      "aiAssisted": true
+    },
+    {
+      "id": "killzone-shadow-fall",
+      "name": "killzone-shadowfall-pc",
+      "repo": "lesca-191204/killzone-shadowfall-pc",
+      "originalTitle": "Killzone Shadow Fall",
+      "originalPlatform": "PS4",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "KillzoneShadowFall-*-windows.zip",
+          "executable": "Killzone Shadow Fall.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (PS4). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (PS4). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 5246679,
+      "igdbId": 1937,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/001c051f536279e94d0902528a70187d.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/5cfcc1972d5e8972ace3c90e609f0f58.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/44e97bac42b33fc4d3873d6c3f8cb118.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/868b7df964b1af24c8c0a9e43a330c6a.ico"
+      },
+      "recomp": {
+        "description": null,
+        "homepage": null,
+        "license": "GPL-2.0",
+        "topics": [],
+        "stars": 340,
+        "firstReleaseAt": "2026-10-16T16:04:46Z",
+        "latestRelease": {
+          "tag": "v0.8.1",
+          "name": "v0.8.1 — Smooth frame generation & fixes",
+          "publishedAt": "2026-10-31T21:21:52Z",
+          "htmlUrl": "https://github.com/lesca-191204/killzone-shadowfall-pc/releases/tag/v0.8.1"
+        },
+        "releaseCount": 14,
+        "totalDownloads": 25336
+      },
+      "game": {
+        "title": "Killzone: Shadow Fall",
+        "releaseDate": "2013-11-15",
+        "developers": [
+          "Guerrilla Games"
+        ],
+        "publishers": [
+          "Sony Computer Entertainment"
+        ],
+        "genres": [
+          "Shooter"
+        ],
+        "summary": "Killzone Shadow Fall is the sixth game of the Killzone series. Gameplay in Shadow Fall is fairly similar to previous installments, though now with more improvements. The game is much more open-ended allowing for multiple ways to reach your target and complete objectives. The player is accompanied by a companion drone called the OWL which can help you in many different ways including deploying a zip-line or stunning the enemy. Using futuristic weapons and gear allows for new stealth gameplay. The online multiplayer mode allows for up to 24-players to battle at once on any of the games default 10 maps. The level system is now challenge-based where completing any of the games many challenges will upgrade your rank. Warzone returns as an online game mode along with Team Deathmatch and Beacon Retrieval (Capture the Flag). A new feature allows for the user to create Warzones with their own specific rules and share them with the community to download and play.",
+        "rating": 67.4,
+        "url": "https://www.igdb.com/games/killzone-shadow-fall",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sch22p.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sch22q.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sch22m.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sch22n.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sch22o.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sch22r.jpg"
+        ]
+      },
+      "aiAssisted": true
+    },
+    {
+      "id": "gravity-rush",
+      "name": "Gravity Rush PC",
+      "repo": "LucaPazienza/gravityrush_pc",
+      "originalTitle": "Gravity Rush Remastered",
+      "originalPlatform": "PS4",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "GravityRush-PC-*-Windows.zip",
+          "executable": "Gravity Rush Launcher.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (PS4). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (PS4). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 5270660,
+      "igdbId": 12529,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/a5681ddbdf84643ab575935222d497f4.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/678e94cac0c753109537c922cab1baf4.jpg",
+        "logo": "https://cdn2.steamgriddb.com/logo/03731c9f1594352ccea95aae83fb690f.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/5d234349ef54d486d92682ae848d9ca4.ico"
+      },
+      "recomp": {
+        "description": "Gravity Rush PC Native Port A community-driven project aiming to bring Gravity Rush to PC as a native port, building upon the technical foundation and approach of the God of War PC port. The goal is to make the game run natively on PC while preserving its original gameplay, unique gravity mechanics, and artistic vision.",
+        "homepage": null,
+        "license": "GPL-2.0",
+        "topics": [],
+        "stars": 319,
+        "firstReleaseAt": "2026-10-17T23:28:51Z",
+        "latestRelease": {
+          "tag": "v0.1.11",
+          "name": "Gravity Rush Remastered PC 0.1.11",
+          "publishedAt": "2026-11-03T22:04:58Z",
+          "htmlUrl": "https://github.com/LucaPazienza/gravityrush_pc/releases/tag/v0.1.11"
+        },
+        "releaseCount": 12,
+        "totalDownloads": 14187
+      },
+      "game": {
+        "title": "Gravity Rush Remastered",
+        "releaseDate": "2015-12-10",
+        "developers": [
+          "SCE Japan Studio",
+          "Project Siren"
+        ],
+        "publishers": [
+          "Sony Computer Entertainment"
+        ],
+        "genres": [
+          "Platform",
+          "Role-playing (RPG)",
+          "Hack and slash/Beat 'em up",
+          "Adventure"
+        ],
+        "summary": "Gravity Rush is an action-adventure video game developed by SIE Japan Studio and Project Siren, and published by Sony Computer Entertainment. Gravity Rush Remastered is the PS4 remaster of the original Gravity Rush game which is bundled with all the previously released downloadable content.",
+        "rating": 76.5,
+        "url": "https://www.igdb.com/games/gravity-rush-remastered",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/r2kqs3hquvew43o1undq.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/anhshaxfszeorro7zgzh.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/dnuhgtqugbofn0h6qfpu.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/svgu5ovvjjgwngelbflz.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/nsc41fseun22atzfdogy.jpg"
+        ]
+      },
+      "aiAssisted": true
+    },
+    {
+      "id": "gta-vcs",
+      "name": "VCS Recomp",
+      "repo": "gothamor/gta-vcs-recomp",
+      "originalTitle": "Grand Theft Auto: Vice City Stories",
+      "originalPlatform": "PS2",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "VCS-Recomp-*-x86_64.AppImage",
+          "executable": "*.AppImage"
+        },
+        "windows-x64": {
+          "assetPattern": "VCS-Recomp-*-windows.zip",
+          "executable": "VCSLauncher.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (PS2). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (PS2). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 34363,
+      "igdbId": 3262,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/c8aa48a3667e7a29486f3f978b0e0279.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/ab88830c7df1320ff8e0fc8203fbc80c.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/e17a5a399de92e1d01a56c50afb2a68e.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/95192c98732387165bf8e396c0f2dad2.ico"
+      },
+      "recomp": {
+        "description": "A native Windows and Linux port of Grand Theft Auto: Vice City Stories (PS2, USA, SLUS-21590), made by recompiling the game's PS2 executable into C++",
+        "homepage": null,
+        "license": "GPL-3.0",
+        "topics": [],
+        "stars": 464,
+        "firstReleaseAt": "2026-10-30T13:25:53Z",
+        "latestRelease": {
+          "tag": "v0.2.0",
+          "name": "GTA Vice City Stories Launcher v0.2.0",
+          "publishedAt": "2026-11-02T22:55:07Z",
+          "htmlUrl": "https://github.com/gothamor/gta-vcs-recomp/releases/tag/v0.2.0"
+        },
+        "releaseCount": 7,
+        "totalDownloads": 13510
+      },
+      "game": {
+        "title": "Grand Theft Auto: Vice City Stories",
+        "releaseDate": "2006-10-31",
+        "developers": [
+          "Rockstar Leeds",
+          "Rockstar North"
+        ],
+        "publishers": [
+          "Take-Two Interactive",
+          "Rockstar Games"
+        ],
+        "genres": [
+          "Racing",
+          "Adventure"
+        ],
+        "summary": "The PlayStation Portable follow-up to Rockstar's monumental handheld entry in the series, Grand Theft Auto: Liberty City Stories. As in Liberty City Stories, this game ventures back to the location of the second PS2 game.",
+        "rating": 75.1,
+        "url": "https://www.igdb.com/games/grand-theft-auto-vice-city-stories",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ig6unih5hvea9aurbd1c.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/u8admqzvqtrehyy9n9du.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sckh44.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sckh45.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/cdem3oyqr712ngtie8tn.jpg"
+        ]
+      },
+      "aiAssisted": true
+    },
+    {
+      "id": "gears-of-war",
+      "name": "COGBox",
+      "repo": "Shagg88/COGBox",
+      "originalTitle": "Gears of War 2",
+      "originalPlatform": "X360",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "COGBox-*.zip",
+          "executable": "CogBox.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (Xbox 360). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (Xbox 360). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 37163,
+      "igdbId": 548,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/537be42935b21c04fac5d9913777f7ee.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/599aa45a1ee37feb6f32e6aee8189c57.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/2f9a86313dbaaaa5e9c04d480df2ac41.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/39af1f025c7f7363e643a6d7868934a0.ico"
+      },
+      "recomp": {
+        "description": "This is an open source, all-in-one, static recompilation project that I built from the ground up for the Xbox 360 Gears of War series. All 4 games have been personally recompiled for use with a fully native renderer by me.",
+        "homepage": null,
+        "license": "MIT",
+        "topics": [
+          "decomp",
+          "decompilation",
+          "pc",
+          "port",
+          "recomp",
+          "recompilation",
+          "xbox",
+          "xbox-360"
+        ],
+        "stars": 368,
+        "firstReleaseAt": "2026-10-27T04:45:04Z",
+        "latestRelease": {
+          "tag": "0.4.4",
+          "name": "COGBox 0.4.4",
+          "publishedAt": "2026-11-03T17:59:18Z",
+          "htmlUrl": "https://github.com/Shagg88/COGBox/releases/tag/0.4.4"
+        },
+        "releaseCount": 15,
+        "totalDownloads": 25960
+      },
+      "game": {
+        "title": "Gears of War 2",
+        "releaseDate": "2008-11-07",
+        "developers": [
+          "Epic Games"
+        ],
+        "publishers": [
+          "Microsoft Game Studios"
+        ],
+        "genres": [
+          "Shooter"
+        ],
+        "summary": "Gears of War 2 is a third-person shooter built around tactical use of cover. Players fight through a campaign as a soldier of the Coalition of Ordered Governments, carrying a limited loadout of weapons and using cover, melee attacks, and the series' chainsaw bayonet against enemy forces. It supports cooperative campaign play and a range of competitive multiplayer modes, and introduces Horde mode, in which up to five players survive escalating waves of enemies together.",
+        "rating": 86.9,
+        "url": "https://www.igdb.com/games/gears-of-war-2",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/xrkt3gnqedisrtuhgnhd.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/hi48uwrlxqxlg9z4thel.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/v4t5lxcbjcwz6wssctg6.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/hmsmlnonm3bsmvs3w5eh.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/fde5mbwk0tuqwdllgdwq.jpg"
+        ]
+      },
+      "aiAssisted": true
+    },
+    {
+      "id": "dragons-crown-pro",
+      "name": "Dragon's Crown Pro PC",
+      "repo": "saulob/dragons-crown-pro-pc",
+      "originalTitle": "Dragon's Crown Pro",
+      "originalPlatform": "PS4",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "DragonsCrownProPC-*-x86_64.AppImage",
+          "executable": "*.AppImage"
+        },
+        "windows-x64": {
+          "assetPattern": "DragonsCrownProPC-*-windows-x64.zip",
+          "executable": "dragons_crown_pro.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (PS4). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (PS4). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 5426974,
+      "igdbId": 68283,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/75ee1d77d340cb0a97ddf66a3daf85af.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/1d04bcd683377838580d82db48fb5c87.jpg",
+        "logo": "https://cdn2.steamgriddb.com/logo/eba9f1a976a8f27e7e0d3a428571b9bb.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/6f6e723c18a99b7d6e16a4e348565ee9.png"
+      },
+      "recomp": {
+        "description": "Dragon's Crown Pro native PC port for Windows, with direct PS4 PKG installation, TRG launcher and modern graphics options",
+        "homepage": null,
+        "license": "GPL-2.0",
+        "topics": [
+          "dragons-crown",
+          "dragons-crown-pro",
+          "native-port",
+          "pc-port",
+          "playstation-4",
+          "ps4"
+        ],
+        "stars": 352,
+        "firstReleaseAt": "2026-10-15T02:55:33Z",
+        "latestRelease": {
+          "tag": "v0.9.1",
+          "name": "Dragon's Crown Pro PC v0.9.1",
+          "publishedAt": "2026-11-01T06:56:43Z",
+          "htmlUrl": "https://github.com/saulob/dragons-crown-pro-pc/releases/tag/v0.9.1"
+        },
+        "releaseCount": 11,
+        "totalDownloads": 17385
+      },
+      "game": {
+        "title": "Dragon's Crown Pro",
+        "releaseDate": "2018-02-08",
+        "developers": [
+          "Vanillaware"
+        ],
+        "publishers": [
+          "Atlus"
+        ],
+        "genres": [
+          "Role-playing (RPG)",
+          "Hack and slash/Beat 'em up",
+          "Adventure"
+        ],
+        "summary": "The most beautiful 2D action RPG in history, which enchanted over a million adventurers on the PlayStation 3 and PlayStation Vita, is journeying to the PlayStation 4! With refined artwork and 4K compatibility, exploring dungeons and battling dragons has never looked so spellbinding. The soundtrack of swords and sorcery has also been revamped and re-recorded by a live orchestra. These improvements and more are conjuring a new era of high fantasy adventure!",
+        "rating": 72.9,
+        "url": "https://www.igdb.com/games/dragons-crown-pro",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scy4ex.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scy4ey.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scy4ez.jpg"
+        ]
+      },
+      "aiAssisted": true
+    },
+    {
+      "id": "king-kong",
+      "name": "King Kong Recompiled",
+      "repo": "TekRantGaming/king-kong-recompiled",
+      "originalTitle": "Peter Jackson's King Kong",
+      "originalPlatform": "X360",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "KingKong-linux-x86_64.AppImage",
+          "executable": "*.AppImage"
+        },
+        "windows-x64": {
+          "assetPattern": "KingKong-*-windows-x64.zip",
+          "executable": "king_kong.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (Xbox 360). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (Xbox 360). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 5249080,
+      "igdbId": 248543,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/95eb83542315080493f9a00e01920fe6.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/e3fc72518f213ad1f39ed9306da322b0.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/5785c3651a5d911fca2b311b48c0896d.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/beac08d527fe5ca7c17e38b19584ae48.ico"
+      },
+      "recomp": {
+        "description": "Native PC port of Peter Jackson's King Kong (Xbox 360) via static recompilation",
+        "homepage": null,
+        "license": null,
+        "topics": [],
+        "stars": 260,
+        "firstReleaseAt": "2026-10-05T06:27:45Z",
+        "latestRelease": {
+          "tag": "v2.0.11",
+          "name": "v2.0.11",
+          "publishedAt": "2026-11-02T04:45:55Z",
+          "htmlUrl": "https://github.com/TekRantGaming/king-kong-recompiled/releases/tag/v2.0.11"
+        },
+        "releaseCount": 39,
+        "totalDownloads": 46267
+      },
+      "game": {
+        "title": "Peter Jackson's King Kong: The Official Game of the Movie",
+        "releaseDate": "2005-11-21",
+        "developers": [
+          "Ubisoft Montpellier"
+        ],
+        "publishers": [
+          "Ubisoft Entertainment"
+        ],
+        "genres": [
+          "Shooter",
+          "Adventure"
+        ],
+        "summary": "Xbox 360 version of Peter Jackson's King Kong: The Official Game of the Movie.",
+        "rating": null,
+        "url": "https://www.igdb.com/games/peter-jacksons-king-kong-the-official-game-of-the-movie--2",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scpzmz.jpg"
+        ]
+      },
+      "aiAssisted": true
+    },
+    {
+      "id": "pokemon-lets-go",
+      "name": "Let's Go Recomp",
+      "repo": "raulzrrs/letsgo-recomp",
+      "originalTitle": "Pokémon: Let's Go, Pikachu!",
+      "originalPlatform": "SWITCH",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "LetsGoRecomp-*-windows.zip",
+          "executable": "LetsGoRecomp.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (Switch). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (Switch). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 5246182,
+      "igdbId": 25877,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/0d2bb68b98bd5246fe99a698c9a3aa3e.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/ab7a710458b8378b523e39143a6764d6.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/b37242925ffe0da400d9b98c254b9fcd.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/c7529b8e425f81f2d9b65a162002f19d.png"
+      },
+      "recomp": {
+        "description": "Native Windows port of Pokémon: Let's Go, Eevee! (Switch v1.0.0) by static recompilation, built on LAS Recomp. No game files included.",
+        "homepage": null,
+        "license": null,
+        "topics": [
+          "arm64",
+          "game-port",
+          "native-port",
+          "nintendo-switch",
+          "pokemon",
+          "pokemon-lets-go",
+          "recomp",
+          "recompilation",
+          "reverse-engineering",
+          "static-recompilation",
+          "vulkan",
+          "windows",
+          "x86-64"
+        ],
+        "stars": 261,
+        "firstReleaseAt": "2026-10-16T02:38:06Z",
+        "latestRelease": {
+          "tag": "v0.7.6",
+          "name": "v0.7.6: the long-session freeze, blank text, a battle hang",
+          "publishedAt": "2026-11-01T14:22:22Z",
+          "htmlUrl": "https://github.com/raulzrrs/letsgo-recomp/releases/tag/v0.7.6"
+        },
+        "releaseCount": 21,
+        "totalDownloads": 95390
+      },
+      "game": {
+        "title": "Pokémon: Let's Go, Pikachu!",
+        "releaseDate": "2018-11-16",
+        "developers": [
+          "Game Freak"
+        ],
+        "publishers": [
+          "Nintendo"
+        ],
+        "genres": [
+          "Role-playing (RPG)",
+          "Adventure"
+        ],
+        "summary": "Take your Pokémon journey to the Kanto region with your energetic partner, Pikachu, to become a top Pokémon Trainer as you battle other trainers. Use a throwing motion to catch Pokémon in the wild with either one Joy-Con controller or Poké Ball Plus accessory, which will light up, vibrate, and make sounds to bring your adventure to life. Share your adventure with family or friends in 2-player action on one system using a second Joy-Con or Poké Ball Plus (sold separately). You can even connect to the Pokémon GO app using a compatible smartphone to bring over Pokémon originally discovered in the Kanto region! Explore the diverse and vibrant region of Kanto! True-to-size wild Pokémon roam around in the game, so catch them like a real Pokémon Trainer by using motion, timing, and a well-placed Poké Ball. Go on a stroll with your favorite Pokémon in your Poké Ball Plus! Connect your game directly to Pokémon GO* to receive Kanto region Pokémon.",
+        "rating": 75.8,
+        "url": "https://www.igdb.com/games/pokemon-lets-go-pikachu",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/wusyhc8xov4bldpil4my.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/n1jbkybjz6entv3a5gvd.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/uvufj8hsohxilfq84bqu.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/p9ogwu6qujrivbhp7ker.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/g1o6wjofeyfjz0xx0fly.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc5jod.jpg"
+        ]
+      },
+      "aiAssisted": true
+    },
+    {
+      "id": "medievil",
+      "name": "MediEvilRecomp",
+      "repo": "BlackLabelHQ/MediEvilRecomp",
+      "originalTitle": "MediEvil",
+      "originalPlatform": "PS1",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "MediEvilRecomp-*-windows-x64.zip",
+          "executable": "medievil.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (PS1). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (PS1). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 38204,
+      "igdbId": 4000,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/b8b0e9685190772ecdb089f0b4a0369f.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/430579c489bddb6b10e67206face1d18.jpg",
+        "logo": "https://cdn2.steamgriddb.com/logo/a188af0bc920853d3673ab71c5f2a440.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/54591b5c8d4291c395119bdbdb3a4ee9.ico"
+      },
+      "recomp": {
+        "description": "Static Recomp of PSX USA MediEvil, By BlackLabelHQ",
+        "homepage": null,
+        "license": null,
+        "topics": [
+          "medievil",
+          "ps1",
+          "recomp"
+        ],
+        "stars": 255,
+        "firstReleaseAt": "2026-10-01T07:44:58Z",
+        "latestRelease": {
+          "tag": "v1.0.3",
+          "name": "v1.0.3",
+          "publishedAt": "2026-11-02T19:55:24Z",
+          "htmlUrl": "https://github.com/BlackLabelHQ/MediEvilRecomp/releases/tag/v1.0.3"
+        },
+        "releaseCount": 6,
+        "totalDownloads": 6836
+      },
+      "game": {
+        "title": "MediEvil",
+        "releaseDate": "1998-10-09",
+        "developers": [
+          "SCE Cambridge Studio"
+        ],
+        "publishers": [
+          "Sony Computer Entertainment"
+        ],
+        "genres": [
+          "Platform",
+          "Puzzle",
+          "Hack and slash/Beat 'em up",
+          "Adventure"
+        ],
+        "summary": "MediEvil is an action-adventure game developed by SCE Cambridge Studio and published by Sony Computer Entertainment. Originally released in 1998 for the PlayStation, the game follows Sir Daniel Fortesque, a skeletal knight accidentally resurrected to battle the sorcerer Zarok and save the kingdom of Gallowmere.\n\nThe game takes place across a variety of levels, many of which require certain objectives to be performed to progress. Sir Daniel Fortesque can use a variety of weapons, consisting of close range weapons such as swords and clubs to long range weapons such as crossbows. Many of these weapons can be charged for a powerful attack and some weapons, such as the club, can be used to access areas that are otherwise inaccessible. When not possessing any items, Dan is able to rip his own arm off and use it for both melee and ranged attacks. Dan can equip a shield alongside weapons to defend against attacks; though they can only take several hits of damage before breaking. Throughout the game, Dan can visit gargoyle heads of two varieties; green ones offer Dan information while blue ones allow Dan to buy services or ammunition by using the treasures he finds.\n\nDan's health is determined by a single health bar, which reduces when Dan is hit. It will deplete completely if Dan drowns or falls from a great height. If Dan completely runs out of health, the game will end. Dan can extend his maximum health by collecting Life Bottles, which will automatically refill his health bar if it drops to zero. Also hidden throughout the game are Life Vials and Life Fountains that can replenish Dan's health and fill up any empty Life Bottles Dan has. In each level, there is a hidden Chalice of Souls, which can be collected if the player fills it with enough souls from defeated enemies (some Chalices are awarded via other means). If the player clears a level with a Chalice in hand, Dan is warped to the Hall of Heroes, where he can speak to a legendary hero who will give him rewards, such as weapons. If the player finishes the game with all the Chalices, the game's true ending is revealed.",
+        "rating": 77.7,
+        "url": "https://www.igdb.com/games/medievil",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/yyvzhgyt4ycz5cuatidm.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/tmak1bz9kvng33n67cbl.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/nb2gwjgvtrsvuysa9h5x.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/prgkaeeug1puvn501szs.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/cwotp16jsnfttmyip1op.jpg"
+        ]
+      }
+    },
+    {
+      "id": "viva-pinata-tip",
+      "name": "reTiP",
+      "repo": "SolarCookies/TiP-Recomp",
+      "originalTitle": "Viva Piñata: Trouble in Paradise",
+      "originalPlatform": "X360",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "retip_*_windows_amd64.zip",
+          "executable": "retip.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (Xbox 360). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (Xbox 360). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 5262214,
+      "igdbId": 7238,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/e9437348054c27c0951c7d9d59bac04f.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/b5e9c7ea20276c57e2e893343186fffd.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/303d0012fd8d7ef9e9f6917dc6e938f0.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/b41785e01b7f3ae10e9cbdb6dc452ed0.png"
+      },
+      "recomp": {
+        "description": "A Recompilation of Viva Pinata: Trouble In Paradise",
+        "homepage": null,
+        "license": null,
+        "topics": [],
+        "stars": 245,
+        "firstReleaseAt": "2026-05-02T20:51:23Z",
+        "latestRelease": {
+          "tag": "1.14.0",
+          "name": "ReTiP 1.14.0",
+          "publishedAt": "2026-10-24T12:29:50Z",
+          "htmlUrl": "https://github.com/SolarCookies/TiP-Recomp/releases/tag/1.14.0"
+        },
+        "releaseCount": 6,
+        "totalDownloads": 12030
+      },
+      "game": {
+        "title": "Viva Piñata: Trouble in Paradise",
+        "releaseDate": "2008-09-02",
+        "developers": [
+          "Rare"
+        ],
+        "publishers": [
+          "Microsoft Game Studios"
+        ],
+        "genres": [
+          "Simulator"
+        ],
+        "summary": "The original Rare Ltd. team behind Viva Piñata has reunited to bring gamers Viva Piñata: Trouble in Paradise, the newest and most fun piñata adventure to date. Available exclusively on Xbox 360, Viva Piñata: Trouble in Paradise reinvigorates a colorful and engaging gaming experience on the Xbox 360 platform. Now with full cooperative and online gameplay modes, the Viva Piñata franchise opens its doors even wider with a new game that provides hours of fun for gamers of all ages, fans of the animated series and animal lovers alike.\n\nReturn to magical Piñata Island. Unfortunately, not all is well on the island, as Professor Pester and his gang of Ruffians have wiped out Piñata Central's computer records, posing a threat to parties everywhere.\n\nRebuild the computer database and thwart Professor Pester's evil plot by sending piñatas at full candiosity to parties all around the world. Build and maintain your piñata gardens—using your creativity and imagination to attract, trap, protect, train, and manage more than 100 different piñata species.",
+        "rating": 79.4,
+        "url": "https://www.igdb.com/games/viva-pinata-trouble-in-paradise",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/tdprokk5pytucg25uxik.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc9ff7.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc9ff9.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc9ff5.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc9ff6.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc9ff8.jpg"
+        ]
+      }
+    },
+    {
+      "id": "pgr4",
+      "name": "PGR4 Recomp",
+      "repo": "beatrixzy/PGR4-Recomp",
+      "originalTitle": "Project Gotham Racing 4",
+      "originalPlatform": "X360",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "PGR4-Recomp-*.zip",
+          "executable": "pgr4_recompiled.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (Xbox 360). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (Xbox 360). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 5253137,
+      "igdbId": 2540,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/90e6b40f3728f30b437e6b71ccda6d0b.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/0dbb3fb9a5cd1d5f8a9075b5bb8070aa.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/7c6c82bb528ebd24198e2d387d207f80.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/fd52865dec24ba68bd106c7aa29afa9b.ico"
+      },
+      "recomp": {
+        "description": "A Recompilation of Project Gotham Racing 4",
+        "homepage": null,
+        "license": "MIT",
+        "topics": [
+          "project-gotham-racing",
+          "rexglue",
+          "rexglue-recomp",
+          "xbox-360"
+        ],
+        "stars": 239,
+        "firstReleaseAt": "2026-07-24T13:51:57Z",
+        "latestRelease": {
+          "tag": "v1.2.2",
+          "name": "v1.2.2",
+          "publishedAt": "2026-10-17T11:17:35Z",
+          "htmlUrl": "https://github.com/beatrixzy/PGR4-Recomp/releases/tag/v1.2.2"
+        },
+        "releaseCount": 6,
+        "totalDownloads": 8360
+      },
+      "game": {
+        "title": "Project Gotham Racing 4",
+        "releaseDate": "2007-10-02",
+        "developers": [
+          "Bizarre Creations"
+        ],
+        "publishers": [
+          "Microsoft Game Studios"
+        ],
+        "genres": [
+          "Racing"
+        ],
+        "summary": "Project Gotham Racing 4 is the fourth title in the main Project Gotham Racing series, developed by Bizarre Creations and published by Microsoft Game Studios.",
+        "rating": 83.4,
+        "url": "https://www.igdb.com/games/project-gotham-racing-4",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/wgbrrgdkyk6zmw6nmk5n.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scjasb.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scjasj.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scjas7.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scjas8.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scjas9.jpg"
+        ]
+      }
+    },
+    {
+      "id": "dbz-budokai-hd",
+      "name": "DBZ Budokai 3 HD Collection",
+      "repo": "novapowers0/DBZ-Budokai-3-HD-Collection",
+      "originalTitle": "Dragon Ball Z: Budokai HD Collection",
+      "originalPlatform": "X360",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "DBZ-Budokai-3-HD-Collection-v*.zip",
+          "executable": "dbz3.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (Xbox 360). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (Xbox 360). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 5277034,
+      "igdbId": 21701,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/d29cbe5ceb0a45d87a1050e9a1718255.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/464272b1e3b0587b021173121d26ccf0.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/2f160fd9502f850571df4f60a6f96fc4.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/61501c1f651da2774f8bb6bbec365d84.png"
+      },
+      "recomp": {
+        "description": "Recompilacion estatica (ReXGlue) de Dragon Ball Z: Budokai 3 HD Collection (Xbox 360) para Windows con launcher, sistema de mods y herramientas. No incluye datos del juego.",
+        "homepage": null,
+        "license": "MIT",
+        "topics": [],
+        "stars": 234,
+        "firstReleaseAt": "2026-08-28T14:02:03Z",
+        "latestRelease": {
+          "tag": "v1.5.6",
+          "name": "DBZ Budokai 3 HD Collection 1.5.6",
+          "publishedAt": "2026-11-02T01:31:55Z",
+          "htmlUrl": "https://github.com/novapowers0/DBZ-Budokai-3-HD-Collection/releases/tag/v1.5.6"
+        },
+        "releaseCount": 50,
+        "totalDownloads": 25685
+      },
+      "game": {
+        "title": "Dragon Ball Z: Budokai HD Collection",
+        "releaseDate": "2012-11-02",
+        "developers": [
+          "Dimps"
+        ],
+        "publishers": [
+          "Namco Bandai Games"
+        ],
+        "genres": [
+          "Fighting"
+        ],
+        "summary": "The game is an HD collection that features both Dragon Ball Z: Budokai 1 and Dragon Ball Z: Budokai 3 enhanced and re-mastered in HD, alongside full Trophy and Achievements support. The graphics of Budokai 3 HD are similar to those of Dragon Ball Z: W Bakuretsu Impact. Since Kenji Yamamoto's original soundtracks have been accused of plagiarism, both included games have entirely new soundtracks mixed from the soundtracks of Dragon Ball Z: Budokai Tenkaichi 2, Dragon Ball Z: Budokai Tenkaichi 3, Dragon Ball: Raging Blast, Dragon Ball Z: Tenkaichi Tag Team, and Dragon Ball Z: Ultimate Tenkaichi, plus entirely new music and the American Dragon Ball Z theme song from the original game and show. Both games also support the optional original Japanese language track (but in Europe, only Japanese is available for Budokai 1, much like the original release).",
+        "rating": 69.9,
+        "url": "https://www.igdb.com/games/dragon-ball-z-budokai-hd-collection",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ksxf7yuc7mdofdlxvm5e.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/mdvehi5odbubh5qxcrnv.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/uuw4rrzplukso3fgm1po.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/dzqhuaxeayudyqljld9l.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/q94kdvwusgnm6kgkb8qx.jpg"
+        ]
+      },
+      "aiAssisted": true
+    },
+    {
+      "id": "naruto-rise-of-a-ninja",
+      "name": "Naruto Rise Recomp",
+      "repo": "jorjbarbosa/naruto-rise-recomp",
+      "originalTitle": "Naruto: Rise of a Ninja",
+      "originalPlatform": "X360",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "NarutoRise-*-Linux-x86_64.AppImage",
+          "executable": "*.AppImage"
+        },
+        "windows-x64": {
+          "assetPattern": "naruto-rise-recomp-win-amd64.zip",
+          "executable": "narutorise.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (Xbox 360). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (Xbox 360). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 5268809,
+      "igdbId": 7101,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/f1cab1954b1fc4ff1914fc819d30f3c1.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/84b077a6d1ec15291624d4ccdfd9dd77.jpg",
+        "logo": "https://cdn2.steamgriddb.com/logo/ee82b11edbd4f34a1081986fb2ecf895.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/38ed4039c0b33e2ec51cc4579405d03e.png"
+      },
+      "recomp": {
+        "description": null,
+        "homepage": null,
+        "license": "GPL-3.0",
+        "topics": [],
+        "stars": 233,
+        "firstReleaseAt": "2026-10-05T19:38:35Z",
+        "latestRelease": {
+          "tag": "v0.4.2-beta",
+          "name": "v0.4.2-beta",
+          "publishedAt": "2026-11-01T17:38:30Z",
+          "htmlUrl": "https://github.com/jorjbarbosa/naruto-rise-recomp/releases/tag/v0.4.2-beta"
+        },
+        "releaseCount": 9,
+        "totalDownloads": 12114
+      },
+      "game": {
+        "title": "Naruto: Rise of a Ninja",
+        "releaseDate": "2007-10-30",
+        "developers": [
+          "Ubisoft Montreal"
+        ],
+        "publishers": [
+          "Ubisoft Entertainment"
+        ],
+        "genres": [
+          "Fighting",
+          "Role-playing (RPG)",
+          "Adventure"
+        ],
+        "summary": "Naruto: Rise of a Ninja is an Xbox 360-exclusive video game developed by Ubisoft Montreal, making it the first Naruto game to be developed by a non-Japanese company.\n\nA sequel titled Naruto: The Broken Bond was released in fall a year later.",
+        "rating": 75.0,
+        "url": "https://www.igdb.com/games/naruto-rise-of-a-ninja",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/mmjf7ol4ehjvqtbw5fjo.jpg"
+        ]
+      },
+      "aiAssisted": true
+    },
+    {
+      "id": "banjo-nuts-and-bolts",
+      "name": "reNut",
+      "repo": "masterspike52/reNut",
+      "originalTitle": "Banjo-Kazooie: Nuts & Bolts",
+      "originalPlatform": "X360",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "renut-x86_64.AppImage",
+          "executable": "*.AppImage"
+        },
+        "windows-x64": {
+          "assetPattern": "renut.zip",
+          "executable": "renut.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (Xbox 360). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (Xbox 360). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 37213,
+      "igdbId": 3008,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/17faa600670ae46a32ff83f76e83806a.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/af37a90a983595fef5aeac638e129534.jpg",
+        "logo": "https://cdn2.steamgriddb.com/logo/c1fb11cad73eaf23ee236ed67e04a36e.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/f88920d4589dae7abec2eb05fca153e3.png"
+      },
+      "recomp": {
+        "description": "Banjo-Kazooie: Nuts and Bolts Recompilation with Rexglue",
+        "homepage": null,
+        "license": null,
+        "topics": [],
+        "stars": 230,
+        "firstReleaseAt": "2026-04-05T00:20:17Z",
+        "latestRelease": {
+          "tag": "renut",
+          "name": "reNut: Now more user friendly",
+          "publishedAt": "2026-10-31T14:01:04Z",
+          "htmlUrl": "https://github.com/masterspike52/reNut/releases/tag/renut"
+        },
+        "releaseCount": 29,
+        "totalDownloads": 24215
+      },
+      "game": {
+        "title": "Banjo-Kazooie: Nuts & Bolts",
+        "releaseDate": "2008-11-12",
+        "developers": [
+          "Rare"
+        ],
+        "publishers": [
+          "Microsoft Game Studios"
+        ],
+        "genres": [
+          "Platform",
+          "Racing",
+          "Quiz/Trivia",
+          "Adventure"
+        ],
+        "summary": "Banjo and Kazooie are facing their greatest adventure yet, battling long-time nemesis Gruntilda for rightful ownership of Spiral Mountain. Use your wits and imagination to invent wild and wonderful contraptions so Banjo and Kazooie can crush this wicked witch. Rule the road, sky, and water in the land of Banjo-Kazooie: Nuts & Bolts!",
+        "rating": 75.5,
+        "url": "https://www.igdb.com/games/banjo-kazooie-nuts-bolts",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/hzwgexdgzzhj9177fxpl.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/pguc2omtnrkpmanvoh9a.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/d7jdt2bohjnj8tz1iimc.jpg"
+        ]
+      },
+      "aiAssisted": true
+    },
+    {
+      "id": "metroid-prime-2",
+      "name": "Metroid Prime 2 Port",
+      "repo": "Odrannnn/MetroidPrime2Port",
+      "originalTitle": "Metroid Prime 2: Echoes",
+      "originalPlatform": "GC",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "MetroidPrime2-x86_64.AppImage",
+          "executable": "*.AppImage"
+        },
+        "windows-x64": {
+          "assetPattern": "metroid-prime2-port-*-windows-x86_64.zip",
+          "executable": "metroid_prime2_port.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (GameCube). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (GameCube). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 36244,
+      "igdbId": 1108,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/a811009cca17955a869190961a215997.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/c0f971d8cd24364f2029fcb9ac7b71f5.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/4158f6d19559955bae372bb00f6204e4.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/a597e50502f5ff68e3e25b9114205d4a.png"
+      },
+      "recomp": {
+        "description": "Native port of Metroid Prime 2: Echoes (GameCube) for Linux and Android, built from the PrimeDecomp decompilation. No emulator, no game assets included: bring your own disc image.",
+        "homepage": "https://github.com/Odrannnn/MetroidPrime2Port/releases/latest",
+        "license": null,
+        "topics": [
+          "android",
+          "decompilation",
+          "gamecube",
+          "linux",
+          "metroid-prime",
+          "metroid-prime-2",
+          "native-port",
+          "randomizer",
+          "sdl3",
+          "webgpu"
+        ],
+        "stars": 235,
+        "firstReleaseAt": "2026-10-28T21:24:56Z",
+        "latestRelease": {
+          "tag": "v0.10.0",
+          "name": "0.10.0",
+          "publishedAt": "2026-11-03T20:03:00Z",
+          "htmlUrl": "https://github.com/Odrannnn/MetroidPrime2Port/releases/tag/v0.10.0"
+        },
+        "releaseCount": 12,
+        "totalDownloads": 13005
+      },
+      "game": {
+        "title": "Metroid Prime 2: Echoes",
+        "releaseDate": "2004-11-15",
+        "developers": [
+          "Retro Studios"
+        ],
+        "publishers": [
+          "Nintendo"
+        ],
+        "genres": [
+          "Shooter",
+          "Platform",
+          "Adventure"
+        ],
+        "summary": "An exploration-driven 3D metroidvania/first-person shooter hybrid and sequel to Metroid Prime (2002) in which Samus lands on Aether, an intricate planet torn into light and dark versions of itself, to help its remaining inhabitants defend against the invaders from its dark incarnation by traversing both the light and dark worlds, acquiring new power-ups and braving oppressive environments.",
+        "rating": 83.0,
+        "url": "https://www.igdb.com/games/metroid-prime-2-echoes",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/apkwta2sumka41h8tjtm.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/tsxdrekuqk34pls8lpvs.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/s8gwbarnyidols229qtb.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/wyawq8rzit35ckcivwmw.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/yngbis1muuqrs8ozs7vb.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/mm48efy9nu9yb0fm8cka.jpg"
+        ]
+      },
+      "aiAssisted": true
+    },
+    {
+      "id": "super-mario-maker-2",
+      "name": "SMM2 Recomp",
+      "repo": "smm2recomp/smm2recomp",
+      "originalTitle": "Super Mario Maker 2",
+      "originalPlatform": "SWITCH",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "SMM2Recomp-windows-x86_64.zip",
+          "executable": "smm2recomp.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (Switch). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (Switch). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 5249544,
+      "igdbId": 115276,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/1a3377beff1ae18422f3a8dfe9ef7231.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/8c4967fa62628e93463f33c2bbd9ee53.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/cca7069645df38802fe9c7a0f4d83548.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/a131005bc99e0505cc970be992378a4f.ico"
+      },
+      "recomp": {
+        "description": "Super Mario Maker 2 Recomp",
+        "homepage": null,
+        "license": "GPL-3.0",
+        "topics": [],
+        "stars": 226,
+        "firstReleaseAt": "2026-10-19T23:33:06Z",
+        "latestRelease": {
+          "tag": "v0.6.5",
+          "name": "SMM2 Recomp v0.6.5",
+          "publishedAt": "2026-11-01T09:41:18Z",
+          "htmlUrl": "https://github.com/smm2recomp/smm2recomp/releases/tag/v0.6.5"
+        },
+        "releaseCount": 27,
+        "totalDownloads": 8077
+      },
+      "game": {
+        "title": "Super Mario Maker 2",
+        "releaseDate": "2019-06-28",
+        "developers": [
+          "Nintendo EPD Production Group No. 10"
+        ],
+        "publishers": [
+          "Nintendo"
+        ],
+        "genres": [
+          "Platform"
+        ],
+        "summary": "A side-scrolling Mario adventure that unleashes the creative potential of Super Mario Maker 2 awaits in Story Mode, which contains over 100 built-in courses. And in Course Maker, a wide range of parts, tools, and more are available so you can construct your own courses. Want coin-shooting cannons? Bowser riding on a giant Goomba? Cat Mario sliding down slopes to take out an army of baddies? Go for it! You call the shots. Pass a Joy-Con controller to a partner to build co-operatively on a single system!",
+        "rating": 84.1,
+        "url": "https://www.igdb.com/games/super-mario-maker-2",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc635y.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc635t.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc635r.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc635v.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc635x.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc635u.jpg"
+        ]
+      }
+    },
+    {
+      "id": "mega-man-x",
+      "name": "MegaManXSNESRecomp",
+      "repo": "mstan/MegaManXSNESRecomp",
+      "originalTitle": "Mega Man X",
+      "originalPlatform": "SNES",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "MegaManXSNESRecomp-windows-*.zip",
+          "executable": "MegaManXSNESRecomp.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (SNES). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (SNES). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 35466,
+      "igdbId": 1741,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/e24927b595bdddebb71671d11f76f067.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/87fb64db8a74fa38e6778aea4d9e0f6c.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/e2a23af417a2344fe3a23e652924091f.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/6b3829244a3cb6ef04f4f11733faa5a2.ico"
+      },
+      "recomp": {
+        "description": "Mega Man X recompiled for the Super Nintendo using snesrecomp · Part of the R.A.I.D. community",
+        "homepage": "https://discord.gg/Ad9BwSzctP",
+        "license": null,
+        "topics": [],
+        "stars": 225,
+        "firstReleaseAt": "2026-05-23T19:12:44Z",
+        "latestRelease": {
+          "tag": "v2.3.12",
+          "name": "Mega Man X 2.3.12 - local independent co-op screens",
+          "publishedAt": "2026-11-01T22:02:26Z",
+          "htmlUrl": "https://github.com/mstan/MegaManXSNESRecomp/releases/tag/v2.3.12"
+        },
+        "releaseCount": 96,
+        "totalDownloads": 30054
+      },
+      "game": {
+        "title": "Mega Man X",
+        "releaseDate": "1993-12-17",
+        "developers": [
+          "Capcom",
+          "Capcom"
+        ],
+        "publishers": [
+          "Capcom",
+          "Playtronic",
+          "Hyundai",
+          "Nintendo"
+        ],
+        "genres": [
+          "Shooter",
+          "Platform",
+          "Adventure"
+        ],
+        "summary": "Mega Man X, known as Rockman X in Japan, is the first game of the Mega Man X series. It was the first spin-off of the classic Mega Man series and made its debut on the Super Famicom/SNES, initially released in 1993. It was ported to the PC in 1995, and to Android and iOS devices in 2011. It was re-released as part of Mega Man X Collection in January 2006, then later re-released in Mega Man X Legacy Collection in July 2018. The game takes place in the year 21XX (early 22nd century), a century after the conclusion of the classic Mega Man series, and stars a new main character named X.",
+        "rating": 85.3,
+        "url": "https://www.igdb.com/games/mega-man-x",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/smgixjoe71icmdvjpgyu.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/xjahpsle0291kbpuvdeu.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/vw3co8pwtssoirtrkzd8.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/elpd7fhc1anuj2qvlmud.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ene5wnuk10hwxdrroyta.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/pbm3cfwearef4ryug9yh.jpg"
+        ]
+      },
+      "aiAssisted": true
+    },
+    {
+      "id": "mega-man-x4",
+      "name": "MegaManX4Recomp",
+      "repo": "mstan/MegaManX4Recomp",
+      "originalTitle": "Mega Man X4",
+      "originalPlatform": "PS1",
+      "platforms": {
+        "linux-x64": {
+          "assetPattern": "MegaManX4Recomp-*-linux-x86_64.AppImage",
+          "executable": "*.AppImage"
+        },
+        "windows-x64": {
+          "assetPattern": "MegaManX4Recomp-*-windows-x64.zip",
+          "executable": "MegaManX4Recomp.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (PS1). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (PS1). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 38080,
+      "igdbId": 1744,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/1a8e3803ba73d4c2d88022c00c79cef7.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/910c8aa6d76100df69a6ea11c2a39ed1.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/b13245211331d16e2a04423665d4b3a8.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/d5e6ff260692ebb551aa687db5b759b2.ico"
+      },
+      "recomp": {
+        "description": "Mega Man X4 (USA, SLUS-00561) statically recompiled to a native PC executable with PSXRecomp",
+        "homepage": null,
+        "license": "MIT",
+        "topics": [],
+        "stars": 125,
+        "firstReleaseAt": "2026-07-06T01:28:36Z",
+        "latestRelease": {
+          "tag": "v1.0.29",
+          "name": "v1.0.29 - Story boss music and Japanese disc selection",
+          "publishedAt": "2026-11-03T21:44:07Z",
+          "htmlUrl": "https://github.com/mstan/MegaManX4Recomp/releases/tag/v1.0.29"
+        },
+        "releaseCount": 87,
+        "totalDownloads": 13262
+      },
+      "game": {
+        "title": "Mega Man X4",
+        "releaseDate": "1997-08-01",
+        "developers": [
+          "Capcom"
+        ],
+        "publishers": [
+          "Capcom",
+          "Sony Computer Entertainment",
+          "Virgin Interactive Entertainment"
+        ],
+        "genres": [
+          "Shooter",
+          "Platform"
+        ],
+        "summary": "Mega Man X4, known as Rockman X4 in Japan, is the fourth game from the Mega Man X series. It was the second game in the series to be released on the Sega Saturn and Sony PlayStation (although it is the first original game; Mega Man X3 was ported to the systems), released in 1997 (and also re-released onto PlayStation as part of its greatest hits in 2002). It was later ported to the PC in 1998 and then re-released as part of the Mega Man X Collection",
+        "rating": 84.3,
+        "url": "https://www.igdb.com/games/mega-man-x4",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/otwkfq81plhqasqyumzn.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc110bl.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc110bi.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc110bj.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc110bk.jpg"
+        ]
+      },
+      "aiAssisted": true
+    },
+    {
+      "id": "animal-crossing-nh",
+      "name": "ACNHRecomp",
+      "repo": "Nycolazs/ACNHRecomp",
+      "originalTitle": "Animal Crossing: New Horizons",
+      "originalPlatform": "SWITCH",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "ACNHRecomp-*-windows-x64.zip",
+          "executable": "ACNHRecomp Launcher.exe"
+        }
+      },
+      "requiredRom": {
+        "description": "Sua cópia do jogo original (Switch). Veja na página do projeto qual versão e formato ele aceita.",
+        "descriptionEn": "Your own copy of the original game (Switch). Check the project page for the version and format it accepts.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 5257932,
+      "igdbId": 109462,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/078d2a1275f0d53cda67d165440aeb50.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/3649a6a2557a26ada5a5751518e711f7.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/7eef53dcebed55c152535e6e01682c80.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/e6051b3bfe716cc4a38c2f39ec199873.png"
+      },
+      "recomp": {
+        "description": null,
+        "homepage": null,
+        "license": "MIT",
+        "topics": [],
+        "stars": 227,
+        "firstReleaseAt": "2026-10-27T06:32:49Z",
+        "latestRelease": {
+          "tag": "v0.7.0",
+          "name": "ACNHRecomp 0.7.0",
+          "publishedAt": "2026-11-03T13:30:00Z",
+          "htmlUrl": "https://github.com/Nycolazs/ACNHRecomp/releases/tag/v0.7.0"
+        },
+        "releaseCount": 10,
+        "totalDownloads": 6415
+      },
+      "game": {
+        "title": "Animal Crossing: New Horizons",
+        "releaseDate": "2020-03-20",
+        "developers": [
+          "Nintendo EPD Production Group No. 5"
+        ],
+        "publishers": [
+          "Nintendo"
+        ],
+        "genres": [
+          "Simulator"
+        ],
+        "summary": "Escape to a deserted island and create your own paradise as you explore, create, and customize in Animal Crossing: New Horizons. Your island getaway has a wealth of natural resources that can be used to craft everything from tools to creature comforts. You can hunt down insects at the crack of dawn, decorate your paradise throughout the day, or enjoy sunset on the beach while fishing in the ocean. The time of day and season match real life, so each day on your island is a chance to check in and find new surprises all year round.",
+        "rating": 86.1,
+        "url": "https://www.igdb.com/games/animal-crossing-new-horizons",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sctl7m.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sctl7n.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sctl7o.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc836w.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc89a2.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc836u.jpg"
+        ]
+      },
+      "aiAssisted": true
+    },
+    {
+      "id": "god-of-war-2-hd",
+      "name": "Gow2HD-Windows",
+      "repo": "sethlikepie/Gow2HD-Windows",
+      "originalTitle": "God of War II HD",
+      "originalPlatform": "PS3",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "Gow2HD-Windows.exe",
+          "executable": "gow2hd.exe",
+          "installer": {
+            "installDir": "%LOCALAPPDATA%/GoW2-Windows"
+          }
+        }
+      },
+      "requiredRom": {
+        "description": "Seu God of War II HD de PS3 (EUA, NPUA80491 v01.00): a pasta do jogo instalado ou o pacote PSN, mais o arquivo de licença .rap. O instalador do projeto pede os arquivos e compila o jogo no seu PC.",
+        "descriptionEn": "Your PS3 God of War II HD (USA, NPUA80491 v01.00): the installed game folder or the PSN package, plus the .rap licence file. The project installer asks for them and builds the game on your PC.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "sgdbId": 35531,
+      "igdbId": 117882,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/7f5c8cbd9c1a9f0fbbb793d440dfd8e3.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/5b6f477594a1fa41586e0ee57d76daba.jpg",
+        "logo": "https://cdn2.steamgriddb.com/logo/f2c5b1f06bfe59954cb2a56858c2ed98.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/6c524f9d5d7027454a783c841250ba71.png"
+      },
+      "recomp": {
+        "description": "A static recompilation of God of War 2 HD from ps3 to windows",
+        "homepage": null,
+        "license": "MIT",
+        "topics": [],
+        "stars": 15,
+        "firstReleaseAt": "2026-10-12T15:59:16Z",
+        "latestRelease": {
+          "tag": "v0.1.0",
+          "name": "Gow2HD-Windows v0.1.0",
+          "publishedAt": "2026-10-12T15:59:16Z",
+          "htmlUrl": "https://github.com/sethlikepie/Gow2HD-Windows/releases/tag/v0.1.0"
+        },
+        "releaseCount": 1,
+        "totalDownloads": 357
+      },
+      "game": {
+        "title": "God of War II",
+        "releaseDate": "2009-11-17",
+        "developers": [],
+        "publishers": [
+          "Sony Computer Entertainment"
+        ],
+        "genres": [
+          "Hack and slash/Beat 'em up",
+          "Adventure"
+        ],
+        "summary": "A remaster of God of War II, an action-adventure hack-and-slash video game developed by Santa Monica Studio and published by Sony Computer Entertainment (SCE). The game is rooted in Greek mythology and unfolds in ancient Greece, revolving around the theme of vengeance. The protagonist, Kratos, is the new God of War, having defeated the former, Ares. However, Kratos is betrayed by Zeus, the King of the Olympian gods, who not only strips him of his godhood but also kills him. Dragged slowly to the Underworld, Kratos is rescued by the Titan Gaia, who guides him to seek out the Sisters of Fate. These entities have the power to enable time travel, allowing Kratos to prevent his betrayal, and ultimately seek revenge on Zeus.\n\nThe remaster features full HD resolution complete with 2X anti-aliased graphics running at 60 frames per second.",
+        "rating": 79.8,
+        "url": "https://www.igdb.com/games/god-of-war-ii--1",
+        "screenshots": [
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8ge0.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8gdz.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8ge1.jpg",
+          "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8gdy.jpg"
+        ]
+      }
     }
   ]
 }
