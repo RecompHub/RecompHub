@@ -3461,6 +3461,41 @@
         "logo": "https://cdn2.steamgriddb.com/logo/f2c5b1f06bfe59954cb2a56858c2ed98.png",
         "icon": "https://cdn2.steamgriddb.com/icon/6c524f9d5d7027454a783c841250ba71.png"
       }
+    },
+    {
+      "id": "zelda-botw",
+      "name": "Savage Wind Recomp",
+      "repo": "Revivedx/SavageWindRecomp",
+      "originalTitle": "The Legend of Zelda: Breath of the Wild",
+      "originalPlatform": "SWITCH",
+      "platforms": {
+        "windows-x64": {
+          "assetPattern": "SavageWind-*-windows.zip",
+          "executable": "savagewind.exe"
+        },
+        "linux-x64": {
+          "assetPattern": "Savage_Wind-*-x86_64.AppImage",
+          "executable": "*.AppImage"
+        }
+      },
+      "requiredRom": {
+        "description": "O dump do seu próprio Breath of the Wild de Switch, versão 1.9.0 (pastas exefs e romfs extraídas). O Savage Wind pede a pasta na primeira execução.",
+        "descriptionEn": "Your own dump of Breath of the Wild for Switch, version 1.9.0 (extracted exefs and romfs folders). Savage Wind asks for the folder on first run.",
+        "sha1": []
+      },
+      "achievements": {
+        "enabled": false,
+        "supportedVersions": []
+      },
+      "aiAssisted": true,
+      "sgdbId": 35744,
+      "igdbId": 7346,
+      "images": {
+        "grid": "https://cdn2.steamgriddb.com/grid/121b81f7d167ca2c24fdab4f044048f8.png",
+        "hero": "https://cdn2.steamgriddb.com/hero/71d1c0c06e1ab5049644acb5cc69a090.png",
+        "logo": "https://cdn2.steamgriddb.com/logo/24df88ee05eb50db7d1d083a37f49b0b.png",
+        "icon": "https://cdn2.steamgriddb.com/icon/af2566f8377b5ae9c13f3dac132297f4.png"
+      }
     }
   ]
 }
