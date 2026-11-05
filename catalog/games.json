@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-04T13:56:22.254651298Z",
+  "generatedAt": "2026-11-05T14:12:00.790107359Z",
   "games": [
     {
       "id": "zelda64-mm",
@@ -39,7 +39,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 7587,
+        "stars": 7589,
         "firstReleaseAt": "2024-05-10T05:07:15Z",
         "latestRelease": {
           "tag": "v1.2.2",
@@ -48,7 +48,7 @@
           "htmlUrl": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 7,
-        "totalDownloads": 384924
+        "totalDownloads": 385519
       },
       "game": {
         "title": "The Legend of Zelda: Majora's Mask",
@@ -65,7 +65,7 @@
           "Adventure"
         ],
         "summary": "The Legend of Zelda: Majora's Mask is a direct sequel to Ocarina of Time, it utilizes the same engine and visual style as its predecessor. The game retains the traditional elements of Zelda games as well as those introduced in Ocarina of Time, such as active blocking with a shield, various throwing items, and the usage of melodies played on the ocarina to solve puzzles. Compared to the previous Zelda games, this installment is more oriented towards interaction with NPCs and has a larger variety of items, optional quests, and mini-games. It also includes a time system that spans three days, and this cycle must be reset periodically to progress through the game.",
-        "rating": 88.3,
+        "rating": 88.2,
         "url": "https://www.igdb.com/games/the-legend-of-zelda-majora-s-mask",
         "screenshots": [
           "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sckeb7.jpg",
@@ -114,7 +114,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 401,
+        "stars": 400,
         "firstReleaseAt": "2025-12-24T22:22:59Z",
         "latestRelease": {
           "tag": "1.0.3",
@@ -123,7 +123,7 @@
           "htmlUrl": "https://github.com/sonicdcer/Starfox64Recomp/releases/tag/1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 31556
+        "totalDownloads": 31658
       },
       "game": {
         "title": "Star Fox 64",
@@ -189,7 +189,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 2118,
+        "stars": 2119,
         "firstReleaseAt": "2026-01-24T19:29:09Z",
         "latestRelease": {
           "tag": "v1.0.2",
@@ -198,7 +198,7 @@
           "htmlUrl": "https://github.com/BanjoRecomp/BanjoRecomp/releases/tag/v1.0.2"
         },
         "releaseCount": 3,
-        "totalDownloads": 153073
+        "totalDownloads": 153398
       },
       "game": {
         "title": "Banjo-Kazooie",
@@ -274,7 +274,7 @@
           "htmlUrl": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled/releases/tag/v1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 53015
+        "totalDownloads": 53288
       },
       "game": {
         "title": "Donkey Kong 64",
@@ -346,7 +346,7 @@
           "pc-port",
           "recompilation"
         ],
-        "stars": 332,
+        "stars": 333,
         "firstReleaseAt": "2025-02-20T23:53:16Z",
         "latestRelease": {
           "tag": "v0.2.0-dev",
@@ -355,7 +355,7 @@
           "htmlUrl": "https://github.com/klorfmorf/Goemon64Recomp/releases/tag/v0.2.0-dev"
         },
         "releaseCount": 5,
-        "totalDownloads": 24235
+        "totalDownloads": 24314
       },
       "game": {
         "title": "Mystical Ninja Starring Goemon",
@@ -421,7 +421,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 310,
+        "stars": 309,
         "firstReleaseAt": "2026-03-22T22:47:19Z",
         "latestRelease": {
           "tag": "v1.0.0",
@@ -430,7 +430,7 @@
           "htmlUrl": "https://github.com/RevoSucks/BM64Recomp/releases/tag/v1.0.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 22493
+        "totalDownloads": 22556
       },
       "game": {
         "title": "Bomberman 64",
@@ -505,7 +505,7 @@
           "htmlUrl": "https://github.com/MegaMan64Recomp/MegaMan64Recompiled/releases/tag/v0.9.1"
         },
         "releaseCount": 3,
-        "totalDownloads": 16253
+        "totalDownloads": 16323
       },
       "game": {
         "title": "Mega Man 64",
@@ -571,7 +571,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 180,
+        "stars": 181,
         "firstReleaseAt": "2026-06-27T05:24:02Z",
         "latestRelease": {
           "tag": "v1.2.2",
@@ -580,7 +580,7 @@
           "htmlUrl": "https://github.com/HarvestMoon64Recomp/HarvestMoon64Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 6,
-        "totalDownloads": 10691
+        "totalDownloads": 10760
       },
       "game": {
         "title": "Harvest Moon 64",
@@ -651,7 +651,7 @@
           "htmlUrl": "https://github.com/theboy181/drmario64_recomp_plus/releases/tag/1.0.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 11332
+        "totalDownloads": 11357
       },
       "game": {
         "title": "Dr. Mario 64",
@@ -728,7 +728,7 @@
           "htmlUrl": "https://github.com/cdlewis/snowboardkids2-recomp/releases/tag/v2.0.2"
         },
         "releaseCount": 5,
-        "totalDownloads": 9698
+        "totalDownloads": 9756
       },
       "game": {
         "title": "Snowboard Kids 2",
@@ -812,7 +812,7 @@
           "htmlUrl": "https://github.com/JackandBeans/Snap64Recomp/releases/tag/v1.1.6"
         },
         "releaseCount": 17,
-        "totalDownloads": 12459
+        "totalDownloads": 12601
       },
       "game": {
         "title": "Pokémon Snap",
@@ -882,7 +882,7 @@
           "recompilation",
           "rt64"
         ],
-        "stars": 172,
+        "stars": 175,
         "firstReleaseAt": "2026-10-01T00:51:32Z",
         "latestRelease": {
           "tag": "v1.4.7",
@@ -891,7 +891,7 @@
           "htmlUrl": "https://github.com/DahSidiAbdallah/ConkerBFDReloaded/releases/tag/v1.4.7"
         },
         "releaseCount": 20,
-        "totalDownloads": 20207
+        "totalDownloads": 20536
       },
       "game": {
         "title": "Conker's Bad Fur Day",
@@ -969,7 +969,7 @@
           "htmlUrl": "https://github.com/RevoSucks/CV64Recomp/releases/tag/v0.5.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 471
+        "totalDownloads": 477
       },
       "game": {
         "title": "Castlevania",
@@ -1037,7 +1037,7 @@
         "homepage": "https://twilitrealm.dev",
         "license": "CC0-1.0",
         "topics": [],
-        "stars": 6226,
+        "stars": 6235,
         "firstReleaseAt": "2026-04-24T03:44:05Z",
         "latestRelease": {
           "tag": "v2.0.3",
@@ -1046,7 +1046,7 @@
           "htmlUrl": "https://github.com/TwilitRealm/dusklight/releases/tag/v2.0.3"
         },
         "releaseCount": 24,
-        "totalDownloads": 1456318
+        "totalDownloads": 1460579
       },
       "game": {
         "title": "The Legend of Zelda: Twilight Princess",
@@ -1483,7 +1483,7 @@
           "vulkan",
           "windows"
         ],
-        "stars": 4582,
+        "stars": 4607,
         "firstReleaseAt": "2026-10-10T22:37:56Z",
         "latestRelease": {
           "tag": "windows-v3.0.0",
@@ -1492,7 +1492,7 @@
           "htmlUrl": "https://github.com/FelipePrado0/SpartanPort/releases/tag/windows-v3.0.0"
         },
         "releaseCount": 26,
-        "totalDownloads": 657597
+        "totalDownloads": 666751
       },
       "game": {
         "title": "God of War III: Remastered",
@@ -1806,7 +1806,7 @@
         "homepage": null,
         "license": "GPL-2.0",
         "topics": [],
-        "stars": 2178,
+        "stars": 2195,
         "firstReleaseAt": "2026-10-15T00:17:51Z",
         "latestRelease": {
           "tag": "v0.3.13",
@@ -1815,7 +1815,7 @@
           "htmlUrl": "https://github.com/Supermedo/uncharted_pc/releases/tag/v0.3.13"
         },
         "releaseCount": 14,
-        "totalDownloads": 162033
+        "totalDownloads": 166874
       },
       "game": {
         "title": "Uncharted: The Nathan Drake Collection",
@@ -1878,7 +1878,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 5337,
+        "stars": 5341,
         "firstReleaseAt": "2025-03-01T11:01:14Z",
         "latestRelease": {
           "tag": "v1.0.3",
@@ -1887,7 +1887,7 @@
           "htmlUrl": "https://github.com/hedge-dev/UnleashedRecomp/releases/tag/v1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 742880
+        "totalDownloads": 743622
       },
       "game": {
         "title": "Sonic Unleashed",
@@ -1954,7 +1954,7 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 1789,
+        "stars": 1790,
         "firstReleaseAt": "2026-06-04T21:32:32Z",
         "latestRelease": {
           "tag": "v2.0.2",
@@ -1963,7 +1963,7 @@
           "htmlUrl": "https://github.com/mchughalex/skate3recomp/releases/tag/v2.0.2"
         },
         "releaseCount": 9,
-        "totalDownloads": 142689
+        "totalDownloads": 143471
       },
       "game": {
         "title": "Skate 3",
@@ -2028,7 +2028,7 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 1065,
+        "stars": 1073,
         "firstReleaseAt": "2026-08-02T21:38:11Z",
         "latestRelease": {
           "tag": "v1.1.2p",
@@ -2037,7 +2037,7 @@
           "htmlUrl": "https://github.com/BlackLabelHQ/SymphonyRecomp/releases/tag/v1.1.2p"
         },
         "releaseCount": 13,
-        "totalDownloads": 72053
+        "totalDownloads": 73626
       },
       "game": {
         "title": "Castlevania: Symphony of the Night",
@@ -2104,7 +2104,7 @@
         "homepage": null,
         "license": "BSD-3-Clause",
         "topics": [],
-        "stars": 897,
+        "stars": 900,
         "firstReleaseAt": "2026-08-23T01:33:50Z",
         "latestRelease": {
           "tag": "v1.3.1",
@@ -2113,7 +2113,7 @@
           "htmlUrl": "https://github.com/zolaware/reblue/releases/tag/v1.3.1"
         },
         "releaseCount": 21,
-        "totalDownloads": 60284
+        "totalDownloads": 60472
       },
       "game": {
         "title": "Blue Dragon",
@@ -2177,7 +2177,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 622,
+        "stars": 621,
         "firstReleaseAt": "2025-08-17T20:39:37Z",
         "latestRelease": {
           "tag": "v0.9.2",
@@ -2186,7 +2186,7 @@
           "htmlUrl": "https://github.com/sonicdcer/MarioKart64Recomp/releases/tag/v0.9.2"
         },
         "releaseCount": 2,
-        "totalDownloads": 29173
+        "totalDownloads": 29340
       },
       "game": {
         "title": "Mario Kart 64",
@@ -2262,7 +2262,7 @@
           "htmlUrl": "https://github.com/ExpansionPak/ModernGekko/releases/tag/kirby"
         },
         "releaseCount": 1,
-        "totalDownloads": 13742
+        "totalDownloads": 13834
       },
       "game": {
         "title": "Kirby's Return to Dream Land",
@@ -2341,7 +2341,7 @@
           "wii",
           "windows-app"
         ],
-        "stars": 137,
+        "stars": 165,
         "firstReleaseAt": "2026-10-10T19:10:23Z",
         "latestRelease": {
           "tag": "v1.1.1",
@@ -2349,8 +2349,8 @@
           "publishedAt": "2026-10-31T07:10:01Z",
           "htmlUrl": "https://github.com/previouslevelgames/recharged/releases/tag/v1.1.1"
         },
-        "releaseCount": 21,
-        "totalDownloads": 13198
+        "releaseCount": 22,
+        "totalDownloads": 14313
       },
       "game": {
         "title": "Mario Strikers Charged",
@@ -2410,7 +2410,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 179,
+        "stars": 180,
         "firstReleaseAt": "2026-10-07T15:43:51Z",
         "latestRelease": {
           "tag": "v0.3.1",
@@ -2419,7 +2419,7 @@
           "htmlUrl": "https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation/releases/tag/v0.3.1"
         },
         "releaseCount": 20,
-        "totalDownloads": 37133
+        "totalDownloads": 38337
       },
       "game": {
         "title": "New Super Mario Bros. Wii",
@@ -2492,7 +2492,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 1336,
+        "stars": 1341,
         "firstReleaseAt": "2026-08-23T20:28:40Z",
         "latestRelease": {
           "tag": "v0.9.3",
@@ -2501,7 +2501,7 @@
           "htmlUrl": "https://github.com/patchzyy/Wiicompiled/releases/tag/v0.9.3"
         },
         "releaseCount": 20,
-        "totalDownloads": 239732
+        "totalDownloads": 240816
       },
       "game": {
         "title": "Mario Kart Wii",
@@ -2566,7 +2566,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 536,
+        "stars": 545,
         "firstReleaseAt": "2026-10-13T16:15:43Z",
         "latestRelease": {
           "tag": "v1.0.2",
@@ -2575,7 +2575,7 @@
           "htmlUrl": "https://github.com/keepvaibin/nebula/releases/tag/v1.0.2"
         },
         "releaseCount": 3,
-        "totalDownloads": 31297
+        "totalDownloads": 31974
       },
       "game": {
         "title": "Super Mario Galaxy",
@@ -2642,7 +2642,7 @@
         "homepage": "https://shipofharkinian.com",
         "license": null,
         "topics": [],
-        "stars": 5839,
+        "stars": 5851,
         "firstReleaseAt": "2023-08-14T21:22:21Z",
         "latestRelease": {
           "tag": "9.3.1",
@@ -2651,7 +2651,7 @@
           "htmlUrl": "https://github.com/HarbourMasters/Shipwright/releases/tag/9.3.1"
         },
         "releaseCount": 53,
-        "totalDownloads": 2412189
+        "totalDownloads": 2417543
       },
       "game": {
         "title": "The Legend of Zelda: Ocarina of Time",
@@ -2720,7 +2720,7 @@
         "homepage": null,
         "license": "CC0-1.0",
         "topics": [],
-        "stars": 2423,
+        "stars": 2426,
         "firstReleaseAt": "2024-05-27T01:01:57Z",
         "latestRelease": {
           "tag": "5.0.1",
@@ -2729,7 +2729,7 @@
           "htmlUrl": "https://github.com/2ship2harkinian/2ship2harkinian/releases/tag/5.0.1"
         },
         "releaseCount": 16,
-        "totalDownloads": 730229
+        "totalDownloads": 730939
       },
       "game": {
         "title": "The Legend of Zelda: Majora's Mask",
@@ -2746,7 +2746,7 @@
           "Adventure"
         ],
         "summary": "The Legend of Zelda: Majora's Mask is a direct sequel to Ocarina of Time, it utilizes the same engine and visual style as its predecessor. The game retains the traditional elements of Zelda games as well as those introduced in Ocarina of Time, such as active blocking with a shield, various throwing items, and the usage of melodies played on the ocarina to solve puzzles. Compared to the previous Zelda games, this installment is more oriented towards interaction with NPCs and has a larger variety of items, optional quests, and mini-games. It also includes a time system that spans three days, and this cycle must be reset periodically to progress through the game.",
-        "rating": 88.3,
+        "rating": 88.2,
         "url": "https://www.igdb.com/games/the-legend-of-zelda-majora-s-mask",
         "screenshots": [
           "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sckeb7.jpg",
@@ -2796,7 +2796,7 @@
         "homepage": null,
         "license": "CC0-1.0",
         "topics": [],
-        "stars": 2131,
+        "stars": 2132,
         "firstReleaseAt": "2024-12-22T22:44:26Z",
         "latestRelease": {
           "tag": "v2.0.0",
@@ -2805,7 +2805,7 @@
           "htmlUrl": "https://github.com/HarbourMasters/Starship/releases/tag/v2.0.0"
         },
         "releaseCount": 2,
-        "totalDownloads": 231247
+        "totalDownloads": 231437
       },
       "game": {
         "title": "Star Fox 64",
@@ -2872,7 +2872,7 @@
         "homepage": "https://harbourmasters.github.io/SpaghettiKart/",
         "license": null,
         "topics": [],
-        "stars": 2482,
+        "stars": 2485,
         "firstReleaseAt": "2025-11-15T22:21:45Z",
         "latestRelease": {
           "tag": "1.0.0",
@@ -2881,7 +2881,7 @@
           "htmlUrl": "https://github.com/HarbourMasters/SpaghettiKart/releases/tag/1.0.0"
         },
         "releaseCount": 3,
-        "totalDownloads": 246895
+        "totalDownloads": 247195
       },
       "game": {
         "title": "Mario Kart 64",
@@ -2957,7 +2957,7 @@
           "sm64",
           "sm64ex-coop"
         ],
-        "stars": 1515,
+        "stars": 1516,
         "firstReleaseAt": "2024-07-02T00:02:31Z",
         "latestRelease": {
           "tag": "v1.5.1",
@@ -2966,7 +2966,7 @@
           "htmlUrl": "https://github.com/coop-deluxe/sm64coopdx/releases/tag/v1.5.1"
         },
         "releaseCount": 16,
-        "totalDownloads": 1714603
+        "totalDownloads": 1715843
       },
       "game": {
         "title": "Super Mario 64",
@@ -2984,7 +2984,7 @@
           "Adventure"
         ],
         "summary": "Mario is super in a whole new way! Combining the finest 3-D graphics ever developed for a video game and an explosive soundtrack, Super Mario 64 becomes a new standard for video games. It's packed with bruising battles, daunting obstacle courses, and underwater adventures. Retrieve the Power Stars from their hidden locations and confront your arch-nemesis— Bowser, King of the Koopas!\n\n• Run freely in a grassy meadow, tip-toe through a gloomy dungeon, climb to the top of a mountain, or take a swim in the moat!\n• Leap headfirst into a watery painting and soon you'll be searching for the surface in an underwater realm!\n• On-the-fly, 3-D rendered gameplay delivers the action of ruthless enemy attacks from every angle!\n• Find the Caps that give Mario super powers and ponder the mysteries of the pyramid; you can even race Koopas for fabulous prizes!\n• With the Nintendo 64 Controller and its analog\nControl Stick, Mario can crawl, kick down obstacles, swim, do reverse flips, and even stick the landing on his backwards somersault!\n• Saved game information is stored for up to four players in memory.",
-        "rating": 88.8,
+        "rating": 88.7,
         "url": "https://www.igdb.com/games/super-mario-64",
         "screenshots": [
           "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8e2l.jpg",
@@ -3030,7 +3030,7 @@
         "homepage": null,
         "license": "MIT",
         "topics": [],
-        "stars": 2100,
+        "stars": 2103,
         "firstReleaseAt": "2024-05-14T09:41:23Z",
         "latestRelease": {
           "tag": "ci-dev-build",
@@ -3039,7 +3039,7 @@
           "htmlUrl": "https://github.com/perfect-dark-pc-port/perfect_dark/releases/tag/ci-dev-build"
         },
         "releaseCount": 1,
-        "totalDownloads": 20792
+        "totalDownloads": 20989
       },
       "game": {
         "title": "Perfect Dark",
@@ -3117,7 +3117,7 @@
           "htmlUrl": "https://github.com/open-goal/launcher/releases/tag/v2.11.2"
         },
         "releaseCount": 90,
-        "totalDownloads": 510451
+        "totalDownloads": 510800
       },
       "game": {
         "title": "Jak and Daxter: The Precursor Legacy",
@@ -3196,7 +3196,7 @@
           "htmlUrl": "https://github.com/open-goal/launcher/releases/tag/v2.11.2"
         },
         "releaseCount": 90,
-        "totalDownloads": 510451
+        "totalDownloads": 510800
       },
       "game": {
         "title": "Jak II",
@@ -3259,7 +3259,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 75,
+        "stars": 76,
         "firstReleaseAt": "2026-10-12T22:04:37Z",
         "latestRelease": {
           "tag": "v1.4.1",
@@ -3268,7 +3268,7 @@
           "htmlUrl": "https://github.com/thiagordsfx/urban-reign-recomp/releases/tag/v1.4.1"
         },
         "releaseCount": 8,
-        "totalDownloads": 3786
+        "totalDownloads": 3928
       },
       "game": {
         "title": "Urban Reign",
@@ -3337,7 +3337,7 @@
           "htmlUrl": "https://github.com/obaidr1/hercules-recompiled/releases/tag/v0.5.6"
         },
         "releaseCount": 11,
-        "totalDownloads": 9292
+        "totalDownloads": 9435
       },
       "game": {
         "title": "Disney's Hercules Action Game",
@@ -3410,7 +3410,7 @@
           "htmlUrl": "https://github.com/OAleex/OpenShao/releases/tag/v0.4.1"
         },
         "releaseCount": 3,
-        "totalDownloads": 9344
+        "totalDownloads": 9819
       },
       "game": {
         "title": "Mortal Kombat: Shaolin Monks",
@@ -3475,7 +3475,7 @@
         "homepage": "https://discord.gg/AJJbJAzNNJ",
         "license": null,
         "topics": [],
-        "stars": 4980,
+        "stars": 4987,
         "firstReleaseAt": "2023-08-17T01:18:40Z",
         "latestRelease": {
           "tag": "v0.3",
@@ -3484,7 +3484,7 @@
           "htmlUrl": "https://github.com/snesrev/zelda3/releases/tag/v0.3"
         },
         "releaseCount": 1,
-        "totalDownloads": 23853
+        "totalDownloads": 23918
       },
       "game": {
         "title": "The Legend of Zelda: A Link to the Past",
@@ -3550,7 +3550,7 @@
         "homepage": "https://discord.gg/yTMG8c4Bqm",
         "license": "GPL-2.0",
         "topics": [],
-        "stars": 5112,
+        "stars": 5143,
         "firstReleaseAt": "2026-10-06T17:55:21Z",
         "latestRelease": {
           "tag": "windows-v1.9.7",
@@ -3559,7 +3559,7 @@
           "htmlUrl": "https://github.com/Supermedo/bloodborne_pc/releases/tag/windows-v1.9.7"
         },
         "releaseCount": 27,
-        "totalDownloads": 704986
+        "totalDownloads": 712428
       },
       "game": {
         "title": "Bloodborne",
@@ -3626,7 +3626,7 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 4106,
+        "stars": 4111,
         "firstReleaseAt": "2026-07-18T01:21:55Z",
         "latestRelease": {
           "tag": "v0.4.0",
@@ -3635,7 +3635,7 @@
           "htmlUrl": "https://github.com/bryanthaboi/gen1recomp/releases/tag/v0.4.0"
         },
         "releaseCount": 276,
-        "totalDownloads": 1407706
+        "totalDownloads": 1410838
       },
       "game": {
         "title": "Pokémon Red Version",
@@ -3699,7 +3699,7 @@
         "homepage": "https://www.patreon.com/loreanxavier",
         "license": null,
         "topics": [],
-        "stars": 2390,
+        "stars": 2403,
         "firstReleaseAt": "2026-10-07T10:02:44Z",
         "latestRelease": {
           "tag": "v1.0.8",
@@ -3708,7 +3708,7 @@
           "htmlUrl": "https://github.com/LoreanXavier/pt-pc/releases/tag/v1.0.8"
         },
         "releaseCount": 9,
-        "totalDownloads": 181945
+        "totalDownloads": 182990
       },
       "game": {
         "title": "P.T.",
@@ -3774,7 +3774,7 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 2120,
+        "stars": 2139,
         "firstReleaseAt": "2026-10-23T23:56:49Z",
         "latestRelease": {
           "tag": "beta_5.4",
@@ -3783,7 +3783,7 @@
           "htmlUrl": "https://github.com/peiikai/LASRecomp/releases/tag/beta_5.4"
         },
         "releaseCount": 8,
-        "totalDownloads": 20376
+        "totalDownloads": 21359
       },
       "game": {
         "title": "The Legend of Zelda: Link's Awakening",
@@ -3846,7 +3846,7 @@
         "homepage": null,
         "license": "GPL-2.0",
         "topics": [],
-        "stars": 1723,
+        "stars": 1734,
         "firstReleaseAt": "2026-10-19T20:42:30Z",
         "latestRelease": {
           "tag": "v0.72.1",
@@ -3855,7 +3855,7 @@
           "htmlUrl": "https://github.com/AjncSystem/ShadowOfTheColossus-PC/releases/tag/v0.72.1"
         },
         "releaseCount": 18,
-        "totalDownloads": 70518
+        "totalDownloads": 73323
       },
       "game": {
         "title": "Shadow of the Colossus",
@@ -3923,7 +3923,7 @@
         "homepage": null,
         "license": "MPL-2.0",
         "topics": [],
-        "stars": 1274,
+        "stars": 1289,
         "firstReleaseAt": "2026-10-05T22:12:13Z",
         "latestRelease": {
           "tag": "v0.5.0",
@@ -3932,7 +3932,7 @@
           "htmlUrl": "https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp/releases/tag/v0.5.0"
         },
         "releaseCount": 21,
-        "totalDownloads": 87041
+        "totalDownloads": 88282
       },
       "game": {
         "title": "The Legend of Zelda: The Wind Waker HD",
@@ -4008,7 +4008,7 @@
           "vulkan",
           "windows"
         ],
-        "stars": 1068,
+        "stars": 1087,
         "firstReleaseAt": "2026-10-14T21:52:17Z",
         "latestRelease": {
           "tag": "v1.0",
@@ -4017,7 +4017,7 @@
           "htmlUrl": "https://github.com/HayatoG/iss_pc/releases/tag/v1.0"
         },
         "releaseCount": 40,
-        "totalDownloads": 92398
+        "totalDownloads": 93653
       },
       "game": {
         "title": "Infamous: Second Son",
@@ -4086,16 +4086,16 @@
           "windows",
           "xbox-360"
         ],
-        "stars": 998,
+        "stars": 1002,
         "firstReleaseAt": "2026-08-25T22:17:51Z",
         "latestRelease": {
-          "tag": "v0.7.1",
-          "name": "Pinyon Shift 0.7.1",
-          "publishedAt": "2026-10-28T01:23:07Z",
-          "htmlUrl": "https://github.com/arcanite24/pinyon-shift/releases/tag/v0.7.1"
+          "tag": "v0.8.1",
+          "name": "Pinyon Shift 0.8.1",
+          "publishedAt": "2026-11-05T02:48:39Z",
+          "htmlUrl": "https://github.com/arcanite24/pinyon-shift/releases/tag/v0.8.1"
         },
-        "releaseCount": 20,
-        "totalDownloads": 72615
+        "releaseCount": 22,
+        "totalDownloads": 76066
       },
       "game": {
         "title": "Forza Horizon",
@@ -4163,7 +4163,7 @@
           "htmlUrl": "https://github.com/djyt/cannonball/releases/tag/v0.34"
         },
         "releaseCount": 4,
-        "totalDownloads": 15366
+        "totalDownloads": 15383
       },
       "game": {
         "title": "OutRun",
@@ -4238,7 +4238,7 @@
           "htmlUrl": "https://github.com/HarbourMasters/Ghostship/releases/tag/3.0.0"
         },
         "releaseCount": 5,
-        "totalDownloads": 141530
+        "totalDownloads": 142276
       },
       "game": {
         "title": "Super Mario 64",
@@ -4256,7 +4256,7 @@
           "Adventure"
         ],
         "summary": "Mario is super in a whole new way! Combining the finest 3-D graphics ever developed for a video game and an explosive soundtrack, Super Mario 64 becomes a new standard for video games. It's packed with bruising battles, daunting obstacle courses, and underwater adventures. Retrieve the Power Stars from their hidden locations and confront your arch-nemesis— Bowser, King of the Koopas!\n\n• Run freely in a grassy meadow, tip-toe through a gloomy dungeon, climb to the top of a mountain, or take a swim in the moat!\n• Leap headfirst into a watery painting and soon you'll be searching for the surface in an underwater realm!\n• On-the-fly, 3-D rendered gameplay delivers the action of ruthless enemy attacks from every angle!\n• Find the Caps that give Mario super powers and ponder the mysteries of the pyramid; you can even race Koopas for fabulous prizes!\n• With the Nintendo 64 Controller and its analog\nControl Stick, Mario can crawl, kick down obstacles, swim, do reverse flips, and even stick the landing on his backwards somersault!\n• Saved game information is stored for up to four players in memory.",
-        "rating": 88.8,
+        "rating": 88.7,
         "url": "https://www.igdb.com/games/super-mario-64",
         "screenshots": [
           "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8e2l.jpg",
@@ -4306,7 +4306,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 913,
+        "stars": 924,
         "firstReleaseAt": "2026-09-06T04:28:07Z",
         "latestRelease": {
           "tag": "v1.1.0",
@@ -4315,7 +4315,7 @@
           "htmlUrl": "https://github.com/freefrank/LostOdysseyRecomp/releases/tag/v1.1.0"
         },
         "releaseCount": 71,
-        "totalDownloads": 121672
+        "totalDownloads": 123266
       },
       "game": {
         "title": "Lost Odyssey",
@@ -4394,7 +4394,7 @@
           "survival-horror",
           "xbox"
         ],
-        "stars": 819,
+        "stars": 820,
         "firstReleaseAt": "2026-03-10T02:30:11Z",
         "latestRelease": {
           "tag": "crossplatform-beta",
@@ -4403,7 +4403,7 @@
           "htmlUrl": "https://github.com/SlickAmogus/silent-hill-decomp/releases/tag/crossplatform-beta"
         },
         "releaseCount": 15,
-        "totalDownloads": 60028
+        "totalDownloads": 61989
       },
       "game": {
         "title": "Silent Hill",
@@ -4466,7 +4466,7 @@
         "homepage": null,
         "license": "GPL-2.0",
         "topics": [],
-        "stars": 921,
+        "stars": 934,
         "firstReleaseAt": "2026-10-16T20:44:24Z",
         "latestRelease": {
           "tag": "v0.4.1",
@@ -4475,7 +4475,7 @@
           "htmlUrl": "https://github.com/OverkillLabs3/driveclub-recomp/releases/tag/v0.4.1"
         },
         "releaseCount": 13,
-        "totalDownloads": 65382
+        "totalDownloads": 67197
       },
       "game": {
         "title": "Driveclub",
@@ -4536,7 +4536,7 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 836,
+        "stars": 839,
         "firstReleaseAt": "2026-09-02T15:50:13Z",
         "latestRelease": {
           "tag": "v0.8.5-beta",
@@ -4545,7 +4545,7 @@
           "htmlUrl": "https://github.com/florinp93/hells-gate-recomp/releases/tag/v0.8.5-beta"
         },
         "releaseCount": 27,
-        "totalDownloads": 80670
+        "totalDownloads": 81827
       },
       "game": {
         "title": "Dante's Inferno",
@@ -4617,7 +4617,7 @@
           "htmlUrl": "https://github.com/Eukaryot/sonic3air/releases/tag/v26.03.28.0-stable"
         },
         "releaseCount": 36,
-        "totalDownloads": 1894051
+        "totalDownloads": 1895938
       },
       "game": {
         "title": "Sonic the Hedgehog 3 & Knuckles",
@@ -4683,7 +4683,7 @@
           "vulkan",
           "windows"
         ],
-        "stars": 705,
+        "stars": 710,
         "firstReleaseAt": "2026-10-12T18:22:03Z",
         "latestRelease": {
           "tag": "v0.4",
@@ -4692,7 +4692,7 @@
           "htmlUrl": "https://github.com/GetLostIn/CTR-NitroFueled-PC/releases/tag/v0.4"
         },
         "releaseCount": 5,
-        "totalDownloads": 47904
+        "totalDownloads": 48273
       },
       "game": {
         "title": "Crash Team Racing Nitro-Fueled",
@@ -4756,7 +4756,7 @@
         "homepage": "https://discord.gg/AJJbJAzNNJ",
         "license": null,
         "topics": [],
-        "stars": 652,
+        "stars": 653,
         "firstReleaseAt": "2023-08-16T22:38:38Z",
         "latestRelease": {
           "tag": "v0.1",
@@ -4765,7 +4765,7 @@
           "htmlUrl": "https://github.com/snesrev/smw/releases/tag/v0.1"
         },
         "releaseCount": 1,
-        "totalDownloads": 24634
+        "totalDownloads": 24685
       },
       "game": {
         "title": "Super Mario World",
@@ -4834,7 +4834,7 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 582,
+        "stars": 584,
         "firstReleaseAt": "2026-09-14T04:32:32Z",
         "latestRelease": {
           "tag": "v0.4.2",
@@ -4843,7 +4843,7 @@
           "htmlUrl": "https://github.com/999sian/melee-pc/releases/tag/v0.4.2"
         },
         "releaseCount": 20,
-        "totalDownloads": 52722
+        "totalDownloads": 53242
       },
       "game": {
         "title": "Super Smash Bros. Melee",
@@ -4906,7 +4906,7 @@
         "homepage": null,
         "license": "MIT",
         "topics": [],
-        "stars": 611,
+        "stars": 612,
         "firstReleaseAt": "2026-09-06T04:00:03Z",
         "latestRelease": {
           "tag": "1.5.0",
@@ -4915,7 +4915,7 @@
           "htmlUrl": "https://github.com/himdo/Fable-2-Recomp/releases/tag/1.5.0"
         },
         "releaseCount": 9,
-        "totalDownloads": 28156
+        "totalDownloads": 28422
       },
       "game": {
         "title": "Fable II",
@@ -4990,7 +4990,7 @@
           "htmlUrl": "https://github.com/BodbDearg/PsyDoom/releases/tag/releases/1.1.1"
         },
         "releaseCount": 27,
-        "totalDownloads": 27727
+        "totalDownloads": 27821
       },
       "game": {
         "title": "Doom",
@@ -5063,16 +5063,16 @@
           "webgpu",
           "windows"
         ],
-        "stars": 643,
+        "stars": 652,
         "firstReleaseAt": "2026-09-27T14:23:41Z",
         "latestRelease": {
-          "tag": "v0.40.0",
-          "name": "v0.40.0",
-          "publishedAt": "2026-11-03T20:45:04Z",
-          "htmlUrl": "https://github.com/Odrannnn/MetroidPrimePort/releases/tag/v0.40.0"
+          "tag": "v0.41.0",
+          "name": "v0.41.0",
+          "publishedAt": "2026-11-04T20:34:35Z",
+          "htmlUrl": "https://github.com/Odrannnn/MetroidPrimePort/releases/tag/v0.41.0"
         },
-        "releaseCount": 48,
-        "totalDownloads": 68418
+        "releaseCount": 49,
+        "totalDownloads": 70590
       },
       "game": {
         "title": "Metroid Prime",
@@ -5140,7 +5140,7 @@
         "homepage": "https://www.harbourmasters.org",
         "license": "CC0-1.0",
         "topics": [],
-        "stars": 546,
+        "stars": 549,
         "firstReleaseAt": "2026-09-17T01:19:09Z",
         "latestRelease": {
           "tag": "1.0.3",
@@ -5149,7 +5149,7 @@
           "htmlUrl": "https://github.com/HarbourMasters/PaperBoat/releases/tag/1.0.3"
         },
         "releaseCount": 4,
-        "totalDownloads": 47686
+        "totalDownloads": 47980
       },
       "game": {
         "title": "Paper Mario",
@@ -5216,7 +5216,7 @@
         "homepage": "https://discord.gg/bAE73kxKXY",
         "license": null,
         "topics": [],
-        "stars": 529,
+        "stars": 532,
         "firstReleaseAt": "2026-04-29T03:23:43Z",
         "latestRelease": {
           "tag": "v1.6",
@@ -5225,7 +5225,7 @@
           "htmlUrl": "https://github.com/JRickey/BattleShip/releases/tag/v1.6"
         },
         "releaseCount": 33,
-        "totalDownloads": 71541
+        "totalDownloads": 71823
       },
       "game": {
         "title": "Super Smash Bros.",
@@ -5292,7 +5292,7 @@
         "topics": [
           "padmint"
         ],
-        "stars": 555,
+        "stars": 558,
         "firstReleaseAt": "2026-09-29T13:53:58Z",
         "latestRelease": {
           "tag": "v0.10.0",
@@ -5301,7 +5301,7 @@
           "htmlUrl": "https://github.com/chrissotraidis/bluewake/releases/tag/v0.10.0"
         },
         "releaseCount": 8,
-        "totalDownloads": 30785
+        "totalDownloads": 31348
       },
       "game": {
         "title": "The Legend of Zelda: The Wind Waker",
@@ -5377,7 +5377,7 @@
           "vulkan",
           "windows"
         ],
-        "stars": 542,
+        "stars": 548,
         "firstReleaseAt": "2026-10-14T21:34:21Z",
         "latestRelease": {
           "tag": "v2026.10.27-4825a99",
@@ -5386,7 +5386,7 @@
           "htmlUrl": "https://github.com/HayatoG/tlg_pc/releases/tag/v2026.10.27-4825a99"
         },
         "releaseCount": 17,
-        "totalDownloads": 29727
+        "totalDownloads": 30182
       },
       "game": {
         "title": "The Last Guardian",
@@ -5465,16 +5465,16 @@
           "steam-deck",
           "windows"
         ],
-        "stars": 501,
+        "stars": 502,
         "firstReleaseAt": "2026-10-06T00:17:26Z",
         "latestRelease": {
-          "tag": "v0.10.1",
-          "name": "v0.10.1",
-          "publishedAt": "2026-11-04T06:28:12Z",
-          "htmlUrl": "https://github.com/nathanialf/ico-pc/releases/tag/v0.10.1"
+          "tag": "v0.10.2",
+          "name": "v0.10.2",
+          "publishedAt": "2026-11-05T01:12:38Z",
+          "htmlUrl": "https://github.com/nathanialf/ico-pc/releases/tag/v0.10.2"
         },
-        "releaseCount": 43,
-        "totalDownloads": 33623
+        "releaseCount": 44,
+        "totalDownloads": 34859
       },
       "game": {
         "title": "Ico",
@@ -5542,7 +5542,7 @@
         "homepage": null,
         "license": "BSD-3-Clause",
         "topics": [],
-        "stars": 482,
+        "stars": 483,
         "firstReleaseAt": "2026-10-04T20:43:09Z",
         "latestRelease": {
           "tag": "v1.1",
@@ -5551,7 +5551,7 @@
           "htmlUrl": "https://github.com/goliathret/EdgeOfTimeRecomp/releases/tag/v1.1"
         },
         "releaseCount": 2,
-        "totalDownloads": 17365
+        "totalDownloads": 17700
       },
       "game": {
         "title": "Spider-Man: Edge of Time",
@@ -5617,7 +5617,7 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 539,
+        "stars": 542,
         "firstReleaseAt": "2026-10-17T19:18:06Z",
         "latestRelease": {
           "tag": "v2.1.0",
@@ -5626,7 +5626,7 @@
           "htmlUrl": "https://github.com/Apolinario-coder/SkyRecomp/releases/tag/v2.1.0"
         },
         "releaseCount": 10,
-        "totalDownloads": 15128
+        "totalDownloads": 16026
       },
       "game": {
         "title": "The Legend of Zelda: Skyward Sword HD",
@@ -5698,7 +5698,7 @@
           "htmlUrl": "https://github.com/UNDERdecoded/Gen2Recomped/releases/tag/v0.8.49"
         },
         "releaseCount": 142,
-        "totalDownloads": 171766
+        "totalDownloads": 172244
       },
       "game": {
         "title": "Pokémon Gold Version",
@@ -5764,13 +5764,13 @@
         "stars": 458,
         "firstReleaseAt": "2026-10-11T20:44:19Z",
         "latestRelease": {
-          "tag": "v2.7.1",
-          "name": "Tekken 6 Native Online v2.7.1",
-          "publishedAt": "2026-11-03T18:50:14Z",
-          "htmlUrl": "https://github.com/Ekspym/Tekken6-native-online/releases/tag/v2.7.1"
+          "tag": "v2.7.2",
+          "name": "Tekken 6 Native Online v2.7.2",
+          "publishedAt": "2026-11-04T17:00:38Z",
+          "htmlUrl": "https://github.com/Ekspym/Tekken6-native-online/releases/tag/v2.7.2"
         },
-        "releaseCount": 43,
-        "totalDownloads": 184027
+        "releaseCount": 44,
+        "totalDownloads": 187603
       },
       "game": {
         "title": "Tekken 6",
@@ -5835,7 +5835,7 @@
         "homepage": "https://discord.gg/Heag4zPJbx",
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 412,
+        "stars": 414,
         "firstReleaseAt": "2026-07-08T05:20:16Z",
         "latestRelease": {
           "tag": "v0.0.6.5",
@@ -5844,7 +5844,7 @@
           "htmlUrl": "https://github.com/YesterMester/TheSimpsonsGameRecomp/releases/tag/v0.0.6.5"
         },
         "releaseCount": 21,
-        "totalDownloads": 31766
+        "totalDownloads": 32151
       },
       "game": {
         "title": "The Simpsons Game",
@@ -5909,7 +5909,7 @@
           "nintendo-gamecube",
           "super-mario-strikers"
         ],
-        "stars": 380,
+        "stars": 382,
         "firstReleaseAt": "2026-09-13T12:44:41Z",
         "latestRelease": {
           "tag": "v1.3.0",
@@ -5917,8 +5917,8 @@
           "publishedAt": "2026-09-22T15:26:18Z",
           "htmlUrl": "https://github.com/new-coke/strikers/releases/tag/v1.3.0"
         },
-        "releaseCount": 8,
-        "totalDownloads": 26008
+        "releaseCount": 9,
+        "totalDownloads": 26391
       },
       "game": {
         "title": "Super Mario Strikers",
@@ -5978,7 +5978,7 @@
         "homepage": null,
         "license": "GPL-2.0",
         "topics": [],
-        "stars": 393,
+        "stars": 395,
         "firstReleaseAt": "2026-10-15T20:42:40Z",
         "latestRelease": {
           "tag": "windows-v0.7.9",
@@ -5987,7 +5987,7 @@
           "htmlUrl": "https://github.com/mateussmeneses/theorder1886-port/releases/tag/windows-v0.7.9"
         },
         "releaseCount": 27,
-        "totalDownloads": 31828
+        "totalDownloads": 32231
       },
       "game": {
         "title": "The Order: 1886",
@@ -6064,7 +6064,7 @@
           "windows",
           "xbox-360"
         ],
-        "stars": 359,
+        "stars": 358,
         "firstReleaseAt": "2026-06-27T18:35:41Z",
         "latestRelease": {
           "tag": "v1.1.8",
@@ -6073,7 +6073,7 @@
           "htmlUrl": "https://github.com/LittleBitUA/DownpourRecomp/releases/tag/v1.1.8"
         },
         "releaseCount": 10,
-        "totalDownloads": 18915
+        "totalDownloads": 19171
       },
       "game": {
         "title": "Silent Hill: Downpour",
@@ -6135,16 +6135,16 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 314,
+        "stars": 318,
         "firstReleaseAt": "2026-08-08T19:38:40Z",
         "latestRelease": {
-          "tag": "v1.2.2",
-          "name": "G-Diffuser 1.2.2 - Save and Import Hotfix",
-          "publishedAt": "2026-11-03T20:25:18Z",
-          "htmlUrl": "https://github.com/Zorkats/G-Diffuser/releases/tag/v1.2.2"
+          "tag": "v1.2.3",
+          "name": "G-Diffuser 1.2.3 - Course Editor Hotfix",
+          "publishedAt": "2026-11-04T17:16:00Z",
+          "htmlUrl": "https://github.com/Zorkats/G-Diffuser/releases/tag/v1.2.3"
         },
-        "releaseCount": 9,
-        "totalDownloads": 17166
+        "releaseCount": 10,
+        "totalDownloads": 17917
       },
       "game": {
         "title": "F-Zero X",
@@ -6218,7 +6218,7 @@
           "htmlUrl": "https://github.com/Rainchus/Quest64-Recomp/releases/tag/v0.1"
         },
         "releaseCount": 1,
-        "totalDownloads": 8242
+        "totalDownloads": 8266
       },
       "game": {
         "title": "Quest 64",
@@ -6281,7 +6281,7 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 310,
+        "stars": 315,
         "firstReleaseAt": "2026-10-16T01:39:30Z",
         "latestRelease": {
           "tag": "v1.1.6",
@@ -6290,7 +6290,7 @@
           "htmlUrl": "https://github.com/rob646464/luigis-mansion-recompiled/releases/tag/v1.1.6"
         },
         "releaseCount": 9,
-        "totalDownloads": 17116
+        "totalDownloads": 17828
       },
       "game": {
         "title": "Luigi's Mansion",
@@ -6352,7 +6352,7 @@
         "homepage": null,
         "license": "MIT",
         "topics": [],
-        "stars": 284,
+        "stars": 286,
         "firstReleaseAt": "2026-08-27T17:16:43Z",
         "latestRelease": {
           "tag": "v0.0.17",
@@ -6361,7 +6361,7 @@
           "htmlUrl": "https://github.com/elliotttate/DKC1Recomp/releases/tag/v0.0.17"
         },
         "releaseCount": 16,
-        "totalDownloads": 17363
+        "totalDownloads": 17514
       },
       "game": {
         "title": "Donkey Kong Country",
@@ -6433,7 +6433,7 @@
           "windows",
           "xbox360"
         ],
-        "stars": 294,
+        "stars": 295,
         "firstReleaseAt": "2026-08-05T02:16:24Z",
         "latestRelease": {
           "tag": "0.6.0",
@@ -6442,7 +6442,7 @@
           "htmlUrl": "https://github.com/psxrestore/Condemned2Recomp/releases/tag/0.6.0"
         },
         "releaseCount": 13,
-        "totalDownloads": 9739
+        "totalDownloads": 10025
       },
       "game": {
         "title": "Condemned 2: Bloodshot",
@@ -6503,7 +6503,7 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 285,
+        "stars": 287,
         "firstReleaseAt": "2026-09-26T17:29:57Z",
         "latestRelease": {
           "tag": "v0.3.0",
@@ -6512,7 +6512,7 @@
           "htmlUrl": "https://github.com/Unchiga/Yu-Gi-Oh-Forbidden-Memories-Recompiled/releases/tag/v0.3.0"
         },
         "releaseCount": 12,
-        "totalDownloads": 48361
+        "totalDownloads": 49196
       },
       "game": {
         "title": "Yu-Gi-Oh! Forbidden Memories",
@@ -6578,16 +6578,16 @@
         "homepage": null,
         "license": "MIT",
         "topics": [],
-        "stars": 257,
+        "stars": 258,
         "firstReleaseAt": "2026-08-10T07:19:24Z",
         "latestRelease": {
-          "tag": "Version1.0.12",
-          "name": "DKR-R Version 1.0.12",
-          "publishedAt": "2026-10-27T18:20:46Z",
-          "htmlUrl": "https://github.com/ThatGuyMcd/DKR-R/releases/tag/Version1.0.12"
+          "tag": "Version1.0.14",
+          "name": "DKR-R v1.0.14",
+          "publishedAt": "2026-11-04T17:52:26Z",
+          "htmlUrl": "https://github.com/ThatGuyMcd/DKR-R/releases/tag/Version1.0.14"
         },
-        "releaseCount": 16,
-        "totalDownloads": 35579
+        "releaseCount": 17,
+        "totalDownloads": 36705
       },
       "game": {
         "title": "Diddy Kong Racing",
@@ -6650,7 +6650,7 @@
         "homepage": null,
         "license": "AGPL-3.0",
         "topics": [],
-        "stars": 695,
+        "stars": 700,
         "firstReleaseAt": "2026-10-06T08:28:15Z",
         "latestRelease": {
           "tag": "v0.1.39.6",
@@ -6659,7 +6659,7 @@
           "htmlUrl": "https://github.com/z3xox/Tenkaichi3Decomp/releases/tag/v0.1.39.6"
         },
         "releaseCount": 60,
-        "totalDownloads": 206829
+        "totalDownloads": 211030
       },
       "game": {
         "title": "Dragon Ball Z: Budokai Tenkaichi 3",
@@ -6726,16 +6726,16 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 126,
+        "stars": 135,
         "firstReleaseAt": "2026-10-31T01:47:36Z",
         "latestRelease": {
-          "tag": "launcher-v0.3.0",
-          "name": "v0.3.0",
-          "publishedAt": "2026-11-04T06:12:25Z",
-          "htmlUrl": "https://github.com/danielalves96/gow-pc-port/releases/tag/launcher-v0.3.0"
+          "tag": "launcher-v0.3.1",
+          "name": "v0.3.1",
+          "publishedAt": "2026-11-04T17:59:57Z",
+          "htmlUrl": "https://github.com/danielalves96/gow-pc-port/releases/tag/launcher-v0.3.1"
         },
-        "releaseCount": 12,
-        "totalDownloads": 10271
+        "releaseCount": 13,
+        "totalDownloads": 11809
       },
       "game": {
         "title": "God of War",
@@ -6814,7 +6814,7 @@
           "static-recompilation",
           "windows"
         ],
-        "stars": 194,
+        "stars": 202,
         "firstReleaseAt": "2026-10-25T07:36:56Z",
         "latestRelease": {
           "tag": "v0.5.0",
@@ -6823,7 +6823,7 @@
           "htmlUrl": "https://github.com/Vnnc1/gow-native-pc/releases/tag/v0.5.0"
         },
         "releaseCount": 6,
-        "totalDownloads": 7814
+        "totalDownloads": 8945
       },
       "game": {
         "title": "God of War",
@@ -6900,7 +6900,7 @@
           "static-recompilation",
           "windows"
         ],
-        "stars": 176,
+        "stars": 181,
         "firstReleaseAt": "2026-10-17T14:27:25Z",
         "latestRelease": {
           "tag": "v1.4.0",
@@ -6909,7 +6909,7 @@
           "htmlUrl": "https://github.com/DrummingBird1/gow-psp-recomp/releases/tag/v1.4.0"
         },
         "releaseCount": 8,
-        "totalDownloads": 10723
+        "totalDownloads": 11178
       },
       "game": {
         "title": "God of War: Chains of Olympus",
@@ -6972,7 +6972,7 @@
         "homepage": "https://halocombatevolved.com/",
         "license": "AGPL-3.0",
         "topics": [],
-        "stars": 1926,
+        "stars": 1933,
         "firstReleaseAt": "2026-10-29T12:38:59Z",
         "latestRelease": {
           "tag": "build-337",
@@ -6981,7 +6981,7 @@
           "htmlUrl": "https://github.com/OpenCommunityEdition/OpenCE/releases/tag/build-337"
         },
         "releaseCount": 5,
-        "totalDownloads": 25898
+        "totalDownloads": 27969
       },
       "game": {
         "title": "Halo: Combat Evolved",
@@ -7047,7 +7047,7 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 1547,
+        "stars": 1551,
         "firstReleaseAt": "2026-03-13T23:42:48Z",
         "latestRelease": {
           "tag": "v1.0.0",
@@ -7056,7 +7056,7 @@
           "htmlUrl": "https://github.com/flyngmt/Nookery/releases/tag/v1.0.0"
         },
         "releaseCount": 10,
-        "totalDownloads": 36062
+        "totalDownloads": 36637
       },
       "game": {
         "title": "Animal Crossing",
@@ -7117,16 +7117,16 @@
         "homepage": null,
         "license": "MIT",
         "topics": [],
-        "stars": 432,
+        "stars": 455,
         "firstReleaseAt": "2026-10-22T14:46:06Z",
         "latestRelease": {
-          "tag": "0.14.0",
-          "name": "0.14.0 - Bugfixes, Android fixes",
-          "publishedAt": "2026-11-03T22:13:34Z",
-          "htmlUrl": "https://github.com/morerokk/MHGURecomp/releases/tag/0.14.0"
+          "tag": "0.14.2",
+          "name": "0.14.2 - Bugfixes",
+          "publishedAt": "2026-11-05T13:23:00Z",
+          "htmlUrl": "https://github.com/morerokk/MHGURecomp/releases/tag/0.14.2"
         },
-        "releaseCount": 39,
-        "totalDownloads": 25593
+        "releaseCount": 41,
+        "totalDownloads": 28487
       },
       "game": {
         "title": "Monster Hunter Generations Ultimate",
@@ -7193,7 +7193,7 @@
         "homepage": null,
         "license": "Apache-2.0",
         "topics": [],
-        "stars": 340,
+        "stars": 350,
         "firstReleaseAt": "2026-10-22T23:46:03Z",
         "latestRelease": {
           "tag": "v0.5.0",
@@ -7202,7 +7202,7 @@
           "htmlUrl": "https://github.com/yozander2009-stack/Metroid-Dread-Recomp/releases/tag/v0.5.0"
         },
         "releaseCount": 6,
-        "totalDownloads": 45586
+        "totalDownloads": 48020
       },
       "game": {
         "title": "Metroid Dread",
@@ -7268,7 +7268,7 @@
         "homepage": null,
         "license": "GPL-2.0",
         "topics": [],
-        "stars": 341,
+        "stars": 342,
         "firstReleaseAt": "2026-10-16T16:04:46Z",
         "latestRelease": {
           "tag": "v0.8.1",
@@ -7277,7 +7277,7 @@
           "htmlUrl": "https://github.com/lesca-191204/killzone-shadowfall-pc/releases/tag/v0.8.1"
         },
         "releaseCount": 14,
-        "totalDownloads": 25575
+        "totalDownloads": 25995
       },
       "game": {
         "title": "Killzone: Shadow Fall",
@@ -7339,16 +7339,16 @@
         "homepage": null,
         "license": "GPL-2.0",
         "topics": [],
-        "stars": 319,
+        "stars": 328,
         "firstReleaseAt": "2026-10-17T23:28:51Z",
         "latestRelease": {
-          "tag": "v0.1.12",
-          "name": "Gravity Rush Remastered PC 0.1.12",
-          "publishedAt": "2026-11-04T10:03:51Z",
-          "htmlUrl": "https://github.com/LucaPazienza/gravityrush_pc/releases/tag/v0.1.12"
+          "tag": "v0.1.14",
+          "name": "Gravity Rush Remastered PC 0.1.14",
+          "publishedAt": "2026-11-05T08:33:12Z",
+          "htmlUrl": "https://github.com/LucaPazienza/gravityrush_pc/releases/tag/v0.1.14"
         },
-        "releaseCount": 13,
-        "totalDownloads": 14777
+        "releaseCount": 15,
+        "totalDownloads": 15879
       },
       "game": {
         "title": "Gravity Rush Remastered",
@@ -7417,16 +7417,16 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 469,
+        "stars": 490,
         "firstReleaseAt": "2026-10-30T13:25:53Z",
         "latestRelease": {
-          "tag": "v0.2.1",
-          "name": "GTA Vice City Stories Launcher v0.2.1",
-          "publishedAt": "2026-11-04T13:16:37Z",
-          "htmlUrl": "https://github.com/gothamor/gta-vcs-recomp/releases/tag/v0.2.1"
+          "tag": "v0.2.2",
+          "name": "GTA Vice City Stories Launcher v0.2.2",
+          "publishedAt": "2026-11-04T21:10:14Z",
+          "htmlUrl": "https://github.com/gothamor/gta-vcs-recomp/releases/tag/v0.2.2"
         },
-        "releaseCount": 8,
-        "totalDownloads": 14211
+        "releaseCount": 9,
+        "totalDownloads": 16665
       },
       "game": {
         "title": "Grand Theft Auto: Vice City Stories",
@@ -7499,16 +7499,16 @@
           "xbox",
           "xbox-360"
         ],
-        "stars": 378,
+        "stars": 387,
         "firstReleaseAt": "2026-10-27T04:45:04Z",
         "latestRelease": {
-          "tag": "0.4.4",
-          "name": "COGBox 0.4.4",
-          "publishedAt": "2026-11-03T17:59:18Z",
-          "htmlUrl": "https://github.com/Shagg88/COGBox/releases/tag/0.4.4"
+          "tag": "0.4.5",
+          "name": "COGBox 0.4.5",
+          "publishedAt": "2026-11-04T18:21:03Z",
+          "htmlUrl": "https://github.com/Shagg88/COGBox/releases/tag/0.4.5"
         },
-        "releaseCount": 15,
-        "totalDownloads": 27535
+        "releaseCount": 16,
+        "totalDownloads": 30582
       },
       "game": {
         "title": "Gears of War 2",
@@ -7580,7 +7580,7 @@
           "playstation-4",
           "ps4"
         ],
-        "stars": 352,
+        "stars": 358,
         "firstReleaseAt": "2026-10-15T02:55:33Z",
         "latestRelease": {
           "tag": "v0.9.2",
@@ -7589,7 +7589,7 @@
           "htmlUrl": "https://github.com/saulob/dragons-crown-pro-pc/releases/tag/v0.9.2"
         },
         "releaseCount": 12,
-        "totalDownloads": 17770
+        "totalDownloads": 18813
       },
       "game": {
         "title": "Dragon's Crown Pro",
@@ -7654,16 +7654,16 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 263,
+        "stars": 264,
         "firstReleaseAt": "2026-10-05T06:27:45Z",
         "latestRelease": {
-          "tag": "v2.0.11",
-          "name": "v2.0.11",
-          "publishedAt": "2026-11-02T04:45:55Z",
-          "htmlUrl": "https://github.com/TekRantGaming/king-kong-recompiled/releases/tag/v2.0.11"
+          "tag": "v2.1.0",
+          "name": "v2.1.0",
+          "publishedAt": "2026-11-05T02:29:42Z",
+          "htmlUrl": "https://github.com/TekRantGaming/king-kong-recompiled/releases/tag/v2.1.0"
         },
-        "releaseCount": 39,
-        "totalDownloads": 47163
+        "releaseCount": 40,
+        "totalDownloads": 48967
       },
       "game": {
         "title": "Peter Jackson's King Kong: The Official Game of the Movie",
@@ -7735,7 +7735,7 @@
           "windows",
           "x86-64"
         ],
-        "stars": 263,
+        "stars": 267,
         "firstReleaseAt": "2026-10-16T02:38:06Z",
         "latestRelease": {
           "tag": "v0.7.6",
@@ -7744,7 +7744,7 @@
           "htmlUrl": "https://github.com/raulzrrs/letsgo-recomp/releases/tag/v0.7.6"
         },
         "releaseCount": 21,
-        "totalDownloads": 97215
+        "totalDownloads": 100608
       },
       "game": {
         "title": "Pokémon: Let's Go, Pikachu!",
@@ -7811,7 +7811,7 @@
           "ps1",
           "recomp"
         ],
-        "stars": 256,
+        "stars": 259,
         "firstReleaseAt": "2026-10-01T07:44:58Z",
         "latestRelease": {
           "tag": "v1.0.3",
@@ -7820,7 +7820,7 @@
           "htmlUrl": "https://github.com/BlackLabelHQ/MediEvilRecomp/releases/tag/v1.0.3"
         },
         "releaseCount": 6,
-        "totalDownloads": 6973
+        "totalDownloads": 7307
       },
       "game": {
         "title": "MediEvil",
@@ -7883,7 +7883,7 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 245,
+        "stars": 244,
         "firstReleaseAt": "2026-05-02T20:51:23Z",
         "latestRelease": {
           "tag": "1.14.0",
@@ -7892,7 +7892,7 @@
           "htmlUrl": "https://github.com/SolarCookies/TiP-Recomp/releases/tag/1.14.0"
         },
         "releaseCount": 6,
-        "totalDownloads": 12058
+        "totalDownloads": 12122
       },
       "game": {
         "title": "Viva Piñata: Trouble in Paradise",
@@ -7958,7 +7958,7 @@
           "rexglue-recomp",
           "xbox-360"
         ],
-        "stars": 239,
+        "stars": 240,
         "firstReleaseAt": "2026-07-24T13:51:57Z",
         "latestRelease": {
           "tag": "v1.2.2",
@@ -7967,7 +7967,7 @@
           "htmlUrl": "https://github.com/beatrixzy/PGR4-Recomp/releases/tag/v1.2.2"
         },
         "releaseCount": 6,
-        "totalDownloads": 8434
+        "totalDownloads": 8568
       },
       "game": {
         "title": "Project Gotham Racing 4",
@@ -8028,7 +8028,7 @@
         "homepage": null,
         "license": "MIT",
         "topics": [],
-        "stars": 235,
+        "stars": 234,
         "firstReleaseAt": "2026-08-28T14:02:03Z",
         "latestRelease": {
           "tag": "v1.5.6",
@@ -8037,7 +8037,7 @@
           "htmlUrl": "https://github.com/novapowers0/DBZ-Budokai-3-HD-Collection/releases/tag/v1.5.6"
         },
         "releaseCount": 50,
-        "totalDownloads": 25942
+        "totalDownloads": 26314
       },
       "game": {
         "title": "Dragon Ball Z: Budokai HD Collection",
@@ -8102,7 +8102,7 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 234,
+        "stars": 236,
         "firstReleaseAt": "2026-10-05T19:38:35Z",
         "latestRelease": {
           "tag": "v0.4.2-beta",
@@ -8111,7 +8111,7 @@
           "htmlUrl": "https://github.com/jorjbarbosa/naruto-rise-recomp/releases/tag/v0.4.2-beta"
         },
         "releaseCount": 9,
-        "totalDownloads": 12301
+        "totalDownloads": 12644
       },
       "game": {
         "title": "Naruto: Rise of a Ninja",
@@ -8174,7 +8174,7 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 229,
+        "stars": 230,
         "firstReleaseAt": "2026-04-05T00:20:17Z",
         "latestRelease": {
           "tag": "renut",
@@ -8183,7 +8183,7 @@
           "htmlUrl": "https://github.com/masterspike52/reNut/releases/tag/renut"
         },
         "releaseCount": 29,
-        "totalDownloads": 24304
+        "totalDownloads": 24431
       },
       "game": {
         "title": "Banjo-Kazooie: Nuts & Bolts",
@@ -8260,16 +8260,16 @@
           "sdl3",
           "webgpu"
         ],
-        "stars": 237,
+        "stars": 243,
         "firstReleaseAt": "2026-10-28T21:24:56Z",
         "latestRelease": {
-          "tag": "v0.10.0",
-          "name": "0.10.0",
-          "publishedAt": "2026-11-03T20:03:00Z",
-          "htmlUrl": "https://github.com/Odrannnn/MetroidPrime2Port/releases/tag/v0.10.0"
+          "tag": "v0.11.0",
+          "name": "0.11.0",
+          "publishedAt": "2026-11-04T20:31:10Z",
+          "htmlUrl": "https://github.com/Odrannnn/MetroidPrime2Port/releases/tag/v0.11.0"
         },
-        "releaseCount": 12,
-        "totalDownloads": 14076
+        "releaseCount": 13,
+        "totalDownloads": 15821
       },
       "game": {
         "title": "Metroid Prime 2: Echoes",
@@ -8333,16 +8333,16 @@
         "homepage": null,
         "license": "GPL-3.0",
         "topics": [],
-        "stars": 229,
+        "stars": 232,
         "firstReleaseAt": "2026-10-19T23:33:06Z",
         "latestRelease": {
-          "tag": "v0.7.0",
-          "name": "SMM2 Recomp v0.7.0",
-          "publishedAt": "2026-11-04T11:25:27Z",
-          "htmlUrl": "https://github.com/smm2recomp/smm2recomp/releases/tag/v0.7.0"
+          "tag": "v0.7.4",
+          "name": "SMM2 Recomp v0.7.4",
+          "publishedAt": "2026-11-05T04:26:27Z",
+          "htmlUrl": "https://github.com/smm2recomp/smm2recomp/releases/tag/v0.7.4"
         },
-        "releaseCount": 28,
-        "totalDownloads": 8274
+        "releaseCount": 30,
+        "totalDownloads": 8870
       },
       "game": {
         "title": "Super Mario Maker 2",
@@ -8412,7 +8412,7 @@
           "htmlUrl": "https://github.com/mstan/MegaManXSNESRecomp/releases/tag/v2.3.12"
         },
         "releaseCount": 96,
-        "totalDownloads": 30257
+        "totalDownloads": 30523
       },
       "game": {
         "title": "Mega Man X",
@@ -8493,7 +8493,7 @@
           "htmlUrl": "https://github.com/mstan/MegaManX4Recomp/releases/tag/v1.0.29"
         },
         "releaseCount": 87,
-        "totalDownloads": 13552
+        "totalDownloads": 13953
       },
       "game": {
         "title": "Mega Man X4",
@@ -8557,16 +8557,16 @@
         "homepage": null,
         "license": "MIT",
         "topics": [],
-        "stars": 235,
+        "stars": 250,
         "firstReleaseAt": "2026-10-27T06:32:49Z",
         "latestRelease": {
-          "tag": "v0.7.0",
-          "name": "ACNHRecomp 0.7.0",
-          "publishedAt": "2026-11-03T13:30:00Z",
-          "htmlUrl": "https://github.com/Nycolazs/ACNHRecomp/releases/tag/v0.7.0"
+          "tag": "v0.8.0",
+          "name": "ACNHRecomp 0.8.0",
+          "publishedAt": "2026-11-05T12:53:14Z",
+          "htmlUrl": "https://github.com/Nycolazs/ACNHRecomp/releases/tag/v0.8.0"
         },
-        "releaseCount": 10,
-        "totalDownloads": 6883
+        "releaseCount": 11,
+        "totalDownloads": 7564
       },
       "game": {
         "title": "Animal Crossing: New Horizons",
@@ -8631,7 +8631,7 @@
         "homepage": null,
         "license": "MIT",
         "topics": [],
-        "stars": 15,
+        "stars": 18,
         "firstReleaseAt": "2026-10-12T15:59:16Z",
         "latestRelease": {
           "tag": "v0.1.0",
@@ -8640,7 +8640,7 @@
           "htmlUrl": "https://github.com/sethlikepie/Gow2HD-Windows/releases/tag/v0.1.0"
         },
         "releaseCount": 1,
-        "totalDownloads": 369
+        "totalDownloads": 426
       },
       "game": {
         "title": "God of War II",
@@ -8702,7 +8702,7 @@
         "homepage": null,
         "license": null,
         "topics": [],
-        "stars": 3040,
+        "stars": 3160,
         "firstReleaseAt": "2026-10-17T05:45:49Z",
         "latestRelease": {
           "tag": "v0.4.1-alpha.4",
@@ -8711,7 +8711,7 @@
           "htmlUrl": "https://github.com/Revivedx/SavageWindRecomp/releases/tag/v0.4.1-alpha.4"
         },
         "releaseCount": 6,
-        "totalDownloads": 96441
+        "totalDownloads": 101521
       },
       "game": {
         "title": "The Legend of Zelda: Breath of the Wild",
